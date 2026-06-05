@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+  font-family:
+    Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Microsoft YaHei", "PingFang SC", sans-serif;
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+}
+
+img {
+  display: block;
+}
+
+@layer components {
+  .input {
+    @apply min-h-12 w-full rounded-md border border-slate-200 bg-field px-3 py-2 text-sm font-semibold text-ink outline-none transition placeholder:text-slate-400 focus:border-court focus:bg-white focus:ring-4 focus:ring-court/10;
+  }
+}

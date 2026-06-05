@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 620" role="img" aria-label="Sports T-shirt">
+  <rect width="900" height="620" fill="#f7fbf8"/>
+  <rect y="384" width="900" height="236" fill="#0d6b5f"/>
+  <path d="M335 132 414 92h72l79 40 92 87-70 78-43-36v245H356V261l-43 36-70-78Z" fill="#fff" stroke="#17202a" stroke-width="14" stroke-linejoin="round"/>
+  <path d="M414 92c8 33 20 61 36 84 16-23 28-51 36-84" fill="none" stroke="#e34f2f" stroke-width="14" stroke-linecap="round"/>
+  <path d="M396 324h108M396 374h108" stroke="#2676d6" stroke-width="14" stroke-linecap="round"/>
+  <text x="450" y="552" text-anchor="middle" font-family="Arial, sans-serif" font-size="48" font-weight="800" fill="#fff">SPORTS T-SHIRT</text>
+</svg>

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 620" role="img" aria-label="Basketball equipment">
+  <rect width="900" height="620" fill="#fff7ed"/>
+  <rect y="386" width="900" height="234" fill="#17202a"/>
+  <circle cx="450" cy="278" r="158" fill="#e34f2f" stroke="#17202a" stroke-width="16"/>
+  <path d="M450 120v316M292 278h316M346 154c72 68 108 151 108 248M554 154c-72 68-108 151-108 248" fill="none" stroke="#17202a" stroke-width="14" stroke-linecap="round"/>
+  <path d="M210 470h480" stroke="#c7ef4e" stroke-width="16" stroke-linecap="round"/>
+  <text x="450" y="552" text-anchor="middle" font-family="Arial, sans-serif" font-size="48" font-weight="800" fill="#fff">BASKETBALL</text>
+</svg>

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 620" role="img" aria-label="Cricket equipment">
+  <rect width="900" height="620" fill="#eef7f2"/>
+  <rect y="380" width="900" height="240" fill="#0d6b5f"/>
+  <path d="M364 95c36-18 82-4 101 31l141 265c13 25 3 56-23 69l-20 10c-25 13-56 3-69-22L353 184c-18-35-3-75 11-89Z" fill="#e6b56a" stroke="#17202a" stroke-width="14"/>
+  <path d="m498 448 66 100" stroke="#17202a" stroke-width="30" stroke-linecap="round"/>
+  <circle cx="286" cy="300" r="58" fill="#e34f2f" stroke="#17202a" stroke-width="10"/>
+  <path d="M244 300h84M286 258v84" stroke="#fff" stroke-width="8" stroke-linecap="round"/>
+  <text x="450" y="552" text-anchor="middle" font-family="Arial, sans-serif" font-size="48" font-weight="800" fill="#fff">CRICKET</text>
+</svg>

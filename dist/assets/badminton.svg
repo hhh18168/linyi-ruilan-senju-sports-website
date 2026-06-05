@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 620" role="img" aria-label="Badminton equipment">
+  <rect width="900" height="620" fill="#f3fbff"/>
+  <rect y="382" width="900" height="238" fill="#2676d6"/>
+  <ellipse cx="360" cy="218" rx="94" ry="132" fill="none" stroke="#17202a" stroke-width="16"/>
+  <path d="M414 330 554 510" stroke="#17202a" stroke-width="22" stroke-linecap="round"/>
+  <path d="M307 112v211M338 88v256M369 88v256M400 112v211M284 165h152M276 220h168M284 275h152" stroke="#0d6b5f" stroke-width="6" stroke-linecap="round"/>
+  <path d="m570 112 92 188H478Z" fill="#fff" stroke="#17202a" stroke-width="12" stroke-linejoin="round"/>
+  <path d="M570 112v188M532 190l-54 110M608 190l54 110" stroke="#e34f2f" stroke-width="8" stroke-linecap="round"/>
+  <text x="450" y="552" text-anchor="middle" font-family="Arial, sans-serif" font-size="48" font-weight="800" fill="#fff">BADMINTON</text>
+</svg>

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 620" role="img" aria-label="Football equipment">
+  <rect width="900" height="620" fill="#f3f8f6"/>
+  <rect y="390" width="900" height="230" fill="#0d6b5f"/>
+  <path d="M0 430c170-55 310-55 485 0s285 55 415 0v190H0Z" fill="#145f55"/>
+  <circle cx="455" cy="286" r="155" fill="#fff"/>
+  <path d="M455 152 340 236l44 134h142l44-134Z" fill="#17202a"/>
+  <path d="m455 152 115 84M340 236l44 134M526 370l44-134M384 370l-71 82M526 370l71 82" fill="none" stroke="#17202a" stroke-width="18" stroke-linecap="round"/>
+  <circle cx="455" cy="286" r="154" fill="none" stroke="#17202a" stroke-width="18"/>
+  <path d="M150 455h600" stroke="#c7ef4e" stroke-width="18" stroke-linecap="round"/>
+  <text x="450" y="552" text-anchor="middle" font-family="Arial, sans-serif" font-size="48" font-weight="800" fill="#fff">FOOTBALL</text>
+</svg>
