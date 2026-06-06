@@ -34,5 +34,6 @@ npm run build
 ## Notes
 
 - The first version is a static showcase website. It does not include payment, cart, login, CMS or backend email delivery.
-- Replace `sales@example.com` with the real sales email before production launch.
+- Public contact emails: `bayi35250@gmail.com`, `lyslsm8888@gmail.com`.
+- Public WhatsApp contacts: `+86 152 6539 8250`, `+86 180 6316 9020`.
 - The site does not depend on remote image CDNs for core visuals, improving overseas reliability.

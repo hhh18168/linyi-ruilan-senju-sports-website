@@ -25,6 +25,12 @@ import {
   type CategoryId,
 } from './products';
 
+const contactEmails = ['bayi35250@gmail.com', 'lyslsm8888@gmail.com'];
+const whatsappContacts = [
+  { label: '+86 152 6539 8250', href: 'https://wa.me/8615265398250' },
+  { label: '+86 180 6316 9020', href: 'https://wa.me/8618063169020' },
+];
+
 type Filter = 'all' | CategoryId;
 
 type FormState = {
@@ -359,13 +365,32 @@ function App() {
               <h2 className="mt-2 text-3xl font-black tracking-normal sm:text-4xl">{text.sections.contactTitle}</h2>
               <p className="mt-4 text-sm leading-7 text-slate-600">{text.sections.contactIntro}</p>
               <div className="mt-7 grid gap-3">
-                <div className="flex items-center gap-3 rounded-md bg-white p-4 shadow-sm ring-1 ring-slate-200">
+                <div className="flex items-start gap-3 rounded-md bg-white p-4 shadow-sm ring-1 ring-slate-200">
                   <Mail className="shrink-0 text-court" size={20} />
-                  <span className="text-sm font-bold">{text.form.emailLabel}</span>
+                  <div>
+                    <div className="text-sm font-bold">{text.form.emailLabel}</div>
+                    <div className="mt-2 flex flex-wrap gap-x-4 gap-y-2">
+                      {contactEmails.map((email) => (
+                        <a key={email} className="text-sm font-black text-court hover:text-flame" href={`mailto:${email}`}>
+                          {email}
+                        </a>
+                      ))}
+                    </div>
+                  </div>
                 </div>
-                <div className="flex items-center gap-3 rounded-md bg-white p-4 shadow-sm ring-1 ring-slate-200">
+                <div className="flex items-start gap-3 rounded-md bg-white p-4 shadow-sm ring-1 ring-slate-200">
                   <Phone className="shrink-0 text-court" size={20} />
-                  <span className="text-sm font-bold">{text.form.audienceLabel}</span>
+                  <div>
+                    <div className="text-sm font-bold">{text.form.whatsappLabel}</div>
+                    <div className="mt-2 flex flex-wrap gap-x-4 gap-y-2">
+                      {whatsappContacts.map((contact) => (
+                        <a key={contact.href} className="text-sm font-black text-court hover:text-flame" href={contact.href} target="_blank" rel="noreferrer">
+                          {contact.label}
+                        </a>
+                      ))}
+                    </div>
+                    <p className="mt-3 text-xs font-semibold leading-6 text-slate-500">{text.form.audienceLabel}</p>
+                  </div>
                 </div>
               </div>
             </div>

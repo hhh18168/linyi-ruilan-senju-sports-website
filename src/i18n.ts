@@ -67,6 +67,7 @@ type Text = {
     submit: string;
     success: string;
     emailLabel: string;
+    whatsappLabel: string;
     audienceLabel: string;
     errors: {
       name: string;
@@ -137,7 +138,8 @@ const en: Text = {
     messagePlaceholder: 'Tell us your use case, delivery time or customization needs',
     submit: 'Submit inquiry',
     success: 'Your inquiry has been received. We will contact you soon.',
-    emailLabel: 'Email: sales@example.com',
+    emailLabel: 'Email: bayi35250@gmail.com / lyslsm8888@gmail.com',
+    whatsappLabel: 'WhatsApp: +86 152 6539 8250 / +86 180 6316 9020',
     audienceLabel: 'For schools, clubs, retailers and event buyers',
     errors: {
       name: 'Please enter your name',
@@ -199,7 +201,8 @@ const zh: Text = {
     messagePlaceholder: '请说明使用场景、交付时间或定制需求',
     submit: '提交询盘',
     success: '已收到您的询盘，我们会尽快联系您。',
-    emailLabel: '邮箱：sales@example.com',
+    emailLabel: '邮箱：bayi35250@gmail.com / lyslsm8888@gmail.com',
+    whatsappLabel: 'WhatsApp：+86 152 6539 8250 / +86 180 6316 9020',
     audienceLabel: '适合学校、俱乐部、零售商和赛事采购方',
     errors: {
       name: '请输入姓名',
