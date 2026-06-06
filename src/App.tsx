@@ -24,6 +24,7 @@ import {
   products,
   type CategoryId,
 } from './products';
+import { yupooCategories, yupooProducts } from './yupooProducts';
 
 const contactEmails = ['bayi35250@gmail.com', 'lyslsm8888@gmail.com'];
 const whatsappContacts = [
@@ -54,6 +55,7 @@ const navKeys = ['home', 'categories', 'products', 'about', 'contact'] as const;
 function App() {
   const [language, setLanguage] = useState<LanguageCode>('en');
   const [activeFilter, setActiveFilter] = useState<Filter>('all');
+  const [activeYupooCategory, setActiveYupooCategory] = useState('all');
   const [menuOpen, setMenuOpen] = useState(false);
   const [form, setForm] = useState<FormState>(initialForm);
   const [errors, setErrors] = useState<Partial<FormState>>({});
@@ -80,6 +82,11 @@ function App() {
     if (activeFilter === 'all') return products;
     return products.filter((product) => product.category === activeFilter);
   }, [activeFilter]);
+
+  const filteredYupooProducts = useMemo(() => {
+    if (activeYupooCategory === 'all') return yupooProducts;
+    return yupooProducts.filter((product) => product.categorySlug === activeYupooCategory);
+  }, [activeYupooCategory]);
 
   const changeLanguage = (nextLanguage: LanguageCode) => {
     setLanguage(nextLanguage);
@@ -333,6 +340,84 @@ function App() {
                 <p className="mt-3 text-sm leading-7 text-slate-600">{text.benefits[index].text}</p>
               </div>
             ))}
+          </div>
+        </section>
+
+        <section id="yupoo-catalog" className="bg-field py-16">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div className="flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
+              <div>
+                <p className="text-sm font-black uppercase tracking-[0.18em] text-court">Yupoo Product Test Catalog</p>
+                <h2 className="mt-2 text-3xl font-black tracking-normal sm:text-4xl">Yupoo商品测试目录</h2>
+                <p className="mt-4 max-w-2xl text-sm leading-7 text-slate-600">
+                  Sample import from the public Yupoo album. Each image is shown as one inquiry product. This is a controlled test before full catalog import.
+                </p>
+              </div>
+              <div className="text-sm font-semibold text-slate-500">
+                Showing <span className="font-black text-court">{filteredYupooProducts.length}</span> sample items
+              </div>
+            </div>
+
+            <div className="mt-7 flex gap-2 overflow-x-auto pb-2">
+              <button
+                type="button"
+                onClick={() => setActiveYupooCategory('all')}
+                className={`min-h-11 shrink-0 rounded-md px-4 text-sm font-black transition ${
+                  activeYupooCategory === 'all'
+                    ? 'bg-court text-white shadow-sm'
+                    : 'bg-white text-slate-700 ring-1 ring-slate-200 hover:bg-slate-100'
+                }`}
+              >
+                All Samples
+              </button>
+              {yupooCategories.map((category) => (
+                <button
+                  key={category.slug}
+                  type="button"
+                  onClick={() => setActiveYupooCategory(category.slug)}
+                  className={`min-h-11 shrink-0 rounded-md px-4 text-sm font-black transition ${
+                    activeYupooCategory === category.slug
+                      ? 'bg-court text-white shadow-sm'
+                      : 'bg-white text-slate-700 ring-1 ring-slate-200 hover:bg-slate-100'
+                  }`}
+                >
+                  {category.name}
+                </button>
+              ))}
+            </div>
+
+            <div className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+              {filteredYupooProducts.map((product) => (
+                <article key={product.id} className="overflow-hidden rounded-md border border-slate-200 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-lift">
+                  <div className="relative aspect-square bg-white">
+                    <img loading="lazy" className="h-full w-full object-cover" src={product.image} alt={product.name} />
+                    <div className="absolute left-3 top-3 rounded-md bg-white px-3 py-1 text-xs font-black text-court shadow-sm">
+                      {product.category}
+                    </div>
+                  </div>
+                  <div className="p-4">
+                    <h3 className="text-base font-black tracking-normal">{product.name}</h3>
+                    <p className="mt-2 text-xs font-semibold uppercase tracking-wide text-slate-500">{product.album}</p>
+                    <div className="mt-4 flex flex-col gap-2 sm:flex-row">
+                      <a
+                        href="#contact"
+                        className="inline-flex min-h-10 flex-1 items-center justify-center rounded-md bg-court px-3 text-sm font-black text-white transition hover:bg-flame"
+                      >
+                        Inquiry
+                      </a>
+                      <a
+                        href={product.sourceUrl}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="inline-flex min-h-10 flex-1 items-center justify-center rounded-md bg-field px-3 text-sm font-black text-slate-700 ring-1 ring-slate-200 transition hover:bg-slate-100"
+                      >
+                        Source
+                      </a>
+                    </div>
+                  </div>
+                </article>
+              ))}
+            </div>
           </div>
         </section>
 

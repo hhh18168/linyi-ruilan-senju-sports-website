@@ -1,9 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 620" role="img" aria-label="Sports backpack">
-  <rect width="900" height="620" fill="#f6f7fb"/>
-  <rect y="384" width="900" height="236" fill="#17202a"/>
-  <path d="M322 220c0-74 56-128 128-128s128 54 128 128v242c0 38-31 69-69 69H391c-38 0-69-31-69-69Z" fill="#0d6b5f" stroke="#17202a" stroke-width="14"/>
-  <path d="M376 222c0-42 31-73 74-73s74 31 74 73" fill="none" stroke="#c7ef4e" stroke-width="18" stroke-linecap="round"/>
-  <rect x="365" y="315" width="170" height="128" rx="26" fill="#fff" stroke="#17202a" stroke-width="12"/>
-  <path d="M385 270h130M395 380h110" stroke="#17202a" stroke-width="12" stroke-linecap="round"/>
-  <text x="450" y="552" text-anchor="middle" font-family="Arial, sans-serif" font-size="48" font-weight="800" fill="#fff">SPORTS BAG</text>
-</svg>

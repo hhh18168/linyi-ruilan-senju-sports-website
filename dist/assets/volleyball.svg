@@ -1,9 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 620" role="img" aria-label="Volleyball equipment">
-  <rect width="900" height="620" fill="#eef5ff"/>
-  <rect y="384" width="900" height="236" fill="#2676d6"/>
-  <circle cx="450" cy="278" r="158" fill="#fff" stroke="#17202a" stroke-width="14"/>
-  <path d="M316 195c88-10 166 9 236 58M300 304c93-48 184-56 273-24M398 134c-35 92-33 190 10 293M522 139c34 88 35 181 0 279" fill="none" stroke="#e34f2f" stroke-width="28" stroke-linecap="round"/>
-  <path d="M150 455h600" stroke="#fff" stroke-width="12" stroke-linecap="round"/>
-  <path d="M450 405v78" stroke="#fff" stroke-width="12" stroke-linecap="round"/>
-  <text x="450" y="552" text-anchor="middle" font-family="Arial, sans-serif" font-size="48" font-weight="800" fill="#fff">VOLLEYBALL</text>
-</svg>
