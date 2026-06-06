@@ -347,14 +347,14 @@ function App() {
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
               <div>
-                <p className="text-sm font-black uppercase tracking-[0.18em] text-court">Yupoo Product Test Catalog</p>
-                <h2 className="mt-2 text-3xl font-black tracking-normal sm:text-4xl">Yupoo商品测试目录</h2>
+                <p className="text-sm font-black uppercase tracking-[0.18em] text-court">Product Catalog</p>
+                <h2 className="mt-2 text-3xl font-black tracking-normal sm:text-4xl">商品目录</h2>
                 <p className="mt-4 max-w-2xl text-sm leading-7 text-slate-600">
-                  Sample import from the public Yupoo album. Each image is shown as one inquiry product. This is a controlled test before full catalog import.
+                  Product images imported from the public catalog album. Each item can be selected for inquiry through the contact form.
                 </p>
               </div>
               <div className="text-sm font-semibold text-slate-500">
-                Showing <span className="font-black text-court">{filteredYupooProducts.length}</span> sample items
+                Showing <span className="font-black text-court">{filteredYupooProducts.length}</span> items
               </div>
             </div>
 
@@ -368,7 +368,7 @@ function App() {
                     : 'bg-white text-slate-700 ring-1 ring-slate-200 hover:bg-slate-100'
                 }`}
               >
-                All Samples
+                All Products
               </button>
               {yupooCategories.map((category) => (
                 <button
