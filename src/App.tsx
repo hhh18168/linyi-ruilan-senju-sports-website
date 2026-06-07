@@ -27,12 +27,16 @@ import {
 import { yupooProducts } from './yupooProducts';
 import {
   defaultCmsProducts,
+  defaultExchangeRates,
   defaultLayoutSettings,
   defaultSiteSettings,
   fetchCmsJson,
+  formatProductPrice,
+  getProductTranslation,
+  normalizeProduct,
   toWhatsAppHref,
 } from './cms';
-import type { CmsProduct, LayoutSettings, SiteSettings } from './cmsTypes';
+import type { CmsProduct, ExchangeRates, LayoutSettings, SiteSettings } from './cmsTypes';
 
 type Filter = 'all' | CategoryId;
 
@@ -61,6 +65,9 @@ function App() {
   const [cmsProducts, setCmsProducts] = useState<CmsProduct[]>(defaultCmsProducts);
   const [siteSettings, setSiteSettings] = useState<SiteSettings>(defaultSiteSettings);
   const [layoutSettings, setLayoutSettings] = useState<LayoutSettings>(defaultLayoutSettings);
+  const [exchangeRates, setExchangeRates] = useState<ExchangeRates>(defaultExchangeRates);
+  const [selectedProductId, setSelectedProductId] = useState<string | null>(null);
+  const [catalogPage, setCatalogPage] = useState(1);
   const [menuOpen, setMenuOpen] = useState(false);
   const [form, setForm] = useState<FormState>(initialForm);
   const [errors, setErrors] = useState<Partial<FormState>>({});
@@ -76,10 +83,12 @@ function App() {
       fetchCmsJson<CmsProduct[]>('/cms/products.json', defaultCmsProducts),
       fetchCmsJson<SiteSettings>('/cms/site-settings.json', defaultSiteSettings),
       fetchCmsJson<LayoutSettings>('/cms/layout-settings.json', defaultLayoutSettings),
-    ]).then(([nextProducts, nextSettings, nextLayout]) => {
-      setCmsProducts(nextProducts);
+      fetchCmsJson<ExchangeRates>('/cms/exchange-rates.json', defaultExchangeRates),
+    ]).then(([nextProducts, nextSettings, nextLayout, nextRates]) => {
+      setCmsProducts(nextProducts.map(normalizeProduct));
       setSiteSettings(nextSettings);
       setLayoutSettings(nextLayout);
+      setExchangeRates(nextRates);
     });
   }, []);
 
@@ -108,6 +117,17 @@ function App() {
     if (activeYupooCategory === 'all') return visible;
     return visible.filter((product) => product.categorySlug === activeYupooCategory);
   }, [activeYupooCategory, cmsProducts]);
+
+  const pageSize = 24;
+  const pagedYupooProducts = useMemo(
+    () => filteredYupooProducts.slice(0, catalogPage * pageSize),
+    [catalogPage, filteredYupooProducts],
+  );
+
+  const selectedProduct = useMemo(
+    () => cmsProducts.map(normalizeProduct).find((product) => product.id === selectedProductId) || null,
+    [cmsProducts, selectedProductId],
+  );
 
   const catalogCategories = useMemo(() => {
     const pairs = cmsProducts
@@ -141,6 +161,26 @@ function App() {
     window.localStorage.setItem('rsj-language', nextLanguage);
     setSubmitted(false);
   };
+
+  const openProduct = (productId: string) => {
+    setSelectedProductId(productId);
+    window.history.pushState(null, '', `/products/${productId}`);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+  const closeProduct = () => {
+    setSelectedProductId(null);
+    window.history.pushState(null, '', '/');
+  };
+
+  useEffect(() => {
+    const match = window.location.pathname.match(/^\/products\/([^/]+)/);
+    if (match?.[1]) setSelectedProductId(decodeURIComponent(match[1]));
+  }, []);
+
+  useEffect(() => {
+    setCatalogPage(1);
+  }, [activeYupooCategory]);
 
   const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
@@ -258,6 +298,15 @@ function App() {
       </header>
 
       <main className="flex flex-col">
+        {selectedProduct ? (
+          <ProductDetail
+            product={selectedProduct}
+            language={language}
+            rates={exchangeRates}
+            onBack={closeProduct}
+          />
+        ) : (
+          <>
         <section id="home" className="relative overflow-hidden bg-ink text-white">
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_80%_20%,rgba(199,239,78,0.25),transparent_32%),linear-gradient(135deg,#17202a_0%,#0d6b5f_62%,#2676d6_100%)]" />
           <div className="relative mx-auto grid min-h-[640px] max-w-7xl items-center gap-10 px-4 pb-20 pt-16 sm:px-6 lg:grid-cols-[1.02fr_0.98fr] lg:px-8">
@@ -456,37 +505,46 @@ function App() {
             </div>
 
             <div className={`mt-8 grid gap-5 ${catalogGridClass}`}>
-              {filteredYupooProducts.map((product) => (
+              {pagedYupooProducts.map((product) => {
+                const productText = getProductTranslation(product, language);
+                return (
                 <article key={product.id} className="overflow-hidden rounded-md border border-slate-200 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-lift">
                   <div className="relative aspect-square bg-white">
                     <img loading="lazy" className="h-full w-full object-cover" src={product.image} alt={product.name} />
                     <div className="absolute left-3 top-3 rounded-md bg-white px-3 py-1 text-xs font-black text-court shadow-sm">
-                      {product.category}
+                      {productText.category || product.category}
                     </div>
                   </div>
                   <div className="p-4">
-                    <h3 className="text-base font-black tracking-normal">{product.name}</h3>
-                    <p className="mt-2 text-xs font-semibold uppercase tracking-wide text-slate-500">{product.album}</p>
+                    <h3 className="text-base font-black tracking-normal">{productText.name || product.name}</h3>
+                    <p className="mt-2 text-xs font-semibold uppercase tracking-wide text-slate-500">{productText.album || product.album}</p>
+                    <p className="mt-3 text-lg font-black text-court">{formatProductPrice(product, language, exchangeRates)}</p>
                     <div className="mt-4 flex flex-col gap-2 sm:flex-row">
-                      <a
-                        href="#contact"
+                      <button
+                        type="button"
+                        onClick={() => openProduct(product.id)}
                         className="inline-flex min-h-10 flex-1 items-center justify-center rounded-md bg-court px-3 text-sm font-black text-white transition hover:bg-flame"
                       >
-                        Inquiry
-                      </a>
+                        Details
+                      </button>
                       <a
-                        href={product.sourceUrl}
-                        target="_blank"
-                        rel="noreferrer"
+                        href="#contact"
                         className="inline-flex min-h-10 flex-1 items-center justify-center rounded-md bg-field px-3 text-sm font-black text-slate-700 ring-1 ring-slate-200 transition hover:bg-slate-100"
                       >
-                        Source
+                        Inquiry
                       </a>
                     </div>
                   </div>
                 </article>
-              ))}
+              )})}
             </div>
+            {pagedYupooProducts.length < filteredYupooProducts.length && (
+              <div className="mt-8 text-center">
+                <button className="inline-flex min-h-11 items-center justify-center rounded-md bg-court px-5 text-sm font-black text-white" type="button" onClick={() => setCatalogPage((page) => page + 1)}>
+                  Load More
+                </button>
+              </div>
+            )}
           </div>
         </section>}
 
@@ -594,6 +652,30 @@ function App() {
             </form>
           </div>
         </section>}
+        {layoutSettings.sections
+          .filter((section) => section.visible && !['categories', 'products', 'benefits', 'catalog', 'about', 'contact'].includes(section.id))
+          .sort((a, b) => a.order - b.order)
+          .map((section) => (
+            <section key={section.id} style={{ order: section.order, backgroundColor: section.backgroundColor || undefined }} className="py-14">
+              <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                <div className={`grid gap-6 ${section.type === 'image-text' ? 'lg:grid-cols-2 lg:items-center' : ''}`}>
+                  {section.image && <img className="w-full rounded-md object-cover ring-1 ring-slate-200" src={section.image} alt={section.title || section.label} />}
+                  <div>
+                    <p className="text-sm font-black uppercase tracking-[0.18em] text-court">{section.label}</p>
+                    <h2 className="mt-2 text-3xl font-black tracking-normal">{section.title || section.label}</h2>
+                    {(section.body || section.subtitle) && <p className="mt-4 whitespace-pre-line text-sm leading-7 text-slate-600">{section.body || section.subtitle}</p>}
+                    {section.buttonText && section.buttonHref && (
+                      <a className="mt-6 inline-flex min-h-11 items-center justify-center rounded-md bg-court px-4 text-sm font-black text-white" href={section.buttonHref}>
+                        {section.buttonText}
+                      </a>
+                    )}
+                  </div>
+                </div>
+              </div>
+            </section>
+          ))}
+          </>
+        )}
       </main>
 
       <footer className="border-t border-slate-200 bg-white py-8">
@@ -654,3 +736,88 @@ function Field({
 }
 
 export default App;
+
+function ProductDetail({
+  product,
+  language,
+  rates,
+  onBack,
+}: {
+  product: CmsProduct;
+  language: LanguageCode;
+  rates: ExchangeRates;
+  onBack: () => void;
+}) {
+  const text = getProductTranslation(product, language);
+  const images = product.galleryImages?.length ? product.galleryImages : [product.image];
+
+  return (
+    <section className="bg-white py-12">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <button className="mb-6 inline-flex min-h-11 items-center justify-center rounded-md bg-field px-4 text-sm font-black text-slate-700 ring-1 ring-slate-200" type="button" onClick={onBack}>
+          Back to products
+        </button>
+        <div className="grid gap-8 lg:grid-cols-[0.95fr_1.05fr]">
+          <div className="grid gap-4">
+            <img className="aspect-square w-full rounded-md bg-field object-cover ring-1 ring-slate-200" src={images[0]} alt={text.name || product.name} />
+            {images.length > 1 && (
+              <div className="grid grid-cols-4 gap-3">
+                {images.slice(1, 9).map((image) => (
+                  <img key={image} className="aspect-square rounded-md bg-field object-cover ring-1 ring-slate-200" src={image} alt={text.name || product.name} />
+                ))}
+              </div>
+            )}
+          </div>
+          <div>
+            <p className="text-sm font-black uppercase tracking-[0.18em] text-court">{text.category || product.category}</p>
+            <h1 className="mt-2 text-4xl font-black tracking-normal">{text.name || product.name}</h1>
+            <p className="mt-3 text-lg font-bold text-slate-500">{text.album || product.album}</p>
+            <p className="mt-6 text-3xl font-black text-court">{formatProductPrice(product, language, rates)}</p>
+            <p className="mt-5 text-base leading-8 text-slate-600">{text.description}</p>
+            {text.highlights?.length ? (
+              <div className="mt-6 grid gap-3 sm:grid-cols-2">
+                {text.highlights.map((item) => (
+                  <div key={item} className="rounded-md bg-field px-4 py-3 text-sm font-bold text-slate-700">{item}</div>
+                ))}
+              </div>
+            ) : null}
+            <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+              <a className="inline-flex min-h-12 items-center justify-center rounded-md bg-flame px-5 text-sm font-black text-white" href="/#contact">
+                Inquiry Now
+              </a>
+              {product.sourceUrl && (
+                <a className="inline-flex min-h-12 items-center justify-center rounded-md bg-field px-5 text-sm font-black text-slate-700 ring-1 ring-slate-200" href={product.sourceUrl} target="_blank" rel="noreferrer">
+                  Source
+                </a>
+              )}
+            </div>
+          </div>
+        </div>
+        <div className="mt-10 grid gap-5 lg:grid-cols-[0.8fr_1.2fr]">
+          <div className="rounded-md bg-field p-5">
+            <h2 className="text-xl font-black">Specifications</h2>
+            <div className="mt-4 grid gap-3">
+              {product.specs?.map((spec) => (
+                <div key={`${spec.label}-${spec.value}`} className="flex justify-between gap-4 border-b border-slate-200 pb-2 text-sm">
+                  <span className="font-bold text-slate-500">{spec.label}</span>
+                  <span className="font-black text-ink">{spec.value}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+          <div className="rounded-md bg-field p-5">
+            <h2 className="text-xl font-black">Details</h2>
+            <div className="mt-4 grid gap-4">
+              {product.detailSections?.map((section) => (
+                <article key={section.title}>
+                  <h3 className="font-black">{section.title}</h3>
+                  <p className="mt-2 text-sm leading-7 text-slate-600">{section.body}</p>
+                </article>
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
