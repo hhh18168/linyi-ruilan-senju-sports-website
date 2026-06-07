@@ -6,15 +6,20 @@ export default async function handler(req, res) {
   try {
     const session = getSession(req);
     if (!session) {
-      json(res, 401, { error: 'Not logged in.' });
+      json(res, 401, { error: '请先登录管理员账号。' });
       return;
     }
 
     const body = await readJsonBody(req);
     const code = String(body.code || '');
 
+    if (!process.env.ADMIN_PERMISSION_CODE_HASH?.trim()) {
+      json(res, 500, { error: '权限码环境变量未配置，请检查 ADMIN_PERMISSION_CODE_HASH。' });
+      return;
+    }
+
     if (!verifySecret(code, 'ADMIN_PERMISSION_CODE_HASH', 'ADMIN_PERMISSION_CODE')) {
-      json(res, 403, { error: 'Invalid permission code.' });
+      json(res, 403, { error: '权限码错误。' });
       return;
     }
 
