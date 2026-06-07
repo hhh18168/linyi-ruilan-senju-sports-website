@@ -1,7 +1,7 @@
 import { ChangeEvent, FormEvent, useEffect, useMemo, useState } from 'react';
 import { ImagePlus, LayoutDashboard, LogOut, PackagePlus, Save, Settings, Trash2 } from 'lucide-react';
-import { defaultCmsProducts, defaultLayoutSettings, defaultSiteSettings } from './cms';
-import type { CmsProduct, Inquiry, LayoutSettings, SiteSettings } from './cmsTypes';
+import { defaultCmsProducts, defaultExchangeRates, defaultLayoutSettings, defaultSiteSettings, normalizeProduct } from './cms';
+import type { CmsProduct, ExchangeRates, Inquiry, LayoutSettings, LayoutSection, SiteSettings } from './cmsTypes';
 
 type Session = {
   loggedIn: boolean;
@@ -9,7 +9,7 @@ type Session = {
   codeVerified: boolean;
 };
 
-type Tab = 'products' | 'inquiries' | 'content' | 'layout';
+type Tab = 'products' | 'inquiries' | 'content' | 'layout' | 'rates';
 
 const emptyProduct: CmsProduct = {
   id: '',
@@ -21,6 +21,14 @@ const emptyProduct: CmsProduct = {
   sourceUrl: '',
   visible: true,
   sortOrder: 1,
+  prices: { baseCurrency: 'USD', basePrice: 0, priceUnit: 'piece' },
+  galleryImages: [],
+  translations: {
+    en: { name: '', description: '', scenario: '', highlights: [] },
+    zh: { name: '', description: '', scenario: '', highlights: [] },
+  },
+  specs: [],
+  detailSections: [],
 };
 
 async function api<T>(url: string, options?: RequestInit): Promise<T> {
@@ -44,6 +52,9 @@ function slugify(value: string) {
     .slice(0, 80);
 }
 
+const linesToList = (value: string) => value.split('\n').map((item) => item.trim()).filter(Boolean);
+const listToLines = (value?: string[]) => (value || []).join('\n');
+
 function AdminApp() {
   const [session, setSession] = useState<Session>({ loggedIn: false, username: null, codeVerified: false });
   const [loading, setLoading] = useState(true);
@@ -55,6 +66,7 @@ function AdminApp() {
   const [draft, setDraft] = useState<CmsProduct>(emptyProduct);
   const [settings, setSettings] = useState<SiteSettings>(defaultSiteSettings);
   const [layout, setLayout] = useState<LayoutSettings>(defaultLayoutSettings);
+  const [rates, setRates] = useState<ExchangeRates>(defaultExchangeRates);
   const [inquiries, setInquiries] = useState<Inquiry[]>([]);
 
   const visibleProducts = useMemo(() => products.filter((product) => product.visible).length, [products]);
@@ -79,15 +91,17 @@ function AdminApp() {
   const loadAdminData = async () => {
     setMessage('');
     try {
-      const [nextProducts, nextSettings, nextLayout, inquiryData] = await Promise.all([
+      const [nextProducts, nextSettings, nextLayout, nextRates, inquiryData] = await Promise.all([
         api<CmsProduct[]>('/api/admin/products'),
         api<SiteSettings>('/api/admin/site-settings'),
         api<LayoutSettings>('/api/admin/layout-settings'),
+        api<ExchangeRates>('/api/admin/exchange-rates').catch(() => defaultExchangeRates),
         api<{ inquiries: Inquiry[] }>('/api/admin/inquiries').catch(() => ({ inquiries: [] })),
       ]);
-      setProducts(nextProducts);
+      setProducts(nextProducts.map(normalizeProduct));
       setSettings(nextSettings);
       setLayout(nextLayout);
+      setRates(nextRates);
       setInquiries(inquiryData.inquiries);
     } catch (error) {
       setMessage(error instanceof Error ? error.message : '后台数据加载失败');
@@ -138,6 +152,7 @@ function AdminApp() {
       id,
       categorySlug: draft.categorySlug || slugify(draft.category),
       sortOrder: Number(draft.sortOrder) || products.length + 1,
+      galleryImages: draft.galleryImages?.length ? draft.galleryImages : [draft.image].filter(Boolean),
     };
     setProducts((current) => {
       const exists = current.some((product) => product.id === id);
@@ -167,6 +182,35 @@ function AdminApp() {
     reader.readAsDataURL(file);
   };
 
+  const uploadImages = async (event: ChangeEvent<HTMLInputElement>) => {
+    const files = Array.from(event.target.files || []).slice(0, 20);
+    if (!files.length) return;
+
+    const toDataUrl = (file: File) =>
+      new Promise<{ filename: string; contentType: string; base64: string }>((resolve) => {
+        const reader = new FileReader();
+        reader.onload = () => resolve({ filename: file.name, contentType: file.type, base64: String(reader.result) });
+        reader.readAsDataURL(file);
+      });
+
+    try {
+      setMessage('正在批量上传图片...');
+      const payload = await Promise.all(files.map(toDataUrl));
+      const data = await api<{ urls: string[] }>('/api/admin/upload-image', {
+        method: 'POST',
+        body: JSON.stringify({ files: payload }),
+      });
+      setDraft((current) => ({
+        ...current,
+        image: current.image || data.urls[0] || '',
+        galleryImages: [...(current.galleryImages || []), ...(data.urls || [])],
+      }));
+      setMessage(`已上传 ${data.urls.length} 张图片，请保存产品。`);
+    } catch (error) {
+      setMessage(error instanceof Error ? error.message : '批量上传失败');
+    }
+  };
+
   const saveSettings = async () => {
     setMessage('正在保存网站内容...');
     try {
@@ -185,6 +229,32 @@ function AdminApp() {
     } catch (error) {
       setMessage(error instanceof Error ? error.message : '保存失败');
     }
+  };
+
+  const saveRates = async () => {
+    setMessage('正在保存汇率...');
+    try {
+      await api('/api/admin/exchange-rates', { method: 'PUT', body: JSON.stringify({ rates }) });
+      setMessage('汇率已保存，Vercel 会自动重新部署。');
+    } catch (error) {
+      setMessage(error instanceof Error ? error.message : '保存失败');
+    }
+  };
+
+  const addModule = () => {
+    const id = `module-${Date.now()}`;
+    const next: LayoutSection = {
+      id,
+      type: 'rich-text',
+      label: '自定义模块',
+      visible: true,
+      order: layout.sections.length + 1,
+      title: 'New Module',
+      body: 'Edit this module in admin.',
+      backgroundColor: '#ffffff',
+      columns: 1,
+    };
+    setLayout({ ...layout, sections: [...layout.sections, next] });
   };
 
   if (loading) return <AdminShell title="正在加载后台..." />;
@@ -235,6 +305,7 @@ function AdminApp() {
         <TabButton tab={tab} value="inquiries" onClick={setTab} icon={<LayoutDashboard size={17} />} label="询盘数据" />
         <TabButton tab={tab} value="content" onClick={setTab} icon={<Settings size={17} />} label="网页内容" />
         <TabButton tab={tab} value="layout" onClick={setTab} icon={<LayoutDashboard size={17} />} label="网页排版" />
+        <TabButton tab={tab} value="rates" onClick={setTab} icon={<Settings size={17} />} label="汇率价格" />
       </div>
 
       {message && <div className="mb-5 rounded-md bg-amber-50 px-4 py-3 text-sm font-bold text-amber-800 ring-1 ring-amber-200">{message}</div>}
@@ -265,9 +336,47 @@ function AdminApp() {
                   <input className="hidden" type="file" accept="image/*" onChange={uploadImage} />
                 </label>
               </AdminField>
+              <AdminField label="批量上传图片（最多20张）">
+                <label className="admin-upload">
+                  <ImagePlus size={18} /> 批量选择
+                  <input className="hidden" type="file" accept="image/*" multiple onChange={uploadImages} />
+                </label>
+              </AdminField>
               <AdminField label="来源链接">
                 <input className="input" value={draft.sourceUrl || ''} onChange={(event) => setDraft({ ...draft, sourceUrl: event.target.value })} />
               </AdminField>
+              <AdminField label="基础价格（USD）">
+                <input className="input" type="number" value={draft.prices?.basePrice || 0} onChange={(event) => setDraft({ ...draft, prices: { baseCurrency: 'USD', basePrice: Number(event.target.value), priceUnit: draft.prices?.priceUnit || 'piece' } })} />
+              </AdminField>
+              <AdminField label="价格单位">
+                <input className="input" value={draft.prices?.priceUnit || 'piece'} onChange={(event) => setDraft({ ...draft, prices: { baseCurrency: draft.prices?.baseCurrency || 'USD', basePrice: draft.prices?.basePrice || 0, priceUnit: event.target.value } })} />
+              </AdminField>
+              <AdminField label="英文名称">
+                <input className="input" value={draft.translations?.en?.name || ''} onChange={(event) => setDraft({ ...draft, translations: { ...(draft.translations || {}), en: { ...(draft.translations?.en || {}), name: event.target.value } } })} />
+              </AdminField>
+              <AdminField label="中文名称">
+                <input className="input" value={draft.translations?.zh?.name || ''} onChange={(event) => setDraft({ ...draft, translations: { ...(draft.translations || {}), zh: { ...(draft.translations?.zh || {}), name: event.target.value } } })} />
+              </AdminField>
+              <div className="sm:col-span-2">
+                <AdminField label="英文描述">
+                  <textarea className="input min-h-24" value={draft.translations?.en?.description || ''} onChange={(event) => setDraft({ ...draft, translations: { ...(draft.translations || {}), en: { ...(draft.translations?.en || {}), description: event.target.value } } })} />
+                </AdminField>
+              </div>
+              <div className="sm:col-span-2">
+                <AdminField label="中文描述">
+                  <textarea className="input min-h-24" value={draft.translations?.zh?.description || ''} onChange={(event) => setDraft({ ...draft, translations: { ...(draft.translations || {}), zh: { ...(draft.translations?.zh || {}), description: event.target.value } } })} />
+                </AdminField>
+              </div>
+              <div className="sm:col-span-2">
+                <AdminField label="图集地址（一行一张）">
+                  <textarea className="input min-h-24" value={listToLines(draft.galleryImages)} onChange={(event) => setDraft({ ...draft, galleryImages: linesToList(event.target.value), image: linesToList(event.target.value)[0] || draft.image })} />
+                </AdminField>
+              </div>
+              <div className="sm:col-span-2">
+                <AdminField label="规格（一行一个，格式：标签=内容）">
+                  <textarea className="input min-h-24" value={(draft.specs || []).map((spec) => `${spec.label}=${spec.value}`).join('\n')} onChange={(event) => setDraft({ ...draft, specs: linesToList(event.target.value).map((line) => { const [label, ...rest] = line.split('='); return { label: label || 'Spec', value: rest.join('=') || '' }; }) })} />
+                </AdminField>
+              </div>
               <label className="flex items-center gap-2 pt-7 text-sm font-black">
                 <input type="checkbox" checked={draft.visible} onChange={(event) => setDraft({ ...draft, visible: event.target.checked })} />
                 在网站显示
@@ -357,7 +466,10 @@ function AdminApp() {
         <section className="admin-card">
           <div className="flex items-center justify-between gap-3">
             <h2 className="admin-title">网页排版</h2>
-            <button className="admin-primary" type="button" onClick={saveLayout}><Save size={16} /> 保存排版</button>
+            <div className="flex gap-2">
+              <button className="admin-secondary" type="button" onClick={addModule}>添加模块</button>
+              <button className="admin-primary" type="button" onClick={saveLayout}><Save size={16} /> 保存排版</button>
+            </div>
           </div>
           <div className="mt-4 grid gap-4 sm:grid-cols-3">
             <AdminField label="主色">
@@ -375,10 +487,27 @@ function AdminApp() {
               .slice()
               .sort((a, b) => a.order - b.order)
               .map((section) => (
-                <div key={section.id} className="grid gap-3 rounded-md border border-slate-200 p-3 sm:grid-cols-[1fr_140px_140px]">
-                  <div>
-                    <p className="font-black">{section.label}</p>
-                    <p className="text-xs text-slate-500">{section.id}</p>
+                <div key={section.id} className="grid gap-3 rounded-md border border-slate-200 p-3 lg:grid-cols-[1fr_120px_120px_120px]">
+                  <div className="grid gap-3 md:grid-cols-2">
+                    <AdminField label="模块名称">
+                      <input className="input" value={section.label} onChange={(event) => setLayout({ ...layout, sections: layout.sections.map((item) => item.id === section.id ? { ...item, label: event.target.value } : item) })} />
+                    </AdminField>
+                    <AdminField label="模块类型">
+                      <select className="input" value={section.type || 'rich-text'} onChange={(event) => setLayout({ ...layout, sections: layout.sections.map((item) => item.id === section.id ? { ...item, type: event.target.value as LayoutSection['type'] } : item) })}>
+                        {['hero', 'category-nav', 'product-grid', 'image-text', 'benefits', 'faq', 'contact', 'rich-text'].map((type) => <option key={type} value={type}>{type}</option>)}
+                      </select>
+                    </AdminField>
+                    <AdminField label="标题">
+                      <input className="input" value={section.title || ''} onChange={(event) => setLayout({ ...layout, sections: layout.sections.map((item) => item.id === section.id ? { ...item, title: event.target.value } : item) })} />
+                    </AdminField>
+                    <AdminField label="背景色">
+                      <input className="input" value={section.backgroundColor || ''} onChange={(event) => setLayout({ ...layout, sections: layout.sections.map((item) => item.id === section.id ? { ...item, backgroundColor: event.target.value } : item) })} />
+                    </AdminField>
+                    <div className="md:col-span-2">
+                      <AdminField label="内容">
+                        <textarea className="input min-h-20" value={section.body || section.subtitle || ''} onChange={(event) => setLayout({ ...layout, sections: layout.sections.map((item) => item.id === section.id ? { ...item, body: event.target.value, subtitle: event.target.value } : item) })} />
+                      </AdminField>
+                    </div>
                   </div>
                   <input
                     className="input"
@@ -404,8 +533,28 @@ function AdminApp() {
                     />
                     显示模块
                   </label>
+                  <button className="admin-danger" type="button" onClick={() => setLayout({ ...layout, sections: layout.sections.filter((item) => item.id !== section.id) })}>
+                    <Trash2 size={15} /> 删除
+                  </button>
                 </div>
               ))}
+          </div>
+        </section>
+      )}
+
+      {tab === 'rates' && (
+        <section className="admin-card">
+          <div className="flex items-center justify-between gap-3">
+            <h2 className="admin-title">汇率与价格</h2>
+            <button className="admin-primary" type="button" onClick={saveRates}><Save size={16} /> 保存汇率</button>
+          </div>
+          <p className="mt-3 text-sm text-slate-500">产品价格以 USD 为基础，前台会按语言自动换算币种。</p>
+          <div className="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-5">
+            {Object.entries(rates.rates).map(([currency, value]) => (
+              <AdminField key={currency} label={currency}>
+                <input className="input" type="number" value={value} onChange={(event) => setRates({ ...rates, rates: { ...rates.rates, [currency]: Number(event.target.value) } })} />
+              </AdminField>
+            ))}
           </div>
         </section>
       )}
