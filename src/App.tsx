@@ -58,6 +58,83 @@ const initialForm: FormState = {
 
 const navKeys = ['home', 'categories', 'products', 'about', 'contact'] as const;
 
+const cmsCategoryTranslations: Record<string, Record<string, string>> = {
+  es: {
+    'Thermal Bonded': 'Termosellado',
+    'Machine Stitched': 'Cosido a máquina',
+    'World Cup': 'Copa Mundial',
+    'European Cup': 'Copa Europea',
+    'Machine Stitched-01': 'Cosido a máquina-01',
+    'Machine Stitched-02': 'Cosido a máquina-02',
+  },
+  zh: {
+    'Thermal Bonded': '热粘合',
+    'Machine Stitched': '机缝',
+    'World Cup': '世界杯',
+    'European Cup': '欧洲杯',
+  },
+};
+
+const uiByLanguage: Record<string, Record<string, string>> = {
+  zh: {
+    catalogEyebrow: '商品目录',
+    catalogTitle: '商品目录',
+    catalogIntro: '浏览精选产品图片和型号，可直接进入详情或提交询盘。',
+    showing: '当前显示',
+    items: '个商品',
+    allProducts: '全部商品',
+    details: '查看详情',
+    inquiry: '询盘',
+    loadMore: '加载更多',
+    back: '返回商品列表',
+    inquiryNow: '立即询盘',
+    source: '来源',
+    specifications: '产品规格',
+    detailTitle: '产品详情',
+    aboutTitle: '面向全球客户的体育用品采购',
+    contactTitle: '提交采购询盘',
+  },
+  en: {
+    catalogEyebrow: 'Product Catalog',
+    catalogTitle: 'Product Catalog',
+    catalogIntro: 'Browse selected product images and models. Open details or send an inquiry.',
+    showing: 'Showing',
+    items: 'items',
+    allProducts: 'All Products',
+    details: 'Details',
+    inquiry: 'Inquiry',
+    loadMore: 'Load More',
+    back: 'Back to products',
+    inquiryNow: 'Inquiry Now',
+    source: 'Source',
+    specifications: 'Specifications',
+    detailTitle: 'Details',
+    aboutTitle: 'Sports goods sourcing for global customers',
+    contactTitle: 'Send a purchase inquiry',
+  },
+  es: {
+    catalogEyebrow: 'Catálogo de productos',
+    catalogTitle: 'Catálogo de productos',
+    catalogIntro: 'Explore imágenes y modelos seleccionados. Abra los detalles o envíe una consulta.',
+    showing: 'Mostrando',
+    items: 'productos',
+    allProducts: 'Todos los productos',
+    details: 'Ver detalles',
+    inquiry: 'Consulta',
+    loadMore: 'Cargar más',
+    back: 'Volver a productos',
+    inquiryNow: 'Solicitar cotización',
+    source: 'Fuente',
+    specifications: 'Especificaciones',
+    detailTitle: 'Detalles',
+    aboutTitle: 'Suministro de artículos deportivos para clientes globales',
+    contactTitle: 'Enviar consulta de compra',
+  },
+};
+
+const uiText = (language: string, key: string) => uiByLanguage[language]?.[key] || uiByLanguage.en[key] || key;
+const translateCmsTerm = (language: string, value = '') => cmsCategoryTranslations[language]?.[value] || value;
+
 function App() {
   const [language, setLanguage] = useState<LanguageCode>('en');
   const [activeFilter, setActiveFilter] = useState<Filter>('all');
@@ -125,8 +202,47 @@ function App() {
   );
 
   const selectedProduct = useMemo(
-    () => cmsProducts.map(normalizeProduct).find((product) => product.id === selectedProductId) || null,
-    [cmsProducts, selectedProductId],
+    () => {
+      const cmsMatch = cmsProducts.map(normalizeProduct).find((product) => product.id === selectedProductId);
+      if (cmsMatch) return cmsMatch;
+      const legacy = products.find((product) => product.id === selectedProductId);
+      if (!legacy) return null;
+      const legacyText = getProductText(legacy, language);
+      return normalizeProduct({
+        id: legacy.id,
+        name: legacyText.name,
+        category: labels[legacy.category],
+        categorySlug: legacy.category,
+        album: labels[legacy.category],
+        image: legacy.image,
+        visible: true,
+        sortOrder: 0,
+        prices: { baseCurrency: 'USD', basePrice: Number(legacy.priceRange.match(/\d+/)?.[0] || 12), priceUnit: 'piece' },
+        galleryImages: [legacy.image],
+        translations: {
+          en: {
+            name: getProductText(legacy, 'en').name,
+            category: categoryLabels.en[legacy.category],
+            album: categoryLabels.en[legacy.category],
+            description: getProductText(legacy, 'en').highlight,
+            scenario: getProductText(legacy, 'en').scenario,
+          },
+          zh: {
+            name: getProductText(legacy, 'zh').name,
+            category: categoryLabels.zh[legacy.category],
+            album: categoryLabels.zh[legacy.category],
+            description: getProductText(legacy, 'zh').highlight,
+            scenario: getProductText(legacy, 'zh').scenario,
+          },
+        },
+        specs: [
+          { label: 'Category', value: labels[legacy.category] },
+          { label: 'Use Case', value: legacyText.scenario },
+        ],
+        detailSections: [{ title: 'Product Details', body: legacyText.highlight }],
+      });
+    },
+    [cmsProducts, labels, language, selectedProductId],
   );
 
   const catalogCategories = useMemo(() => {
@@ -149,7 +265,24 @@ function App() {
         ? 'sm:grid-cols-2 lg:grid-cols-3'
         : 'sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4';
 
+  const useCmsCopy = language === 'zh' || language === 'en';
   const displayBrand = language === 'zh' ? siteSettings.brandZh : siteSettings.brandEn;
+  const cmsCopy = {
+    tagline: useCmsCopy ? siteSettings.tagline : text.tagline,
+    heroBadge: useCmsCopy ? siteSettings.heroBadge : text.hero.badge,
+    heroTitle: language === 'zh' ? siteSettings.brandZh : useCmsCopy ? siteSettings.heroTitle : text.hero.title,
+    heroSubtitle: useCmsCopy ? siteSettings.heroSubtitle : text.hero.subtitle,
+    categoriesTitle: useCmsCopy ? siteSettings.categoriesTitle : text.sections.categoriesTitle,
+    categoriesIntro: useCmsCopy ? siteSettings.categoriesIntro : text.sections.categoriesIntro,
+    catalogEyebrow: useCmsCopy ? siteSettings.catalogEyebrow : uiText(language, 'catalogEyebrow'),
+    catalogTitle: useCmsCopy ? siteSettings.catalogTitle : uiText(language, 'catalogTitle'),
+    catalogIntro: useCmsCopy ? siteSettings.catalogIntro : uiText(language, 'catalogIntro'),
+    aboutTitle: useCmsCopy ? siteSettings.aboutTitle : text.sections.aboutTitle,
+    aboutText: useCmsCopy ? siteSettings.aboutText : text.sections.aboutText,
+    contactTitle: useCmsCopy ? siteSettings.contactTitle : text.sections.contactTitle,
+    contactIntro: useCmsCopy ? siteSettings.contactIntro : text.sections.contactIntro,
+    footerText: useCmsCopy ? siteSettings.footerText : text.footer,
+  };
   const contactEmails = siteSettings.emails.length ? siteSettings.emails : defaultSiteSettings.emails;
   const whatsappContacts = (siteSettings.whatsapp.length ? siteSettings.whatsapp : defaultSiteSettings.whatsapp).map((value) => ({
     label: value,
@@ -240,7 +373,7 @@ function App() {
             </span>
             <span className="min-w-0">
               <span className="block truncate text-base font-black tracking-normal sm:text-lg">{displayBrand}</span>
-              <span className="block text-xs font-semibold text-slate-500">{siteSettings.tagline || text.tagline}</span>
+              <span className="block text-xs font-semibold text-slate-500">{cmsCopy.tagline || text.tagline}</span>
             </span>
           </a>
 
@@ -313,12 +446,12 @@ function App() {
             <div className="max-w-3xl">
               <div className="mb-5 inline-flex max-w-full items-center gap-2 rounded-md bg-white/12 px-3 py-2 text-sm font-semibold text-lime ring-1 ring-white/15">
                 <Sparkles className="shrink-0" size={17} />
-                <span>{siteSettings.heroBadge || text.hero.badge}</span>
+                <span>{cmsCopy.heroBadge || text.hero.badge}</span>
               </div>
               <h1 className="max-w-4xl text-4xl font-black leading-tight tracking-normal sm:text-5xl lg:text-6xl">
-                {language === 'zh' ? siteSettings.brandZh : siteSettings.heroTitle || text.hero.title}
+                {cmsCopy.heroTitle || text.hero.title}
               </h1>
-              <p className="mt-5 max-w-2xl text-base leading-8 text-slate-100 sm:text-lg">{siteSettings.heroSubtitle || text.hero.subtitle}</p>
+              <p className="mt-5 max-w-2xl text-base leading-8 text-slate-100 sm:text-lg">{cmsCopy.heroSubtitle || text.hero.subtitle}</p>
               <div className="mt-8 flex flex-col gap-3 sm:flex-row">
                 <a
                   href="#products"
@@ -358,9 +491,9 @@ function App() {
           <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
             <div>
               <p className="text-sm font-black uppercase tracking-[0.18em] text-court">{text.sections.categoriesEyebrow}</p>
-              <h2 className="mt-2 text-3xl font-black tracking-normal sm:text-4xl">{siteSettings.categoriesTitle || text.sections.categoriesTitle}</h2>
+              <h2 className="mt-2 text-3xl font-black tracking-normal sm:text-4xl">{cmsCopy.categoriesTitle || text.sections.categoriesTitle}</h2>
             </div>
-            <p className="max-w-xl text-sm leading-7 text-slate-600">{siteSettings.categoriesIntro || text.sections.categoriesIntro}</p>
+            <p className="max-w-xl text-sm leading-7 text-slate-600">{cmsCopy.categoriesIntro || text.sections.categoriesIntro}</p>
           </div>
 
           <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
@@ -423,7 +556,11 @@ function App() {
               {filteredProducts.map((product) => {
                 const productText = getProductText(product, language);
                 return (
-                  <article key={product.id} className="overflow-hidden rounded-md border border-slate-200 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-lift">
+                  <article
+                    key={product.id}
+                    className="cursor-pointer overflow-hidden rounded-md border border-slate-200 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-lift"
+                    onClick={() => openProduct(product.id)}
+                  >
                     <div className="relative aspect-[16/10] bg-field">
                       <img className="h-full w-full object-cover" src={product.image} alt={productText.name} />
                       <div className="absolute left-3 top-3 rounded-md bg-white px-3 py-1 text-xs font-black text-court shadow-sm">
@@ -465,14 +602,14 @@ function App() {
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
               <div>
-                <p className="text-sm font-black uppercase tracking-[0.18em] text-court">{siteSettings.catalogEyebrow}</p>
-                <h2 className="mt-2 text-3xl font-black tracking-normal sm:text-4xl">{siteSettings.catalogTitle}</h2>
+                <p className="text-sm font-black uppercase tracking-[0.18em] text-court">{cmsCopy.catalogEyebrow}</p>
+                <h2 className="mt-2 text-3xl font-black tracking-normal sm:text-4xl">{cmsCopy.catalogTitle}</h2>
                 <p className="mt-4 max-w-2xl text-sm leading-7 text-slate-600">
-                  {siteSettings.catalogIntro}
+                  {cmsCopy.catalogIntro}
                 </p>
               </div>
               <div className="text-sm font-semibold text-slate-500">
-                Showing <span className="font-black text-court">{filteredYupooProducts.length}</span> items
+                {uiText(language, 'showing')} <span className="font-black text-court">{filteredYupooProducts.length}</span> {uiText(language, 'items')}
               </div>
             </div>
 
@@ -486,7 +623,7 @@ function App() {
                     : 'bg-white text-slate-700 ring-1 ring-slate-200 hover:bg-slate-100'
                 }`}
               >
-                All Products
+                {uiText(language, 'allProducts')}
               </button>
               {catalogCategories.map((category) => (
                 <button
@@ -499,7 +636,7 @@ function App() {
                       : 'bg-white text-slate-700 ring-1 ring-slate-200 hover:bg-slate-100'
                   }`}
                 >
-                  {category.name}
+                      {translateCmsTerm(language, category.name)}
                 </button>
               ))}
             </div>
@@ -508,30 +645,38 @@ function App() {
               {pagedYupooProducts.map((product) => {
                 const productText = getProductTranslation(product, language);
                 return (
-                <article key={product.id} className="overflow-hidden rounded-md border border-slate-200 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-lift">
+                <article
+                  key={product.id}
+                  className="cursor-pointer overflow-hidden rounded-md border border-slate-200 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-lift"
+                  onClick={() => openProduct(product.id)}
+                >
                   <div className="relative aspect-square bg-white">
                     <img loading="lazy" className="h-full w-full object-cover" src={product.image} alt={product.name} />
                     <div className="absolute left-3 top-3 rounded-md bg-white px-3 py-1 text-xs font-black text-court shadow-sm">
-                      {productText.category || product.category}
+                      {translateCmsTerm(language, productText.category || product.category)}
                     </div>
                   </div>
                   <div className="p-4">
                     <h3 className="text-base font-black tracking-normal">{productText.name || product.name}</h3>
-                    <p className="mt-2 text-xs font-semibold uppercase tracking-wide text-slate-500">{productText.album || product.album}</p>
+                    <p className="mt-2 text-xs font-semibold uppercase tracking-wide text-slate-500">{translateCmsTerm(language, productText.album || product.album)}</p>
                     <p className="mt-3 text-lg font-black text-court">{formatProductPrice(product, language, exchangeRates)}</p>
                     <div className="mt-4 flex flex-col gap-2 sm:flex-row">
                       <button
                         type="button"
-                        onClick={() => openProduct(product.id)}
+                        onClick={(event) => {
+                          event.stopPropagation();
+                          openProduct(product.id);
+                        }}
                         className="inline-flex min-h-10 flex-1 items-center justify-center rounded-md bg-court px-3 text-sm font-black text-white transition hover:bg-flame"
                       >
-                        Details
+                        {uiText(language, 'details')}
                       </button>
                       <a
                         href="#contact"
+                        onClick={(event) => event.stopPropagation()}
                         className="inline-flex min-h-10 flex-1 items-center justify-center rounded-md bg-field px-3 text-sm font-black text-slate-700 ring-1 ring-slate-200 transition hover:bg-slate-100"
                       >
-                        Inquiry
+                        {uiText(language, 'inquiry')}
                       </a>
                     </div>
                   </div>
@@ -541,7 +686,7 @@ function App() {
             {pagedYupooProducts.length < filteredYupooProducts.length && (
               <div className="mt-8 text-center">
                 <button className="inline-flex min-h-11 items-center justify-center rounded-md bg-court px-5 text-sm font-black text-white" type="button" onClick={() => setCatalogPage((page) => page + 1)}>
-                  Load More
+                  {uiText(language, 'loadMore')}
                 </button>
               </div>
             )}
@@ -552,8 +697,8 @@ function App() {
           <div className="mx-auto grid max-w-7xl gap-10 px-4 sm:px-6 lg:grid-cols-[0.9fr_1.1fr] lg:px-8">
             <div>
               <p className="text-sm font-black uppercase tracking-[0.18em] text-lime">{text.sections.aboutEyebrow}</p>
-              <h2 className="mt-2 text-3xl font-black tracking-normal sm:text-4xl">{siteSettings.aboutTitle || text.sections.aboutTitle}</h2>
-              <p className="mt-4 text-sm leading-7 text-slate-200">{siteSettings.aboutText || text.sections.aboutText}</p>
+              <h2 className="mt-2 text-3xl font-black tracking-normal sm:text-4xl">{cmsCopy.aboutTitle || text.sections.aboutTitle}</h2>
+              <p className="mt-4 text-sm leading-7 text-slate-200">{cmsCopy.aboutText || text.sections.aboutText}</p>
             </div>
             <div className="grid gap-5 sm:grid-cols-2">
               {featuredProducts.slice(0, 4).map((product) => {
@@ -574,8 +719,8 @@ function App() {
           <div className="grid gap-8 lg:grid-cols-[0.86fr_1.14fr]">
             <div>
               <p className="text-sm font-black uppercase tracking-[0.18em] text-court">{text.sections.contactEyebrow}</p>
-              <h2 className="mt-2 text-3xl font-black tracking-normal sm:text-4xl">{siteSettings.contactTitle || text.sections.contactTitle}</h2>
-              <p className="mt-4 text-sm leading-7 text-slate-600">{siteSettings.contactIntro || text.sections.contactIntro}</p>
+              <h2 className="mt-2 text-3xl font-black tracking-normal sm:text-4xl">{cmsCopy.contactTitle || text.sections.contactTitle}</h2>
+              <p className="mt-4 text-sm leading-7 text-slate-600">{cmsCopy.contactIntro || text.sections.contactIntro}</p>
               <div className="mt-7 grid gap-3">
                 <div className="flex items-start gap-3 rounded-md bg-white p-4 shadow-sm ring-1 ring-slate-200">
                   <Mail className="shrink-0 text-court" size={20} />
@@ -681,7 +826,7 @@ function App() {
       <footer className="border-t border-slate-200 bg-white py-8">
         <div className="mx-auto flex max-w-7xl flex-col gap-3 px-4 text-sm text-slate-500 sm:flex-row sm:items-center sm:justify-between sm:px-6 lg:px-8">
           <span className="font-bold text-ink">{displayBrand}</span>
-          <span>{siteSettings.footerText || text.footer}</span>
+          <span>{cmsCopy.footerText || text.footer}</span>
         </div>
       </footer>
     </div>
@@ -755,7 +900,7 @@ function ProductDetail({
     <section className="bg-white py-12">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <button className="mb-6 inline-flex min-h-11 items-center justify-center rounded-md bg-field px-4 text-sm font-black text-slate-700 ring-1 ring-slate-200" type="button" onClick={onBack}>
-          Back to products
+          {uiText(language, 'back')}
         </button>
         <div className="grid gap-8 lg:grid-cols-[0.95fr_1.05fr]">
           <div className="grid gap-4">
@@ -769,9 +914,9 @@ function ProductDetail({
             )}
           </div>
           <div>
-            <p className="text-sm font-black uppercase tracking-[0.18em] text-court">{text.category || product.category}</p>
+            <p className="text-sm font-black uppercase tracking-[0.18em] text-court">{translateCmsTerm(language, text.category || product.category)}</p>
             <h1 className="mt-2 text-4xl font-black tracking-normal">{text.name || product.name}</h1>
-            <p className="mt-3 text-lg font-bold text-slate-500">{text.album || product.album}</p>
+            <p className="mt-3 text-lg font-bold text-slate-500">{translateCmsTerm(language, text.album || product.album)}</p>
             <p className="mt-6 text-3xl font-black text-court">{formatProductPrice(product, language, rates)}</p>
             <p className="mt-5 text-base leading-8 text-slate-600">{text.description}</p>
             {text.highlights?.length ? (
@@ -783,11 +928,11 @@ function ProductDetail({
             ) : null}
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
               <a className="inline-flex min-h-12 items-center justify-center rounded-md bg-flame px-5 text-sm font-black text-white" href="/#contact">
-                Inquiry Now
+                {uiText(language, 'inquiryNow')}
               </a>
               {product.sourceUrl && (
                 <a className="inline-flex min-h-12 items-center justify-center rounded-md bg-field px-5 text-sm font-black text-slate-700 ring-1 ring-slate-200" href={product.sourceUrl} target="_blank" rel="noreferrer">
-                  Source
+                  {uiText(language, 'source')}
                 </a>
               )}
             </div>
@@ -795,7 +940,7 @@ function ProductDetail({
         </div>
         <div className="mt-10 grid gap-5 lg:grid-cols-[0.8fr_1.2fr]">
           <div className="rounded-md bg-field p-5">
-            <h2 className="text-xl font-black">Specifications</h2>
+            <h2 className="text-xl font-black">{uiText(language, 'specifications')}</h2>
             <div className="mt-4 grid gap-3">
               {product.specs?.map((spec) => (
                 <div key={`${spec.label}-${spec.value}`} className="flex justify-between gap-4 border-b border-slate-200 pb-2 text-sm">
@@ -806,7 +951,7 @@ function ProductDetail({
             </div>
           </div>
           <div className="rounded-md bg-field p-5">
-            <h2 className="text-xl font-black">Details</h2>
+            <h2 className="text-xl font-black">{uiText(language, 'detailTitle')}</h2>
             <div className="mt-4 grid gap-4">
               {product.detailSections?.map((section) => (
                 <article key={section.title}>
