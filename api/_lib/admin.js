@@ -31,10 +31,10 @@ function timingSafeEqualText(left, right) {
 }
 
 export function verifySecret(value, hashEnvName, plainEnvName) {
-  const expectedHash = process.env[hashEnvName];
+  const expectedHash = process.env[hashEnvName]?.trim();
   if (expectedHash) return timingSafeEqualText(sha256(value), expectedHash);
 
-  const expectedPlain = process.env[plainEnvName];
+  const expectedPlain = process.env[plainEnvName]?.trim();
   if (expectedPlain) return timingSafeEqualText(value, expectedPlain);
 
   return false;
