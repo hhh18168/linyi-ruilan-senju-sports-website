@@ -8,6 +8,38 @@ export type CmsProduct = {
   sourceUrl?: string;
   visible: boolean;
   sortOrder: number;
+  translations?: Record<string, ProductTranslation>;
+  prices?: ProductPrices;
+  galleryImages?: string[];
+  specs?: ProductSpec[];
+  detailSections?: ProductDetailSection[];
+};
+
+export type ProductTranslation = {
+  name?: string;
+  category?: string;
+  album?: string;
+  description?: string;
+  scenario?: string;
+  highlights?: string[];
+};
+
+export type ProductPrices = {
+  baseCurrency: CurrencyCode;
+  basePrice: number;
+  priceUnit?: string;
+};
+
+export type CurrencyCode = 'USD' | 'CNY' | 'EUR' | 'JPY' | 'KRW' | 'VND' | 'IDR' | 'GBP' | 'TRY' | 'RUB';
+
+export type ProductSpec = {
+  label: string;
+  value: string;
+};
+
+export type ProductDetailSection = {
+  title: string;
+  body: string;
 };
 
 export type SiteSettings = {
@@ -32,17 +64,41 @@ export type SiteSettings = {
 };
 
 export type LayoutSection = {
-  id: 'categories' | 'products' | 'benefits' | 'catalog' | 'about' | 'contact';
+  id: string;
+  type?: PageModuleType;
   label: string;
   visible: boolean;
   order: number;
+  title?: string;
+  subtitle?: string;
+  body?: string;
+  image?: string;
+  buttonText?: string;
+  buttonHref?: string;
+  backgroundColor?: string;
+  columns?: number;
 };
+
+export type PageModuleType =
+  | 'hero'
+  | 'category-nav'
+  | 'product-grid'
+  | 'image-text'
+  | 'benefits'
+  | 'faq'
+  | 'contact'
+  | 'rich-text';
 
 export type LayoutSettings = {
   primaryColor: string;
   accentColor: string;
   catalogColumns: number;
   sections: LayoutSection[];
+};
+
+export type ExchangeRates = {
+  baseCurrency: CurrencyCode;
+  rates: Record<CurrencyCode, number>;
 };
 
 export type Inquiry = {
