@@ -3,6 +3,10 @@
     {
       "source": "/admin/:path*",
       "destination": "/index.html"
+    },
+    {
+      "source": "/products/:path*",
+      "destination": "/index.html"
     }
   ]
 }
