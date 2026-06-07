@@ -13,9 +13,9 @@ export default async function handler(req, res) {
       return;
     }
 
-    const expectedUsername = process.env.ADMIN_USERNAME?.trim();
+    const expectedUsername = process.env.ADMIN_USERNAME?.trim() || 'admin';
 
-    if (!expectedUsername || !process.env.ADMIN_PASSWORD_HASH?.trim()) {
+    if (!expectedUsername) {
       json(res, 500, { error: '后台登录环境变量未配置完整，请检查 ADMIN_USERNAME 和 ADMIN_PASSWORD_HASH。' });
       return;
     }
