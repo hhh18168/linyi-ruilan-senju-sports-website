@@ -5,39 +5,62 @@
   "sections": [
     {
       "id": "categories",
+      "type": "category-nav",
       "label": "Product Categories",
       "visible": true,
-      "order": 1
+      "order": 1,
+      "title": "Product Categories",
+      "subtitle": "Browse products by sports and sourcing category",
+      "columns": 4
     },
     {
       "id": "products",
+      "type": "product-grid",
       "label": "Hot Products",
       "visible": true,
-      "order": 2
+      "order": 2,
+      "title": "Hot Products",
+      "subtitle": "Selected products for training, retail and team purchase",
+      "columns": 3
     },
     {
       "id": "benefits",
+      "type": "benefits",
       "label": "Brand Advantages",
       "visible": true,
-      "order": 3
+      "order": 3,
+      "title": "Why Work With Us",
+      "subtitle": "Multi-category sports goods sourcing for global buyers",
+      "columns": 3
     },
     {
       "id": "catalog",
+      "type": "product-grid",
       "label": "Product Catalog",
       "visible": true,
-      "order": 4
+      "order": 4,
+      "title": "Product Catalog",
+      "subtitle": "Browse selected product images and models",
+      "columns": 4
     },
     {
       "id": "about",
+      "type": "image-text",
       "label": "About Us",
       "visible": true,
-      "order": 5
+      "order": 5,
+      "title": "About Us",
+      "body": "We help buyers select practical sports products for training, retail and team events.",
+      "columns": 2
     },
     {
       "id": "contact",
+      "type": "contact",
       "label": "Contact Form",
       "visible": true,
-      "order": 6
+      "order": 6,
+      "title": "Contact",
+      "subtitle": "Send us your purchase inquiry"
     }
   ]
 }
