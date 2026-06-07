@@ -90,7 +90,7 @@ function AdminApp() {
       setLayout(nextLayout);
       setInquiries(inquiryData.inquiries);
     } catch (error) {
-      setMessage(error instanceof Error ? error.message : 'Failed to load admin data');
+      setMessage(error instanceof Error ? error.message : '后台数据加载失败');
     }
   };
 
@@ -101,7 +101,7 @@ function AdminApp() {
       await api('/api/admin/login', { method: 'POST', body: JSON.stringify(login) });
       await refreshSession();
     } catch (error) {
-      setMessage(error instanceof Error ? error.message : 'Login failed');
+      setMessage(error instanceof Error ? error.message : '登录失败');
     }
   };
 
@@ -112,7 +112,7 @@ function AdminApp() {
       await api('/api/admin/verify-code', { method: 'POST', body: JSON.stringify({ code: permissionCode }) });
       await refreshSession();
     } catch (error) {
-      setMessage(error instanceof Error ? error.message : 'Permission code failed');
+      setMessage(error instanceof Error ? error.message : '权限码验证失败');
     }
   };
 
@@ -122,12 +122,12 @@ function AdminApp() {
   };
 
   const saveProducts = async () => {
-    setMessage('Saving products...');
+    setMessage('正在保存产品...');
     try {
       await api('/api/admin/products', { method: 'PUT', body: JSON.stringify({ products }) });
-      setMessage('Products saved. Vercel will redeploy the website automatically.');
+      setMessage('产品已保存，Vercel 会自动重新部署网站。');
     } catch (error) {
-      setMessage(error instanceof Error ? error.message : 'Save failed');
+      setMessage(error instanceof Error ? error.message : '保存失败');
     }
   };
 
@@ -153,53 +153,53 @@ function AdminApp() {
     const reader = new FileReader();
     reader.onload = async () => {
       try {
-        setMessage('Uploading image...');
+        setMessage('正在上传图片...');
         const data = await api<{ url: string }>('/api/admin/upload-image', {
           method: 'POST',
           body: JSON.stringify({ filename: file.name, contentType: file.type, base64: reader.result }),
         });
         setDraft((current) => ({ ...current, image: data.url }));
-        setMessage('Image uploaded. Add or update the product, then save products.');
+        setMessage('图片已上传，请添加或更新产品，然后保存产品列表。');
       } catch (error) {
-        setMessage(error instanceof Error ? error.message : 'Upload failed');
+        setMessage(error instanceof Error ? error.message : '上传失败');
       }
     };
     reader.readAsDataURL(file);
   };
 
   const saveSettings = async () => {
-    setMessage('Saving site content...');
+    setMessage('正在保存网站内容...');
     try {
       await api('/api/admin/site-settings', { method: 'PUT', body: JSON.stringify({ settings }) });
-      setMessage('Site content saved. Vercel will redeploy automatically.');
+      setMessage('网站内容已保存，Vercel 会自动重新部署。');
     } catch (error) {
-      setMessage(error instanceof Error ? error.message : 'Save failed');
+      setMessage(error instanceof Error ? error.message : '保存失败');
     }
   };
 
   const saveLayout = async () => {
-    setMessage('Saving layout...');
+    setMessage('正在保存排版...');
     try {
       await api('/api/admin/layout-settings', { method: 'PUT', body: JSON.stringify({ settings: layout }) });
-      setMessage('Layout saved. Vercel will redeploy automatically.');
+      setMessage('排版已保存，Vercel 会自动重新部署。');
     } catch (error) {
-      setMessage(error instanceof Error ? error.message : 'Save failed');
+      setMessage(error instanceof Error ? error.message : '保存失败');
     }
   };
 
-  if (loading) return <AdminShell title="Loading admin..." />;
+  if (loading) return <AdminShell title="正在加载后台..." />;
 
   if (!session.loggedIn) {
     return (
-      <AdminShell title="Admin Login">
+      <AdminShell title="管理员登录">
         <form className="admin-card mx-auto max-w-md" onSubmit={submitLogin}>
-          <AdminField label="Username">
+          <AdminField label="管理员账号">
             <input className="input" value={login.username} onChange={(event) => setLogin({ ...login, username: event.target.value })} />
           </AdminField>
-          <AdminField label="Password">
-            <input className="input" type="password" value={login.password} onChange={(event) => setLogin({ ...login, password: event.target.value })} />
+          <AdminField label="登录密码">
+            <input className="input" type="text" value={login.password} onChange={(event) => setLogin({ ...login, password: event.target.value })} />
           </AdminField>
-          <button className="admin-primary" type="submit">Login</button>
+          <button className="admin-primary" type="submit">登录</button>
           {message && <p className="admin-message">{message}</p>}
         </form>
       </AdminShell>
@@ -208,12 +208,12 @@ function AdminApp() {
 
   if (!session.codeVerified) {
     return (
-      <AdminShell title="Permission Code">
+      <AdminShell title="输入权限码">
         <form className="admin-card mx-auto max-w-md" onSubmit={submitCode}>
-          <AdminField label="Permission code">
-            <input className="input" type="password" value={permissionCode} onChange={(event) => setPermissionCode(event.target.value)} />
+          <AdminField label="权限码">
+            <input className="input" type="text" value={permissionCode} onChange={(event) => setPermissionCode(event.target.value)} />
           </AdminField>
-          <button className="admin-primary" type="submit">Enter Admin Panel</button>
+          <button className="admin-primary" type="submit">进入后台</button>
           {message && <p className="admin-message">{message}</p>}
         </form>
       </AdminShell>
@@ -221,20 +221,20 @@ function AdminApp() {
   }
 
   return (
-    <AdminShell title="Linyi Ruilan Senju Admin">
+    <AdminShell title="临沂瑞澜森炬后台管理">
       <div className="mb-5 flex flex-col gap-3 rounded-md bg-white p-4 shadow-sm ring-1 ring-slate-200 sm:flex-row sm:items-center sm:justify-between">
         <div>
-          <p className="text-sm font-bold text-slate-500">Signed in as {session.username}</p>
-          <p className="mt-1 text-sm text-slate-500">{products.length} products, {visibleProducts} visible, {inquiries.length} inquiries loaded</p>
+          <p className="text-sm font-bold text-slate-500">当前账号：{session.username}</p>
+          <p className="mt-1 text-sm text-slate-500">共 {products.length} 个产品，{visibleProducts} 个已显示，已加载 {inquiries.length} 条询盘</p>
         </div>
-        <button className="admin-secondary" type="button" onClick={logout}><LogOut size={16} /> Logout</button>
+        <button className="admin-secondary" type="button" onClick={logout}><LogOut size={16} /> 退出登录</button>
       </div>
 
       <div className="mb-5 flex gap-2 overflow-x-auto pb-2">
-        <TabButton tab={tab} value="products" onClick={setTab} icon={<PackagePlus size={17} />} label="Products" />
-        <TabButton tab={tab} value="inquiries" onClick={setTab} icon={<LayoutDashboard size={17} />} label="Inquiries" />
-        <TabButton tab={tab} value="content" onClick={setTab} icon={<Settings size={17} />} label="Content" />
-        <TabButton tab={tab} value="layout" onClick={setTab} icon={<LayoutDashboard size={17} />} label="Layout" />
+        <TabButton tab={tab} value="products" onClick={setTab} icon={<PackagePlus size={17} />} label="产品管理" />
+        <TabButton tab={tab} value="inquiries" onClick={setTab} icon={<LayoutDashboard size={17} />} label="询盘数据" />
+        <TabButton tab={tab} value="content" onClick={setTab} icon={<Settings size={17} />} label="网页内容" />
+        <TabButton tab={tab} value="layout" onClick={setTab} icon={<LayoutDashboard size={17} />} label="网页排版" />
       </div>
 
       {message && <div className="mb-5 rounded-md bg-amber-50 px-4 py-3 text-sm font-bold text-amber-800 ring-1 ring-amber-200">{message}</div>}
@@ -242,44 +242,44 @@ function AdminApp() {
       {tab === 'products' && (
         <div className="grid gap-5 xl:grid-cols-[0.92fr_1.08fr]">
           <section className="admin-card">
-            <h2 className="admin-title">Add / Edit Product</h2>
+            <h2 className="admin-title">新增 / 修改产品</h2>
             <div className="grid gap-4 sm:grid-cols-2">
-              <AdminField label="Product name">
+              <AdminField label="产品名称">
                 <input className="input" value={draft.name} onChange={(event) => setDraft({ ...draft, name: event.target.value })} />
               </AdminField>
-              <AdminField label="Category">
+              <AdminField label="产品分类">
                 <input className="input" value={draft.category} onChange={(event) => setDraft({ ...draft, category: event.target.value, categorySlug: slugify(event.target.value) })} />
               </AdminField>
-              <AdminField label="Album / model group">
+              <AdminField label="相册 / 型号分组">
                 <input className="input" value={draft.album} onChange={(event) => setDraft({ ...draft, album: event.target.value })} />
               </AdminField>
-              <AdminField label="Sort order">
+              <AdminField label="排序">
                 <input className="input" type="number" value={draft.sortOrder} onChange={(event) => setDraft({ ...draft, sortOrder: Number(event.target.value) })} />
               </AdminField>
-              <AdminField label="Image URL">
+              <AdminField label="图片地址">
                 <input className="input" value={draft.image} onChange={(event) => setDraft({ ...draft, image: event.target.value })} />
               </AdminField>
-              <AdminField label="Upload image">
+              <AdminField label="上传图片">
                 <label className="admin-upload">
-                  <ImagePlus size={18} /> Choose image
+                  <ImagePlus size={18} /> 选择图片
                   <input className="hidden" type="file" accept="image/*" onChange={uploadImage} />
                 </label>
               </AdminField>
-              <AdminField label="Source URL">
+              <AdminField label="来源链接">
                 <input className="input" value={draft.sourceUrl || ''} onChange={(event) => setDraft({ ...draft, sourceUrl: event.target.value })} />
               </AdminField>
               <label className="flex items-center gap-2 pt-7 text-sm font-black">
                 <input type="checkbox" checked={draft.visible} onChange={(event) => setDraft({ ...draft, visible: event.target.checked })} />
-                Visible on website
+                在网站显示
               </label>
             </div>
-            <button className="admin-primary mt-5" type="button" onClick={addOrUpdateProduct}>Add / Update Product</button>
+            <button className="admin-primary mt-5" type="button" onClick={addOrUpdateProduct}>添加 / 更新产品</button>
           </section>
 
           <section className="admin-card">
             <div className="flex items-center justify-between gap-3">
-              <h2 className="admin-title">Product List</h2>
-              <button className="admin-primary" type="button" onClick={saveProducts}><Save size={16} /> Save Products</button>
+              <h2 className="admin-title">产品列表</h2>
+              <button className="admin-primary" type="button" onClick={saveProducts}><Save size={16} /> 保存产品</button>
             </div>
             <div className="mt-4 grid max-h-[640px] gap-3 overflow-auto pr-1">
               {products
@@ -294,9 +294,9 @@ function AdminApp() {
                       <p className="mt-1 text-xs text-slate-400">{product.image}</p>
                     </div>
                     <div className="flex gap-2 sm:flex-col">
-                      <button className="admin-secondary" type="button" onClick={() => setDraft(product)}>Edit</button>
+                      <button className="admin-secondary" type="button" onClick={() => setDraft(product)}>编辑</button>
                       <button className="admin-danger" type="button" onClick={() => setProducts((current) => current.filter((item) => item.id !== product.id))}>
-                        <Trash2 size={15} /> Delete
+                        <Trash2 size={15} /> 删除
                       </button>
                     </div>
                   </div>
@@ -308,18 +308,18 @@ function AdminApp() {
 
       {tab === 'inquiries' && (
         <section className="admin-card">
-          <h2 className="admin-title">Customer Inquiries</h2>
+          <h2 className="admin-title">客户询盘</h2>
           <div className="mt-4 grid gap-3">
-            {inquiries.length === 0 && <p className="text-sm text-slate-500">No inquiries loaded yet.</p>}
+            {inquiries.length === 0 && <p className="text-sm text-slate-500">暂无询盘数据。</p>}
             {inquiries.map((inquiry) => (
               <article key={inquiry.id} className="rounded-md border border-slate-200 p-4">
                 <div className="flex flex-col gap-1 sm:flex-row sm:items-center sm:justify-between">
                   <h3 className="font-black">{inquiry.name}</h3>
                   <span className="text-xs font-bold text-slate-500">{new Date(inquiry.createdAt).toLocaleString()}</span>
                 </div>
-                <p className="mt-2 text-sm"><b>Contact:</b> {inquiry.contact}</p>
-                <p className="text-sm"><b>Product:</b> {inquiry.product}</p>
-                <p className="text-sm"><b>Quantity:</b> {inquiry.quantity}</p>
+                <p className="mt-2 text-sm"><b>联系方式：</b> {inquiry.contact}</p>
+                <p className="text-sm"><b>意向产品：</b> {inquiry.product}</p>
+                <p className="text-sm"><b>采购数量：</b> {inquiry.quantity}</p>
                 <p className="mt-2 text-sm leading-6 text-slate-600">{inquiry.message}</p>
               </article>
             ))}
@@ -330,8 +330,8 @@ function AdminApp() {
       {tab === 'content' && (
         <section className="admin-card">
           <div className="flex items-center justify-between gap-3">
-            <h2 className="admin-title">Website Content</h2>
-            <button className="admin-primary" type="button" onClick={saveSettings}><Save size={16} /> Save Content</button>
+            <h2 className="admin-title">网页内容</h2>
+            <button className="admin-primary" type="button" onClick={saveSettings}><Save size={16} /> 保存内容</button>
           </div>
           <div className="mt-4 grid gap-4 md:grid-cols-2">
             {Object.entries(settings).map(([key, value]) => (
@@ -356,17 +356,17 @@ function AdminApp() {
       {tab === 'layout' && (
         <section className="admin-card">
           <div className="flex items-center justify-between gap-3">
-            <h2 className="admin-title">Layout Settings</h2>
-            <button className="admin-primary" type="button" onClick={saveLayout}><Save size={16} /> Save Layout</button>
+            <h2 className="admin-title">网页排版</h2>
+            <button className="admin-primary" type="button" onClick={saveLayout}><Save size={16} /> 保存排版</button>
           </div>
           <div className="mt-4 grid gap-4 sm:grid-cols-3">
-            <AdminField label="Primary color">
+            <AdminField label="主色">
               <input className="input" value={layout.primaryColor} onChange={(event) => setLayout({ ...layout, primaryColor: event.target.value })} />
             </AdminField>
-            <AdminField label="Accent color">
+            <AdminField label="强调色">
               <input className="input" value={layout.accentColor} onChange={(event) => setLayout({ ...layout, accentColor: event.target.value })} />
             </AdminField>
-            <AdminField label="Catalog columns">
+            <AdminField label="商品目录每行列数">
               <input className="input" type="number" min={2} max={4} value={layout.catalogColumns} onChange={(event) => setLayout({ ...layout, catalogColumns: Number(event.target.value) })} />
             </AdminField>
           </div>
@@ -402,7 +402,7 @@ function AdminApp() {
                         })
                       }
                     />
-                    Show section
+                    显示模块
                   </label>
                 </div>
               ))}
@@ -418,8 +418,8 @@ function AdminShell({ title, children }: { title: string; children?: React.React
     <div className="min-h-screen bg-field text-ink">
       <header className="border-b border-slate-200 bg-white">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
-          <a className="text-sm font-black text-court" href="/">View Website</a>
-          <span className="text-xs font-bold uppercase tracking-[0.18em] text-slate-400">Admin</span>
+          <a className="text-sm font-black text-court" href="/">查看网站</a>
+          <span className="text-xs font-bold uppercase tracking-[0.18em] text-slate-400">后台管理</span>
         </div>
       </header>
       <main className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
