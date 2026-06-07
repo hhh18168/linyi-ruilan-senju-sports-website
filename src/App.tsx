@@ -32,7 +32,6 @@ import {
   defaultSiteSettings,
   fetchCmsJson,
   formatProductPrice,
-  getProductTranslation,
   normalizeProduct,
   toWhatsAppHref,
 } from './cms';
@@ -91,6 +90,13 @@ const uiByLanguage: Record<string, Record<string, string>> = {
     source: '来源',
     specifications: '产品规格',
     detailTitle: '产品详情',
+    productDescription: '这是一款适合团队采购、门店选品和体育训练场景的产品。请联系我们获取数量、定制和交付信息。',
+    scenario: '团队采购、学校训练、体育用品零售',
+    highlight1: '支持批量询盘',
+    highlight2: '支持定制采购沟通',
+    specCategory: '分类',
+    specUseCase: '适用场景',
+    sectionProductDetails: '产品详情',
     aboutTitle: '面向全球客户的体育用品采购',
     contactTitle: '提交采购询盘',
   },
@@ -109,6 +115,13 @@ const uiByLanguage: Record<string, Record<string, string>> = {
     source: 'Source',
     specifications: 'Specifications',
     detailTitle: 'Details',
+    productDescription: 'This product is suitable for team purchasing, retail sourcing and sports training. Contact us for quantity, customization and delivery details.',
+    scenario: 'Team purchasing, school training, sports goods retail',
+    highlight1: 'Bulk inquiry available',
+    highlight2: 'Customization support',
+    specCategory: 'Category',
+    specUseCase: 'Use Case',
+    sectionProductDetails: 'Product Details',
     aboutTitle: 'Sports goods sourcing for global customers',
     contactTitle: 'Send a purchase inquiry',
   },
@@ -127,6 +140,13 @@ const uiByLanguage: Record<string, Record<string, string>> = {
     source: 'Fuente',
     specifications: 'Especificaciones',
     detailTitle: 'Detalles',
+    productDescription: 'Este producto es adecuado para compras de equipo, selección minorista y entrenamiento deportivo. Contáctenos para cantidades, personalización y entrega.',
+    scenario: 'Compras de equipo, entrenamiento escolar, venta de artículos deportivos',
+    highlight1: 'Consulta por volumen disponible',
+    highlight2: 'Soporte de personalización',
+    specCategory: 'Categoría',
+    specUseCase: 'Uso',
+    sectionProductDetails: 'Detalles del producto',
     aboutTitle: 'Suministro de artículos deportivos para clientes globales',
     contactTitle: 'Enviar consulta de compra',
   },
@@ -134,6 +154,24 @@ const uiByLanguage: Record<string, Record<string, string>> = {
 
 const uiText = (language: string, key: string) => uiByLanguage[language]?.[key] || uiByLanguage.en[key] || key;
 const translateCmsTerm = (language: string, value = '') => cmsCategoryTranslations[language]?.[value] || value;
+const localizedProductName = (language: string, productName: string) => {
+  if (language === 'zh') return productName.replace('World Cup', '世界杯').replace('European Cup', '欧洲杯').replace('Machine Stitched', '机缝');
+  if (language === 'es') return productName.replace('World Cup', 'Copa Mundial').replace('European Cup', 'Copa Europea').replace('Machine Stitched', 'Cosido a máquina');
+  return productName;
+};
+const localizedProductCopy = (product: CmsProduct, language: string) => {
+  const direct = product.translations?.[language];
+  const isComplete = direct?.name && direct?.description;
+  if (isComplete) return direct;
+  return {
+    name: localizedProductName(language, direct?.name || product.name),
+    category: translateCmsTerm(language, direct?.category || product.category),
+    album: translateCmsTerm(language, direct?.album || product.album),
+    description: uiText(language, 'productDescription'),
+    scenario: uiText(language, 'scenario'),
+    highlights: [uiText(language, 'highlight1'), uiText(language, 'highlight2')],
+  };
+};
 
 function App() {
   const [language, setLanguage] = useState<LanguageCode>('en');
@@ -207,7 +245,13 @@ function App() {
       if (cmsMatch) return cmsMatch;
       const legacy = products.find((product) => product.id === selectedProductId);
       if (!legacy) return null;
-      const legacyText = getProductText(legacy, language);
+      const legacyText = language === 'zh' || language === 'en'
+        ? getProductText(legacy, language)
+        : {
+            name: `${labels[legacy.category]} ${legacy.id.split('-').slice(-1)[0] || ''}`.trim(),
+            highlight: uiText(language, 'productDescription'),
+            scenario: uiText(language, 'scenario'),
+          };
       return normalizeProduct({
         id: legacy.id,
         name: legacyText.name,
@@ -554,7 +598,13 @@ function App() {
 
             <div className="mt-8 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
               {filteredProducts.map((product) => {
-                const productText = getProductText(product, language);
+                const productText = language === 'zh' || language === 'en'
+                  ? getProductText(product, language)
+                  : {
+                      name: `${labels[product.category]} ${product.id.split('-').slice(-1)[0] || ''}`.trim(),
+                      highlight: uiText(language, 'productDescription'),
+                      scenario: uiText(language, 'scenario'),
+                    };
                 return (
                   <article
                     key={product.id}
@@ -643,7 +693,7 @@ function App() {
 
             <div className={`mt-8 grid gap-5 ${catalogGridClass}`}>
               {pagedYupooProducts.map((product) => {
-                const productText = getProductTranslation(product, language);
+                const productText = localizedProductCopy(product, language);
                 return (
                 <article
                   key={product.id}
@@ -893,8 +943,22 @@ function ProductDetail({
   rates: ExchangeRates;
   onBack: () => void;
 }) {
-  const text = getProductTranslation(product, language);
+  const text = localizedProductCopy(product, language);
   const images = product.galleryImages?.length ? product.galleryImages : [product.image];
+  const specs = product.specs?.length
+    ? product.specs.map((spec) => ({
+        label:
+          spec.label === 'Category'
+            ? uiText(language, 'specCategory')
+            : spec.label === 'Use Case'
+              ? uiText(language, 'specUseCase')
+              : spec.label,
+        value: translateCmsTerm(language, spec.value),
+      }))
+    : [
+        { label: uiText(language, 'specCategory'), value: translateCmsTerm(language, product.category) },
+        { label: uiText(language, 'specUseCase'), value: text.scenario || uiText(language, 'scenario') },
+      ];
 
   return (
     <section className="bg-white py-12">
@@ -942,7 +1006,7 @@ function ProductDetail({
           <div className="rounded-md bg-field p-5">
             <h2 className="text-xl font-black">{uiText(language, 'specifications')}</h2>
             <div className="mt-4 grid gap-3">
-              {product.specs?.map((spec) => (
+              {specs.map((spec) => (
                 <div key={`${spec.label}-${spec.value}`} className="flex justify-between gap-4 border-b border-slate-200 pb-2 text-sm">
                   <span className="font-bold text-slate-500">{spec.label}</span>
                   <span className="font-black text-ink">{spec.value}</span>
@@ -953,10 +1017,13 @@ function ProductDetail({
           <div className="rounded-md bg-field p-5">
             <h2 className="text-xl font-black">{uiText(language, 'detailTitle')}</h2>
             <div className="mt-4 grid gap-4">
-              {product.detailSections?.map((section) => (
+              {(product.translations?.[language]?.description
+                ? product.detailSections || []
+                : [{ title: uiText(language, 'sectionProductDetails'), body: text.description || uiText(language, 'productDescription') }]
+              ).map((section) => (
                 <article key={section.title}>
-                  <h3 className="font-black">{section.title}</h3>
-                  <p className="mt-2 text-sm leading-7 text-slate-600">{section.body}</p>
+                  <h3 className="font-black">{product.translations?.[language]?.description ? section.title : uiText(language, 'sectionProductDetails')}</h3>
+                  <p className="mt-2 text-sm leading-7 text-slate-600">{product.translations?.[language]?.description ? section.body : text.description}</p>
                 </article>
               ))}
             </div>
