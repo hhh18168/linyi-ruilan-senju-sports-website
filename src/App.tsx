@@ -1,4 +1,4 @@
-import { FormEvent, useEffect, useMemo, useState, type CSSProperties } from 'react';
+﻿import { FormEvent, useEffect, useMemo, useState, type CSSProperties } from 'react';
 import {
   ArrowRight,
   BadgeCheck,
@@ -57,49 +57,36 @@ const initialForm: FormState = {
 
 const navKeys = ['home', 'categories', 'products', 'about', 'contact'] as const;
 
-const cmsCategoryTranslations: Record<string, Record<string, string>> = {
-  es: {
-    'Thermal Bonded': 'Termosellado',
-    'Machine Stitched': 'Cosido a máquina',
-    'World Cup': 'Copa Mundial',
-    'European Cup': 'Copa Europea',
-    'Machine Stitched-01': 'Cosido a máquina-01',
-    'Machine Stitched-02': 'Cosido a máquina-02',
-  },
+const cleanCategoryLabels: Record<string, Record<CategoryId, string>> = {
   zh: {
-    'Thermal Bonded': '热粘合',
-    'Machine Stitched': '机缝',
-    'World Cup': '世界杯',
-    'European Cup': '欧洲杯',
+    football: '\u8db3\u7403',
+    volleyball: '\u6392\u7403',
+    basketball: '\u7bee\u7403',
+    tennis: '\u7f51\u7403',
+    cricket: '\u677f\u7403',
+    badminton: '\u7fbd\u6bdb\u7403',
+    sportsBag: '\u8fd0\u52a8\u4e66\u5305',
+    sportsTshirt: '\u8fd0\u52a8T\u6064',
   },
+  en: categoryLabels.en,
+  es: { football: 'Futbol', volleyball: 'Voleibol', basketball: 'Baloncesto', tennis: 'Tenis', cricket: 'Criquet', badminton: 'Badminton', sportsBag: 'Bolsa deportiva', sportsTshirt: 'Camiseta deportiva' },
+  fr: { football: 'Football', volleyball: 'Volley-ball', basketball: 'Basket-ball', tennis: 'Tennis', cricket: 'Cricket', badminton: 'Badminton', sportsBag: 'Sac de sport', sportsTshirt: 'T-shirt de sport' },
+  de: { football: 'Fussball', volleyball: 'Volleyball', basketball: 'Basketball', tennis: 'Tennis', cricket: 'Cricket', badminton: 'Badminton', sportsBag: 'Sporttasche', sportsTshirt: 'Sport-T-Shirt' },
+  pt: { football: 'Futebol', volleyball: 'Voleibol', basketball: 'Basquete', tennis: 'Tenis', cricket: 'Cricket', badminton: 'Badminton', sportsBag: 'Bolsa esportiva', sportsTshirt: 'Camiseta esportiva' },
+  ru: { football: '\u0424\u0443\u0442\u0431\u043e\u043b', volleyball: '\u0412\u043e\u043b\u0435\u0439\u0431\u043e\u043b', basketball: '\u0411\u0430\u0441\u043a\u0435\u0442\u0431\u043e\u043b', tennis: '\u0422\u0435\u043d\u043d\u0438\u0441', cricket: '\u041a\u0440\u0438\u043a\u0435\u0442', badminton: '\u0411\u0430\u0434\u043c\u0438\u043d\u0442\u043e\u043d', sportsBag: '\u0421\u043f\u043e\u0440\u0442\u0438\u0432\u043d\u0430\u044f \u0441\u0443\u043c\u043a\u0430', sportsTshirt: '\u0421\u043f\u043e\u0440\u0442\u0438\u0432\u043d\u0430\u044f \u0444\u0443\u0442\u0431\u043e\u043b\u043a\u0430' },
+  ar: { football: '\u0643\u0631\u0629 \u0627\u0644\u0642\u062f\u0645', volleyball: '\u0627\u0644\u0643\u0631\u0629 \u0627\u0644\u0637\u0627\u0626\u0631\u0629', basketball: '\u0643\u0631\u0629 \u0627\u0644\u0633\u0644\u0629', tennis: '\u0627\u0644\u062a\u0646\u0633', cricket: '\u0627\u0644\u0643\u0631\u064a\u0643\u062a', badminton: '\u0627\u0644\u0628\u0627\u062f\u0645\u0646\u062a\u0648\u0646', sportsBag: '\u062d\u0642\u064a\u0628\u0629 \u0631\u064a\u0627\u0636\u064a\u0629', sportsTshirt: '\u0642\u0645\u064a\u0635 \u0631\u064a\u0627\u0636\u064a' },
+  ja: { football: '\u30b5\u30c3\u30ab\u30fc', volleyball: '\u30d0\u30ec\u30fc\u30dc\u30fc\u30eb', basketball: '\u30d0\u30b9\u30b1\u30c3\u30c8\u30dc\u30fc\u30eb', tennis: '\u30c6\u30cb\u30b9', cricket: '\u30af\u30ea\u30b1\u30c3\u30c8', badminton: '\u30d0\u30c9\u30df\u30f3\u30c8\u30f3', sportsBag: '\u30b9\u30dd\u30fc\u30c4\u30d0\u30c3\u30b0', sportsTshirt: '\u30b9\u30dd\u30fc\u30c4T\u30b7\u30e3\u30c4' },
+  ko: { football: '\ucd95\uad6c', volleyball: '\ubc30\uad6c', basketball: '\ub18d\uad6c', tennis: '\ud14c\ub2c8\uc2a4', cricket: '\ud06c\ub9ac\ucf13', badminton: '\ubc30\ub4dc\ubbfc\ud134', sportsBag: '\uc2a4\ud3ec\uce20 \uac00\ubc29', sportsTshirt: '\uc2a4\ud3ec\uce20 T\uc154\uce20' },
+  it: { football: 'Calcio', volleyball: 'Pallavolo', basketball: 'Basket', tennis: 'Tennis', cricket: 'Cricket', badminton: 'Badminton', sportsBag: 'Borsa sportiva', sportsTshirt: 'T-shirt sportiva' },
+  nl: { football: 'Voetbal', volleyball: 'Volleybal', basketball: 'Basketbal', tennis: 'Tennis', cricket: 'Cricket', badminton: 'Badminton', sportsBag: 'Sporttas', sportsTshirt: 'Sport T-shirt' },
+  tr: { football: 'Futbol', volleyball: 'Voleybol', basketball: 'Basketbol', tennis: 'Tenis', cricket: 'Kriket', badminton: 'Badminton', sportsBag: 'Spor cantasi', sportsTshirt: 'Spor tisortu' },
+  vi: { football: 'Bong da', volleyball: 'Bong chuyen', basketball: 'Bong ro', tennis: 'Quan vot tennis', cricket: 'Cricket', badminton: 'Cau long', sportsBag: 'Tui the thao', sportsTshirt: 'Ao the thao' },
+  id: { football: 'Sepak bola', volleyball: 'Voli', basketball: 'Bola basket', tennis: 'Tenis', cricket: 'Kriket', badminton: 'Bulu tangkis', sportsBag: 'Tas olahraga', sportsTshirt: 'Kaos olahraga' },
 };
 
+const cmsCategoryTranslations: Record<string, Record<string, string>> = {};
+
 const uiByLanguage: Record<string, Record<string, string>> = {
-  zh: {
-    catalogEyebrow: '商品目录',
-    catalogTitle: '商品目录',
-    catalogIntro: '浏览精选产品图片和型号，可直接进入详情或提交询盘。',
-    showing: '当前显示',
-    items: '个商品',
-    allProducts: '全部商品',
-    details: '查看详情',
-    inquiry: '询盘',
-    loadMore: '加载更多',
-    back: '返回商品列表',
-    inquiryNow: '立即询盘',
-    source: '来源',
-    specifications: '产品规格',
-    detailTitle: '产品详情',
-    productDescription: '这是一款适合团队采购、门店选品和体育训练场景的产品。请联系我们获取数量、定制和交付信息。',
-    scenario: '团队采购、学校训练、体育用品零售',
-    highlight1: '支持批量询盘',
-    highlight2: '支持定制采购沟通',
-    specCategory: '分类',
-    specUseCase: '适用场景',
-    sectionProductDetails: '产品详情',
-    aboutTitle: '面向全球客户的体育用品采购',
-    contactTitle: '提交采购询盘',
-  },
   en: {
     catalogEyebrow: 'Product Catalog',
     catalogTitle: 'Product Catalog',
@@ -122,49 +109,288 @@ const uiByLanguage: Record<string, Record<string, string>> = {
     specCategory: 'Category',
     specUseCase: 'Use Case',
     sectionProductDetails: 'Product Details',
-    aboutTitle: 'Sports goods sourcing for global customers',
-    contactTitle: 'Send a purchase inquiry',
   },
   es: {
-    catalogEyebrow: 'Catálogo de productos',
-    catalogTitle: 'Catálogo de productos',
-    catalogIntro: 'Explore imágenes y modelos seleccionados. Abra los detalles o envíe una consulta.',
+    catalogEyebrow: 'Catalogo de productos',
+    catalogTitle: 'Catalogo de productos',
+    catalogIntro: 'Explore imagenes y modelos seleccionados. Abra los detalles o envie una consulta.',
     showing: 'Mostrando',
     items: 'productos',
     allProducts: 'Todos los productos',
     details: 'Ver detalles',
     inquiry: 'Consulta',
-    loadMore: 'Cargar más',
+    loadMore: 'Cargar mas',
     back: 'Volver a productos',
-    inquiryNow: 'Solicitar cotización',
+    inquiryNow: 'Solicitar cotizacion',
     source: 'Fuente',
     specifications: 'Especificaciones',
     detailTitle: 'Detalles',
-    productDescription: 'Este producto es adecuado para compras de equipo, selección minorista y entrenamiento deportivo. Contáctenos para cantidades, personalización y entrega.',
-    scenario: 'Compras de equipo, entrenamiento escolar, venta de artículos deportivos',
+    productDescription: 'Este producto es adecuado para compras de equipo, seleccion minorista y entrenamiento deportivo.',
+    scenario: 'Compras de equipo, entrenamiento escolar, venta deportiva',
     highlight1: 'Consulta por volumen disponible',
-    highlight2: 'Soporte de personalización',
-    specCategory: 'Categoría',
+    highlight2: 'Soporte de personalizacion',
+    specCategory: 'Categoria',
     specUseCase: 'Uso',
     sectionProductDetails: 'Detalles del producto',
-    aboutTitle: 'Suministro de artículos deportivos para clientes globales',
-    contactTitle: 'Enviar consulta de compra',
   },
 };
-
-const uiText = (language: string, key: string) => uiByLanguage[language]?.[key] || uiByLanguage.en[key] || key;
-const translateCmsTerm = (language: string, value = '') => cmsCategoryTranslations[language]?.[value] || value;
-const localizedProductName = (language: string, productName: string) => {
-  if (language === 'zh') return productName.replace('World Cup', '世界杯').replace('European Cup', '欧洲杯').replace('Machine Stitched', '机缝');
-  if (language === 'es') return productName.replace('World Cup', 'Copa Mundial').replace('European Cup', 'Copa Europea').replace('Machine Stitched', 'Cosido a máquina');
-  return productName;
+const strictUiByLanguage: Record<string, Record<string, string>> = {
+  zh: {
+    catalogEyebrow: '\u5546\u54c1\u76ee\u5f55',
+    catalogTitle: '\u5546\u54c1\u76ee\u5f55',
+    catalogIntro: '\u6d4f\u89c8\u5546\u54c1\u56fe\u7247\u548c\u578b\u53f7\uff0c\u53ef\u67e5\u770b\u8be6\u60c5\u6216\u63d0\u4ea4\u8be2\u76d8\u3002',
+    showing: '\u5f53\u524d\u663e\u793a',
+    items: '\u4e2a\u5546\u54c1',
+    allProducts: '\u5168\u90e8\u5546\u54c1',
+    details: '\u67e5\u770b\u8be6\u60c5',
+    inquiry: '\u8be2\u76d8',
+    loadMore: '\u52a0\u8f7d\u66f4\u591a',
+    back: '\u8fd4\u56de\u5546\u54c1\u5217\u8868',
+    inquiryNow: '\u7acb\u5373\u8be2\u76d8',
+    source: '\u6765\u6e90',
+    specifications: '\u4ea7\u54c1\u89c4\u683c',
+    detailTitle: '\u4ea7\u54c1\u8be6\u60c5',
+    productDescription: '\u8be5\u5546\u54c1\u9002\u5408\u56e2\u961f\u91c7\u8d2d\u3001\u95e8\u5e97\u9009\u54c1\u548c\u4f53\u80b2\u8bad\u7ec3\u573a\u666f\u3002\u8bf7\u8054\u7cfb\u6211\u4eec\u83b7\u53d6\u6570\u91cf\u3001\u5b9a\u5236\u548c\u4ea4\u4ed8\u4fe1\u606f\u3002',
+    scenario: '\u56e2\u961f\u91c7\u8d2d\u3001\u5b66\u6821\u8bad\u7ec3\u3001\u4f53\u80b2\u7528\u54c1\u96f6\u552e',
+    highlight1: '\u652f\u6301\u6279\u91cf\u8be2\u76d8',
+    highlight2: '\u652f\u6301\u5b9a\u5236\u91c7\u8d2d\u6c9f\u901a',
+    specCategory: '\u5206\u7c7b',
+    specUseCase: '\u9002\u7528\u573a\u666f',
+    sectionProductDetails: '\u4ea7\u54c1\u8be6\u60c5',
+  },
+  en: uiByLanguage.en,
+  es: uiByLanguage.es,
+  fr: {
+    catalogEyebrow: 'Catalogue de produits',
+    catalogTitle: 'Catalogue de produits',
+    catalogIntro: 'Parcourez les images et modeles de produits, ouvrez les details ou envoyez une demande.',
+    showing: 'Affichage',
+    items: 'produits',
+    allProducts: 'Tous les produits',
+    details: 'Voir details',
+    inquiry: 'Demande',
+    loadMore: 'Charger plus',
+    back: 'Retour aux produits',
+    inquiryNow: 'Demander maintenant',
+    source: 'Source',
+    specifications: 'Specifications',
+    detailTitle: 'Details',
+    productDescription: 'Ce produit convient aux achats d equipe, a la vente et a l entrainement sportif.',
+    scenario: 'Achat equipe, entrainement scolaire, vente sportive',
+    highlight1: 'Demande en volume disponible',
+    highlight2: 'Personnalisation disponible',
+    specCategory: 'Categorie',
+    specUseCase: 'Usage',
+    sectionProductDetails: 'Details du produit',
+  },
+  de: {
+    catalogEyebrow: 'Produktkatalog',
+    catalogTitle: 'Produktkatalog',
+    catalogIntro: 'Produktbilder und Modelle ansehen, Details offnen oder Anfrage senden.',
+    showing: 'Angezeigt',
+    items: 'Produkte',
+    allProducts: 'Alle Produkte',
+    details: 'Details ansehen',
+    inquiry: 'Anfrage',
+    loadMore: 'Mehr laden',
+    back: 'Zuruck zu Produkten',
+    inquiryNow: 'Jetzt anfragen',
+    source: 'Quelle',
+    specifications: 'Spezifikationen',
+    detailTitle: 'Details',
+    productDescription: 'Dieses Produkt eignet sich fur Teameinkauf, Handel und Sporttraining.',
+    scenario: 'Teameinkauf, Schultraining, Sportartikelhandel',
+    highlight1: 'Mengenanfrage moglich',
+    highlight2: 'Anpassung moglich',
+    specCategory: 'Kategorie',
+    specUseCase: 'Nutzung',
+    sectionProductDetails: 'Produktdetails',
+  },
+  pt: {
+    catalogEyebrow: 'Catalogo de produtos',
+    catalogTitle: 'Catalogo de produtos',
+    catalogIntro: 'Veja imagens e modelos, abra detalhes ou envie uma consulta.',
+    showing: 'Exibindo',
+    items: 'produtos',
+    allProducts: 'Todos os produtos',
+    details: 'Ver detalhes',
+    inquiry: 'Consulta',
+    loadMore: 'Carregar mais',
+    back: 'Voltar aos produtos',
+    inquiryNow: 'Consultar agora',
+    source: 'Fonte',
+    specifications: 'Especificacoes',
+    detailTitle: 'Detalhes',
+    productDescription: 'Este produto e adequado para compras de equipe, varejo e treinamento esportivo.',
+    scenario: 'Compra de equipe, treino escolar, varejo esportivo',
+    highlight1: 'Consulta em volume disponivel',
+    highlight2: 'Personalizacao disponivel',
+    specCategory: 'Categoria',
+    specUseCase: 'Uso',
+    sectionProductDetails: 'Detalhes do produto',
+  },
+  ru: {
+    catalogEyebrow: '\u041a\u0430\u0442\u0430\u043b\u043e\u0433 \u0442\u043e\u0432\u0430\u0440\u043e\u0432',
+    catalogTitle: '\u041a\u0430\u0442\u0430\u043b\u043e\u0433 \u0442\u043e\u0432\u0430\u0440\u043e\u0432',
+    catalogIntro: '\u041f\u0440\u043e\u0441\u043c\u043e\u0442\u0440\u0438\u0442\u0435 \u0444\u043e\u0442\u043e \u0438 \u043c\u043e\u0434\u0435\u043b\u0438, \u043e\u0442\u043a\u0440\u043e\u0439\u0442\u0435 \u0434\u0435\u0442\u0430\u043b\u0438 \u0438\u043b\u0438 \u043e\u0442\u043f\u0440\u0430\u0432\u044c\u0442\u0435 \u0437\u0430\u043f\u0440\u043e\u0441.',
+    showing: '\u041f\u043e\u043a\u0430\u0437\u0430\u043d\u043e',
+    items: '\u0442\u043e\u0432\u0430\u0440\u043e\u0432',
+    allProducts: '\u0412\u0441\u0435 \u0442\u043e\u0432\u0430\u0440\u044b',
+    details: '\u0414\u0435\u0442\u0430\u043b\u0438',
+    inquiry: '\u0417\u0430\u043f\u0440\u043e\u0441',
+    loadMore: '\u0417\u0430\u0433\u0440\u0443\u0437\u0438\u0442\u044c \u0435\u0449\u0435',
+    back: '\u041d\u0430\u0437\u0430\u0434 \u043a \u0442\u043e\u0432\u0430\u0440\u0430\u043c',
+    inquiryNow: '\u0417\u0430\u043f\u0440\u043e\u0441\u0438\u0442\u044c',
+    source: '\u0418\u0441\u0442\u043e\u0447\u043d\u0438\u043a',
+    specifications: '\u0425\u0430\u0440\u0430\u043a\u0442\u0435\u0440\u0438\u0441\u0442\u0438\u043a\u0438',
+    detailTitle: '\u0414\u0435\u0442\u0430\u043b\u0438',
+    productDescription: '\u0422\u043e\u0432\u0430\u0440 \u043f\u043e\u0434\u0445\u043e\u0434\u0438\u0442 \u0434\u043b\u044f \u043a\u043e\u043c\u0430\u043d\u0434, \u0448\u043a\u043e\u043b \u0438 \u0441\u043f\u043e\u0440\u0442\u0438\u0432\u043d\u043e\u0439 \u0440\u043e\u0437\u043d\u0438\u0446\u044b.',
+    scenario: '\u041a\u043e\u043c\u0430\u043d\u0434\u044b, \u0448\u043a\u043e\u043b\u044b, \u0441\u043f\u043e\u0440\u0442\u0438\u0432\u043d\u0430\u044f \u0440\u043e\u0437\u043d\u0438\u0446\u0430',
+    highlight1: '\u0414\u043e\u0441\u0442\u0443\u043f\u043d\u044b \u043e\u043f\u0442\u043e\u0432\u044b\u0435 \u0437\u0430\u043f\u0440\u043e\u0441\u044b',
+    highlight2: '\u0414\u043e\u0441\u0442\u0443\u043f\u043d\u0430 \u043a\u0430\u0441\u0442\u043e\u043c\u0438\u0437\u0430\u0446\u0438\u044f',
+    specCategory: '\u041a\u0430\u0442\u0435\u0433\u043e\u0440\u0438\u044f',
+    specUseCase: '\u041f\u0440\u0438\u043c\u0435\u043d\u0435\u043d\u0438\u0435',
+    sectionProductDetails: '\u0414\u0435\u0442\u0430\u043b\u0438 \u0442\u043e\u0432\u0430\u0440\u0430',
+  },
 };
-const localizedProductCopy = (product: CmsProduct, language: string) => {
+const uiText = (language: string, key: string) => strictUiByLanguage[language]?.[key] || uiByLanguage[language]?.[key] || uiByLanguage.en[key] || key;
+
+Object.assign(strictUiByLanguage, {
+  ar: {
+    catalogEyebrow: '\u0643\u062a\u0627\u0644\u0648\u062c \u0627\u0644\u0645\u0646\u062a\u062c\u0627\u062a',
+    catalogTitle: '\u0643\u062a\u0627\u0644\u0648\u062c \u0627\u0644\u0645\u0646\u062a\u062c\u0627\u062a',
+    catalogIntro: '\u062a\u0635\u0641\u062d \u0635\u0648\u0631 \u0627\u0644\u0645\u0646\u062a\u062c\u0627\u062a \u0648\u0627\u0644\u0645\u0648\u062f\u064a\u0644\u0627\u062a \u0648\u0623\u0631\u0633\u0644 \u0637\u0644\u0628\u0627.',
+    showing: '\u064a\u0639\u0631\u0636',
+    items: '\u0645\u0646\u062a\u062c',
+    allProducts: '\u0643\u0644 \u0627\u0644\u0645\u0646\u062a\u062c\u0627\u062a',
+    details: '\u0627\u0644\u062a\u0641\u0627\u0635\u064a\u0644',
+    inquiry: '\u0637\u0644\u0628',
+    loadMore: '\u062a\u062d\u0645\u064a\u0644 \u0627\u0644\u0645\u0632\u064a\u062f',
+    back: '\u0627\u0644\u0639\u0648\u062f\u0629 \u0644\u0644\u0645\u0646\u062a\u062c\u0627\u062a',
+    inquiryNow: '\u0627\u0633\u062a\u0641\u0633\u0631 \u0627\u0644\u0622\u0646',
+    source: '\u0627\u0644\u0645\u0635\u062f\u0631',
+    specifications: '\u0627\u0644\u0645\u0648\u0627\u0635\u0641\u0627\u062a',
+    detailTitle: '\u0627\u0644\u062a\u0641\u0627\u0635\u064a\u0644',
+    productDescription: '\u0647\u0630\u0627 \u0627\u0644\u0645\u0646\u062a\u062c \u0645\u0646\u0627\u0633\u0628 \u0644\u0634\u0631\u0627\u0621 \u0627\u0644\u0641\u0631\u0642 \u0648\u0627\u0644\u0645\u062f\u0627\u0631\u0633 \u0648\u0627\u0644\u0645\u062a\u0627\u062c\u0631.',
+    scenario: '\u0627\u0644\u0641\u0631\u0642\u060c \u0627\u0644\u0645\u062f\u0627\u0631\u0633\u060c \u062a\u062c\u0627\u0631\u0629 \u0627\u0644\u0631\u064a\u0627\u0636\u0629',
+    highlight1: '\u0637\u0644\u0628\u0627\u062a \u062c\u0645\u0644\u0629',
+    highlight2: '\u062f\u0639\u0645 \u0627\u0644\u062a\u062e\u0635\u064a\u0635',
+    specCategory: '\u0641\u0626\u0629',
+    specUseCase: '\u0627\u0644\u0627\u0633\u062a\u062e\u062f\u0627\u0645',
+    sectionProductDetails: '\u062a\u0641\u0627\u0635\u064a\u0644 \u0627\u0644\u0645\u0646\u062a\u062c',
+  },
+  ja: {
+    catalogEyebrow: '\u5546\u54c1\u30ab\u30bf\u30ed\u30b0',
+    catalogTitle: '\u5546\u54c1\u30ab\u30bf\u30ed\u30b0',
+    catalogIntro: '\u5546\u54c1\u753b\u50cf\u3068\u30e2\u30c7\u30eb\u3092\u78ba\u8a8d\u3057\u3001\u8a73\u7d30\u8868\u793a\u307e\u305f\u306f\u554f\u3044\u5408\u308f\u305b\u304c\u3067\u304d\u307e\u3059\u3002',
+    showing: '\u8868\u793a\u4e2d',
+    items: '\u5546\u54c1',
+    allProducts: '\u3059\u3079\u3066\u306e\u5546\u54c1',
+    details: '\u8a73\u7d30\u3092\u898b\u308b',
+    inquiry: '\u554f\u3044\u5408\u308f\u305b',
+    loadMore: '\u3082\u3063\u3068\u8868\u793a',
+    back: '\u5546\u54c1\u4e00\u89a7\u3078\u623b\u308b',
+    inquiryNow: '\u4eca\u3059\u3050\u554f\u3044\u5408\u308f\u305b',
+    source: '\u30bd\u30fc\u30b9',
+    specifications: '\u4ed5\u69d8',
+    detailTitle: '\u8a73\u7d30',
+    productDescription: '\u30c1\u30fc\u30e0\u8cfc\u5165\u3001\u5b66\u6821\u30c8\u30ec\u30fc\u30cb\u30f3\u30b0\u3001\u30b9\u30dd\u30fc\u30c4\u5c0f\u58f2\u306b\u9069\u3057\u305f\u5546\u54c1\u3067\u3059\u3002',
+    scenario: '\u30c1\u30fc\u30e0\u8cfc\u5165\u3001\u5b66\u6821\u30c8\u30ec\u30fc\u30cb\u30f3\u30b0\u3001\u30b9\u30dd\u30fc\u30c4\u5c0f\u58f2',
+    highlight1: '\u5927\u53e3\u554f\u3044\u5408\u308f\u305b\u5bfe\u5fdc',
+    highlight2: '\u30ab\u30b9\u30bf\u30e0\u5bfe\u5fdc',
+    specCategory: '\u30ab\u30c6\u30b4\u30ea',
+    specUseCase: '\u7528\u9014',
+    sectionProductDetails: '\u5546\u54c1\u8a73\u7d30',
+  },
+  ko: {
+    catalogEyebrow: '\uc0c1\ud488 \uce74\ud0c8\ub85c\uadf8',
+    catalogTitle: '\uc0c1\ud488 \uce74\ud0c8\ub85c\uadf8',
+    catalogIntro: '\uc0c1\ud488 \uc774\ubbf8\uc9c0\uc640 \ubaa8\ub378\uc744 \ud655\uc778\ud558\uace0 \uc0c1\uc138 \ub610\ub294 \ubb38\uc758\ub97c \uc774\uc6a9\ud558\uc138\uc694.',
+    showing: '\ud45c\uc2dc',
+    items: '\uc0c1\ud488',
+    allProducts: '\uc804\uccb4 \uc0c1\ud488',
+    details: '\uc0c1\uc138 \ubcf4\uae30',
+    inquiry: '\ubb38\uc758',
+    loadMore: '\ub354 \ubcf4\uae30',
+    back: '\uc0c1\ud488 \ubaa9\ub85d\uc73c\ub85c',
+    inquiryNow: '\uc9c0\uae08 \ubb38\uc758',
+    source: '\ucd9c\ucc98',
+    specifications: '\uc0ac\uc591',
+    detailTitle: '\uc0c1\uc138',
+    productDescription: '\ud300 \uad6c\ub9e4, \ud559\uad50 \ud6c8\ub828, \uc2a4\ud3ec\uce20 \uc18c\ub9e4\uc5d0 \uc801\ud569\ud55c \uc0c1\ud488\uc785\ub2c8\ub2e4.',
+    scenario: '\ud300 \uad6c\ub9e4, \ud559\uad50 \ud6c8\ub828, \uc2a4\ud3ec\uce20 \uc18c\ub9e4',
+    highlight1: '\ub300\ub7c9 \ubb38\uc758 \uac00\ub2a5',
+    highlight2: '\ub9de\ucda4 \uc0c1\ub2f4 \uac00\ub2a5',
+    specCategory: '\uce74\ud14c\uace0\ub9ac',
+    specUseCase: '\uc6a9\ub3c4',
+    sectionProductDetails: '\uc0c1\ud488 \uc0c1\uc138',
+  },
+});
+
+['it', 'nl', 'tr', 'vi', 'id'].forEach((code) => {
+  if (!strictUiByLanguage[code]) strictUiByLanguage[code] = strictUiByLanguage.en;
+});
+
+const termTranslations: Record<string, Record<string, string>> = {
+  zh: { 'Thermal Bonded': '\u70ed\u7c98\u5408', 'Machine Stitched': '\u673a\u7f1d', 'World Cup': '\u4e16\u754c\u676f', 'European Cup': '\u6b27\u6d32\u676f', Album: '\u76f8\u518c', Category: '\u5206\u7c7b', Product: '\u5546\u54c1', Item: '\u5546\u54c1' },
+  es: { 'Thermal Bonded': 'Termosellado', 'Machine Stitched': 'Cosido a maquina', 'World Cup': 'Copa Mundial', 'European Cup': 'Copa Europea', Album: 'Album', Category: 'Categoria', Product: 'Producto', Item: 'Producto' },
+  fr: { 'Thermal Bonded': 'Thermocolle', 'Machine Stitched': 'Cousu machine', 'World Cup': 'Coupe du monde', 'European Cup': 'Coupe europeenne', Album: 'Album', Category: 'Categorie', Product: 'Produit', Item: 'Produit' },
+  de: { 'Thermal Bonded': 'Thermisch geklebt', 'Machine Stitched': 'Maschinengen盲ht', 'World Cup': 'Weltmeisterschaft', 'European Cup': 'Europapokal', Album: 'Album', Category: 'Kategorie', Product: 'Produkt', Item: 'Produkt' },
+  pt: { 'Thermal Bonded': 'Termocolado', 'Machine Stitched': 'Costurado a maquina', 'World Cup': 'Copa do Mundo', 'European Cup': 'Copa Europeia', Album: 'Album', Category: 'Categoria', Product: 'Produto', Item: 'Produto' },
+  ru: { 'Thermal Bonded': '\u0422\u0435\u0440\u043c\u043e\u0441\u043a\u043b\u0435\u0439\u043a\u0430', 'Machine Stitched': '\u041c\u0430\u0448\u0438\u043d\u043d\u0430\u044f \u0441\u0442\u0440\u043e\u0447\u043a\u0430', 'World Cup': '\u041a\u0443\u0431\u043e\u043a \u043c\u0438\u0440\u0430', 'European Cup': '\u041a\u0443\u0431\u043e\u043a \u0415\u0432\u0440\u043e\u043f\u044b', Album: '\u0410\u043b\u044c\u0431\u043e\u043c', Category: '\u041a\u0430\u0442\u0435\u0433\u043e\u0440\u0438\u044f', Product: '\u0422\u043e\u0432\u0430\u0440', Item: '\u0422\u043e\u0432\u0430\u0440' },
+  ar: { 'Thermal Bonded': '\u0644\u062d\u0627\u0645 \u062d\u0631\u0627\u0631\u064a', 'Machine Stitched': '\u062e\u064a\u0627\u0637\u0629 \u0622\u0644\u064a\u0629', 'World Cup': '\u0643\u0623\u0633 \u0627\u0644\u0639\u0627\u0644\u0645', 'European Cup': '\u0643\u0623\u0633 \u0623\u0648\u0631\u0648\u0628\u0627', Album: '\u0623\u0644\u0628\u0648\u0645', Category: '\u0641\u0626\u0629', Product: '\u0645\u0646\u062a\u062c', Item: '\u0645\u0646\u062a\u062c' },
+  ja: { 'Thermal Bonded': '\u71b1\u63a5\u7740', 'Machine Stitched': '\u30df\u30b7\u30f3\u7e2b\u3044', 'World Cup': '\u30ef\u30fc\u30eb\u30c9\u30ab\u30c3\u30d7', 'European Cup': '\u30e8\u30fc\u30ed\u30c3\u30d1\u30ab\u30c3\u30d7', Album: '\u30a2\u30eb\u30d0\u30e0', Category: '\u30ab\u30c6\u30b4\u30ea', Product: '\u5546\u54c1', Item: '\u5546\u54c1' },
+  ko: { 'Thermal Bonded': '\uc5f4\uc811\ucc29', 'Machine Stitched': '\uae30\uacc4 \ubd09\uc81c', 'World Cup': '\uc6d4\ub4dc\ucef5', 'European Cup': '\uc720\ub7fd\ucef5', Album: '\uc568\ubc94', Category: '\uce74\ud14c\uace0\ub9ac', Product: '\uc0c1\ud488', Item: '\uc0c1\ud488' },
+  it: { 'Thermal Bonded': 'Termosaldato', 'Machine Stitched': 'Cucito a macchina', 'World Cup': 'Coppa del mondo', 'European Cup': 'Coppa europea', Album: 'Album', Category: 'Categoria', Product: 'Prodotto', Item: 'Prodotto' },
+  nl: { 'Thermal Bonded': 'Thermisch gebonden', 'Machine Stitched': 'Machinaal gestikt', 'World Cup': 'Wereldbeker', 'European Cup': 'Europese beker', Album: 'Album', Category: 'Categorie', Product: 'Product', Item: 'Product' },
+  tr: { 'Thermal Bonded': 'Isil yapistirma', 'Machine Stitched': 'Makine dikisli', 'World Cup': 'Dunya Kupasi', 'European Cup': 'Avrupa Kupasi', Album: 'Album', Category: 'Kategori', Product: 'Urun', Item: 'Urun' },
+  vi: { 'Thermal Bonded': 'Dan nhiet', 'Machine Stitched': 'May bang may', 'World Cup': 'World Cup', 'European Cup': 'Cup Chau Au', Album: 'Album', Category: 'Danh muc', Product: 'San pham', Item: 'San pham' },
+  id: { 'Thermal Bonded': 'Ikatan panas', 'Machine Stitched': 'Jahitan mesin', 'World Cup': 'Piala Dunia', 'European Cup': 'Piala Eropa', Album: 'Album', Category: 'Kategori', Product: 'Produk', Item: 'Produk' },
+};
+
+const translateCmsTerm = (language: string, value = '') => {
+  const text = value.trim();
+  if (!text) return text;
+  if (language === 'en') return text;
+  const dictionary = { ...(cmsCategoryTranslations[language] || {}), ...(termTranslations[language] || {}) };
+  if (dictionary[text]) return dictionary[text];
+  const knownKey = Object.keys(termTranslations.en || {}).find((key) => text.toLowerCase().includes(key.toLowerCase()));
+  if (knownKey && dictionary[knownKey]) return dictionary[knownKey];
+  return dictionary.Product || dictionary.Item || text;
+};
+const localizedProductName = (language: string, productName: string) => {
+  if (language === 'en') return productName;
+  return localizedProductNameStrict(language, productName);
+};const localizedProductCopy = (product: CmsProduct, language: string) => {
   const direct = product.translations?.[language];
   const isComplete = direct?.name && direct?.description;
   if (isComplete) return direct;
   return {
     name: localizedProductName(language, direct?.name || product.name),
+    category: translateCmsTerm(language, direct?.category || product.category),
+    album: translateCmsTerm(language, direct?.album || product.album),
+    description: uiText(language, 'productDescription'),
+    scenario: uiText(language, 'scenario'),
+    highlights: [uiText(language, 'highlight1'), uiText(language, 'highlight2')],
+  };
+};
+
+const localizedProductNameStrict = (language: string, productName: string) => {
+  if (language === 'en') return productName;
+  const dictionary = termTranslations[language] || {};
+  const number = productName.match(/(\d+)$/)?.[1] || productName.match(/-(\d+)/)?.[1] || '';
+  const key = ['World Cup', 'European Cup', 'Machine Stitched', 'Thermal Bonded'].find((item) =>
+    productName.toLowerCase().includes(item.toLowerCase()),
+  );
+  if (key && dictionary[key]) return `${dictionary[key]}${number ? `-${number}` : ''}`;
+  return `${dictionary.Product || dictionary.Item || uiText(language, 'allProducts')}${number ? `-${number}` : ''}`;
+};
+
+const localizedProductCopyStrict = (product: CmsProduct, language: string) => {
+  if (language === 'en') return localizedProductCopy(product, language);
+  const direct = product.translations?.[language];
+  return {
+    name: localizedProductNameStrict(language, direct?.name || product.name),
     category: translateCmsTerm(language, direct?.category || product.category),
     album: translateCmsTerm(language, direct?.album || product.album),
     description: uiText(language, 'productDescription'),
@@ -208,7 +434,7 @@ function App() {
   }, []);
 
   const text = getText(language);
-  const labels = categoryLabels[language];
+  const labels = cleanCategoryLabels[language] || categoryLabels.en;
   const direction = languages.find((item) => item.code === language)?.dir ?? 'ltr';
 
   useEffect(() => {
@@ -216,8 +442,8 @@ function App() {
     document.documentElement.dir = direction;
     document.title =
       language === 'zh'
-        ? '临沂瑞澜森炬 | 体育用品官网'
-        : 'Linyi Ruilan Senju | Sporting Goods Supplier';
+        ? '\u4e34\u6c82\u745e\u6f9c\u68ee\u70ac | \u4f53\u80b2\u7528\u54c1\u5b98\u7f51'
+        : `${text.brand} | ${text.tagline}`;
   }, [direction, language]);
 
   const filteredProducts = useMemo(() => {
@@ -273,8 +499,8 @@ function App() {
           },
           zh: {
             name: getProductText(legacy, 'zh').name,
-            category: categoryLabels.zh[legacy.category],
-            album: categoryLabels.zh[legacy.category],
+            category: cleanCategoryLabels.zh[legacy.category],
+            album: cleanCategoryLabels.zh[legacy.category],
             description: getProductText(legacy, 'zh').highlight,
             scenario: getProductText(legacy, 'zh').scenario,
           },
@@ -283,7 +509,7 @@ function App() {
           { label: 'Category', value: labels[legacy.category] },
           { label: 'Use Case', value: legacyText.scenario },
         ],
-        detailSections: [{ title: 'Product Details', body: legacyText.highlight }],
+        detailSections: [{ title: uiText(language, 'sectionProductDetails'), body: legacyText.highlight }],
       });
     },
     [cmsProducts, labels, language, selectedProductId],
@@ -309,12 +535,12 @@ function App() {
         ? 'sm:grid-cols-2 lg:grid-cols-3'
         : 'sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4';
 
-  const useCmsCopy = language === 'zh' || language === 'en';
-  const displayBrand = language === 'zh' ? siteSettings.brandZh : siteSettings.brandEn;
+  const useCmsCopy = language === 'en';
+  const displayBrand = text.brand;
   const cmsCopy = {
     tagline: useCmsCopy ? siteSettings.tagline : text.tagline,
     heroBadge: useCmsCopy ? siteSettings.heroBadge : text.hero.badge,
-    heroTitle: language === 'zh' ? siteSettings.brandZh : useCmsCopy ? siteSettings.heroTitle : text.hero.title,
+    heroTitle: useCmsCopy ? siteSettings.heroTitle : text.hero.title,
     heroSubtitle: useCmsCopy ? siteSettings.heroSubtitle : text.hero.subtitle,
     categoriesTitle: useCmsCopy ? siteSettings.categoriesTitle : text.sections.categoriesTitle,
     categoriesIntro: useCmsCopy ? siteSettings.categoriesIntro : text.sections.categoriesIntro,
@@ -693,7 +919,7 @@ function App() {
 
             <div className={`mt-8 grid gap-5 ${catalogGridClass}`}>
               {pagedYupooProducts.map((product) => {
-                const productText = localizedProductCopy(product, language);
+                const productText = localizedProductCopyStrict(product, language);
                 return (
                 <article
                   key={product.id}
@@ -752,7 +978,13 @@ function App() {
             </div>
             <div className="grid gap-5 sm:grid-cols-2">
               {featuredProducts.slice(0, 4).map((product) => {
-                const productText = getProductText(product, language);
+                const productText = language === 'en'
+                  ? getProductText(product, language)
+                  : {
+                      name: labels[product.category],
+                      highlight: uiText(language, 'productDescription'),
+                      scenario: uiText(language, 'scenario'),
+                    };
                 return (
                   <div key={product.id} className="rounded-md border border-white/12 bg-white/8 p-5">
                     <BadgeCheck className="text-lime" size={22} />
@@ -943,7 +1175,7 @@ function ProductDetail({
   rates: ExchangeRates;
   onBack: () => void;
 }) {
-  const text = localizedProductCopy(product, language);
+  const text = localizedProductCopyStrict(product, language);
   const images = product.galleryImages?.length ? product.galleryImages : [product.image];
   const specs = product.specs?.length
     ? product.specs.map((spec) => ({
@@ -1017,13 +1249,13 @@ function ProductDetail({
           <div className="rounded-md bg-field p-5">
             <h2 className="text-xl font-black">{uiText(language, 'detailTitle')}</h2>
             <div className="mt-4 grid gap-4">
-              {(product.translations?.[language]?.description
+              {(language === 'en' && product.translations?.[language]?.description
                 ? product.detailSections || []
                 : [{ title: uiText(language, 'sectionProductDetails'), body: text.description || uiText(language, 'productDescription') }]
               ).map((section) => (
                 <article key={section.title}>
-                  <h3 className="font-black">{product.translations?.[language]?.description ? section.title : uiText(language, 'sectionProductDetails')}</h3>
-                  <p className="mt-2 text-sm leading-7 text-slate-600">{product.translations?.[language]?.description ? section.body : text.description}</p>
+                  <h3 className="font-black">{language === 'en' && product.translations?.[language]?.description ? section.title : uiText(language, 'sectionProductDetails')}</h3>
+                  <p className="mt-2 text-sm leading-7 text-slate-600">{language === 'en' && product.translations?.[language]?.description ? section.body : text.description}</p>
                 </article>
               ))}
             </div>
@@ -1033,3 +1265,6 @@ function ProductDetail({
     </section>
   );
 }
+
+
+
