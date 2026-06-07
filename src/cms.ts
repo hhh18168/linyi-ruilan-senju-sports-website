@@ -1,4 +1,4 @@
-import type { CmsProduct, LayoutSettings, SiteSettings } from './cmsTypes';
+import type { CmsProduct, CurrencyCode, ExchangeRates, LayoutSettings, ProductTranslation, SiteSettings } from './cmsTypes';
 import { yupooProducts } from './yupooProducts';
 
 export const defaultSiteSettings: SiteSettings = {
@@ -38,10 +38,60 @@ export const defaultLayoutSettings: LayoutSettings = {
   ],
 };
 
+export const defaultExchangeRates: ExchangeRates = {
+  baseCurrency: 'USD',
+  rates: {
+    USD: 1,
+    CNY: 7.2,
+    EUR: 0.92,
+    JPY: 156,
+    KRW: 1370,
+    VND: 25400,
+    IDR: 16200,
+    GBP: 0.79,
+    TRY: 32,
+    RUB: 90,
+  },
+};
+
 export const defaultCmsProducts: CmsProduct[] = yupooProducts.map((product, index) => ({
   ...product,
   visible: true,
   sortOrder: index + 1,
+  prices: {
+    baseCurrency: 'USD',
+    basePrice: 12 + (index % 6) * 2,
+    priceUnit: 'piece',
+  },
+  galleryImages: [product.image],
+  specs: [
+    { label: 'Category', value: product.category },
+    { label: 'Album', value: product.album },
+  ],
+  translations: {
+    en: {
+      name: product.name,
+      category: product.category,
+      album: product.album,
+      description: `${product.name} from ${product.album}, suitable for team purchase and product inquiry.`,
+      scenario: 'Club training, school sourcing, sports goods retail',
+      highlights: ['Selected catalog item', 'Bulk inquiry available', 'Custom sourcing support'],
+    },
+    zh: {
+      name: product.name,
+      category: product.category,
+      album: product.album,
+      description: `${product.name}，适合团队采购、门店选品和外贸询盘。`,
+      scenario: '俱乐部训练、学校采购、体育用品零售',
+      highlights: ['目录精选产品', '支持批量询盘', '支持定制采购沟通'],
+    },
+  },
+  detailSections: [
+    {
+      title: 'Product Details',
+      body: 'This item can be used for sourcing reference. Contact us for quantity, customization and delivery details.',
+    },
+  ],
 }));
 
 export async function fetchCmsJson<T>(path: string, fallback: T): Promise<T> {
@@ -58,3 +108,86 @@ export const toWhatsAppHref = (value: string) => {
   const digits = value.replace(/[^\d]/g, '');
   return digits ? `https://wa.me/${digits}` : '#contact';
 };
+
+export const currencyByLanguage: Record<string, CurrencyCode> = {
+  zh: 'CNY',
+  en: 'USD',
+  es: 'EUR',
+  fr: 'EUR',
+  de: 'EUR',
+  pt: 'EUR',
+  ru: 'RUB',
+  ar: 'USD',
+  ja: 'JPY',
+  ko: 'KRW',
+  it: 'EUR',
+  nl: 'EUR',
+  tr: 'TRY',
+  vi: 'VND',
+  id: 'IDR',
+};
+
+export function normalizeProduct(product: CmsProduct, index = 0): CmsProduct {
+  const fallbackTranslation: ProductTranslation = {
+    name: product.name,
+    category: product.category,
+    album: product.album,
+    description: `${product.name} from ${product.album || product.category}.`,
+    scenario: 'Sports goods sourcing and team purchase',
+    highlights: ['Product catalog item', 'Inquiry available'],
+  };
+
+  return {
+    ...product,
+    visible: product.visible ?? true,
+    sortOrder: Number(product.sortOrder) || index + 1,
+    prices: product.prices || {
+      baseCurrency: 'USD',
+      basePrice: 12 + (index % 6) * 2,
+      priceUnit: 'piece',
+    },
+    galleryImages: product.galleryImages?.length ? product.galleryImages : [product.image].filter(Boolean),
+    specs: product.specs?.length
+      ? product.specs
+      : [
+          { label: 'Category', value: product.category },
+          { label: 'Album', value: product.album },
+        ],
+    translations: {
+      en: fallbackTranslation,
+      zh: fallbackTranslation,
+      ...(product.translations || {}),
+    },
+    detailSections: product.detailSections?.length
+      ? product.detailSections
+      : [
+          {
+            title: 'Product Details',
+            body: 'Contact us for price, customization and delivery details.',
+          },
+        ],
+  };
+}
+
+export function getProductTranslation(product: CmsProduct, language: string): ProductTranslation {
+  return product.translations?.[language] || product.translations?.en || {
+    name: product.name,
+    category: product.category,
+    album: product.album,
+  };
+}
+
+export function formatProductPrice(product: CmsProduct, language: string, rates: ExchangeRates) {
+  const targetCurrency = currencyByLanguage[language] || 'USD';
+  const price = product.prices?.basePrice || 0;
+  const baseCurrency = product.prices?.baseCurrency || rates.baseCurrency;
+  const baseRate = rates.rates[baseCurrency] || 1;
+  const targetRate = rates.rates[targetCurrency] || 1;
+  const converted = baseRate ? (price / baseRate) * targetRate : price;
+
+  return new Intl.NumberFormat(language === 'zh' ? 'zh-CN' : language, {
+    style: 'currency',
+    currency: targetCurrency,
+    maximumFractionDigits: ['JPY', 'KRW', 'VND', 'IDR'].includes(targetCurrency) ? 0 : 2,
+  }).format(converted);
+}
