@@ -27,4 +27,52 @@ img {
   .input {
     @apply min-h-12 w-full rounded-md border border-slate-200 bg-field px-3 py-2 text-sm font-semibold text-ink outline-none transition placeholder:text-slate-400 focus:border-court focus:bg-white focus:ring-4 focus:ring-court/10;
   }
+
+  .admin-card {
+    @apply rounded-md bg-white p-5 shadow-sm ring-1 ring-slate-200;
+  }
+
+  .admin-title {
+    @apply text-xl font-black tracking-normal;
+  }
+
+  .admin-primary {
+    @apply inline-flex min-h-11 items-center justify-center gap-2 rounded-md bg-court px-4 text-sm font-black text-white transition hover:bg-flame;
+  }
+
+  .admin-secondary {
+    @apply inline-flex min-h-11 items-center justify-center gap-2 rounded-md bg-white px-4 text-sm font-black text-slate-700 ring-1 ring-slate-200 transition hover:bg-slate-50;
+  }
+
+  .admin-danger {
+    @apply inline-flex min-h-10 items-center justify-center gap-2 rounded-md bg-red-50 px-3 text-sm font-black text-red-700 ring-1 ring-red-200 transition hover:bg-red-100;
+  }
+
+  .admin-message {
+    @apply mt-4 rounded-md bg-amber-50 px-4 py-3 text-sm font-bold text-amber-800 ring-1 ring-amber-200;
+  }
+
+  .admin-upload {
+    @apply inline-flex min-h-12 w-full cursor-pointer items-center justify-center gap-2 rounded-md border border-dashed border-slate-300 bg-field px-3 text-sm font-black text-slate-700 transition hover:bg-white;
+  }
+}
+
+[style*="--cms-primary"] .bg-court {
+  background-color: var(--cms-primary);
+}
+
+[style*="--cms-primary"] .text-court {
+  color: var(--cms-primary);
+}
+
+[style*="--cms-primary"] .border-court {
+  border-color: var(--cms-primary);
+}
+
+[style*="--cms-accent"] .bg-flame {
+  background-color: var(--cms-accent);
+}
+
+[style*="--cms-accent"] .text-flame {
+  color: var(--cms-accent);
 }

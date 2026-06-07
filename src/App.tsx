@@ -1,4 +1,4 @@
-import { FormEvent, useEffect, useMemo, useState } from 'react';
+import { FormEvent, useEffect, useMemo, useState, type CSSProperties } from 'react';
 import {
   ArrowRight,
   BadgeCheck,
@@ -24,13 +24,15 @@ import {
   products,
   type CategoryId,
 } from './products';
-import { yupooCategories, yupooProducts } from './yupooProducts';
-
-const contactEmails = ['bayi35250@gmail.com', 'lyslsm8888@gmail.com'];
-const whatsappContacts = [
-  { label: '+86 152 6539 8250', href: 'https://wa.me/8615265398250' },
-  { label: '+86 180 6316 9020', href: 'https://wa.me/8618063169020' },
-];
+import { yupooProducts } from './yupooProducts';
+import {
+  defaultCmsProducts,
+  defaultLayoutSettings,
+  defaultSiteSettings,
+  fetchCmsJson,
+  toWhatsAppHref,
+} from './cms';
+import type { CmsProduct, LayoutSettings, SiteSettings } from './cmsTypes';
 
 type Filter = 'all' | CategoryId;
 
@@ -56,13 +58,29 @@ function App() {
   const [language, setLanguage] = useState<LanguageCode>('en');
   const [activeFilter, setActiveFilter] = useState<Filter>('all');
   const [activeYupooCategory, setActiveYupooCategory] = useState('all');
+  const [cmsProducts, setCmsProducts] = useState<CmsProduct[]>(defaultCmsProducts);
+  const [siteSettings, setSiteSettings] = useState<SiteSettings>(defaultSiteSettings);
+  const [layoutSettings, setLayoutSettings] = useState<LayoutSettings>(defaultLayoutSettings);
   const [menuOpen, setMenuOpen] = useState(false);
   const [form, setForm] = useState<FormState>(initialForm);
   const [errors, setErrors] = useState<Partial<FormState>>({});
   const [submitted, setSubmitted] = useState(false);
+  const [submitError, setSubmitError] = useState('');
 
   useEffect(() => {
     setLanguage(detectLanguage());
+  }, []);
+
+  useEffect(() => {
+    Promise.all([
+      fetchCmsJson<CmsProduct[]>('/cms/products.json', defaultCmsProducts),
+      fetchCmsJson<SiteSettings>('/cms/site-settings.json', defaultSiteSettings),
+      fetchCmsJson<LayoutSettings>('/cms/layout-settings.json', defaultLayoutSettings),
+    ]).then(([nextProducts, nextSettings, nextLayout]) => {
+      setCmsProducts(nextProducts);
+      setSiteSettings(nextSettings);
+      setLayoutSettings(nextLayout);
+    });
   }, []);
 
   const text = getText(language);
@@ -84,9 +102,39 @@ function App() {
   }, [activeFilter]);
 
   const filteredYupooProducts = useMemo(() => {
-    if (activeYupooCategory === 'all') return yupooProducts;
-    return yupooProducts.filter((product) => product.categorySlug === activeYupooCategory);
-  }, [activeYupooCategory]);
+    const visible = cmsProducts
+      .filter((product) => product.visible)
+      .sort((a, b) => a.sortOrder - b.sortOrder);
+    if (activeYupooCategory === 'all') return visible;
+    return visible.filter((product) => product.categorySlug === activeYupooCategory);
+  }, [activeYupooCategory, cmsProducts]);
+
+  const catalogCategories = useMemo(() => {
+    const pairs = cmsProducts
+      .filter((product) => product.visible)
+      .map((product) => [product.categorySlug, product.category] as const);
+    return Array.from(new Map(pairs).entries()).map(([slug, name]) => ({ slug, name }));
+  }, [cmsProducts]);
+
+  const sectionVisible = (id: LayoutSettings['sections'][number]['id']) =>
+    layoutSettings.sections.find((section) => section.id === id)?.visible ?? true;
+
+  const sectionOrder = (id: LayoutSettings['sections'][number]['id']) =>
+    layoutSettings.sections.find((section) => section.id === id)?.order ?? 10;
+
+  const catalogGridClass =
+    layoutSettings.catalogColumns <= 2
+      ? 'sm:grid-cols-2'
+      : layoutSettings.catalogColumns === 3
+        ? 'sm:grid-cols-2 lg:grid-cols-3'
+        : 'sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4';
+
+  const displayBrand = language === 'zh' ? siteSettings.brandZh : siteSettings.brandEn;
+  const contactEmails = siteSettings.emails.length ? siteSettings.emails : defaultSiteSettings.emails;
+  const whatsappContacts = (siteSettings.whatsapp.length ? siteSettings.whatsapp : defaultSiteSettings.whatsapp).map((value) => ({
+    label: value,
+    href: toWhatsAppHref(value),
+  }));
 
   const changeLanguage = (nextLanguage: LanguageCode) => {
     setLanguage(nextLanguage);
@@ -94,7 +142,7 @@ function App() {
     setSubmitted(false);
   };
 
-  const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     const nextErrors: Partial<FormState> = {};
 
@@ -110,8 +158,19 @@ function App() {
     setErrors(nextErrors);
 
     if (Object.keys(nextErrors).length === 0) {
-      setSubmitted(true);
-      setForm(initialForm);
+      setSubmitError('');
+      try {
+        const response = await fetch('/api/inquiries', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ ...form, source: 'website-contact-form' }),
+        });
+        if (!response.ok) throw new Error('Inquiry API failed');
+        setSubmitted(true);
+        setForm(initialForm);
+      } catch {
+        setSubmitError('Submit failed. Please contact us by email or WhatsApp.');
+      }
     }
   };
 
@@ -119,19 +178,29 @@ function App() {
     setForm((current) => ({ ...current, [key]: value }));
     setErrors((current) => ({ ...current, [key]: undefined }));
     setSubmitted(false);
+    setSubmitError('');
   };
 
   return (
-    <div className="min-h-screen bg-field text-ink" dir={direction}>
+    <div
+      className="min-h-screen bg-field text-ink"
+      dir={direction}
+      style={
+        {
+          '--cms-primary': layoutSettings.primaryColor,
+          '--cms-accent': layoutSettings.accentColor,
+        } as CSSProperties
+      }
+    >
       <header className="sticky top-0 z-50 border-b border-white/70 bg-white/92 backdrop-blur">
         <div className="mx-auto flex max-w-7xl items-center justify-between gap-3 px-4 py-3 sm:px-6 lg:px-8">
-          <a href="#home" className="flex min-w-0 items-center gap-3" aria-label={text.brand}>
+          <a href="#home" className="flex min-w-0 items-center gap-3" aria-label={displayBrand}>
             <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-md bg-court text-white">
               <Dumbbell size={24} strokeWidth={2.4} />
             </span>
             <span className="min-w-0">
-              <span className="block truncate text-base font-black tracking-normal sm:text-lg">{text.brand}</span>
-              <span className="block text-xs font-semibold text-slate-500">{text.tagline}</span>
+              <span className="block truncate text-base font-black tracking-normal sm:text-lg">{displayBrand}</span>
+              <span className="block text-xs font-semibold text-slate-500">{siteSettings.tagline || text.tagline}</span>
             </span>
           </a>
 
@@ -188,19 +257,19 @@ function App() {
         )}
       </header>
 
-      <main>
+      <main className="flex flex-col">
         <section id="home" className="relative overflow-hidden bg-ink text-white">
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_80%_20%,rgba(199,239,78,0.25),transparent_32%),linear-gradient(135deg,#17202a_0%,#0d6b5f_62%,#2676d6_100%)]" />
           <div className="relative mx-auto grid min-h-[640px] max-w-7xl items-center gap-10 px-4 pb-20 pt-16 sm:px-6 lg:grid-cols-[1.02fr_0.98fr] lg:px-8">
             <div className="max-w-3xl">
               <div className="mb-5 inline-flex max-w-full items-center gap-2 rounded-md bg-white/12 px-3 py-2 text-sm font-semibold text-lime ring-1 ring-white/15">
                 <Sparkles className="shrink-0" size={17} />
-                <span>{text.hero.badge}</span>
+                <span>{siteSettings.heroBadge || text.hero.badge}</span>
               </div>
               <h1 className="max-w-4xl text-4xl font-black leading-tight tracking-normal sm:text-5xl lg:text-6xl">
-                {text.hero.title}
+                {language === 'zh' ? siteSettings.brandZh : siteSettings.heroTitle || text.hero.title}
               </h1>
-              <p className="mt-5 max-w-2xl text-base leading-8 text-slate-100 sm:text-lg">{text.hero.subtitle}</p>
+              <p className="mt-5 max-w-2xl text-base leading-8 text-slate-100 sm:text-lg">{siteSettings.heroSubtitle || text.hero.subtitle}</p>
               <div className="mt-8 flex flex-col gap-3 sm:flex-row">
                 <a
                   href="#products"
@@ -236,13 +305,13 @@ function App() {
           </div>
         </section>
 
-        <section id="categories" className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
+        {sectionVisible('categories') && <section id="categories" style={{ order: sectionOrder('categories') }} className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
           <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
             <div>
               <p className="text-sm font-black uppercase tracking-[0.18em] text-court">{text.sections.categoriesEyebrow}</p>
-              <h2 className="mt-2 text-3xl font-black tracking-normal sm:text-4xl">{text.sections.categoriesTitle}</h2>
+              <h2 className="mt-2 text-3xl font-black tracking-normal sm:text-4xl">{siteSettings.categoriesTitle || text.sections.categoriesTitle}</h2>
             </div>
-            <p className="max-w-xl text-sm leading-7 text-slate-600">{text.sections.categoriesIntro}</p>
+            <p className="max-w-xl text-sm leading-7 text-slate-600">{siteSettings.categoriesIntro || text.sections.categoriesIntro}</p>
           </div>
 
           <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
@@ -269,9 +338,9 @@ function App() {
               </button>
             ))}
           </div>
-        </section>
+        </section>}
 
-        <section id="products" className="bg-white py-16">
+        {sectionVisible('products') && <section id="products" style={{ order: sectionOrder('products') }} className="bg-white py-16">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
               <div>
@@ -327,9 +396,9 @@ function App() {
               })}
             </div>
           </div>
-        </section>
+        </section>}
 
-        <section className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
+        {sectionVisible('benefits') && <section style={{ order: sectionOrder('benefits') }} className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
           <div className="grid gap-5 md:grid-cols-3">
             {[PackageCheck, ShieldCheck, Truck].map((Icon, index) => (
               <div key={text.benefits[index].title} className="rounded-md bg-white p-6 shadow-sm ring-1 ring-slate-200">
@@ -341,16 +410,16 @@ function App() {
               </div>
             ))}
           </div>
-        </section>
+        </section>}
 
-        <section id="yupoo-catalog" className="bg-field py-16">
+        {sectionVisible('catalog') && <section id="yupoo-catalog" style={{ order: sectionOrder('catalog') }} className="bg-field py-16">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
               <div>
-                <p className="text-sm font-black uppercase tracking-[0.18em] text-court">Product Catalog</p>
-                <h2 className="mt-2 text-3xl font-black tracking-normal sm:text-4xl">商品目录</h2>
+                <p className="text-sm font-black uppercase tracking-[0.18em] text-court">{siteSettings.catalogEyebrow}</p>
+                <h2 className="mt-2 text-3xl font-black tracking-normal sm:text-4xl">{siteSettings.catalogTitle}</h2>
                 <p className="mt-4 max-w-2xl text-sm leading-7 text-slate-600">
-                  Product images imported from the public catalog album. Each item can be selected for inquiry through the contact form.
+                  {siteSettings.catalogIntro}
                 </p>
               </div>
               <div className="text-sm font-semibold text-slate-500">
@@ -370,7 +439,7 @@ function App() {
               >
                 All Products
               </button>
-              {yupooCategories.map((category) => (
+              {catalogCategories.map((category) => (
                 <button
                   key={category.slug}
                   type="button"
@@ -386,7 +455,7 @@ function App() {
               ))}
             </div>
 
-            <div className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+            <div className={`mt-8 grid gap-5 ${catalogGridClass}`}>
               {filteredYupooProducts.map((product) => (
                 <article key={product.id} className="overflow-hidden rounded-md border border-slate-200 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-lift">
                   <div className="relative aspect-square bg-white">
@@ -419,14 +488,14 @@ function App() {
               ))}
             </div>
           </div>
-        </section>
+        </section>}
 
-        <section id="about" className="bg-ink py-16 text-white">
+        {sectionVisible('about') && <section id="about" style={{ order: sectionOrder('about') }} className="bg-ink py-16 text-white">
           <div className="mx-auto grid max-w-7xl gap-10 px-4 sm:px-6 lg:grid-cols-[0.9fr_1.1fr] lg:px-8">
             <div>
               <p className="text-sm font-black uppercase tracking-[0.18em] text-lime">{text.sections.aboutEyebrow}</p>
-              <h2 className="mt-2 text-3xl font-black tracking-normal sm:text-4xl">{text.sections.aboutTitle}</h2>
-              <p className="mt-4 text-sm leading-7 text-slate-200">{text.sections.aboutText}</p>
+              <h2 className="mt-2 text-3xl font-black tracking-normal sm:text-4xl">{siteSettings.aboutTitle || text.sections.aboutTitle}</h2>
+              <p className="mt-4 text-sm leading-7 text-slate-200">{siteSettings.aboutText || text.sections.aboutText}</p>
             </div>
             <div className="grid gap-5 sm:grid-cols-2">
               {featuredProducts.slice(0, 4).map((product) => {
@@ -441,14 +510,14 @@ function App() {
               })}
             </div>
           </div>
-        </section>
+        </section>}
 
-        <section id="contact" className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
+        {sectionVisible('contact') && <section id="contact" style={{ order: sectionOrder('contact') }} className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
           <div className="grid gap-8 lg:grid-cols-[0.86fr_1.14fr]">
             <div>
               <p className="text-sm font-black uppercase tracking-[0.18em] text-court">{text.sections.contactEyebrow}</p>
-              <h2 className="mt-2 text-3xl font-black tracking-normal sm:text-4xl">{text.sections.contactTitle}</h2>
-              <p className="mt-4 text-sm leading-7 text-slate-600">{text.sections.contactIntro}</p>
+              <h2 className="mt-2 text-3xl font-black tracking-normal sm:text-4xl">{siteSettings.contactTitle || text.sections.contactTitle}</h2>
+              <p className="mt-4 text-sm leading-7 text-slate-600">{siteSettings.contactIntro || text.sections.contactIntro}</p>
               <div className="mt-7 grid gap-3">
                 <div className="flex items-start gap-3 rounded-md bg-white p-4 shadow-sm ring-1 ring-slate-200">
                   <Mail className="shrink-0 text-court" size={20} />
@@ -513,19 +582,24 @@ function App() {
                   {text.form.success}
                 </div>
               )}
+              {submitError && (
+                <div className="mt-5 rounded-md bg-red-50 px-4 py-3 text-sm font-bold text-red-700 ring-1 ring-red-200">
+                  {submitError}
+                </div>
+              )}
 
               <button className="mt-6 inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-md bg-flame px-5 text-sm font-black text-white transition hover:bg-court sm:w-auto" type="submit">
                 {text.form.submit} <ArrowRight size={18} />
               </button>
             </form>
           </div>
-        </section>
+        </section>}
       </main>
 
       <footer className="border-t border-slate-200 bg-white py-8">
         <div className="mx-auto flex max-w-7xl flex-col gap-3 px-4 text-sm text-slate-500 sm:flex-row sm:items-center sm:justify-between sm:px-6 lg:px-8">
-          <span className="font-bold text-ink">{text.brand}</span>
-          <span>{text.footer}</span>
+          <span className="font-bold text-ink">{displayBrand}</span>
+          <span>{siteSettings.footerText || text.footer}</span>
         </div>
       </footer>
     </div>

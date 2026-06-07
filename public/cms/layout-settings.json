@@ -1,0 +1,43 @@
+{
+  "primaryColor": "#0d6b5f",
+  "accentColor": "#e9582f",
+  "catalogColumns": 4,
+  "sections": [
+    {
+      "id": "categories",
+      "label": "Product Categories",
+      "visible": true,
+      "order": 1
+    },
+    {
+      "id": "products",
+      "label": "Hot Products",
+      "visible": true,
+      "order": 2
+    },
+    {
+      "id": "benefits",
+      "label": "Brand Advantages",
+      "visible": true,
+      "order": 3
+    },
+    {
+      "id": "catalog",
+      "label": "Product Catalog",
+      "visible": true,
+      "order": 4
+    },
+    {
+      "id": "about",
+      "label": "About Us",
+      "visible": true,
+      "order": 5
+    },
+    {
+      "id": "contact",
+      "label": "Contact Form",
+      "visible": true,
+      "order": 6
+    }
+  ]
+}
