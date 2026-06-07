@@ -9,12 +9,19 @@ export default async function handler(req, res) {
     const password = String(body.password || '');
 
     if (!username || !password) {
-      json(res, 400, { error: 'Username and password are required.' });
+      json(res, 400, { error: '请输入管理员账号和登录密码。' });
       return;
     }
 
-    if (username !== process.env.ADMIN_USERNAME || !verifySecret(password, 'ADMIN_PASSWORD_HASH', 'ADMIN_PASSWORD')) {
-      json(res, 401, { error: 'Invalid username or password.' });
+    const expectedUsername = process.env.ADMIN_USERNAME?.trim();
+
+    if (!expectedUsername || !process.env.ADMIN_PASSWORD_HASH?.trim()) {
+      json(res, 500, { error: '后台登录环境变量未配置完整，请检查 ADMIN_USERNAME 和 ADMIN_PASSWORD_HASH。' });
+      return;
+    }
+
+    if (username !== expectedUsername || !verifySecret(password, 'ADMIN_PASSWORD_HASH', 'ADMIN_PASSWORD')) {
+      json(res, 401, { error: '管理员账号或登录密码错误。' });
       return;
     }
 
