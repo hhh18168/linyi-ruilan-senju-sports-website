@@ -8,7 +8,58 @@
     "image": "/yupoo-products/thermal-bonded/world-cup-01.jpg",
     "sourceUrl": "https://qubu.x.yupoo.com/albums/177031341?uid=1&isSubCate=false&referrercate=4696117",
     "visible": true,
-    "sortOrder": 1
+    "sortOrder": 1,
+    "prices": {
+      "baseCurrency": "USD",
+      "basePrice": 12,
+      "priceUnit": "piece"
+    },
+    "galleryImages": [
+      "/yupoo-products/thermal-bonded/world-cup-01.jpg"
+    ],
+    "galleryLabels": [],
+    "specs": [
+      {
+        "label": "Category",
+        "value": "Thermal Bonded"
+      },
+      {
+        "label": "Album",
+        "value": "World Cup"
+      }
+    ],
+    "translations": {
+      "en": {
+        "name": "World Cup-01",
+        "category": "Thermal Bonded",
+        "album": "World Cup",
+        "description": "World Cup-01 from World Cup, suitable for team purchase and product inquiry.",
+        "scenario": "Club training, school sourcing, sports goods retail",
+        "highlights": [
+          "Selected catalog item",
+          "Bulk inquiry available",
+          "Custom sourcing support"
+        ]
+      },
+      "zh": {
+        "name": "World Cup-01",
+        "category": "Thermal Bonded",
+        "album": "World Cup",
+        "description": "World Cup-01 suitable for team purchase and sports training.",
+        "scenario": "Team purchase, school training, sports retail",
+        "highlights": [
+          "Selected catalog item",
+          "Bulk inquiry available",
+          "Custom sourcing support"
+        ]
+      }
+    },
+    "detailSections": [
+      {
+        "title": "Product Details",
+        "body": "Contact us for price, customization and delivery details."
+      }
+    ]
   },
   {
     "id": "thermal-bonded-world-cup-02",
@@ -19,7 +70,58 @@
     "image": "/yupoo-products/thermal-bonded/world-cup-02.jpg",
     "sourceUrl": "https://qubu.x.yupoo.com/albums/177031341?uid=1&isSubCate=false&referrercate=4696117",
     "visible": true,
-    "sortOrder": 2
+    "sortOrder": 2,
+    "prices": {
+      "baseCurrency": "USD",
+      "basePrice": 14,
+      "priceUnit": "piece"
+    },
+    "galleryImages": [
+      "/yupoo-products/thermal-bonded/world-cup-02.jpg"
+    ],
+    "galleryLabels": [],
+    "specs": [
+      {
+        "label": "Category",
+        "value": "Thermal Bonded"
+      },
+      {
+        "label": "Album",
+        "value": "World Cup"
+      }
+    ],
+    "translations": {
+      "en": {
+        "name": "World Cup-02",
+        "category": "Thermal Bonded",
+        "album": "World Cup",
+        "description": "World Cup-02 from World Cup, suitable for team purchase and product inquiry.",
+        "scenario": "Club training, school sourcing, sports goods retail",
+        "highlights": [
+          "Selected catalog item",
+          "Bulk inquiry available",
+          "Custom sourcing support"
+        ]
+      },
+      "zh": {
+        "name": "World Cup-02",
+        "category": "Thermal Bonded",
+        "album": "World Cup",
+        "description": "World Cup-02 suitable for team purchase and sports training.",
+        "scenario": "Team purchase, school training, sports retail",
+        "highlights": [
+          "Selected catalog item",
+          "Bulk inquiry available",
+          "Custom sourcing support"
+        ]
+      }
+    },
+    "detailSections": [
+      {
+        "title": "Product Details",
+        "body": "Contact us for price, customization and delivery details."
+      }
+    ]
   },
   {
     "id": "thermal-bonded-world-cup-03",
@@ -30,7 +132,58 @@
     "image": "/yupoo-products/thermal-bonded/world-cup-03.jpg",
     "sourceUrl": "https://qubu.x.yupoo.com/albums/177031341?uid=1&isSubCate=false&referrercate=4696117",
     "visible": true,
-    "sortOrder": 3
+    "sortOrder": 3,
+    "prices": {
+      "baseCurrency": "USD",
+      "basePrice": 16,
+      "priceUnit": "piece"
+    },
+    "galleryImages": [
+      "/yupoo-products/thermal-bonded/world-cup-03.jpg"
+    ],
+    "galleryLabels": [],
+    "specs": [
+      {
+        "label": "Category",
+        "value": "Thermal Bonded"
+      },
+      {
+        "label": "Album",
+        "value": "World Cup"
+      }
+    ],
+    "translations": {
+      "en": {
+        "name": "World Cup-03",
+        "category": "Thermal Bonded",
+        "album": "World Cup",
+        "description": "World Cup-03 from World Cup, suitable for team purchase and product inquiry.",
+        "scenario": "Club training, school sourcing, sports goods retail",
+        "highlights": [
+          "Selected catalog item",
+          "Bulk inquiry available",
+          "Custom sourcing support"
+        ]
+      },
+      "zh": {
+        "name": "World Cup-03",
+        "category": "Thermal Bonded",
+        "album": "World Cup",
+        "description": "World Cup-03 suitable for team purchase and sports training.",
+        "scenario": "Team purchase, school training, sports retail",
+        "highlights": [
+          "Selected catalog item",
+          "Bulk inquiry available",
+          "Custom sourcing support"
+        ]
+      }
+    },
+    "detailSections": [
+      {
+        "title": "Product Details",
+        "body": "Contact us for price, customization and delivery details."
+      }
+    ]
   },
   {
     "id": "thermal-bonded-world-cup-04",
@@ -41,7 +194,58 @@
     "image": "/yupoo-products/thermal-bonded/world-cup-04.jpg",
     "sourceUrl": "https://qubu.x.yupoo.com/albums/177031341?uid=1&isSubCate=false&referrercate=4696117",
     "visible": true,
-    "sortOrder": 4
+    "sortOrder": 4,
+    "prices": {
+      "baseCurrency": "USD",
+      "basePrice": 18,
+      "priceUnit": "piece"
+    },
+    "galleryImages": [
+      "/yupoo-products/thermal-bonded/world-cup-04.jpg"
+    ],
+    "galleryLabels": [],
+    "specs": [
+      {
+        "label": "Category",
+        "value": "Thermal Bonded"
+      },
+      {
+        "label": "Album",
+        "value": "World Cup"
+      }
+    ],
+    "translations": {
+      "en": {
+        "name": "World Cup-04",
+        "category": "Thermal Bonded",
+        "album": "World Cup",
+        "description": "World Cup-04 from World Cup, suitable for team purchase and product inquiry.",
+        "scenario": "Club training, school sourcing, sports goods retail",
+        "highlights": [
+          "Selected catalog item",
+          "Bulk inquiry available",
+          "Custom sourcing support"
+        ]
+      },
+      "zh": {
+        "name": "World Cup-04",
+        "category": "Thermal Bonded",
+        "album": "World Cup",
+        "description": "World Cup-04 suitable for team purchase and sports training.",
+        "scenario": "Team purchase, school training, sports retail",
+        "highlights": [
+          "Selected catalog item",
+          "Bulk inquiry available",
+          "Custom sourcing support"
+        ]
+      }
+    },
+    "detailSections": [
+      {
+        "title": "Product Details",
+        "body": "Contact us for price, customization and delivery details."
+      }
+    ]
   },
   {
     "id": "thermal-bonded-world-cup-05",
@@ -52,7 +256,58 @@
     "image": "/yupoo-products/thermal-bonded/world-cup-05.jpg",
     "sourceUrl": "https://qubu.x.yupoo.com/albums/177031341?uid=1&isSubCate=false&referrercate=4696117",
     "visible": true,
-    "sortOrder": 5
+    "sortOrder": 5,
+    "prices": {
+      "baseCurrency": "USD",
+      "basePrice": 20,
+      "priceUnit": "piece"
+    },
+    "galleryImages": [
+      "/yupoo-products/thermal-bonded/world-cup-05.jpg"
+    ],
+    "galleryLabels": [],
+    "specs": [
+      {
+        "label": "Category",
+        "value": "Thermal Bonded"
+      },
+      {
+        "label": "Album",
+        "value": "World Cup"
+      }
+    ],
+    "translations": {
+      "en": {
+        "name": "World Cup-05",
+        "category": "Thermal Bonded",
+        "album": "World Cup",
+        "description": "World Cup-05 from World Cup, suitable for team purchase and product inquiry.",
+        "scenario": "Club training, school sourcing, sports goods retail",
+        "highlights": [
+          "Selected catalog item",
+          "Bulk inquiry available",
+          "Custom sourcing support"
+        ]
+      },
+      "zh": {
+        "name": "World Cup-05",
+        "category": "Thermal Bonded",
+        "album": "World Cup",
+        "description": "World Cup-05 suitable for team purchase and sports training.",
+        "scenario": "Team purchase, school training, sports retail",
+        "highlights": [
+          "Selected catalog item",
+          "Bulk inquiry available",
+          "Custom sourcing support"
+        ]
+      }
+    },
+    "detailSections": [
+      {
+        "title": "Product Details",
+        "body": "Contact us for price, customization and delivery details."
+      }
+    ]
   },
   {
     "id": "thermal-bonded-world-cup-06",
@@ -63,7 +318,58 @@
     "image": "/yupoo-products/thermal-bonded/world-cup-06.jpg",
     "sourceUrl": "https://qubu.x.yupoo.com/albums/177031341?uid=1&isSubCate=false&referrercate=4696117",
     "visible": true,
-    "sortOrder": 6
+    "sortOrder": 6,
+    "prices": {
+      "baseCurrency": "USD",
+      "basePrice": 22,
+      "priceUnit": "piece"
+    },
+    "galleryImages": [
+      "/yupoo-products/thermal-bonded/world-cup-06.jpg"
+    ],
+    "galleryLabels": [],
+    "specs": [
+      {
+        "label": "Category",
+        "value": "Thermal Bonded"
+      },
+      {
+        "label": "Album",
+        "value": "World Cup"
+      }
+    ],
+    "translations": {
+      "en": {
+        "name": "World Cup-06",
+        "category": "Thermal Bonded",
+        "album": "World Cup",
+        "description": "World Cup-06 from World Cup, suitable for team purchase and product inquiry.",
+        "scenario": "Club training, school sourcing, sports goods retail",
+        "highlights": [
+          "Selected catalog item",
+          "Bulk inquiry available",
+          "Custom sourcing support"
+        ]
+      },
+      "zh": {
+        "name": "World Cup-06",
+        "category": "Thermal Bonded",
+        "album": "World Cup",
+        "description": "World Cup-06 suitable for team purchase and sports training.",
+        "scenario": "Team purchase, school training, sports retail",
+        "highlights": [
+          "Selected catalog item",
+          "Bulk inquiry available",
+          "Custom sourcing support"
+        ]
+      }
+    },
+    "detailSections": [
+      {
+        "title": "Product Details",
+        "body": "Contact us for price, customization and delivery details."
+      }
+    ]
   },
   {
     "id": "thermal-bonded-european-cup-01",
@@ -74,7 +380,58 @@
     "image": "/yupoo-products/thermal-bonded/european-cup-01.jpg",
     "sourceUrl": "https://qubu.x.yupoo.com/albums/177208648?uid=1&isSubCate=false&referrercate=4696117",
     "visible": true,
-    "sortOrder": 7
+    "sortOrder": 7,
+    "prices": {
+      "baseCurrency": "USD",
+      "basePrice": 12,
+      "priceUnit": "piece"
+    },
+    "galleryImages": [
+      "/yupoo-products/thermal-bonded/european-cup-01.jpg"
+    ],
+    "galleryLabels": [],
+    "specs": [
+      {
+        "label": "Category",
+        "value": "Thermal Bonded"
+      },
+      {
+        "label": "Album",
+        "value": "European Cup"
+      }
+    ],
+    "translations": {
+      "en": {
+        "name": "European Cup-01",
+        "category": "Thermal Bonded",
+        "album": "European Cup",
+        "description": "European Cup-01 from European Cup, suitable for team purchase and product inquiry.",
+        "scenario": "Club training, school sourcing, sports goods retail",
+        "highlights": [
+          "Selected catalog item",
+          "Bulk inquiry available",
+          "Custom sourcing support"
+        ]
+      },
+      "zh": {
+        "name": "European Cup-01",
+        "category": "Thermal Bonded",
+        "album": "European Cup",
+        "description": "European Cup-01 suitable for team purchase and sports training.",
+        "scenario": "Team purchase, school training, sports retail",
+        "highlights": [
+          "Selected catalog item",
+          "Bulk inquiry available",
+          "Custom sourcing support"
+        ]
+      }
+    },
+    "detailSections": [
+      {
+        "title": "Product Details",
+        "body": "Contact us for price, customization and delivery details."
+      }
+    ]
   },
   {
     "id": "thermal-bonded-european-cup-02",
@@ -85,7 +442,58 @@
     "image": "/yupoo-products/thermal-bonded/european-cup-02.jpg",
     "sourceUrl": "https://qubu.x.yupoo.com/albums/177208648?uid=1&isSubCate=false&referrercate=4696117",
     "visible": true,
-    "sortOrder": 8
+    "sortOrder": 8,
+    "prices": {
+      "baseCurrency": "USD",
+      "basePrice": 14,
+      "priceUnit": "piece"
+    },
+    "galleryImages": [
+      "/yupoo-products/thermal-bonded/european-cup-02.jpg"
+    ],
+    "galleryLabels": [],
+    "specs": [
+      {
+        "label": "Category",
+        "value": "Thermal Bonded"
+      },
+      {
+        "label": "Album",
+        "value": "European Cup"
+      }
+    ],
+    "translations": {
+      "en": {
+        "name": "European Cup-02",
+        "category": "Thermal Bonded",
+        "album": "European Cup",
+        "description": "European Cup-02 from European Cup, suitable for team purchase and product inquiry.",
+        "scenario": "Club training, school sourcing, sports goods retail",
+        "highlights": [
+          "Selected catalog item",
+          "Bulk inquiry available",
+          "Custom sourcing support"
+        ]
+      },
+      "zh": {
+        "name": "European Cup-02",
+        "category": "Thermal Bonded",
+        "album": "European Cup",
+        "description": "European Cup-02 suitable for team purchase and sports training.",
+        "scenario": "Team purchase, school training, sports retail",
+        "highlights": [
+          "Selected catalog item",
+          "Bulk inquiry available",
+          "Custom sourcing support"
+        ]
+      }
+    },
+    "detailSections": [
+      {
+        "title": "Product Details",
+        "body": "Contact us for price, customization and delivery details."
+      }
+    ]
   },
   {
     "id": "thermal-bonded-european-cup-03",
@@ -96,7 +504,58 @@
     "image": "/yupoo-products/thermal-bonded/european-cup-03.jpg",
     "sourceUrl": "https://qubu.x.yupoo.com/albums/177208648?uid=1&isSubCate=false&referrercate=4696117",
     "visible": true,
-    "sortOrder": 9
+    "sortOrder": 9,
+    "prices": {
+      "baseCurrency": "USD",
+      "basePrice": 16,
+      "priceUnit": "piece"
+    },
+    "galleryImages": [
+      "/yupoo-products/thermal-bonded/european-cup-03.jpg"
+    ],
+    "galleryLabels": [],
+    "specs": [
+      {
+        "label": "Category",
+        "value": "Thermal Bonded"
+      },
+      {
+        "label": "Album",
+        "value": "European Cup"
+      }
+    ],
+    "translations": {
+      "en": {
+        "name": "European Cup-03",
+        "category": "Thermal Bonded",
+        "album": "European Cup",
+        "description": "European Cup-03 from European Cup, suitable for team purchase and product inquiry.",
+        "scenario": "Club training, school sourcing, sports goods retail",
+        "highlights": [
+          "Selected catalog item",
+          "Bulk inquiry available",
+          "Custom sourcing support"
+        ]
+      },
+      "zh": {
+        "name": "European Cup-03",
+        "category": "Thermal Bonded",
+        "album": "European Cup",
+        "description": "European Cup-03 suitable for team purchase and sports training.",
+        "scenario": "Team purchase, school training, sports retail",
+        "highlights": [
+          "Selected catalog item",
+          "Bulk inquiry available",
+          "Custom sourcing support"
+        ]
+      }
+    },
+    "detailSections": [
+      {
+        "title": "Product Details",
+        "body": "Contact us for price, customization and delivery details."
+      }
+    ]
   },
   {
     "id": "thermal-bonded-european-cup-04",
@@ -107,7 +566,58 @@
     "image": "/yupoo-products/thermal-bonded/european-cup-04.jpg",
     "sourceUrl": "https://qubu.x.yupoo.com/albums/177208648?uid=1&isSubCate=false&referrercate=4696117",
     "visible": true,
-    "sortOrder": 10
+    "sortOrder": 10,
+    "prices": {
+      "baseCurrency": "USD",
+      "basePrice": 18,
+      "priceUnit": "piece"
+    },
+    "galleryImages": [
+      "/yupoo-products/thermal-bonded/european-cup-04.jpg"
+    ],
+    "galleryLabels": [],
+    "specs": [
+      {
+        "label": "Category",
+        "value": "Thermal Bonded"
+      },
+      {
+        "label": "Album",
+        "value": "European Cup"
+      }
+    ],
+    "translations": {
+      "en": {
+        "name": "European Cup-04",
+        "category": "Thermal Bonded",
+        "album": "European Cup",
+        "description": "European Cup-04 from European Cup, suitable for team purchase and product inquiry.",
+        "scenario": "Club training, school sourcing, sports goods retail",
+        "highlights": [
+          "Selected catalog item",
+          "Bulk inquiry available",
+          "Custom sourcing support"
+        ]
+      },
+      "zh": {
+        "name": "European Cup-04",
+        "category": "Thermal Bonded",
+        "album": "European Cup",
+        "description": "European Cup-04 suitable for team purchase and sports training.",
+        "scenario": "Team purchase, school training, sports retail",
+        "highlights": [
+          "Selected catalog item",
+          "Bulk inquiry available",
+          "Custom sourcing support"
+        ]
+      }
+    },
+    "detailSections": [
+      {
+        "title": "Product Details",
+        "body": "Contact us for price, customization and delivery details."
+      }
+    ]
   },
   {
     "id": "thermal-bonded-european-cup-05",
@@ -118,7 +628,58 @@
     "image": "/yupoo-products/thermal-bonded/european-cup-05.jpg",
     "sourceUrl": "https://qubu.x.yupoo.com/albums/177208648?uid=1&isSubCate=false&referrercate=4696117",
     "visible": true,
-    "sortOrder": 11
+    "sortOrder": 11,
+    "prices": {
+      "baseCurrency": "USD",
+      "basePrice": 20,
+      "priceUnit": "piece"
+    },
+    "galleryImages": [
+      "/yupoo-products/thermal-bonded/european-cup-05.jpg"
+    ],
+    "galleryLabels": [],
+    "specs": [
+      {
+        "label": "Category",
+        "value": "Thermal Bonded"
+      },
+      {
+        "label": "Album",
+        "value": "European Cup"
+      }
+    ],
+    "translations": {
+      "en": {
+        "name": "European Cup-05",
+        "category": "Thermal Bonded",
+        "album": "European Cup",
+        "description": "European Cup-05 from European Cup, suitable for team purchase and product inquiry.",
+        "scenario": "Club training, school sourcing, sports goods retail",
+        "highlights": [
+          "Selected catalog item",
+          "Bulk inquiry available",
+          "Custom sourcing support"
+        ]
+      },
+      "zh": {
+        "name": "European Cup-05",
+        "category": "Thermal Bonded",
+        "album": "European Cup",
+        "description": "European Cup-05 suitable for team purchase and sports training.",
+        "scenario": "Team purchase, school training, sports retail",
+        "highlights": [
+          "Selected catalog item",
+          "Bulk inquiry available",
+          "Custom sourcing support"
+        ]
+      }
+    },
+    "detailSections": [
+      {
+        "title": "Product Details",
+        "body": "Contact us for price, customization and delivery details."
+      }
+    ]
   },
   {
     "id": "thermal-bonded-european-cup-06",
@@ -129,7 +690,58 @@
     "image": "/yupoo-products/thermal-bonded/european-cup-06.jpg",
     "sourceUrl": "https://qubu.x.yupoo.com/albums/177208648?uid=1&isSubCate=false&referrercate=4696117",
     "visible": true,
-    "sortOrder": 12
+    "sortOrder": 12,
+    "prices": {
+      "baseCurrency": "USD",
+      "basePrice": 22,
+      "priceUnit": "piece"
+    },
+    "galleryImages": [
+      "/yupoo-products/thermal-bonded/european-cup-06.jpg"
+    ],
+    "galleryLabels": [],
+    "specs": [
+      {
+        "label": "Category",
+        "value": "Thermal Bonded"
+      },
+      {
+        "label": "Album",
+        "value": "European Cup"
+      }
+    ],
+    "translations": {
+      "en": {
+        "name": "European Cup-06",
+        "category": "Thermal Bonded",
+        "album": "European Cup",
+        "description": "European Cup-06 from European Cup, suitable for team purchase and product inquiry.",
+        "scenario": "Club training, school sourcing, sports goods retail",
+        "highlights": [
+          "Selected catalog item",
+          "Bulk inquiry available",
+          "Custom sourcing support"
+        ]
+      },
+      "zh": {
+        "name": "European Cup-06",
+        "category": "Thermal Bonded",
+        "album": "European Cup",
+        "description": "European Cup-06 suitable for team purchase and sports training.",
+        "scenario": "Team purchase, school training, sports retail",
+        "highlights": [
+          "Selected catalog item",
+          "Bulk inquiry available",
+          "Custom sourcing support"
+        ]
+      }
+    },
+    "detailSections": [
+      {
+        "title": "Product Details",
+        "body": "Contact us for price, customization and delivery details."
+      }
+    ]
   },
   {
     "id": "machine-stitched-item-hz916t-01",
@@ -140,7 +752,58 @@
     "image": "/yupoo-products/machine-stitched/item-hz916t-01.jpg",
     "sourceUrl": "https://qubu.x.yupoo.com/albums/177221340?uid=1&isSubCate=false&referrercate=4694653",
     "visible": true,
-    "sortOrder": 13
+    "sortOrder": 13,
+    "prices": {
+      "baseCurrency": "USD",
+      "basePrice": 12,
+      "priceUnit": "piece"
+    },
+    "galleryImages": [
+      "/yupoo-products/machine-stitched/item-hz916t-01.jpg"
+    ],
+    "galleryLabels": [],
+    "specs": [
+      {
+        "label": "Category",
+        "value": "Machine Stitched"
+      },
+      {
+        "label": "Album",
+        "value": "Machine Stitched"
+      }
+    ],
+    "translations": {
+      "en": {
+        "name": "Machine Stitched-01",
+        "category": "Machine Stitched",
+        "album": "Machine Stitched",
+        "description": "Machine Stitched-01 from Machine Stitched, suitable for team purchase and product inquiry.",
+        "scenario": "Club training, school sourcing, sports goods retail",
+        "highlights": [
+          "Selected catalog item",
+          "Bulk inquiry available",
+          "Custom sourcing support"
+        ]
+      },
+      "zh": {
+        "name": "Machine Stitched-01",
+        "category": "Machine Stitched",
+        "album": "Machine Stitched",
+        "description": "Machine Stitched-01 suitable for team purchase and sports training.",
+        "scenario": "Team purchase, school training, sports retail",
+        "highlights": [
+          "Selected catalog item",
+          "Bulk inquiry available",
+          "Custom sourcing support"
+        ]
+      }
+    },
+    "detailSections": [
+      {
+        "title": "Product Details",
+        "body": "Contact us for price, customization and delivery details."
+      }
+    ]
   },
   {
     "id": "machine-stitched-item-hz916t-02",
@@ -151,6 +814,57 @@
     "image": "/yupoo-products/machine-stitched/item-hz916t-02.jpg",
     "sourceUrl": "https://qubu.x.yupoo.com/albums/177221340?uid=1&isSubCate=false&referrercate=4694653",
     "visible": true,
-    "sortOrder": 14
+    "sortOrder": 14,
+    "prices": {
+      "baseCurrency": "USD",
+      "basePrice": 14,
+      "priceUnit": "piece"
+    },
+    "galleryImages": [
+      "/yupoo-products/machine-stitched/item-hz916t-02.jpg"
+    ],
+    "galleryLabels": [],
+    "specs": [
+      {
+        "label": "Category",
+        "value": "Machine Stitched"
+      },
+      {
+        "label": "Album",
+        "value": "Machine Stitched"
+      }
+    ],
+    "translations": {
+      "en": {
+        "name": "Machine Stitched-02",
+        "category": "Machine Stitched",
+        "album": "Machine Stitched",
+        "description": "Machine Stitched-02 from Machine Stitched, suitable for team purchase and product inquiry.",
+        "scenario": "Club training, school sourcing, sports goods retail",
+        "highlights": [
+          "Selected catalog item",
+          "Bulk inquiry available",
+          "Custom sourcing support"
+        ]
+      },
+      "zh": {
+        "name": "Machine Stitched-02",
+        "category": "Machine Stitched",
+        "album": "Machine Stitched",
+        "description": "Machine Stitched-02 suitable for team purchase and sports training.",
+        "scenario": "Team purchase, school training, sports retail",
+        "highlights": [
+          "Selected catalog item",
+          "Bulk inquiry available",
+          "Custom sourcing support"
+        ]
+      }
+    },
+    "detailSections": [
+      {
+        "title": "Product Details",
+        "body": "Contact us for price, customization and delivery details."
+      }
+    ]
   }
 ]

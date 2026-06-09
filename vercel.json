@@ -7,6 +7,10 @@
     {
       "source": "/products/:path*",
       "destination": "/index.html"
+    },
+    {
+      "source": "/categories/:path*",
+      "destination": "/index.html"
     }
   ]
 }

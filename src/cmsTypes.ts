@@ -11,6 +11,7 @@ export type CmsProduct = {
   translations?: Record<string, ProductTranslation>;
   prices?: ProductPrices;
   galleryImages?: string[];
+  galleryLabels?: string[];
   specs?: ProductSpec[];
   detailSections?: ProductDetailSection[];
 };

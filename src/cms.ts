@@ -5,7 +5,7 @@ export const defaultSiteSettings: SiteSettings = {
   brandZh: '临沂瑞澜森炬',
   brandEn: 'Linyi Ruilan Senju',
   tagline: 'SPORTING GOODS',
-  heroBadge: 'Football, volleyball, basketball, tennis, cricket, badminton and teamwear supply',
+  heroBadge: 'Football, volleyball, basketball, tennis, badminton and teamwear supply',
   heroTitle: 'Linyi Ruilan Senju',
   heroSubtitle:
     'A sports goods supplier for schools, clubs, retailers and event organizers, covering balls, rackets, sports bags, T-shirts and team purchasing needs.',
