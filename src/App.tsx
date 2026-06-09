@@ -370,12 +370,15 @@ function App() {
                 categories={categories}
                 openProduct={openProduct}
                 openCategory={openCategory}
+                rates={exchangeRates}
                 sectionVisible={sectionVisible}
                 sectionOrder={sectionOrder}
               />
             )}
-            {(route.type === 'category' || route.type === 'home') && (
+            {(route.type === 'category' || (route.type === 'home' && sectionVisible('catalog'))) && (
               <CatalogSection
+                sectionId={route.type === 'home' ? 'catalog' : 'products'}
+                order={route.type === 'home' ? sectionOrder('catalog') : 1}
                 language={language}
                 title={route.type === 'category' ? translateTerm(language, categories.find((item) => item.slug === routeCategory)?.name || t(language, 'products')) : cmsCopy.catalogTitle}
                 intro={cmsCopy.catalogIntro}
@@ -450,6 +453,7 @@ function HomeSections({
   categories,
   openProduct,
   openCategory,
+  rates,
   sectionVisible,
   sectionOrder,
 }: {
@@ -460,10 +464,12 @@ function HomeSections({
   categories: { slug: string; name: string }[];
   openProduct: (id: string) => void;
   openCategory: (slug: string) => void;
+  rates: ExchangeRates;
   sectionVisible: (id: LayoutSettings['sections'][number]['id']) => boolean;
   sectionOrder: (id: LayoutSettings['sections'][number]['id']) => number;
 }) {
   const featured = products.slice(0, 4);
+  const hotProducts = products.slice(0, 8);
   return (
     <>
       <section id="home" className="relative overflow-hidden bg-ink text-white">
@@ -541,11 +547,49 @@ function HomeSections({
           </div>
         </section>
       )}
+
+      {sectionVisible('products') && (
+        <section id="hot-products" style={{ order: sectionOrder('products') }} className="bg-white py-16">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
+              <div>
+                <p className="text-sm font-black uppercase tracking-[0.18em] text-court">{text.sections.productsEyebrow}</p>
+                <h2 className="mt-2 text-3xl font-black tracking-normal sm:text-4xl">{text.sections.productsTitle}</h2>
+              </div>
+              <button type="button" onClick={() => openCategory('all')} className="inline-flex min-h-11 items-center justify-center gap-2 rounded-md bg-court px-4 text-sm font-black text-white transition hover:bg-flame">
+                {t(language, 'allProducts')} <ArrowRight size={17} />
+              </button>
+            </div>
+            <div className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+              {hotProducts.map((product) => {
+                const copy = productCopy(product, language);
+                return (
+                  <article key={product.id} className="cursor-pointer overflow-hidden rounded-md border border-slate-200 bg-field shadow-sm transition hover:-translate-y-1 hover:shadow-lift" onClick={() => openProduct(product.id)}>
+                    <div className="relative aspect-square bg-white">
+                      <img loading="lazy" className="h-full w-full object-cover" src={product.image} alt={copy.name || product.name} />
+                      <div className="absolute left-3 top-3 rounded-md bg-white px-3 py-1 text-xs font-black text-court shadow-sm">{translateTerm(language, copy.category || product.category)}</div>
+                    </div>
+                    <div className="p-4">
+                      <h3 className="line-clamp-2 min-h-12 text-base font-black tracking-normal">{copy.name || product.name}</h3>
+                      <p className="mt-2 text-lg font-black text-court">{formatProductPrice(product, language, rates)}</p>
+                      <button type="button" onClick={(event) => { event.stopPropagation(); openProduct(product.id); }} className="mt-4 inline-flex min-h-10 w-full items-center justify-center rounded-md bg-court px-3 text-sm font-black text-white transition hover:bg-flame">
+                        {t(language, 'details')}
+                      </button>
+                    </div>
+                  </article>
+                );
+              })}
+            </div>
+          </div>
+        </section>
+      )}
     </>
   );
 }
 
 function CatalogSection({
+  sectionId,
+  order,
   language,
   title,
   intro,
@@ -560,6 +604,8 @@ function CatalogSection({
   hasMore,
   rates,
 }: {
+  sectionId: string;
+  order: number;
   language: LanguageCode;
   title: string;
   intro: string;
@@ -575,7 +621,7 @@ function CatalogSection({
   rates: ExchangeRates;
 }) {
   return (
-    <section id="products" className="bg-field py-16">
+    <section id={sectionId} style={{ order }} className="bg-field py-16">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
           <div>
