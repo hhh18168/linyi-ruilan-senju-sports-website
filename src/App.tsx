@@ -114,8 +114,20 @@ const ui: Record<string, Record<string, string>> = {
 };
 
 const termTranslations: Record<string, Record<string, string>> = {
-  zh: { 'Thermal Bonded': '\u70ed\u7c98\u5408', 'Machine Stitched': '\u673a\u7f1d', 'World Cup': '\u4e16\u754c\u676f', 'European Cup': '\u6b27\u6d32\u676f', Product: '\u5546\u54c1' },
-  es: { 'Thermal Bonded': 'Termosellado', 'Machine Stitched': 'Cosido a maquina', 'World Cup': 'Copa Mundial', 'European Cup': 'Copa Europea', Product: 'Producto' },
+  zh: { Football: '足球', Volleyball: '排球', Basketball: '篮球', Tennis: '网球', Badminton: '羽毛球', 'Sports Bag': '运动书包', 'Sports T-shirt': '运动T恤', 'Thermal Bonded': '热粘合', 'Machine Stitched': '机缝', 'World Cup': '世界杯', 'European Cup': '欧洲杯', Product: '商品' },
+  es: { Football: 'Futbol', Volleyball: 'Voleibol', Basketball: 'Baloncesto', Tennis: 'Tenis', Badminton: 'Badminton', 'Sports Bag': 'Bolsa deportiva', 'Sports T-shirt': 'Camiseta deportiva', 'Thermal Bonded': 'Termosellado', 'Machine Stitched': 'Cosido a maquina', 'World Cup': 'Copa Mundial', 'European Cup': 'Copa Europea', Product: 'Producto' },
+  fr: { Football: 'Football', Volleyball: 'Volley-ball', Basketball: 'Basket-ball', Tennis: 'Tennis', Badminton: 'Badminton', 'Sports Bag': 'Sac de sport', 'Sports T-shirt': 'T-shirt de sport', Product: 'Produit' },
+  de: { Football: 'Fussball', Volleyball: 'Volleyball', Basketball: 'Basketball', Tennis: 'Tennis', Badminton: 'Badminton', 'Sports Bag': 'Sporttasche', 'Sports T-shirt': 'Sport-T-Shirt', Product: 'Produkt' },
+  pt: { Football: 'Futebol', Volleyball: 'Voleibol', Basketball: 'Basquete', Tennis: 'Tenis', Badminton: 'Badminton', 'Sports Bag': 'Bolsa esportiva', 'Sports T-shirt': 'Camiseta esportiva', Product: 'Produto' },
+  ru: { Football: 'Футбол', Volleyball: 'Волейбол', Basketball: 'Баскетбол', Tennis: 'Теннис', Badminton: 'Бадминтон', 'Sports Bag': 'Спортивный рюкзак', 'Sports T-shirt': 'Спортивная футболка', Product: 'Товар' },
+  ar: { Football: 'كرة القدم', Volleyball: 'الكرة الطائرة', Basketball: 'كرة السلة', Tennis: 'التنس', Badminton: 'الريشة الطائرة', 'Sports Bag': 'حقيبة رياضية', 'Sports T-shirt': 'قميص رياضي', Product: 'منتج' },
+  ja: { Football: 'サッカー', Volleyball: 'バレーボール', Basketball: 'バスケットボール', Tennis: 'テニス', Badminton: 'バドミントン', 'Sports Bag': 'スポーツバッグ', 'Sports T-shirt': 'スポーツTシャツ', Product: '商品' },
+  ko: { Football: '축구', Volleyball: '배구', Basketball: '농구', Tennis: '테니스', Badminton: '배드민턴', 'Sports Bag': '스포츠 백팩', 'Sports T-shirt': '스포츠 티셔츠', Product: '상품' },
+  it: { Football: 'Calcio', Volleyball: 'Pallavolo', Basketball: 'Basket', Tennis: 'Tennis', Badminton: 'Badminton', 'Sports Bag': 'Borsa sportiva', 'Sports T-shirt': 'T-shirt sportiva', Product: 'Prodotto' },
+  nl: { Football: 'Voetbal', Volleyball: 'Volleybal', Basketball: 'Basketbal', Tennis: 'Tennis', Badminton: 'Badminton', 'Sports Bag': 'Sporttas', 'Sports T-shirt': 'Sport T-shirt', Product: 'Product' },
+  tr: { Football: 'Futbol', Volleyball: 'Voleybol', Basketball: 'Basketbol', Tennis: 'Tenis', Badminton: 'Badminton', 'Sports Bag': 'Spor çantası', 'Sports T-shirt': 'Spor tişörtü', Product: 'Ürün' },
+  vi: { Football: 'Bong da', Volleyball: 'Bong chuyen', Basketball: 'Bong ro', Tennis: 'Quan vot tennis', Badminton: 'Cau long', 'Sports Bag': 'Ba lo the thao', 'Sports T-shirt': 'Ao thun the thao', Product: 'San pham' },
+  id: { Football: 'Sepak bola', Volleyball: 'Voli', Basketball: 'Bola basket', Tennis: 'Tenis', Badminton: 'Bulu tangkis', 'Sports Bag': 'Tas olahraga', 'Sports T-shirt': 'Kaos olahraga', Product: 'Produk' },
 };
 
 const t = (language: string, key: string) => ui[language]?.[key] || ui.en[key] || key;
@@ -136,7 +148,7 @@ const productCopy = (product: CmsProduct, language: string) => {
   if (language === 'en' && direct?.name) return direct;
   const baseName = direct?.name || product.name;
   const number = baseName.match(/(\d+)$/)?.[1] || '';
-  const translatedName = translateTerm(language, baseName);
+  const translatedName = direct?.name || translateTerm(language, baseName);
   return {
     name: translatedName === baseName && language !== 'en' ? `${termTranslations[language]?.Product || t(language, 'products')}${number ? `-${number}` : ''}` : translatedName,
     category: translateTerm(language, direct?.category || product.category),
