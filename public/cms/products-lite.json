@@ -1,0 +1,2303 @@
+[
+  {
+    "id": "football-177031341-world-cup",
+    "name": "World Cup",
+    "category": "Football",
+    "categorySlug": "football",
+    "album": "World Cup",
+    "image": "/assets/football.svg",
+    "visible": true,
+    "sortOrder": 1,
+    "prices": {
+      "baseCurrency": "USD",
+      "basePrice": 12,
+      "priceUnit": "piece"
+    },
+    "galleryImages": [
+      "/assets/football.svg"
+    ],
+    "galleryLabels": [],
+    "specs": [],
+    "translations": {
+      "en": {
+        "name": "World Cup",
+        "category": "Football",
+        "album": "World Cup",
+        "description": "World Cup football style with 14 product images for inquiry and team purchasing.",
+        "scenario": "Football clubs, schools, team purchase and sports goods retail",
+        "highlights": [
+          "Football product catalog",
+          "Multiple images available",
+          "Bulk inquiry support"
+        ]
+      },
+      "zh": {
+        "name": "World Cup",
+        "category": "足球",
+        "album": "World Cup",
+        "description": "World Cup 足球款式，包含 14 张产品图片，适合询盘、选款和团队采购。",
+        "scenario": "足球俱乐部、学校训练、团队采购、体育用品零售",
+        "highlights": [
+          "足球款式图集",
+          "多图可查看",
+          "支持批量询盘"
+        ]
+      },
+      "es": {
+        "name": "World Cup",
+        "category": "Futbol",
+        "album": "World Cup",
+        "description": "Modelo de futbol World Cup con 14 imagenes para consulta y compra por equipo.",
+        "scenario": "Clubes, escuelas, equipos y venta deportiva",
+        "highlights": [
+          "Catalogo de futbol",
+          "Varias imagenes",
+          "Consulta por volumen"
+        ]
+      }
+    },
+    "detailSections": []
+  },
+  {
+    "id": "football-177208648-european-cup",
+    "name": "European Cup",
+    "category": "Football",
+    "categorySlug": "football",
+    "album": "European Cup",
+    "image": "/assets/football.svg",
+    "visible": true,
+    "sortOrder": 2,
+    "prices": {
+      "baseCurrency": "USD",
+      "basePrice": 14,
+      "priceUnit": "piece"
+    },
+    "galleryImages": [
+      "/assets/football.svg"
+    ],
+    "galleryLabels": [],
+    "specs": [],
+    "translations": {
+      "en": {
+        "name": "European Cup",
+        "category": "Football",
+        "album": "European Cup",
+        "description": "European Cup football style with 8 product images for inquiry and team purchasing.",
+        "scenario": "Football clubs, schools, team purchase and sports goods retail",
+        "highlights": [
+          "Football product catalog",
+          "Multiple images available",
+          "Bulk inquiry support"
+        ]
+      },
+      "zh": {
+        "name": "European Cup",
+        "category": "足球",
+        "album": "European Cup",
+        "description": "European Cup 足球款式，包含 8 张产品图片，适合询盘、选款和团队采购。",
+        "scenario": "足球俱乐部、学校训练、团队采购、体育用品零售",
+        "highlights": [
+          "足球款式图集",
+          "多图可查看",
+          "支持批量询盘"
+        ]
+      },
+      "es": {
+        "name": "European Cup",
+        "category": "Futbol",
+        "album": "European Cup",
+        "description": "Modelo de futbol European Cup con 8 imagenes para consulta y compra por equipo.",
+        "scenario": "Clubes, escuelas, equipos y venta deportiva",
+        "highlights": [
+          "Catalogo de futbol",
+          "Varias imagenes",
+          "Consulta por volumen"
+        ]
+      }
+    },
+    "detailSections": []
+  },
+  {
+    "id": "football-177028558-uefa-champions-league",
+    "name": "UEFA Champions League",
+    "category": "Football",
+    "categorySlug": "football",
+    "album": "UEFA Champions League",
+    "image": "/assets/football.svg",
+    "visible": true,
+    "sortOrder": 3,
+    "prices": {
+      "baseCurrency": "USD",
+      "basePrice": 16,
+      "priceUnit": "piece"
+    },
+    "galleryImages": [
+      "/assets/football.svg"
+    ],
+    "galleryLabels": [],
+    "specs": [],
+    "translations": {
+      "en": {
+        "name": "UEFA Champions League",
+        "category": "Football",
+        "album": "UEFA Champions League",
+        "description": "UEFA Champions League football style with 43 product images for inquiry and team purchasing.",
+        "scenario": "Football clubs, schools, team purchase and sports goods retail",
+        "highlights": [
+          "Football product catalog",
+          "Multiple images available",
+          "Bulk inquiry support"
+        ]
+      },
+      "zh": {
+        "name": "UEFA Champions League",
+        "category": "足球",
+        "album": "UEFA Champions League",
+        "description": "UEFA Champions League 足球款式，包含 43 张产品图片，适合询盘、选款和团队采购。",
+        "scenario": "足球俱乐部、学校训练、团队采购、体育用品零售",
+        "highlights": [
+          "足球款式图集",
+          "多图可查看",
+          "支持批量询盘"
+        ]
+      },
+      "es": {
+        "name": "UEFA Champions League",
+        "category": "Futbol",
+        "album": "UEFA Champions League",
+        "description": "Modelo de futbol UEFA Champions League con 43 imagenes para consulta y compra por equipo.",
+        "scenario": "Clubes, escuelas, equipos y venta deportiva",
+        "highlights": [
+          "Catalogo de futbol",
+          "Varias imagenes",
+          "Consulta por volumen"
+        ]
+      }
+    },
+    "detailSections": []
+  },
+  {
+    "id": "football-177028568-premier-league",
+    "name": "Premier League",
+    "category": "Football",
+    "categorySlug": "football",
+    "album": "Premier League",
+    "image": "/assets/football.svg",
+    "visible": true,
+    "sortOrder": 4,
+    "prices": {
+      "baseCurrency": "USD",
+      "basePrice": 18,
+      "priceUnit": "piece"
+    },
+    "galleryImages": [
+      "/assets/football.svg"
+    ],
+    "galleryLabels": [],
+    "specs": [],
+    "translations": {
+      "en": {
+        "name": "Premier League",
+        "category": "Football",
+        "album": "Premier League",
+        "description": "Premier League football style with 44 product images for inquiry and team purchasing.",
+        "scenario": "Football clubs, schools, team purchase and sports goods retail",
+        "highlights": [
+          "Football product catalog",
+          "Multiple images available",
+          "Bulk inquiry support"
+        ]
+      },
+      "zh": {
+        "name": "Premier League",
+        "category": "足球",
+        "album": "Premier League",
+        "description": "Premier League 足球款式，包含 44 张产品图片，适合询盘、选款和团队采购。",
+        "scenario": "足球俱乐部、学校训练、团队采购、体育用品零售",
+        "highlights": [
+          "足球款式图集",
+          "多图可查看",
+          "支持批量询盘"
+        ]
+      },
+      "es": {
+        "name": "Premier League",
+        "category": "Futbol",
+        "album": "Premier League",
+        "description": "Modelo de futbol Premier League con 44 imagenes para consulta y compra por equipo.",
+        "scenario": "Clubes, escuelas, equipos y venta deportiva",
+        "highlights": [
+          "Catalogo de futbol",
+          "Varias imagenes",
+          "Consulta por volumen"
+        ]
+      }
+    },
+    "detailSections": []
+  },
+  {
+    "id": "football-177208927-la-liga",
+    "name": "La Liga",
+    "category": "Football",
+    "categorySlug": "football",
+    "album": "La Liga",
+    "image": "/assets/football.svg",
+    "visible": true,
+    "sortOrder": 5,
+    "prices": {
+      "baseCurrency": "USD",
+      "basePrice": 20,
+      "priceUnit": "piece"
+    },
+    "galleryImages": [
+      "/assets/football.svg"
+    ],
+    "galleryLabels": [],
+    "specs": [],
+    "translations": {
+      "en": {
+        "name": "La Liga",
+        "category": "Football",
+        "album": "La Liga",
+        "description": "La Liga football style with 4 product images for inquiry and team purchasing.",
+        "scenario": "Football clubs, schools, team purchase and sports goods retail",
+        "highlights": [
+          "Football product catalog",
+          "Multiple images available",
+          "Bulk inquiry support"
+        ]
+      },
+      "zh": {
+        "name": "La Liga",
+        "category": "足球",
+        "album": "La Liga",
+        "description": "La Liga 足球款式，包含 4 张产品图片，适合询盘、选款和团队采购。",
+        "scenario": "足球俱乐部、学校训练、团队采购、体育用品零售",
+        "highlights": [
+          "足球款式图集",
+          "多图可查看",
+          "支持批量询盘"
+        ]
+      },
+      "es": {
+        "name": "La Liga",
+        "category": "Futbol",
+        "album": "La Liga",
+        "description": "Modelo de futbol La Liga con 4 imagenes para consulta y compra por equipo.",
+        "scenario": "Clubes, escuelas, equipos y venta deportiva",
+        "highlights": [
+          "Catalogo de futbol",
+          "Varias imagenes",
+          "Consulta por volumen"
+        ]
+      }
+    },
+    "detailSections": []
+  },
+  {
+    "id": "football-177208883-bundesliga",
+    "name": "Bundesliga",
+    "category": "Football",
+    "categorySlug": "football",
+    "album": "Bundesliga",
+    "image": "/assets/football.svg",
+    "visible": true,
+    "sortOrder": 6,
+    "prices": {
+      "baseCurrency": "USD",
+      "basePrice": 22,
+      "priceUnit": "piece"
+    },
+    "galleryImages": [
+      "/assets/football.svg"
+    ],
+    "galleryLabels": [],
+    "specs": [],
+    "translations": {
+      "en": {
+        "name": "Bundesliga",
+        "category": "Football",
+        "album": "Bundesliga",
+        "description": "Bundesliga football style with 4 product images for inquiry and team purchasing.",
+        "scenario": "Football clubs, schools, team purchase and sports goods retail",
+        "highlights": [
+          "Football product catalog",
+          "Multiple images available",
+          "Bulk inquiry support"
+        ]
+      },
+      "zh": {
+        "name": "Bundesliga",
+        "category": "足球",
+        "album": "Bundesliga",
+        "description": "Bundesliga 足球款式，包含 4 张产品图片，适合询盘、选款和团队采购。",
+        "scenario": "足球俱乐部、学校训练、团队采购、体育用品零售",
+        "highlights": [
+          "足球款式图集",
+          "多图可查看",
+          "支持批量询盘"
+        ]
+      },
+      "es": {
+        "name": "Bundesliga",
+        "category": "Futbol",
+        "album": "Bundesliga",
+        "description": "Modelo de futbol Bundesliga con 4 imagenes para consulta y compra por equipo.",
+        "scenario": "Clubes, escuelas, equipos y venta deportiva",
+        "highlights": [
+          "Catalogo de futbol",
+          "Varias imagenes",
+          "Consulta por volumen"
+        ]
+      }
+    },
+    "detailSections": []
+  },
+  {
+    "id": "football-177208966-serie-a",
+    "name": "Serie A",
+    "category": "Football",
+    "categorySlug": "football",
+    "album": "Serie A",
+    "image": "/assets/football.svg",
+    "visible": true,
+    "sortOrder": 7,
+    "prices": {
+      "baseCurrency": "USD",
+      "basePrice": 24,
+      "priceUnit": "piece"
+    },
+    "galleryImages": [
+      "/assets/football.svg"
+    ],
+    "galleryLabels": [],
+    "specs": [],
+    "translations": {
+      "en": {
+        "name": "Serie A",
+        "category": "Football",
+        "album": "Serie A",
+        "description": "Serie A football style with 6 product images for inquiry and team purchasing.",
+        "scenario": "Football clubs, schools, team purchase and sports goods retail",
+        "highlights": [
+          "Football product catalog",
+          "Multiple images available",
+          "Bulk inquiry support"
+        ]
+      },
+      "zh": {
+        "name": "Serie A",
+        "category": "足球",
+        "album": "Serie A",
+        "description": "Serie A 足球款式，包含 6 张产品图片，适合询盘、选款和团队采购。",
+        "scenario": "足球俱乐部、学校训练、团队采购、体育用品零售",
+        "highlights": [
+          "足球款式图集",
+          "多图可查看",
+          "支持批量询盘"
+        ]
+      },
+      "es": {
+        "name": "Serie A",
+        "category": "Futbol",
+        "album": "Serie A",
+        "description": "Modelo de futbol Serie A con 6 imagenes para consulta y compra por equipo.",
+        "scenario": "Clubes, escuelas, equipos y venta deportiva",
+        "highlights": [
+          "Catalogo de futbol",
+          "Varias imagenes",
+          "Consulta por volumen"
+        ]
+      }
+    },
+    "detailSections": []
+  },
+  {
+    "id": "football-177331049-uefa-nations-league",
+    "name": "UEFA Nations League",
+    "category": "Football",
+    "categorySlug": "football",
+    "album": "UEFA Nations League",
+    "image": "/assets/football.svg",
+    "visible": true,
+    "sortOrder": 8,
+    "prices": {
+      "baseCurrency": "USD",
+      "basePrice": 26,
+      "priceUnit": "piece"
+    },
+    "galleryImages": [
+      "/assets/football.svg"
+    ],
+    "galleryLabels": [],
+    "specs": [],
+    "translations": {
+      "en": {
+        "name": "UEFA Nations League",
+        "category": "Football",
+        "album": "UEFA Nations League",
+        "description": "UEFA Nations League football style with 3 product images for inquiry and team purchasing.",
+        "scenario": "Football clubs, schools, team purchase and sports goods retail",
+        "highlights": [
+          "Football product catalog",
+          "Multiple images available",
+          "Bulk inquiry support"
+        ]
+      },
+      "zh": {
+        "name": "UEFA Nations League",
+        "category": "足球",
+        "album": "UEFA Nations League",
+        "description": "UEFA Nations League 足球款式，包含 3 张产品图片，适合询盘、选款和团队采购。",
+        "scenario": "足球俱乐部、学校训练、团队采购、体育用品零售",
+        "highlights": [
+          "足球款式图集",
+          "多图可查看",
+          "支持批量询盘"
+        ]
+      },
+      "es": {
+        "name": "UEFA Nations League",
+        "category": "Futbol",
+        "album": "UEFA Nations League",
+        "description": "Modelo de futbol UEFA Nations League con 3 imagenes para consulta y compra por equipo.",
+        "scenario": "Clubes, escuelas, equipos y venta deportiva",
+        "highlights": [
+          "Catalogo de futbol",
+          "Varias imagenes",
+          "Consulta por volumen"
+        ]
+      }
+    },
+    "detailSections": []
+  },
+  {
+    "id": "football-177330935-major-league-soccer",
+    "name": "Major League Soccer",
+    "category": "Football",
+    "categorySlug": "football",
+    "album": "Major League Soccer",
+    "image": "/assets/football.svg",
+    "visible": true,
+    "sortOrder": 9,
+    "prices": {
+      "baseCurrency": "USD",
+      "basePrice": 12,
+      "priceUnit": "piece"
+    },
+    "galleryImages": [
+      "/assets/football.svg"
+    ],
+    "galleryLabels": [],
+    "specs": [],
+    "translations": {
+      "en": {
+        "name": "Major League Soccer",
+        "category": "Football",
+        "album": "Major League Soccer",
+        "description": "Major League Soccer football style with 3 product images for inquiry and team purchasing.",
+        "scenario": "Football clubs, schools, team purchase and sports goods retail",
+        "highlights": [
+          "Football product catalog",
+          "Multiple images available",
+          "Bulk inquiry support"
+        ]
+      },
+      "zh": {
+        "name": "Major League Soccer",
+        "category": "足球",
+        "album": "Major League Soccer",
+        "description": "Major League Soccer 足球款式，包含 3 张产品图片，适合询盘、选款和团队采购。",
+        "scenario": "足球俱乐部、学校训练、团队采购、体育用品零售",
+        "highlights": [
+          "足球款式图集",
+          "多图可查看",
+          "支持批量询盘"
+        ]
+      },
+      "es": {
+        "name": "Major League Soccer",
+        "category": "Futbol",
+        "album": "Major League Soccer",
+        "description": "Modelo de futbol Major League Soccer con 3 imagenes para consulta y compra por equipo.",
+        "scenario": "Clubes, escuelas, equipos y venta deportiva",
+        "highlights": [
+          "Catalogo de futbol",
+          "Varias imagenes",
+          "Consulta por volumen"
+        ]
+      }
+    },
+    "detailSections": []
+  },
+  {
+    "id": "football-177208736-molten",
+    "name": "Molten",
+    "category": "Football",
+    "categorySlug": "football",
+    "album": "Molten",
+    "image": "/assets/football.svg",
+    "visible": true,
+    "sortOrder": 10,
+    "prices": {
+      "baseCurrency": "USD",
+      "basePrice": 14,
+      "priceUnit": "piece"
+    },
+    "galleryImages": [
+      "/assets/football.svg"
+    ],
+    "galleryLabels": [],
+    "specs": [],
+    "translations": {
+      "en": {
+        "name": "Molten",
+        "category": "Football",
+        "album": "Molten",
+        "description": "Molten football style with 18 product images for inquiry and team purchasing.",
+        "scenario": "Football clubs, schools, team purchase and sports goods retail",
+        "highlights": [
+          "Football product catalog",
+          "Multiple images available",
+          "Bulk inquiry support"
+        ]
+      },
+      "zh": {
+        "name": "Molten",
+        "category": "足球",
+        "album": "Molten",
+        "description": "Molten 足球款式，包含 18 张产品图片，适合询盘、选款和团队采购。",
+        "scenario": "足球俱乐部、学校训练、团队采购、体育用品零售",
+        "highlights": [
+          "足球款式图集",
+          "多图可查看",
+          "支持批量询盘"
+        ]
+      },
+      "es": {
+        "name": "Molten",
+        "category": "Futbol",
+        "album": "Molten",
+        "description": "Modelo de futbol Molten con 18 imagenes para consulta y compra por equipo.",
+        "scenario": "Clubes, escuelas, equipos y venta deportiva",
+        "highlights": [
+          "Catalogo de futbol",
+          "Varias imagenes",
+          "Consulta por volumen"
+        ]
+      }
+    },
+    "detailSections": []
+  },
+  {
+    "id": "football-177208682-club",
+    "name": "Club",
+    "category": "Football",
+    "categorySlug": "football",
+    "album": "Club",
+    "image": "/assets/football.svg",
+    "visible": true,
+    "sortOrder": 11,
+    "prices": {
+      "baseCurrency": "USD",
+      "basePrice": 16,
+      "priceUnit": "piece"
+    },
+    "galleryImages": [
+      "/assets/football.svg"
+    ],
+    "galleryLabels": [],
+    "specs": [],
+    "translations": {
+      "en": {
+        "name": "Club",
+        "category": "Football",
+        "album": "Club",
+        "description": "Club football style with 6 product images for inquiry and team purchasing.",
+        "scenario": "Football clubs, schools, team purchase and sports goods retail",
+        "highlights": [
+          "Football product catalog",
+          "Multiple images available",
+          "Bulk inquiry support"
+        ]
+      },
+      "zh": {
+        "name": "Club",
+        "category": "足球",
+        "album": "Club",
+        "description": "Club 足球款式，包含 6 张产品图片，适合询盘、选款和团队采购。",
+        "scenario": "足球俱乐部、学校训练、团队采购、体育用品零售",
+        "highlights": [
+          "足球款式图集",
+          "多图可查看",
+          "支持批量询盘"
+        ]
+      },
+      "es": {
+        "name": "Club",
+        "category": "Futbol",
+        "album": "Club",
+        "description": "Modelo de futbol Club con 6 imagenes para consulta y compra por equipo.",
+        "scenario": "Clubes, escuelas, equipos y venta deportiva",
+        "highlights": [
+          "Catalogo de futbol",
+          "Varias imagenes",
+          "Consulta por volumen"
+        ]
+      }
+    },
+    "detailSections": []
+  },
+  {
+    "id": "football-177208778-other",
+    "name": "Other",
+    "category": "Football",
+    "categorySlug": "football",
+    "album": "Other",
+    "image": "/assets/football.svg",
+    "visible": true,
+    "sortOrder": 12,
+    "prices": {
+      "baseCurrency": "USD",
+      "basePrice": 18,
+      "priceUnit": "piece"
+    },
+    "galleryImages": [
+      "/assets/football.svg"
+    ],
+    "galleryLabels": [],
+    "specs": [],
+    "translations": {
+      "en": {
+        "name": "Other",
+        "category": "Football",
+        "album": "Other",
+        "description": "Other football style with 15 product images for inquiry and team purchasing.",
+        "scenario": "Football clubs, schools, team purchase and sports goods retail",
+        "highlights": [
+          "Football product catalog",
+          "Multiple images available",
+          "Bulk inquiry support"
+        ]
+      },
+      "zh": {
+        "name": "Other",
+        "category": "足球",
+        "album": "Other",
+        "description": "Other 足球款式，包含 15 张产品图片，适合询盘、选款和团队采购。",
+        "scenario": "足球俱乐部、学校训练、团队采购、体育用品零售",
+        "highlights": [
+          "足球款式图集",
+          "多图可查看",
+          "支持批量询盘"
+        ]
+      },
+      "es": {
+        "name": "Other",
+        "category": "Futbol",
+        "album": "Other",
+        "description": "Modelo de futbol Other con 15 imagenes para consulta y compra por equipo.",
+        "scenario": "Clubes, escuelas, equipos y venta deportiva",
+        "highlights": [
+          "Catalogo de futbol",
+          "Varias imagenes",
+          "Consulta por volumen"
+        ]
+      }
+    },
+    "detailSections": []
+  },
+  {
+    "id": "football-177221340",
+    "name": "世界杯",
+    "category": "Football",
+    "categorySlug": "football",
+    "album": "世界杯",
+    "image": "/assets/football.svg",
+    "visible": true,
+    "sortOrder": 13,
+    "prices": {
+      "baseCurrency": "USD",
+      "basePrice": 20,
+      "priceUnit": "piece"
+    },
+    "galleryImages": [
+      "/assets/football.svg"
+    ],
+    "galleryLabels": [],
+    "specs": [],
+    "translations": {
+      "en": {
+        "name": "世界杯",
+        "category": "Football",
+        "album": "世界杯",
+        "description": "世界杯 football style with 10 product images for inquiry and team purchasing.",
+        "scenario": "Football clubs, schools, team purchase and sports goods retail",
+        "highlights": [
+          "Football product catalog",
+          "Multiple images available",
+          "Bulk inquiry support"
+        ]
+      },
+      "zh": {
+        "name": "世界杯",
+        "category": "足球",
+        "album": "世界杯",
+        "description": "世界杯 足球款式，包含 10 张产品图片，适合询盘、选款和团队采购。",
+        "scenario": "足球俱乐部、学校训练、团队采购、体育用品零售",
+        "highlights": [
+          "足球款式图集",
+          "多图可查看",
+          "支持批量询盘"
+        ]
+      },
+      "es": {
+        "name": "世界杯",
+        "category": "Futbol",
+        "album": "世界杯",
+        "description": "Modelo de futbol 世界杯 con 10 imagenes para consulta y compra por equipo.",
+        "scenario": "Clubes, escuelas, equipos y venta deportiva",
+        "highlights": [
+          "Catalogo de futbol",
+          "Varias imagenes",
+          "Consulta por volumen"
+        ]
+      }
+    },
+    "detailSections": []
+  },
+  {
+    "id": "football-177221352",
+    "name": "欧洲杯",
+    "category": "Football",
+    "categorySlug": "football",
+    "album": "欧洲杯",
+    "image": "/assets/football.svg",
+    "visible": true,
+    "sortOrder": 14,
+    "prices": {
+      "baseCurrency": "USD",
+      "basePrice": 22,
+      "priceUnit": "piece"
+    },
+    "galleryImages": [
+      "/assets/football.svg"
+    ],
+    "galleryLabels": [],
+    "specs": [],
+    "translations": {
+      "en": {
+        "name": "欧洲杯",
+        "category": "Football",
+        "album": "欧洲杯",
+        "description": "欧洲杯 football style with 2 product images for inquiry and team purchasing.",
+        "scenario": "Football clubs, schools, team purchase and sports goods retail",
+        "highlights": [
+          "Football product catalog",
+          "Multiple images available",
+          "Bulk inquiry support"
+        ]
+      },
+      "zh": {
+        "name": "欧洲杯",
+        "category": "足球",
+        "album": "欧洲杯",
+        "description": "欧洲杯 足球款式，包含 2 张产品图片，适合询盘、选款和团队采购。",
+        "scenario": "足球俱乐部、学校训练、团队采购、体育用品零售",
+        "highlights": [
+          "足球款式图集",
+          "多图可查看",
+          "支持批量询盘"
+        ]
+      },
+      "es": {
+        "name": "欧洲杯",
+        "category": "Futbol",
+        "album": "欧洲杯",
+        "description": "Modelo de futbol 欧洲杯 con 2 imagenes para consulta y compra por equipo.",
+        "scenario": "Clubes, escuelas, equipos y venta deportiva",
+        "highlights": [
+          "Catalogo de futbol",
+          "Varias imagenes",
+          "Consulta por volumen"
+        ]
+      }
+    },
+    "detailSections": []
+  },
+  {
+    "id": "football-177221201",
+    "name": "欧冠",
+    "category": "Football",
+    "categorySlug": "football",
+    "album": "欧冠",
+    "image": "/assets/football.svg",
+    "visible": true,
+    "sortOrder": 15,
+    "prices": {
+      "baseCurrency": "USD",
+      "basePrice": 24,
+      "priceUnit": "piece"
+    },
+    "galleryImages": [
+      "/assets/football.svg"
+    ],
+    "galleryLabels": [],
+    "specs": [],
+    "translations": {
+      "en": {
+        "name": "欧冠",
+        "category": "Football",
+        "album": "欧冠",
+        "description": "欧冠 football style with 25 product images for inquiry and team purchasing.",
+        "scenario": "Football clubs, schools, team purchase and sports goods retail",
+        "highlights": [
+          "Football product catalog",
+          "Multiple images available",
+          "Bulk inquiry support"
+        ]
+      },
+      "zh": {
+        "name": "欧冠",
+        "category": "足球",
+        "album": "欧冠",
+        "description": "欧冠 足球款式，包含 25 张产品图片，适合询盘、选款和团队采购。",
+        "scenario": "足球俱乐部、学校训练、团队采购、体育用品零售",
+        "highlights": [
+          "足球款式图集",
+          "多图可查看",
+          "支持批量询盘"
+        ]
+      },
+      "es": {
+        "name": "欧冠",
+        "category": "Futbol",
+        "album": "欧冠",
+        "description": "Modelo de futbol 欧冠 con 25 imagenes para consulta y compra por equipo.",
+        "scenario": "Clubes, escuelas, equipos y venta deportiva",
+        "highlights": [
+          "Catalogo de futbol",
+          "Varias imagenes",
+          "Consulta por volumen"
+        ]
+      }
+    },
+    "detailSections": []
+  },
+  {
+    "id": "football-177028535",
+    "name": "英超",
+    "category": "Football",
+    "categorySlug": "football",
+    "album": "英超",
+    "image": "/assets/football.svg",
+    "visible": true,
+    "sortOrder": 16,
+    "prices": {
+      "baseCurrency": "USD",
+      "basePrice": 26,
+      "priceUnit": "piece"
+    },
+    "galleryImages": [
+      "/assets/football.svg"
+    ],
+    "galleryLabels": [],
+    "specs": [],
+    "translations": {
+      "en": {
+        "name": "英超",
+        "category": "Football",
+        "album": "英超",
+        "description": "英超 football style with 37 product images for inquiry and team purchasing.",
+        "scenario": "Football clubs, schools, team purchase and sports goods retail",
+        "highlights": [
+          "Football product catalog",
+          "Multiple images available",
+          "Bulk inquiry support"
+        ]
+      },
+      "zh": {
+        "name": "英超",
+        "category": "足球",
+        "album": "英超",
+        "description": "英超 足球款式，包含 37 张产品图片，适合询盘、选款和团队采购。",
+        "scenario": "足球俱乐部、学校训练、团队采购、体育用品零售",
+        "highlights": [
+          "足球款式图集",
+          "多图可查看",
+          "支持批量询盘"
+        ]
+      },
+      "es": {
+        "name": "英超",
+        "category": "Futbol",
+        "album": "英超",
+        "description": "Modelo de futbol 英超 con 37 imagenes para consulta y compra por equipo.",
+        "scenario": "Clubes, escuelas, equipos y venta deportiva",
+        "highlights": [
+          "Catalogo de futbol",
+          "Varias imagenes",
+          "Consulta por volumen"
+        ]
+      }
+    },
+    "detailSections": []
+  },
+  {
+    "id": "football-177221277",
+    "name": "德甲",
+    "category": "Football",
+    "categorySlug": "football",
+    "album": "德甲",
+    "image": "/assets/football.svg",
+    "visible": true,
+    "sortOrder": 17,
+    "prices": {
+      "baseCurrency": "USD",
+      "basePrice": 12,
+      "priceUnit": "piece"
+    },
+    "galleryImages": [
+      "/assets/football.svg"
+    ],
+    "galleryLabels": [],
+    "specs": [],
+    "translations": {
+      "en": {
+        "name": "德甲",
+        "category": "Football",
+        "album": "德甲",
+        "description": "德甲 football style with 2 product images for inquiry and team purchasing.",
+        "scenario": "Football clubs, schools, team purchase and sports goods retail",
+        "highlights": [
+          "Football product catalog",
+          "Multiple images available",
+          "Bulk inquiry support"
+        ]
+      },
+      "zh": {
+        "name": "德甲",
+        "category": "足球",
+        "album": "德甲",
+        "description": "德甲 足球款式，包含 2 张产品图片，适合询盘、选款和团队采购。",
+        "scenario": "足球俱乐部、学校训练、团队采购、体育用品零售",
+        "highlights": [
+          "足球款式图集",
+          "多图可查看",
+          "支持批量询盘"
+        ]
+      },
+      "es": {
+        "name": "德甲",
+        "category": "Futbol",
+        "album": "德甲",
+        "description": "Modelo de futbol 德甲 con 2 imagenes para consulta y compra por equipo.",
+        "scenario": "Clubes, escuelas, equipos y venta deportiva",
+        "highlights": [
+          "Catalogo de futbol",
+          "Varias imagenes",
+          "Consulta por volumen"
+        ]
+      }
+    },
+    "detailSections": []
+  },
+  {
+    "id": "football-177349633",
+    "name": "大联盟",
+    "category": "Football",
+    "categorySlug": "football",
+    "album": "大联盟",
+    "image": "/assets/football.svg",
+    "visible": true,
+    "sortOrder": 18,
+    "prices": {
+      "baseCurrency": "USD",
+      "basePrice": 14,
+      "priceUnit": "piece"
+    },
+    "galleryImages": [
+      "/assets/football.svg"
+    ],
+    "galleryLabels": [],
+    "specs": [],
+    "translations": {
+      "en": {
+        "name": "大联盟",
+        "category": "Football",
+        "album": "大联盟",
+        "description": "大联盟 football style with 2 product images for inquiry and team purchasing.",
+        "scenario": "Football clubs, schools, team purchase and sports goods retail",
+        "highlights": [
+          "Football product catalog",
+          "Multiple images available",
+          "Bulk inquiry support"
+        ]
+      },
+      "zh": {
+        "name": "大联盟",
+        "category": "足球",
+        "album": "大联盟",
+        "description": "大联盟 足球款式，包含 2 张产品图片，适合询盘、选款和团队采购。",
+        "scenario": "足球俱乐部、学校训练、团队采购、体育用品零售",
+        "highlights": [
+          "足球款式图集",
+          "多图可查看",
+          "支持批量询盘"
+        ]
+      },
+      "es": {
+        "name": "大联盟",
+        "category": "Futbol",
+        "album": "大联盟",
+        "description": "Modelo de futbol 大联盟 con 2 imagenes para consulta y compra por equipo.",
+        "scenario": "Clubes, escuelas, equipos y venta deportiva",
+        "highlights": [
+          "Catalogo de futbol",
+          "Varias imagenes",
+          "Consulta por volumen"
+        ]
+      }
+    },
+    "detailSections": []
+  },
+  {
+    "id": "football-177221390",
+    "name": "摩腾",
+    "category": "Football",
+    "categorySlug": "football",
+    "album": "摩腾",
+    "image": "/assets/football.svg",
+    "visible": true,
+    "sortOrder": 19,
+    "prices": {
+      "baseCurrency": "USD",
+      "basePrice": 16,
+      "priceUnit": "piece"
+    },
+    "galleryImages": [
+      "/assets/football.svg"
+    ],
+    "galleryLabels": [],
+    "specs": [],
+    "translations": {
+      "en": {
+        "name": "摩腾",
+        "category": "Football",
+        "album": "摩腾",
+        "description": "摩腾 football style with 28 product images for inquiry and team purchasing.",
+        "scenario": "Football clubs, schools, team purchase and sports goods retail",
+        "highlights": [
+          "Football product catalog",
+          "Multiple images available",
+          "Bulk inquiry support"
+        ]
+      },
+      "zh": {
+        "name": "摩腾",
+        "category": "足球",
+        "album": "摩腾",
+        "description": "摩腾 足球款式，包含 28 张产品图片，适合询盘、选款和团队采购。",
+        "scenario": "足球俱乐部、学校训练、团队采购、体育用品零售",
+        "highlights": [
+          "足球款式图集",
+          "多图可查看",
+          "支持批量询盘"
+        ]
+      },
+      "es": {
+        "name": "摩腾",
+        "category": "Futbol",
+        "album": "摩腾",
+        "description": "Modelo de futbol 摩腾 con 28 imagenes para consulta y compra por equipo.",
+        "scenario": "Clubes, escuelas, equipos y venta deportiva",
+        "highlights": [
+          "Catalogo de futbol",
+          "Varias imagenes",
+          "Consulta por volumen"
+        ]
+      }
+    },
+    "detailSections": []
+  },
+  {
+    "id": "football-177221370",
+    "name": "队标",
+    "category": "Football",
+    "categorySlug": "football",
+    "album": "队标",
+    "image": "/assets/football.svg",
+    "visible": true,
+    "sortOrder": 20,
+    "prices": {
+      "baseCurrency": "USD",
+      "basePrice": 18,
+      "priceUnit": "piece"
+    },
+    "galleryImages": [
+      "/assets/football.svg"
+    ],
+    "galleryLabels": [],
+    "specs": [],
+    "translations": {
+      "en": {
+        "name": "队标",
+        "category": "Football",
+        "album": "队标",
+        "description": "队标 football style with 16 product images for inquiry and team purchasing.",
+        "scenario": "Football clubs, schools, team purchase and sports goods retail",
+        "highlights": [
+          "Football product catalog",
+          "Multiple images available",
+          "Bulk inquiry support"
+        ]
+      },
+      "zh": {
+        "name": "队标",
+        "category": "足球",
+        "album": "队标",
+        "description": "队标 足球款式，包含 16 张产品图片，适合询盘、选款和团队采购。",
+        "scenario": "足球俱乐部、学校训练、团队采购、体育用品零售",
+        "highlights": [
+          "足球款式图集",
+          "多图可查看",
+          "支持批量询盘"
+        ]
+      },
+      "es": {
+        "name": "队标",
+        "category": "Futbol",
+        "album": "队标",
+        "description": "Modelo de futbol 队标 con 16 imagenes para consulta y compra por equipo.",
+        "scenario": "Clubes, escuelas, equipos y venta deportiva",
+        "highlights": [
+          "Catalogo de futbol",
+          "Varias imagenes",
+          "Consulta por volumen"
+        ]
+      }
+    },
+    "detailSections": []
+  },
+  {
+    "id": "football-177221397",
+    "name": "其他",
+    "category": "Football",
+    "categorySlug": "football",
+    "album": "其他",
+    "image": "/assets/football.svg",
+    "visible": true,
+    "sortOrder": 21,
+    "prices": {
+      "baseCurrency": "USD",
+      "basePrice": 20,
+      "priceUnit": "piece"
+    },
+    "galleryImages": [
+      "/assets/football.svg"
+    ],
+    "galleryLabels": [],
+    "specs": [],
+    "translations": {
+      "en": {
+        "name": "其他",
+        "category": "Football",
+        "album": "其他",
+        "description": "其他 football style with 5 product images for inquiry and team purchasing.",
+        "scenario": "Football clubs, schools, team purchase and sports goods retail",
+        "highlights": [
+          "Football product catalog",
+          "Multiple images available",
+          "Bulk inquiry support"
+        ]
+      },
+      "zh": {
+        "name": "其他",
+        "category": "足球",
+        "album": "其他",
+        "description": "其他 足球款式，包含 5 张产品图片，适合询盘、选款和团队采购。",
+        "scenario": "足球俱乐部、学校训练、团队采购、体育用品零售",
+        "highlights": [
+          "足球款式图集",
+          "多图可查看",
+          "支持批量询盘"
+        ]
+      },
+      "es": {
+        "name": "其他",
+        "category": "Futbol",
+        "album": "其他",
+        "description": "Modelo de futbol 其他 con 5 imagenes para consulta y compra por equipo.",
+        "scenario": "Clubes, escuelas, equipos y venta deportiva",
+        "highlights": [
+          "Catalogo de futbol",
+          "Varias imagenes",
+          "Consulta por volumen"
+        ]
+      }
+    },
+    "detailSections": []
+  },
+  {
+    "id": "volleyball-1",
+    "name": "Indoor Training Volleyball",
+    "category": "Volleyball",
+    "categorySlug": "volleyball",
+    "album": "Volleyball",
+    "image": "/assets/volleyball.svg",
+    "visible": true,
+    "sortOrder": 22,
+    "prices": {
+      "baseCurrency": "USD",
+      "basePrice": 16,
+      "priceUnit": "piece"
+    },
+    "galleryImages": [
+      "/assets/volleyball.svg"
+    ],
+    "galleryLabels": [],
+    "specs": [],
+    "translations": {
+      "en": {
+        "name": "Indoor Training Volleyball",
+        "category": "Volleyball",
+        "album": "Volleyball",
+        "description": "Indoor Training Volleyball for training, retail sourcing and team purchase.",
+        "scenario": "School training, club sourcing, retail sale",
+        "highlights": [
+          "Ready for inquiry",
+          "Bulk purchase support",
+          "Custom sourcing support"
+        ]
+      },
+      "zh": {
+        "name": "室内训练排球",
+        "category": "排球",
+        "album": "排球",
+        "description": "室内训练排球，适合训练、门店选品和团队采购。",
+        "scenario": "学校训练、俱乐部采购、门店零售",
+        "highlights": [
+          "现货目录商品",
+          "支持批量询盘",
+          "支持定制采购"
+        ]
+      },
+      "es": {
+        "name": "Volleyball producto 1",
+        "category": "Volleyball",
+        "album": "Volleyball",
+        "description": "Producto deportivo para entrenamiento y compra por equipo.",
+        "scenario": "Entrenamiento, clubes y venta minorista",
+        "highlights": [
+          "Consulta disponible",
+          "Compra por volumen",
+          "Soporte personalizado"
+        ]
+      }
+    },
+    "detailSections": []
+  },
+  {
+    "id": "volleyball-2",
+    "name": "Beach Volleyball",
+    "category": "Volleyball",
+    "categorySlug": "volleyball",
+    "album": "Volleyball",
+    "image": "/assets/volleyball.svg",
+    "visible": true,
+    "sortOrder": 23,
+    "prices": {
+      "baseCurrency": "USD",
+      "basePrice": 19,
+      "priceUnit": "piece"
+    },
+    "galleryImages": [
+      "/assets/volleyball.svg"
+    ],
+    "galleryLabels": [],
+    "specs": [],
+    "translations": {
+      "en": {
+        "name": "Beach Volleyball",
+        "category": "Volleyball",
+        "album": "Volleyball",
+        "description": "Beach Volleyball for training, retail sourcing and team purchase.",
+        "scenario": "School training, club sourcing, retail sale",
+        "highlights": [
+          "Ready for inquiry",
+          "Bulk purchase support",
+          "Custom sourcing support"
+        ]
+      },
+      "zh": {
+        "name": "沙滩排球",
+        "category": "排球",
+        "album": "排球",
+        "description": "沙滩排球，适合训练、门店选品和团队采购。",
+        "scenario": "学校训练、俱乐部采购、门店零售",
+        "highlights": [
+          "现货目录商品",
+          "支持批量询盘",
+          "支持定制采购"
+        ]
+      },
+      "es": {
+        "name": "Volleyball producto 2",
+        "category": "Volleyball",
+        "album": "Volleyball",
+        "description": "Producto deportivo para entrenamiento y compra por equipo.",
+        "scenario": "Entrenamiento, clubes y venta minorista",
+        "highlights": [
+          "Consulta disponible",
+          "Compra por volumen",
+          "Soporte personalizado"
+        ]
+      }
+    },
+    "detailSections": []
+  },
+  {
+    "id": "volleyball-3",
+    "name": "Match Composite Volleyball",
+    "category": "Volleyball",
+    "categorySlug": "volleyball",
+    "album": "Volleyball",
+    "image": "/assets/volleyball.svg",
+    "visible": true,
+    "sortOrder": 24,
+    "prices": {
+      "baseCurrency": "USD",
+      "basePrice": 22,
+      "priceUnit": "piece"
+    },
+    "galleryImages": [
+      "/assets/volleyball.svg"
+    ],
+    "galleryLabels": [],
+    "specs": [],
+    "translations": {
+      "en": {
+        "name": "Match Composite Volleyball",
+        "category": "Volleyball",
+        "album": "Volleyball",
+        "description": "Match Composite Volleyball for training, retail sourcing and team purchase.",
+        "scenario": "School training, club sourcing, retail sale",
+        "highlights": [
+          "Ready for inquiry",
+          "Bulk purchase support",
+          "Custom sourcing support"
+        ]
+      },
+      "zh": {
+        "name": "比赛复合排球",
+        "category": "排球",
+        "album": "排球",
+        "description": "比赛复合排球，适合训练、门店选品和团队采购。",
+        "scenario": "学校训练、俱乐部采购、门店零售",
+        "highlights": [
+          "现货目录商品",
+          "支持批量询盘",
+          "支持定制采购"
+        ]
+      },
+      "es": {
+        "name": "Volleyball producto 3",
+        "category": "Volleyball",
+        "album": "Volleyball",
+        "description": "Producto deportivo para entrenamiento y compra por equipo.",
+        "scenario": "Entrenamiento, clubes y venta minorista",
+        "highlights": [
+          "Consulta disponible",
+          "Compra por volumen",
+          "Soporte personalizado"
+        ]
+      }
+    },
+    "detailSections": []
+  },
+  {
+    "id": "basketball-1",
+    "name": "Outdoor Street Basketball",
+    "category": "Basketball",
+    "categorySlug": "basketball",
+    "album": "Basketball",
+    "image": "/assets/basketball.svg",
+    "visible": true,
+    "sortOrder": 25,
+    "prices": {
+      "baseCurrency": "USD",
+      "basePrice": 18,
+      "priceUnit": "piece"
+    },
+    "galleryImages": [
+      "/assets/basketball.svg"
+    ],
+    "galleryLabels": [],
+    "specs": [],
+    "translations": {
+      "en": {
+        "name": "Outdoor Street Basketball",
+        "category": "Basketball",
+        "album": "Basketball",
+        "description": "Outdoor Street Basketball for training, retail sourcing and team purchase.",
+        "scenario": "School training, club sourcing, retail sale",
+        "highlights": [
+          "Ready for inquiry",
+          "Bulk purchase support",
+          "Custom sourcing support"
+        ]
+      },
+      "zh": {
+        "name": "户外街头篮球",
+        "category": "篮球",
+        "album": "篮球",
+        "description": "户外街头篮球，适合训练、门店选品和团队采购。",
+        "scenario": "学校训练、俱乐部采购、门店零售",
+        "highlights": [
+          "现货目录商品",
+          "支持批量询盘",
+          "支持定制采购"
+        ]
+      },
+      "es": {
+        "name": "Basketball producto 1",
+        "category": "Basketball",
+        "album": "Basketball",
+        "description": "Producto deportivo para entrenamiento y compra por equipo.",
+        "scenario": "Entrenamiento, clubes y venta minorista",
+        "highlights": [
+          "Consulta disponible",
+          "Compra por volumen",
+          "Soporte personalizado"
+        ]
+      }
+    },
+    "detailSections": []
+  },
+  {
+    "id": "basketball-2",
+    "name": "Indoor Composite Basketball",
+    "category": "Basketball",
+    "categorySlug": "basketball",
+    "album": "Basketball",
+    "image": "/assets/basketball.svg",
+    "visible": true,
+    "sortOrder": 26,
+    "prices": {
+      "baseCurrency": "USD",
+      "basePrice": 21,
+      "priceUnit": "piece"
+    },
+    "galleryImages": [
+      "/assets/basketball.svg"
+    ],
+    "galleryLabels": [],
+    "specs": [],
+    "translations": {
+      "en": {
+        "name": "Indoor Composite Basketball",
+        "category": "Basketball",
+        "album": "Basketball",
+        "description": "Indoor Composite Basketball for training, retail sourcing and team purchase.",
+        "scenario": "School training, club sourcing, retail sale",
+        "highlights": [
+          "Ready for inquiry",
+          "Bulk purchase support",
+          "Custom sourcing support"
+        ]
+      },
+      "zh": {
+        "name": "室内贴皮篮球",
+        "category": "篮球",
+        "album": "篮球",
+        "description": "室内贴皮篮球，适合训练、门店选品和团队采购。",
+        "scenario": "学校训练、俱乐部采购、门店零售",
+        "highlights": [
+          "现货目录商品",
+          "支持批量询盘",
+          "支持定制采购"
+        ]
+      },
+      "es": {
+        "name": "Basketball producto 2",
+        "category": "Basketball",
+        "album": "Basketball",
+        "description": "Producto deportivo para entrenamiento y compra por equipo.",
+        "scenario": "Entrenamiento, clubes y venta minorista",
+        "highlights": [
+          "Consulta disponible",
+          "Compra por volumen",
+          "Soporte personalizado"
+        ]
+      }
+    },
+    "detailSections": []
+  },
+  {
+    "id": "basketball-3",
+    "name": "Youth Training Basketball",
+    "category": "Basketball",
+    "categorySlug": "basketball",
+    "album": "Basketball",
+    "image": "/assets/basketball.svg",
+    "visible": true,
+    "sortOrder": 27,
+    "prices": {
+      "baseCurrency": "USD",
+      "basePrice": 24,
+      "priceUnit": "piece"
+    },
+    "galleryImages": [
+      "/assets/basketball.svg"
+    ],
+    "galleryLabels": [],
+    "specs": [],
+    "translations": {
+      "en": {
+        "name": "Youth Training Basketball",
+        "category": "Basketball",
+        "album": "Basketball",
+        "description": "Youth Training Basketball for training, retail sourcing and team purchase.",
+        "scenario": "School training, club sourcing, retail sale",
+        "highlights": [
+          "Ready for inquiry",
+          "Bulk purchase support",
+          "Custom sourcing support"
+        ]
+      },
+      "zh": {
+        "name": "青少年训练篮球",
+        "category": "篮球",
+        "album": "篮球",
+        "description": "青少年训练篮球，适合训练、门店选品和团队采购。",
+        "scenario": "学校训练、俱乐部采购、门店零售",
+        "highlights": [
+          "现货目录商品",
+          "支持批量询盘",
+          "支持定制采购"
+        ]
+      },
+      "es": {
+        "name": "Basketball producto 3",
+        "category": "Basketball",
+        "album": "Basketball",
+        "description": "Producto deportivo para entrenamiento y compra por equipo.",
+        "scenario": "Entrenamiento, clubes y venta minorista",
+        "highlights": [
+          "Consulta disponible",
+          "Compra por volumen",
+          "Soporte personalizado"
+        ]
+      }
+    },
+    "detailSections": []
+  },
+  {
+    "id": "tennis-1",
+    "name": "Control Tennis Racket",
+    "category": "Tennis",
+    "categorySlug": "tennis",
+    "album": "Tennis",
+    "image": "/assets/tennis.svg",
+    "visible": true,
+    "sortOrder": 28,
+    "prices": {
+      "baseCurrency": "USD",
+      "basePrice": 28,
+      "priceUnit": "piece"
+    },
+    "galleryImages": [
+      "/assets/tennis.svg"
+    ],
+    "galleryLabels": [],
+    "specs": [],
+    "translations": {
+      "en": {
+        "name": "Control Tennis Racket",
+        "category": "Tennis",
+        "album": "Tennis",
+        "description": "Control Tennis Racket for training, retail sourcing and team purchase.",
+        "scenario": "School training, club sourcing, retail sale",
+        "highlights": [
+          "Ready for inquiry",
+          "Bulk purchase support",
+          "Custom sourcing support"
+        ]
+      },
+      "zh": {
+        "name": "控球型网球拍",
+        "category": "网球",
+        "album": "网球",
+        "description": "控球型网球拍，适合训练、门店选品和团队采购。",
+        "scenario": "学校训练、俱乐部采购、门店零售",
+        "highlights": [
+          "现货目录商品",
+          "支持批量询盘",
+          "支持定制采购"
+        ]
+      },
+      "es": {
+        "name": "Tennis producto 1",
+        "category": "Tennis",
+        "album": "Tennis",
+        "description": "Producto deportivo para entrenamiento y compra por equipo.",
+        "scenario": "Entrenamiento, clubes y venta minorista",
+        "highlights": [
+          "Consulta disponible",
+          "Compra por volumen",
+          "Soporte personalizado"
+        ]
+      }
+    },
+    "detailSections": []
+  },
+  {
+    "id": "tennis-2",
+    "name": "Training Tennis Balls",
+    "category": "Tennis",
+    "categorySlug": "tennis",
+    "album": "Tennis",
+    "image": "/assets/tennis.svg",
+    "visible": true,
+    "sortOrder": 29,
+    "prices": {
+      "baseCurrency": "USD",
+      "basePrice": 31,
+      "priceUnit": "piece"
+    },
+    "galleryImages": [
+      "/assets/tennis.svg"
+    ],
+    "galleryLabels": [],
+    "specs": [],
+    "translations": {
+      "en": {
+        "name": "Training Tennis Balls",
+        "category": "Tennis",
+        "album": "Tennis",
+        "description": "Training Tennis Balls for training, retail sourcing and team purchase.",
+        "scenario": "School training, club sourcing, retail sale",
+        "highlights": [
+          "Ready for inquiry",
+          "Bulk purchase support",
+          "Custom sourcing support"
+        ]
+      },
+      "zh": {
+        "name": "训练网球",
+        "category": "网球",
+        "album": "网球",
+        "description": "训练网球，适合训练、门店选品和团队采购。",
+        "scenario": "学校训练、俱乐部采购、门店零售",
+        "highlights": [
+          "现货目录商品",
+          "支持批量询盘",
+          "支持定制采购"
+        ]
+      },
+      "es": {
+        "name": "Tennis producto 2",
+        "category": "Tennis",
+        "album": "Tennis",
+        "description": "Producto deportivo para entrenamiento y compra por equipo.",
+        "scenario": "Entrenamiento, clubes y venta minorista",
+        "highlights": [
+          "Consulta disponible",
+          "Compra por volumen",
+          "Soporte personalizado"
+        ]
+      }
+    },
+    "detailSections": []
+  },
+  {
+    "id": "tennis-3",
+    "name": "Two-racket Tennis Bag",
+    "category": "Tennis",
+    "categorySlug": "tennis",
+    "album": "Tennis",
+    "image": "/assets/tennis.svg",
+    "visible": true,
+    "sortOrder": 30,
+    "prices": {
+      "baseCurrency": "USD",
+      "basePrice": 34,
+      "priceUnit": "piece"
+    },
+    "galleryImages": [
+      "/assets/tennis.svg"
+    ],
+    "galleryLabels": [],
+    "specs": [],
+    "translations": {
+      "en": {
+        "name": "Two-racket Tennis Bag",
+        "category": "Tennis",
+        "album": "Tennis",
+        "description": "Two-racket Tennis Bag for training, retail sourcing and team purchase.",
+        "scenario": "School training, club sourcing, retail sale",
+        "highlights": [
+          "Ready for inquiry",
+          "Bulk purchase support",
+          "Custom sourcing support"
+        ]
+      },
+      "zh": {
+        "name": "双拍位网球包",
+        "category": "网球",
+        "album": "网球",
+        "description": "双拍位网球包，适合训练、门店选品和团队采购。",
+        "scenario": "学校训练、俱乐部采购、门店零售",
+        "highlights": [
+          "现货目录商品",
+          "支持批量询盘",
+          "支持定制采购"
+        ]
+      },
+      "es": {
+        "name": "Tennis producto 3",
+        "category": "Tennis",
+        "album": "Tennis",
+        "description": "Producto deportivo para entrenamiento y compra por equipo.",
+        "scenario": "Entrenamiento, clubes y venta minorista",
+        "highlights": [
+          "Consulta disponible",
+          "Compra por volumen",
+          "Soporte personalizado"
+        ]
+      }
+    },
+    "detailSections": []
+  },
+  {
+    "id": "badminton-1",
+    "name": "Speed Badminton Racket",
+    "category": "Badminton",
+    "categorySlug": "badminton",
+    "album": "Badminton",
+    "image": "/assets/badminton.svg",
+    "visible": true,
+    "sortOrder": 31,
+    "prices": {
+      "baseCurrency": "USD",
+      "basePrice": 20,
+      "priceUnit": "piece"
+    },
+    "galleryImages": [
+      "/assets/badminton.svg"
+    ],
+    "galleryLabels": [],
+    "specs": [],
+    "translations": {
+      "en": {
+        "name": "Speed Badminton Racket",
+        "category": "Badminton",
+        "album": "Badminton",
+        "description": "Speed Badminton Racket for training, retail sourcing and team purchase.",
+        "scenario": "School training, club sourcing, retail sale",
+        "highlights": [
+          "Ready for inquiry",
+          "Bulk purchase support",
+          "Custom sourcing support"
+        ]
+      },
+      "zh": {
+        "name": "速度型羽毛球拍",
+        "category": "羽毛球",
+        "album": "羽毛球",
+        "description": "速度型羽毛球拍，适合训练、门店选品和团队采购。",
+        "scenario": "学校训练、俱乐部采购、门店零售",
+        "highlights": [
+          "现货目录商品",
+          "支持批量询盘",
+          "支持定制采购"
+        ]
+      },
+      "es": {
+        "name": "Badminton producto 1",
+        "category": "Badminton",
+        "album": "Badminton",
+        "description": "Producto deportivo para entrenamiento y compra por equipo.",
+        "scenario": "Entrenamiento, clubes y venta minorista",
+        "highlights": [
+          "Consulta disponible",
+          "Compra por volumen",
+          "Soporte personalizado"
+        ]
+      }
+    },
+    "detailSections": []
+  },
+  {
+    "id": "badminton-2",
+    "name": "Durable Shuttlecocks",
+    "category": "Badminton",
+    "categorySlug": "badminton",
+    "album": "Badminton",
+    "image": "/assets/badminton.svg",
+    "visible": true,
+    "sortOrder": 32,
+    "prices": {
+      "baseCurrency": "USD",
+      "basePrice": 23,
+      "priceUnit": "piece"
+    },
+    "galleryImages": [
+      "/assets/badminton.svg"
+    ],
+    "galleryLabels": [],
+    "specs": [],
+    "translations": {
+      "en": {
+        "name": "Durable Shuttlecocks",
+        "category": "Badminton",
+        "album": "Badminton",
+        "description": "Durable Shuttlecocks for training, retail sourcing and team purchase.",
+        "scenario": "School training, club sourcing, retail sale",
+        "highlights": [
+          "Ready for inquiry",
+          "Bulk purchase support",
+          "Custom sourcing support"
+        ]
+      },
+      "zh": {
+        "name": "耐打训练羽毛球",
+        "category": "羽毛球",
+        "album": "羽毛球",
+        "description": "耐打训练羽毛球，适合训练、门店选品和团队采购。",
+        "scenario": "学校训练、俱乐部采购、门店零售",
+        "highlights": [
+          "现货目录商品",
+          "支持批量询盘",
+          "支持定制采购"
+        ]
+      },
+      "es": {
+        "name": "Badminton producto 2",
+        "category": "Badminton",
+        "album": "Badminton",
+        "description": "Producto deportivo para entrenamiento y compra por equipo.",
+        "scenario": "Entrenamiento, clubes y venta minorista",
+        "highlights": [
+          "Consulta disponible",
+          "Compra por volumen",
+          "Soporte personalizado"
+        ]
+      }
+    },
+    "detailSections": []
+  },
+  {
+    "id": "badminton-3",
+    "name": "Anti-slip Badminton Shoes",
+    "category": "Badminton",
+    "categorySlug": "badminton",
+    "album": "Badminton",
+    "image": "/assets/badminton.svg",
+    "visible": true,
+    "sortOrder": 33,
+    "prices": {
+      "baseCurrency": "USD",
+      "basePrice": 26,
+      "priceUnit": "piece"
+    },
+    "galleryImages": [
+      "/assets/badminton.svg"
+    ],
+    "galleryLabels": [],
+    "specs": [],
+    "translations": {
+      "en": {
+        "name": "Anti-slip Badminton Shoes",
+        "category": "Badminton",
+        "album": "Badminton",
+        "description": "Anti-slip Badminton Shoes for training, retail sourcing and team purchase.",
+        "scenario": "School training, club sourcing, retail sale",
+        "highlights": [
+          "Ready for inquiry",
+          "Bulk purchase support",
+          "Custom sourcing support"
+        ]
+      },
+      "zh": {
+        "name": "防滑羽毛球鞋",
+        "category": "羽毛球",
+        "album": "羽毛球",
+        "description": "防滑羽毛球鞋，适合训练、门店选品和团队采购。",
+        "scenario": "学校训练、俱乐部采购、门店零售",
+        "highlights": [
+          "现货目录商品",
+          "支持批量询盘",
+          "支持定制采购"
+        ]
+      },
+      "es": {
+        "name": "Badminton producto 3",
+        "category": "Badminton",
+        "album": "Badminton",
+        "description": "Producto deportivo para entrenamiento y compra por equipo.",
+        "scenario": "Entrenamiento, clubes y venta minorista",
+        "highlights": [
+          "Consulta disponible",
+          "Compra por volumen",
+          "Soporte personalizado"
+        ]
+      }
+    },
+    "detailSections": []
+  },
+  {
+    "id": "sports-bag-1",
+    "name": "Team Sports Backpack",
+    "category": "Sports Bag",
+    "categorySlug": "sports-bag",
+    "album": "Sports Bag",
+    "image": "/assets/backpack.svg",
+    "visible": true,
+    "sortOrder": 34,
+    "prices": {
+      "baseCurrency": "USD",
+      "basePrice": 18,
+      "priceUnit": "piece"
+    },
+    "galleryImages": [
+      "/assets/backpack.svg"
+    ],
+    "galleryLabels": [],
+    "specs": [],
+    "translations": {
+      "en": {
+        "name": "Team Sports Backpack",
+        "category": "Sports Bag",
+        "album": "Sports Bag",
+        "description": "Team Sports Backpack for training, retail sourcing and team purchase.",
+        "scenario": "School training, club sourcing, retail sale",
+        "highlights": [
+          "Ready for inquiry",
+          "Bulk purchase support",
+          "Custom sourcing support"
+        ]
+      },
+      "zh": {
+        "name": "团队训练运动书包",
+        "category": "运动书包",
+        "album": "运动书包",
+        "description": "团队训练运动书包，适合训练、门店选品和团队采购。",
+        "scenario": "学校训练、俱乐部采购、门店零售",
+        "highlights": [
+          "现货目录商品",
+          "支持批量询盘",
+          "支持定制采购"
+        ]
+      },
+      "es": {
+        "name": "Sports Bag producto 1",
+        "category": "Sports Bag",
+        "album": "Sports Bag",
+        "description": "Producto deportivo para entrenamiento y compra por equipo.",
+        "scenario": "Entrenamiento, clubes y venta minorista",
+        "highlights": [
+          "Consulta disponible",
+          "Compra por volumen",
+          "Soporte personalizado"
+        ]
+      }
+    },
+    "detailSections": []
+  },
+  {
+    "id": "sports-bag-2",
+    "name": "Water-repellent Sports Backpack",
+    "category": "Sports Bag",
+    "categorySlug": "sports-bag",
+    "album": "Sports Bag",
+    "image": "/assets/backpack.svg",
+    "visible": true,
+    "sortOrder": 35,
+    "prices": {
+      "baseCurrency": "USD",
+      "basePrice": 21,
+      "priceUnit": "piece"
+    },
+    "galleryImages": [
+      "/assets/backpack.svg"
+    ],
+    "galleryLabels": [],
+    "specs": [],
+    "translations": {
+      "en": {
+        "name": "Water-repellent Sports Backpack",
+        "category": "Sports Bag",
+        "album": "Sports Bag",
+        "description": "Water-repellent Sports Backpack for training, retail sourcing and team purchase.",
+        "scenario": "School training, club sourcing, retail sale",
+        "highlights": [
+          "Ready for inquiry",
+          "Bulk purchase support",
+          "Custom sourcing support"
+        ]
+      },
+      "zh": {
+        "name": "防泼水运动背包",
+        "category": "运动书包",
+        "album": "运动书包",
+        "description": "防泼水运动背包，适合训练、门店选品和团队采购。",
+        "scenario": "学校训练、俱乐部采购、门店零售",
+        "highlights": [
+          "现货目录商品",
+          "支持批量询盘",
+          "支持定制采购"
+        ]
+      },
+      "es": {
+        "name": "Sports Bag producto 2",
+        "category": "Sports Bag",
+        "album": "Sports Bag",
+        "description": "Producto deportivo para entrenamiento y compra por equipo.",
+        "scenario": "Entrenamiento, clubes y venta minorista",
+        "highlights": [
+          "Consulta disponible",
+          "Compra por volumen",
+          "Soporte personalizado"
+        ]
+      }
+    },
+    "detailSections": []
+  },
+  {
+    "id": "sports-bag-3",
+    "name": "Light Drawstring Training Bag",
+    "category": "Sports Bag",
+    "categorySlug": "sports-bag",
+    "album": "Sports Bag",
+    "image": "/assets/backpack.svg",
+    "visible": true,
+    "sortOrder": 36,
+    "prices": {
+      "baseCurrency": "USD",
+      "basePrice": 24,
+      "priceUnit": "piece"
+    },
+    "galleryImages": [
+      "/assets/backpack.svg"
+    ],
+    "galleryLabels": [],
+    "specs": [],
+    "translations": {
+      "en": {
+        "name": "Light Drawstring Training Bag",
+        "category": "Sports Bag",
+        "album": "Sports Bag",
+        "description": "Light Drawstring Training Bag for training, retail sourcing and team purchase.",
+        "scenario": "School training, club sourcing, retail sale",
+        "highlights": [
+          "Ready for inquiry",
+          "Bulk purchase support",
+          "Custom sourcing support"
+        ]
+      },
+      "zh": {
+        "name": "轻量抽绳训练包",
+        "category": "运动书包",
+        "album": "运动书包",
+        "description": "轻量抽绳训练包，适合训练、门店选品和团队采购。",
+        "scenario": "学校训练、俱乐部采购、门店零售",
+        "highlights": [
+          "现货目录商品",
+          "支持批量询盘",
+          "支持定制采购"
+        ]
+      },
+      "es": {
+        "name": "Sports Bag producto 3",
+        "category": "Sports Bag",
+        "album": "Sports Bag",
+        "description": "Producto deportivo para entrenamiento y compra por equipo.",
+        "scenario": "Entrenamiento, clubes y venta minorista",
+        "highlights": [
+          "Consulta disponible",
+          "Compra por volumen",
+          "Soporte personalizado"
+        ]
+      }
+    },
+    "detailSections": []
+  },
+  {
+    "id": "sports-tshirt-1",
+    "name": "Quick-dry Training T-shirt",
+    "category": "Sports T-shirt",
+    "categorySlug": "sports-tshirt",
+    "album": "Sports T-shirt",
+    "image": "/assets/tshirt.svg",
+    "visible": true,
+    "sortOrder": 37,
+    "prices": {
+      "baseCurrency": "USD",
+      "basePrice": 12,
+      "priceUnit": "piece"
+    },
+    "galleryImages": [
+      "/assets/tshirt.svg"
+    ],
+    "galleryLabels": [],
+    "specs": [],
+    "translations": {
+      "en": {
+        "name": "Quick-dry Training T-shirt",
+        "category": "Sports T-shirt",
+        "album": "Sports T-shirt",
+        "description": "Quick-dry Training T-shirt for training, retail sourcing and team purchase.",
+        "scenario": "School training, club sourcing, retail sale",
+        "highlights": [
+          "Ready for inquiry",
+          "Bulk purchase support",
+          "Custom sourcing support"
+        ]
+      },
+      "zh": {
+        "name": "速干训练T恤",
+        "category": "运动T恤",
+        "album": "运动T恤",
+        "description": "速干训练T恤，适合训练、门店选品和团队采购。",
+        "scenario": "学校训练、俱乐部采购、门店零售",
+        "highlights": [
+          "现货目录商品",
+          "支持批量询盘",
+          "支持定制采购"
+        ]
+      },
+      "es": {
+        "name": "Sports T-shirt producto 1",
+        "category": "Sports T-shirt",
+        "album": "Sports T-shirt",
+        "description": "Producto deportivo para entrenamiento y compra por equipo.",
+        "scenario": "Entrenamiento, clubes y venta minorista",
+        "highlights": [
+          "Consulta disponible",
+          "Compra por volumen",
+          "Soporte personalizado"
+        ]
+      }
+    },
+    "detailSections": []
+  },
+  {
+    "id": "sports-tshirt-2",
+    "name": "Custom Team T-shirt",
+    "category": "Sports T-shirt",
+    "categorySlug": "sports-tshirt",
+    "album": "Sports T-shirt",
+    "image": "/assets/tshirt.svg",
+    "visible": true,
+    "sortOrder": 38,
+    "prices": {
+      "baseCurrency": "USD",
+      "basePrice": 15,
+      "priceUnit": "piece"
+    },
+    "galleryImages": [
+      "/assets/tshirt.svg"
+    ],
+    "galleryLabels": [],
+    "specs": [],
+    "translations": {
+      "en": {
+        "name": "Custom Team T-shirt",
+        "category": "Sports T-shirt",
+        "album": "Sports T-shirt",
+        "description": "Custom Team T-shirt for training, retail sourcing and team purchase.",
+        "scenario": "School training, club sourcing, retail sale",
+        "highlights": [
+          "Ready for inquiry",
+          "Bulk purchase support",
+          "Custom sourcing support"
+        ]
+      },
+      "zh": {
+        "name": "队服定制T恤",
+        "category": "运动T恤",
+        "album": "运动T恤",
+        "description": "队服定制T恤，适合训练、门店选品和团队采购。",
+        "scenario": "学校训练、俱乐部采购、门店零售",
+        "highlights": [
+          "现货目录商品",
+          "支持批量询盘",
+          "支持定制采购"
+        ]
+      },
+      "es": {
+        "name": "Sports T-shirt producto 2",
+        "category": "Sports T-shirt",
+        "album": "Sports T-shirt",
+        "description": "Producto deportivo para entrenamiento y compra por equipo.",
+        "scenario": "Entrenamiento, clubes y venta minorista",
+        "highlights": [
+          "Consulta disponible",
+          "Compra por volumen",
+          "Soporte personalizado"
+        ]
+      }
+    },
+    "detailSections": []
+  },
+  {
+    "id": "sports-tshirt-3",
+    "name": "Stretch Fit Sports T-shirt",
+    "category": "Sports T-shirt",
+    "categorySlug": "sports-tshirt",
+    "album": "Sports T-shirt",
+    "image": "/assets/tshirt.svg",
+    "visible": true,
+    "sortOrder": 39,
+    "prices": {
+      "baseCurrency": "USD",
+      "basePrice": 18,
+      "priceUnit": "piece"
+    },
+    "galleryImages": [
+      "/assets/tshirt.svg"
+    ],
+    "galleryLabels": [],
+    "specs": [],
+    "translations": {
+      "en": {
+        "name": "Stretch Fit Sports T-shirt",
+        "category": "Sports T-shirt",
+        "album": "Sports T-shirt",
+        "description": "Stretch Fit Sports T-shirt for training, retail sourcing and team purchase.",
+        "scenario": "School training, club sourcing, retail sale",
+        "highlights": [
+          "Ready for inquiry",
+          "Bulk purchase support",
+          "Custom sourcing support"
+        ]
+      },
+      "zh": {
+        "name": "弹力贴合运动T恤",
+        "category": "运动T恤",
+        "album": "运动T恤",
+        "description": "弹力贴合运动T恤，适合训练、门店选品和团队采购。",
+        "scenario": "学校训练、俱乐部采购、门店零售",
+        "highlights": [
+          "现货目录商品",
+          "支持批量询盘",
+          "支持定制采购"
+        ]
+      },
+      "es": {
+        "name": "Sports T-shirt producto 3",
+        "category": "Sports T-shirt",
+        "album": "Sports T-shirt",
+        "description": "Producto deportivo para entrenamiento y compra por equipo.",
+        "scenario": "Entrenamiento, clubes y venta minorista",
+        "highlights": [
+          "Consulta disponible",
+          "Compra por volumen",
+          "Soporte personalizado"
+        ]
+      }
+    },
+    "detailSections": []
+  }
+]
