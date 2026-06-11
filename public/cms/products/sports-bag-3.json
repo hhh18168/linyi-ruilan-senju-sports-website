@@ -1,0 +1,73 @@
+{
+  "id": "sports-bag-3",
+  "name": "Light Drawstring Training Bag",
+  "category": "Sports Bag",
+  "categorySlug": "sports-bag",
+  "album": "Sports Bag",
+  "image": "/assets/backpack.svg",
+  "visible": true,
+  "sortOrder": 36,
+  "prices": {
+    "baseCurrency": "USD",
+    "basePrice": 24,
+    "priceUnit": "piece"
+  },
+  "galleryImages": [
+    "/assets/backpack.svg"
+  ],
+  "galleryLabels": [],
+  "specs": [
+    {
+      "label": "Category",
+      "value": "Sports Bag"
+    },
+    {
+      "label": "Use Case",
+      "value": "Training and team purchase"
+    }
+  ],
+  "translations": {
+    "en": {
+      "name": "Light Drawstring Training Bag",
+      "category": "Sports Bag",
+      "album": "Sports Bag",
+      "description": "Light Drawstring Training Bag for training, retail sourcing and team purchase.",
+      "scenario": "School training, club sourcing, retail sale",
+      "highlights": [
+        "Ready for inquiry",
+        "Bulk purchase support",
+        "Custom sourcing support"
+      ]
+    },
+    "zh": {
+      "name": "轻量抽绳训练包",
+      "category": "运动书包",
+      "album": "运动书包",
+      "description": "轻量抽绳训练包，适合训练、门店选品和团队采购。",
+      "scenario": "学校训练、俱乐部采购、门店零售",
+      "highlights": [
+        "现货目录商品",
+        "支持批量询盘",
+        "支持定制采购"
+      ]
+    },
+    "es": {
+      "name": "Sports Bag producto 3",
+      "category": "Sports Bag",
+      "album": "Sports Bag",
+      "description": "Producto deportivo para entrenamiento y compra por equipo.",
+      "scenario": "Entrenamiento, clubes y venta minorista",
+      "highlights": [
+        "Consulta disponible",
+        "Compra por volumen",
+        "Soporte personalizado"
+      ]
+    }
+  },
+  "detailSections": [
+    {
+      "title": "Product Details",
+      "body": "Contact us for price, customization and delivery details."
+    }
+  ]
+}
