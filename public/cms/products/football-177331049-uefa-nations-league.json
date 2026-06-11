@@ -1,0 +1,83 @@
+{
+  "id": "football-177331049-uefa-nations-league",
+  "name": "UEFA Nations League",
+  "category": "Football",
+  "categorySlug": "football",
+  "album": "UEFA Nations League",
+  "image": "/yupoo-products/football/177331049-uefa-nations-league/177331049-uefa-nations-league-01.jpg",
+  "visible": true,
+  "sortOrder": 8,
+  "prices": {
+    "baseCurrency": "USD",
+    "basePrice": 26,
+    "priceUnit": "piece"
+  },
+  "galleryImages": [
+    "/yupoo-products/football/177331049-uefa-nations-league/177331049-uefa-nations-league-01.jpg",
+    "/yupoo-products/football/177331049-uefa-nations-league/177331049-uefa-nations-league-02.jpg",
+    "/yupoo-products/football/177331049-uefa-nations-league/177331049-uefa-nations-league-03.jpg"
+  ],
+  "galleryLabels": [
+    "Style 1",
+    "Style 2",
+    "Style 3"
+  ],
+  "specs": [
+    {
+      "label": "Category",
+      "value": "Football"
+    },
+    {
+      "label": "Album",
+      "value": "UEFA Nations League"
+    },
+    {
+      "label": "Images",
+      "value": "3"
+    }
+  ],
+  "translations": {
+    "en": {
+      "name": "UEFA Nations League",
+      "category": "Football",
+      "album": "UEFA Nations League",
+      "description": "UEFA Nations League football style with 3 product images for inquiry and team purchasing.",
+      "scenario": "Football clubs, schools, team purchase and sports goods retail",
+      "highlights": [
+        "Football product catalog",
+        "Multiple images available",
+        "Bulk inquiry support"
+      ]
+    },
+    "zh": {
+      "name": "UEFA Nations League",
+      "category": "足球",
+      "album": "UEFA Nations League",
+      "description": "UEFA Nations League 足球款式，包含 3 张产品图片，适合询盘、选款和团队采购。",
+      "scenario": "足球俱乐部、学校训练、团队采购、体育用品零售",
+      "highlights": [
+        "足球款式图集",
+        "多图可查看",
+        "支持批量询盘"
+      ]
+    },
+    "es": {
+      "name": "UEFA Nations League",
+      "category": "Futbol",
+      "album": "UEFA Nations League",
+      "description": "Modelo de futbol UEFA Nations League con 3 imagenes para consulta y compra por equipo.",
+      "scenario": "Clubes, escuelas, equipos y venta deportiva",
+      "highlights": [
+        "Catalogo de futbol",
+        "Varias imagenes",
+        "Consulta por volumen"
+      ]
+    }
+  },
+  "detailSections": [
+    {
+      "title": "Product Details",
+      "body": "Contact us for price, customization and delivery details."
+    }
+  ]
+}
