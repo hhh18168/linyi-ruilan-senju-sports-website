@@ -1,0 +1,85 @@
+{
+  "id": "football-177208883-bundesliga",
+  "name": "Bundesliga",
+  "category": "Football",
+  "categorySlug": "football",
+  "album": "Bundesliga",
+  "image": "/yupoo-products/football/177208883-bundesliga/177208883-bundesliga-01.jpg",
+  "visible": true,
+  "sortOrder": 6,
+  "prices": {
+    "baseCurrency": "USD",
+    "basePrice": 22,
+    "priceUnit": "piece"
+  },
+  "galleryImages": [
+    "/yupoo-products/football/177208883-bundesliga/177208883-bundesliga-01.jpg",
+    "/yupoo-products/football/177208883-bundesliga/177208883-bundesliga-02.jpg",
+    "/yupoo-products/football/177208883-bundesliga/177208883-bundesliga-03.jpg",
+    "/yupoo-products/football/177208883-bundesliga/177208883-bundesliga-04.jpg"
+  ],
+  "galleryLabels": [
+    "Style 1",
+    "Style 2",
+    "Style 3",
+    "Style 4"
+  ],
+  "specs": [
+    {
+      "label": "Category",
+      "value": "Football"
+    },
+    {
+      "label": "Album",
+      "value": "Bundesliga"
+    },
+    {
+      "label": "Images",
+      "value": "4"
+    }
+  ],
+  "translations": {
+    "en": {
+      "name": "Bundesliga",
+      "category": "Football",
+      "album": "Bundesliga",
+      "description": "Bundesliga football style with 4 product images for inquiry and team purchasing.",
+      "scenario": "Football clubs, schools, team purchase and sports goods retail",
+      "highlights": [
+        "Football product catalog",
+        "Multiple images available",
+        "Bulk inquiry support"
+      ]
+    },
+    "zh": {
+      "name": "Bundesliga",
+      "category": "足球",
+      "album": "Bundesliga",
+      "description": "Bundesliga 足球款式，包含 4 张产品图片，适合询盘、选款和团队采购。",
+      "scenario": "足球俱乐部、学校训练、团队采购、体育用品零售",
+      "highlights": [
+        "足球款式图集",
+        "多图可查看",
+        "支持批量询盘"
+      ]
+    },
+    "es": {
+      "name": "Bundesliga",
+      "category": "Futbol",
+      "album": "Bundesliga",
+      "description": "Modelo de futbol Bundesliga con 4 imagenes para consulta y compra por equipo.",
+      "scenario": "Clubes, escuelas, equipos y venta deportiva",
+      "highlights": [
+        "Catalogo de futbol",
+        "Varias imagenes",
+        "Consulta por volumen"
+      ]
+    }
+  },
+  "detailSections": [
+    {
+      "title": "Product Details",
+      "body": "Contact us for price, customization and delivery details."
+    }
+  ]
+}
