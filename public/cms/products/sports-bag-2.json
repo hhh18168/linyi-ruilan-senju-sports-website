@@ -1,0 +1,73 @@
+{
+  "id": "sports-bag-2",
+  "name": "Water-repellent Sports Backpack",
+  "category": "Sports Bag",
+  "categorySlug": "sports-bag",
+  "album": "Sports Bag",
+  "image": "/assets/backpack.svg",
+  "visible": true,
+  "sortOrder": 35,
+  "prices": {
+    "baseCurrency": "USD",
+    "basePrice": 21,
+    "priceUnit": "piece"
+  },
+  "galleryImages": [
+    "/assets/backpack.svg"
+  ],
+  "galleryLabels": [],
+  "specs": [
+    {
+      "label": "Category",
+      "value": "Sports Bag"
+    },
+    {
+      "label": "Use Case",
+      "value": "Training and team purchase"
+    }
+  ],
+  "translations": {
+    "en": {
+      "name": "Water-repellent Sports Backpack",
+      "category": "Sports Bag",
+      "album": "Sports Bag",
+      "description": "Water-repellent Sports Backpack for training, retail sourcing and team purchase.",
+      "scenario": "School training, club sourcing, retail sale",
+      "highlights": [
+        "Ready for inquiry",
+        "Bulk purchase support",
+        "Custom sourcing support"
+      ]
+    },
+    "zh": {
+      "name": "防泼水运动背包",
+      "category": "运动书包",
+      "album": "运动书包",
+      "description": "防泼水运动背包，适合训练、门店选品和团队采购。",
+      "scenario": "学校训练、俱乐部采购、门店零售",
+      "highlights": [
+        "现货目录商品",
+        "支持批量询盘",
+        "支持定制采购"
+      ]
+    },
+    "es": {
+      "name": "Sports Bag producto 2",
+      "category": "Sports Bag",
+      "album": "Sports Bag",
+      "description": "Producto deportivo para entrenamiento y compra por equipo.",
+      "scenario": "Entrenamiento, clubes y venta minorista",
+      "highlights": [
+        "Consulta disponible",
+        "Compra por volumen",
+        "Soporte personalizado"
+      ]
+    }
+  },
+  "detailSections": [
+    {
+      "title": "Product Details",
+      "body": "Contact us for price, customization and delivery details."
+    }
+  ]
+}
