@@ -153,6 +153,12 @@ const lightProductImage = (product: CmsProduct) => {
   };
   return categoryIcon[product.categorySlug] || product.image;
 };
+const displayProductImage = (product: CmsProduct) => product.image || lightProductImage(product);
+const fallbackProductImage = (event: React.SyntheticEvent<HTMLImageElement>, product: CmsProduct) => {
+  const fallback = lightProductImage(product);
+  if (event.currentTarget.src.endsWith(fallback)) return;
+  event.currentTarget.src = fallback;
+};
 
 const translateTerm = (language: string, value = '') => {
   if (!value) return value;
@@ -195,6 +201,7 @@ function App() {
   const [cmsProducts, setCmsProducts] = useState<CmsProduct[]>(defaultCmsProducts);
   const [productsLoaded, setProductsLoaded] = useState(false);
   const [fullProducts, setFullProducts] = useState<CmsProduct[] | null>(null);
+  const [productDetails, setProductDetails] = useState<Record<string, CmsProduct>>({});
   const [siteSettings, setSiteSettings] = useState<SiteSettings>(defaultSiteSettings);
   const [layoutSettings, setLayoutSettings] = useState<LayoutSettings>(defaultLayoutSettings);
   const [exchangeRates, setExchangeRates] = useState<ExchangeRates>(defaultExchangeRates);
@@ -257,14 +264,14 @@ function App() {
   }, [routeCategory, visibleProducts]);
   const pagedProducts = listedProducts.slice(0, catalogPage * pageSize);
   useEffect(() => {
-    if (route.type !== 'product' || fullProducts) return;
-    fetchCmsJson<CmsProduct[]>('/cms/products.json', []).then((nextProducts) => {
-      if (nextProducts.length) setFullProducts(nextProducts.map(normalizeProduct));
+    if (route.type !== 'product' || !route.productId || productDetails[route.productId]) return;
+    fetchCmsJson<CmsProduct | null>(`/cms/products/${route.productId}.json`, null).then((nextProduct) => {
+      if (nextProduct) setProductDetails((current) => ({ ...current, [nextProduct.id]: normalizeProduct(nextProduct) }));
     });
-  }, [fullProducts, route.type]);
+  }, [productDetails, route.productId, route.type]);
 
   const selectedProduct = route.type === 'product'
-    ? (fullProducts || visibleProducts).find((product) => product.id === route.productId) || visibleProducts.find((product) => product.id === route.productId) || null
+    ? (route.productId ? productDetails[route.productId] : null) || (fullProducts || visibleProducts).find((product) => product.id === route.productId) || visibleProducts.find((product) => product.id === route.productId) || null
     : null;
   const homeProducts = route.type === 'home' && !productsLoaded ? defaultCmsProducts : visibleProducts;
 
@@ -280,9 +287,9 @@ function App() {
 
   const openProduct = (productId: string) => {
     navigate(`/products/${productId}`, { type: 'product', productId });
-    if (!fullProducts) {
-      fetchCmsJson<CmsProduct[]>('/cms/products.json', []).then((nextProducts) => {
-        if (nextProducts.length) setFullProducts(nextProducts.map(normalizeProduct));
+    if (!productDetails[productId]) {
+      fetchCmsJson<CmsProduct | null>(`/cms/products/${productId}.json`, null).then((nextProduct) => {
+        if (nextProduct) setProductDetails((current) => ({ ...current, [nextProduct.id]: normalizeProduct(nextProduct) }));
       });
     }
   };
@@ -617,8 +624,8 @@ function HomeSections({
                 const copy = productCopy(product, language);
                 return (
                   <article key={product.id} className="cursor-pointer overflow-hidden rounded-md border border-slate-200 bg-field shadow-sm transition hover:-translate-y-1 hover:shadow-lift" onClick={() => openProduct(product.id)}>
-                    <div className="relative aspect-square bg-white">
-                      <img loading="lazy" decoding="async" className="h-full w-full object-contain p-8" src={lightProductImage(product)} alt={copy.name || product.name} />
+                    <div className="relative aspect-[4/3] bg-white">
+                      <img loading="lazy" decoding="async" onError={(event) => fallbackProductImage(event, product)} className="h-full w-full object-contain p-4" src={displayProductImage(product)} alt={copy.name || product.name} />
                       <div className="absolute left-3 top-3 rounded-md bg-white px-3 py-1 text-xs font-black text-court shadow-sm">{translateTerm(language, copy.category || product.category)}</div>
                     </div>
                     <div className="p-4">
@@ -694,8 +701,8 @@ function CatalogSection({
             const copy = productCopy(product, language);
             return (
               <article key={product.id} className="cursor-pointer overflow-hidden rounded-md border border-slate-200 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-lift" onClick={() => openProduct(product.id)}>
-                <div className="relative aspect-square bg-white">
-                  <img loading="lazy" decoding="async" className="h-full w-full object-contain p-8" src={lightProductImage(product)} alt={copy.name || product.name} />
+                <div className="relative aspect-[4/3] bg-white">
+                  <img loading="lazy" decoding="async" onError={(event) => fallbackProductImage(event, product)} className="h-full w-full object-contain p-4" src={displayProductImage(product)} alt={copy.name || product.name} />
                   <div className="absolute left-3 top-3 rounded-md bg-white px-3 py-1 text-xs font-black text-court shadow-sm">{translateTerm(language, copy.category || product.category)}</div>
                 </div>
                 <div className="p-4">
@@ -869,7 +876,7 @@ function ProductDetail({ product, language, rates, onBack }: { product: CmsProdu
         <button className="mb-6 inline-flex min-h-11 items-center justify-center rounded-md bg-field px-4 text-sm font-black text-slate-700 ring-1 ring-slate-200" type="button" onClick={onBack}>{t(language, 'back')}</button>
         <div className="grid gap-8 lg:grid-cols-[0.95fr_1.05fr]">
           <div className="grid gap-4">
-            <img className="aspect-square w-full rounded-md bg-field object-cover ring-1 ring-slate-200" src={activeImage} alt={copy.name || product.name} />
+            <img className="aspect-square w-full rounded-md bg-field object-contain ring-1 ring-slate-200" src={activeImage} alt={copy.name || product.name} />
             {images.length > 1 && (
               <div>
                 <h2 className="mb-3 text-sm font-black text-slate-600">{t(language, 'colors')} · {images.length}</h2>
