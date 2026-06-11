@@ -1,5 +1,5 @@
 import { json, method, readJsonBody, requireAdmin } from '../_lib/admin.js';
-import { readFile, readJson, writeJson } from '../_lib/github.js';
+import { readJson, writeJson } from '../_lib/github.js';
 
 const FILE_PATH = 'public/cms/products.json';
 const LITE_FILE_PATH = 'public/cms/products-lite.json';
@@ -15,14 +15,7 @@ async function readProductsSafely() {
   const { data: liteProducts } = await readJson(LITE_FILE_PATH);
   if (!Array.isArray(liteProducts)) return [];
 
-  return Promise.all(liteProducts.map(async (product) => {
-    try {
-      const file = await readFile(`public/cms/products/${product.id}.json`);
-      return JSON.parse(file.content);
-    } catch {
-      return product;
-    }
-  }));
+  return liteProducts;
 }
 
 export default async function handler(req, res) {

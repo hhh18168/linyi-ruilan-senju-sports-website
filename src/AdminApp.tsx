@@ -28,16 +28,13 @@ const emptyProduct: CmsProduct = {
 };
 
 async function api<T>(url: string, options?: RequestInit): Promise<T> {
-  const controller = new AbortController();
-  const timer = window.setTimeout(() => controller.abort(), 20000);
   const response = await fetch(url, {
     ...options,
-    signal: controller.signal,
     credentials: 'same-origin',
     headers: { 'Content-Type': 'application/json', ...(options?.headers || {}) },
-  }).finally(() => window.clearTimeout(timer));
+  });
   const data = await response.json().catch(() => ({}));
-  if (!response.ok) throw new Error(data.error || '请求失败，请检查登录信息或稍后重试。');
+  if (!response.ok) throw new Error(data.error || '请求失败，请稍后重试。');
   return data as T;
 }
 function slugify(value: string) {
