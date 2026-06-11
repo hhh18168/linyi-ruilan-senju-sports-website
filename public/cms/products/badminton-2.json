@@ -1,0 +1,73 @@
+{
+  "id": "badminton-2",
+  "name": "Durable Shuttlecocks",
+  "category": "Badminton",
+  "categorySlug": "badminton",
+  "album": "Badminton",
+  "image": "/assets/badminton.svg",
+  "visible": true,
+  "sortOrder": 32,
+  "prices": {
+    "baseCurrency": "USD",
+    "basePrice": 23,
+    "priceUnit": "piece"
+  },
+  "galleryImages": [
+    "/assets/badminton.svg"
+  ],
+  "galleryLabels": [],
+  "specs": [
+    {
+      "label": "Category",
+      "value": "Badminton"
+    },
+    {
+      "label": "Use Case",
+      "value": "Training and team purchase"
+    }
+  ],
+  "translations": {
+    "en": {
+      "name": "Durable Shuttlecocks",
+      "category": "Badminton",
+      "album": "Badminton",
+      "description": "Durable Shuttlecocks for training, retail sourcing and team purchase.",
+      "scenario": "School training, club sourcing, retail sale",
+      "highlights": [
+        "Ready for inquiry",
+        "Bulk purchase support",
+        "Custom sourcing support"
+      ]
+    },
+    "zh": {
+      "name": "耐打训练羽毛球",
+      "category": "羽毛球",
+      "album": "羽毛球",
+      "description": "耐打训练羽毛球，适合训练、门店选品和团队采购。",
+      "scenario": "学校训练、俱乐部采购、门店零售",
+      "highlights": [
+        "现货目录商品",
+        "支持批量询盘",
+        "支持定制采购"
+      ]
+    },
+    "es": {
+      "name": "Badminton producto 2",
+      "category": "Badminton",
+      "album": "Badminton",
+      "description": "Producto deportivo para entrenamiento y compra por equipo.",
+      "scenario": "Entrenamiento, clubes y venta minorista",
+      "highlights": [
+        "Consulta disponible",
+        "Compra por volumen",
+        "Soporte personalizado"
+      ]
+    }
+  },
+  "detailSections": [
+    {
+      "title": "Product Details",
+      "body": "Contact us for price, customization and delivery details."
+    }
+  ]
+}
