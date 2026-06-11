@@ -16,6 +16,18 @@ export type CmsProduct = {
   detailSections?: ProductDetailSection[];
 };
 
+export type ResponsiveImageSet = {
+  thumb?: ImageFormatSet;
+  card?: ImageFormatSet;
+  detail?: ImageFormatSet;
+};
+
+export type ImageFormatSet = {
+  avif?: string;
+  webp?: string;
+  jpg: string;
+};
+
 export type ProductTranslation = {
   name?: string;
   category?: string;

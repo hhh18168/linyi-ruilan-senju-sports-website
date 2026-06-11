@@ -83,6 +83,7 @@ const ui: Record<string, Record<string, string>> = {
     nextImage: '\u4e0b\u4e00\u5f20',
     scrollUp: '\u5411\u4e0a\u67e5\u770b',
     scrollDown: '\u5411\u4e0b\u67e5\u770b',
+    loadMoreColors: '\u52a0\u8f7d\u66f4\u591a\u914d\u8272',
   },
   en: {
     catalog: 'Product Catalog',
@@ -110,6 +111,7 @@ const ui: Record<string, Record<string, string>> = {
     nextImage: 'Next image',
     scrollUp: 'Scroll up',
     scrollDown: 'Scroll down',
+    loadMoreColors: 'Load more colors',
   },
   es: {
     catalog: 'Catalogo de productos',
@@ -137,6 +139,7 @@ const ui: Record<string, Record<string, string>> = {
     nextImage: 'Imagen siguiente',
     scrollUp: 'Subir',
     scrollDown: 'Bajar',
+    loadMoreColors: 'Cargar mas colores',
   },
 };
 
@@ -157,6 +160,9 @@ const termTranslations: Record<string, Record<string, string>> = {
   id: { Football: 'Sepak bola', Volleyball: 'Voli', Basketball: 'Bola basket', Tennis: 'Tenis', Badminton: 'Bulu tangkis', 'Sports Bag': 'Tas olahraga', 'Sports T-shirt': 'Kaos olahraga', Product: 'Produk' },
 };
 
+type ImageVariant = 'thumb' | 'card' | 'detail';
+type ImagePriority = 'high' | 'low' | 'auto';
+
 const t = (language: string, key: string) => ui[language]?.[key] || ui.en[key] || key;
 const slugify = (value: string) => value.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '').slice(0, 80);
 const isCricket = (value = '') => /cricket|板球|\u677f\u7403/i.test(value);
@@ -173,11 +179,54 @@ const lightProductImage = (product: CmsProduct) => {
   return categoryIcon[product.categorySlug] || product.image;
 };
 const displayProductImage = (product: CmsProduct) => product.image || lightProductImage(product);
+const optimizedImage = (src: string, variant: ImageVariant) => {
+  if (!src.startsWith('/yupoo-products/') || !src.toLowerCase().endsWith('.jpg')) return null;
+  const base = src.replace('/yupoo-products/', '/optimized-products/').replace(/\.jpg$/i, '');
+  return {
+    avif: `${base}-${variant}.avif`,
+    webp: `${base}-${variant}.webp`,
+    jpg: src,
+  };
+};
 const fallbackProductImage = (event: React.SyntheticEvent<HTMLImageElement>, product: CmsProduct) => {
   const fallback = lightProductImage(product);
   if (event.currentTarget.src.endsWith(fallback)) return;
   event.currentTarget.src = fallback;
 };
+
+function OptimizedImage({
+  src,
+  alt,
+  product,
+  variant = 'card',
+  className,
+  eager = false,
+}: {
+  src: string;
+  alt: string;
+  product?: CmsProduct;
+  variant?: ImageVariant;
+  className: string;
+  eager?: boolean;
+}) {
+  const set = optimizedImage(src, variant);
+  const fallback = set?.jpg || src;
+  return (
+    <picture>
+      {set?.avif && <source srcSet={set.avif} type="image/avif" />}
+      {set?.webp && <source srcSet={set.webp} type="image/webp" />}
+      <img
+        className={className}
+        src={fallback}
+        alt={alt}
+        loading={eager ? 'eager' : 'lazy'}
+        fetchPriority={eager ? 'high' as ImagePriority : 'auto' as ImagePriority}
+        decoding="async"
+        onError={product ? (event) => fallbackProductImage(event, product) : undefined}
+      />
+    </picture>
+  );
+}
 
 const translateTerm = (language: string, value = '') => {
   if (!value) return value;
@@ -575,9 +624,9 @@ function HomeSections({
           </div>
           <div className="grid gap-4">
             <div className="grid grid-cols-2 gap-3">
-              {featured.map((product) => (
+              {featured.map((product, index) => (
                 <button key={product.id} type="button" onClick={() => openProduct(product.id)} className="overflow-hidden rounded-md bg-white/12 text-left ring-1 ring-white/15 transition hover:-translate-y-1">
-                  <img loading="lazy" decoding="async" onError={(event) => fallbackProductImage(event, product)} className="aspect-[4/3] w-full object-contain p-6" src={displayProductImage(product)} alt={productCopy(product, language).name || product.name} />
+                  <OptimizedImage eager={index === 0} variant="thumb" product={product} className="aspect-[4/3] w-full object-contain p-6" src={displayProductImage(product)} alt={productCopy(product, language).name || product.name} />
                 </button>
               ))}
             </div>
@@ -603,7 +652,7 @@ function HomeSections({
               return (
                 <button key={category.slug} type="button" onClick={() => openCategory(category.slug)} className="group overflow-hidden rounded-md bg-white text-left shadow-sm ring-1 ring-slate-200 transition hover:-translate-y-1 hover:shadow-lift">
                   <div className="relative aspect-[4/3] overflow-hidden bg-slate-200">
-                    {sample && <img loading="lazy" decoding="async" onError={(event) => fallbackProductImage(event, sample)} className="h-full w-full object-contain p-8 transition duration-500 group-hover:scale-105" src={displayProductImage(sample)} alt={translateTerm(language, category.name)} />}
+                    {sample && <OptimizedImage variant="thumb" product={sample} className="h-full w-full object-contain p-8 transition duration-500 group-hover:scale-105" src={displayProductImage(sample)} alt={translateTerm(language, category.name)} />}
                     <div className="absolute inset-0 bg-gradient-to-t from-ink/70 to-transparent" />
                     <span className="absolute bottom-3 left-3 right-3 rounded-md bg-white px-3 py-1 text-sm font-black text-ink">{translateTerm(language, category.name)}</span>
                   </div>
@@ -650,7 +699,7 @@ function HomeSections({
                 return (
                   <article key={product.id} className="cursor-pointer overflow-hidden rounded-md border border-slate-200 bg-field shadow-sm transition hover:-translate-y-1 hover:shadow-lift" onClick={() => openProduct(product.id)}>
                     <div className="relative aspect-[4/3] bg-white">
-                      <img loading="lazy" decoding="async" onError={(event) => fallbackProductImage(event, product)} className="h-full w-full object-contain p-4" src={displayProductImage(product)} alt={copy.name || product.name} />
+                      <OptimizedImage variant="card" product={product} className="h-full w-full object-contain p-4" src={displayProductImage(product)} alt={copy.name || product.name} />
                       <div className="absolute left-3 top-3 rounded-md bg-white px-3 py-1 text-xs font-black text-court shadow-sm">{translateTerm(language, copy.category || product.category)}</div>
                     </div>
                     <div className="p-4">
@@ -727,7 +776,7 @@ function CatalogSection({
             return (
               <article key={product.id} className="cursor-pointer overflow-hidden rounded-md border border-slate-200 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-lift" onClick={() => openProduct(product.id)}>
                 <div className="relative aspect-[4/3] bg-white">
-                  <img loading="lazy" decoding="async" onError={(event) => fallbackProductImage(event, product)} className="h-full w-full object-contain p-4" src={displayProductImage(product)} alt={copy.name || product.name} />
+                  <OptimizedImage variant="card" product={product} className="h-full w-full object-contain p-4" src={displayProductImage(product)} alt={copy.name || product.name} />
                   <div className="absolute left-3 top-3 rounded-md bg-white px-3 py-1 text-xs font-black text-court shadow-sm">{translateTerm(language, copy.category || product.category)}</div>
                 </div>
                 <div className="p-4">
@@ -892,10 +941,12 @@ function ProductDetail({
   const copy = productCopy(product, language);
   const images = product.galleryImages?.length ? product.galleryImages : [product.image].filter(Boolean);
   const [activeImage, setActiveImage] = useState(images[0] || product.image);
+  const [visibleImageCount, setVisibleImageCount] = useState(12);
   const thumbnailRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     setActiveImage(images[0] || product.image);
+    setVisibleImageCount(12);
   }, [product.id, product.image, images.length]);
 
   const activeIndex = Math.max(0, images.findIndex((image) => image === activeImage));
@@ -907,6 +958,7 @@ function ProductDetail({
   const scrollThumbnails = (step: number) => {
     thumbnailRef.current?.scrollBy({ top: step * 240, behavior: 'smooth' });
   };
+  const visibleDetailImages = images.slice(0, visibleImageCount);
 
   const specs = product.specs?.length
     ? product.specs.map((spec) => ({
@@ -925,7 +977,7 @@ function ProductDetail({
         <div className="grid gap-8 lg:grid-cols-[0.95fr_1.05fr]">
           <div className="grid gap-4">
             <div className="relative">
-              <img className="aspect-square w-full rounded-md bg-field object-contain ring-1 ring-slate-200" src={activeImage} alt={copy.name || product.name} />
+              <OptimizedImage eager variant="detail" className="aspect-square w-full rounded-md bg-field object-contain ring-1 ring-slate-200" src={activeImage} alt={copy.name || product.name} />
               {images.length > 1 && (
                 <>
                   <button type="button" onClick={() => goImage(-1)} aria-label={t(language, 'previousImage')} className="absolute left-3 top-1/2 inline-flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full bg-white/95 text-court shadow-lg ring-1 ring-slate-200 transition hover:bg-court hover:text-white"><ChevronLeft size={22} /></button>
@@ -945,12 +997,17 @@ function ProductDetail({
                   </div>
                 </div>
                 <div ref={thumbnailRef} className="grid max-h-[520px] grid-cols-4 gap-3 overflow-y-auto pr-1 sm:grid-cols-6">
-                  {images.map((image, index) => (
+                  {visibleDetailImages.map((image, index) => (
                     <button key={`${image}-${index}`} type="button" onClick={() => setActiveImage(image)} className={`rounded-md ring-2 ${activeImage === image ? 'ring-court' : 'ring-slate-200'}`}>
-                      <img loading="lazy" decoding="async" className="aspect-square rounded-md bg-field object-cover" src={image} alt={`${copy.name || product.name}-${index + 1}`} />
+                      <OptimizedImage variant="thumb" className="aspect-square rounded-md bg-field object-cover" src={image} alt={`${copy.name || product.name}-${index + 1}`} />
                     </button>
                   ))}
                 </div>
+                {visibleImageCount < images.length && (
+                  <button type="button" onClick={() => setVisibleImageCount((count) => Math.min(count + 12, images.length))} className="mt-4 inline-flex min-h-11 w-full items-center justify-center rounded-md bg-field px-4 text-sm font-black text-slate-700 ring-1 ring-slate-200 hover:bg-white">
+                    {t(language, 'loadMoreColors')} ({visibleImageCount}/{images.length})
+                  </button>
+                )}
               </div>
             )}
           </div>

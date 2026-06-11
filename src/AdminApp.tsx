@@ -1,10 +1,10 @@
 import { ChangeEvent, FormEvent, useEffect, useMemo, useState } from 'react';
-import { ImagePlus, LayoutDashboard, LogOut, PackagePlus, Save, Settings, Trash2 } from 'lucide-react';
+import { BarChart3, ImagePlus, LayoutDashboard, LogOut, PackagePlus, Save, Settings, Trash2 } from 'lucide-react';
 import { defaultCmsProducts, defaultExchangeRates, defaultLayoutSettings, defaultSiteSettings, normalizeProduct } from './cms';
 import type { CmsProduct, ExchangeRates, Inquiry, LayoutSettings, LayoutSection, SiteSettings } from './cmsTypes';
 
 type Session = { loggedIn: boolean; username: string | null; codeVerified: boolean };
-type Tab = 'products' | 'inquiries' | 'content' | 'layout' | 'rates';
+type Tab = 'products' | 'inquiries' | 'content' | 'layout' | 'rates' | 'analytics';
 
 const emptyProduct: CmsProduct = {
   id: '',
@@ -314,6 +314,7 @@ function AdminApp() {
         <TabButton tab={tab} value="content" onClick={setTab} icon={<Settings size={17} />} label="网页内容" />
         <TabButton tab={tab} value="layout" onClick={setTab} icon={<LayoutDashboard size={17} />} label="网页排版" />
         <TabButton tab={tab} value="rates" onClick={setTab} icon={<Settings size={17} />} label="汇率价格" />
+        <TabButton tab={tab} value="analytics" onClick={setTab} icon={<BarChart3 size={17} />} label="网站访问统计" />
       </div>
       {message && <div className="mb-5 rounded-md bg-amber-50 px-4 py-3 text-sm font-bold text-amber-800 ring-1 ring-amber-200">{message}</div>}
       {tab === 'products' && (
@@ -431,7 +432,25 @@ function AdminApp() {
           <div className="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-5">{Object.entries(rates.rates).map(([currency, value]) => <AdminField key={currency} label={currency}><input className="input" type="number" value={value} onChange={(event) => setRates({ ...rates, rates: { ...rates.rates, [currency]: Number(event.target.value) } })} /></AdminField>)}</div>
         </section>
       )}
-    </AdminShell>
+      {tab === 'analytics' && (
+        <section className="admin-card">
+          <h2 className="admin-title">网站访问统计</h2>
+          <p className="mt-3 text-sm leading-7 text-slate-600">已接入 Vercel Web Analytics 和 Speed Insights。统计由 Vercel 全球边缘网络处理，不会拖慢前台访问。</p>
+          <div className="mt-5 grid gap-4 md:grid-cols-2">
+            <a className="rounded-md border border-slate-200 bg-field p-5 transition hover:bg-white" href="https://vercel.com/analytics" target="_blank" rel="noreferrer">
+              <h3 className="text-lg font-black">访问人数与国家数据</h3>
+              <p className="mt-2 text-sm leading-6 text-slate-600">查看访客数量、页面访问、国家/地区、设备来源和浏览器数据。</p>
+            </a>
+            <a className="rounded-md border border-slate-200 bg-field p-5 transition hover:bg-white" href="https://vercel.com/speed-insights" target="_blank" rel="noreferrer">
+              <h3 className="text-lg font-black">网站速度监测</h3>
+              <p className="mt-2 text-sm leading-6 text-slate-600">查看真实用户的加载速度、核心 Web 指标和慢地区表现。</p>
+            </a>
+          </div>
+          <div className="mt-5 rounded-md bg-emerald-50 p-4 text-sm leading-7 text-emerald-900 ring-1 ring-emerald-200">
+            国家访问数据查看路径：Vercel 项目 → Analytics → Visitors / Countries。若看不到数据，请在 Vercel 项目设置中确认 Web Analytics 已启用。
+          </div>
+        </section>
+      )}    </AdminShell>
   );
 }
 
