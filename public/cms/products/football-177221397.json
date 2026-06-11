@@ -1,0 +1,87 @@
+{
+  "id": "football-177221397",
+  "name": "其他",
+  "category": "Football",
+  "categorySlug": "football",
+  "album": "其他",
+  "image": "/yupoo-products/football/177221397/177221397-01.jpg",
+  "visible": true,
+  "sortOrder": 21,
+  "prices": {
+    "baseCurrency": "USD",
+    "basePrice": 20,
+    "priceUnit": "piece"
+  },
+  "galleryImages": [
+    "/yupoo-products/football/177221397/177221397-01.jpg",
+    "/yupoo-products/football/177221397/177221397-02.jpg",
+    "/yupoo-products/football/177221397/177221397-03.jpg",
+    "/yupoo-products/football/177221397/177221397-04.jpg",
+    "/yupoo-products/football/177221397/177221397-05.jpg"
+  ],
+  "galleryLabels": [
+    "Style 1",
+    "Style 2",
+    "Style 3",
+    "Style 4",
+    "Style 5"
+  ],
+  "specs": [
+    {
+      "label": "Category",
+      "value": "Football"
+    },
+    {
+      "label": "Album",
+      "value": "其他"
+    },
+    {
+      "label": "Images",
+      "value": "5"
+    }
+  ],
+  "translations": {
+    "en": {
+      "name": "其他",
+      "category": "Football",
+      "album": "其他",
+      "description": "其他 football style with 5 product images for inquiry and team purchasing.",
+      "scenario": "Football clubs, schools, team purchase and sports goods retail",
+      "highlights": [
+        "Football product catalog",
+        "Multiple images available",
+        "Bulk inquiry support"
+      ]
+    },
+    "zh": {
+      "name": "其他",
+      "category": "足球",
+      "album": "其他",
+      "description": "其他 足球款式，包含 5 张产品图片，适合询盘、选款和团队采购。",
+      "scenario": "足球俱乐部、学校训练、团队采购、体育用品零售",
+      "highlights": [
+        "足球款式图集",
+        "多图可查看",
+        "支持批量询盘"
+      ]
+    },
+    "es": {
+      "name": "其他",
+      "category": "Futbol",
+      "album": "其他",
+      "description": "Modelo de futbol 其他 con 5 imagenes para consulta y compra por equipo.",
+      "scenario": "Clubes, escuelas, equipos y venta deportiva",
+      "highlights": [
+        "Catalogo de futbol",
+        "Varias imagenes",
+        "Consulta por volumen"
+      ]
+    }
+  },
+  "detailSections": [
+    {
+      "title": "Product Details",
+      "body": "Contact us for price, customization and delivery details."
+    }
+  ]
+}
