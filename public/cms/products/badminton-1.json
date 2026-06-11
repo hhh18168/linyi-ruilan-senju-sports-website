@@ -1,0 +1,73 @@
+{
+  "id": "badminton-1",
+  "name": "Speed Badminton Racket",
+  "category": "Badminton",
+  "categorySlug": "badminton",
+  "album": "Badminton",
+  "image": "/assets/badminton.svg",
+  "visible": true,
+  "sortOrder": 31,
+  "prices": {
+    "baseCurrency": "USD",
+    "basePrice": 20,
+    "priceUnit": "piece"
+  },
+  "galleryImages": [
+    "/assets/badminton.svg"
+  ],
+  "galleryLabels": [],
+  "specs": [
+    {
+      "label": "Category",
+      "value": "Badminton"
+    },
+    {
+      "label": "Use Case",
+      "value": "Training and team purchase"
+    }
+  ],
+  "translations": {
+    "en": {
+      "name": "Speed Badminton Racket",
+      "category": "Badminton",
+      "album": "Badminton",
+      "description": "Speed Badminton Racket for training, retail sourcing and team purchase.",
+      "scenario": "School training, club sourcing, retail sale",
+      "highlights": [
+        "Ready for inquiry",
+        "Bulk purchase support",
+        "Custom sourcing support"
+      ]
+    },
+    "zh": {
+      "name": "速度型羽毛球拍",
+      "category": "羽毛球",
+      "album": "羽毛球",
+      "description": "速度型羽毛球拍，适合训练、门店选品和团队采购。",
+      "scenario": "学校训练、俱乐部采购、门店零售",
+      "highlights": [
+        "现货目录商品",
+        "支持批量询盘",
+        "支持定制采购"
+      ]
+    },
+    "es": {
+      "name": "Badminton producto 1",
+      "category": "Badminton",
+      "album": "Badminton",
+      "description": "Producto deportivo para entrenamiento y compra por equipo.",
+      "scenario": "Entrenamiento, clubes y venta minorista",
+      "highlights": [
+        "Consulta disponible",
+        "Compra por volumen",
+        "Soporte personalizado"
+      ]
+    }
+  },
+  "detailSections": [
+    {
+      "title": "Product Details",
+      "body": "Contact us for price, customization and delivery details."
+    }
+  ]
+}
