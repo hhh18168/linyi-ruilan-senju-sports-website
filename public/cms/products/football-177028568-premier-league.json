@@ -1,0 +1,165 @@
+{
+  "id": "football-177028568-premier-league",
+  "name": "Premier League",
+  "category": "Football",
+  "categorySlug": "football",
+  "album": "Premier League",
+  "image": "/yupoo-products/football/177028568-premier-league/177028568-premier-league-01.jpg",
+  "visible": true,
+  "sortOrder": 4,
+  "prices": {
+    "baseCurrency": "USD",
+    "basePrice": 18,
+    "priceUnit": "piece"
+  },
+  "galleryImages": [
+    "/yupoo-products/football/177028568-premier-league/177028568-premier-league-01.jpg",
+    "/yupoo-products/football/177028568-premier-league/177028568-premier-league-02.jpg",
+    "/yupoo-products/football/177028568-premier-league/177028568-premier-league-03.jpg",
+    "/yupoo-products/football/177028568-premier-league/177028568-premier-league-04.jpg",
+    "/yupoo-products/football/177028568-premier-league/177028568-premier-league-05.jpg",
+    "/yupoo-products/football/177028568-premier-league/177028568-premier-league-06.jpg",
+    "/yupoo-products/football/177028568-premier-league/177028568-premier-league-07.jpg",
+    "/yupoo-products/football/177028568-premier-league/177028568-premier-league-08.jpg",
+    "/yupoo-products/football/177028568-premier-league/177028568-premier-league-09.jpg",
+    "/yupoo-products/football/177028568-premier-league/177028568-premier-league-10.jpg",
+    "/yupoo-products/football/177028568-premier-league/177028568-premier-league-11.jpg",
+    "/yupoo-products/football/177028568-premier-league/177028568-premier-league-12.jpg",
+    "/yupoo-products/football/177028568-premier-league/177028568-premier-league-13.jpg",
+    "/yupoo-products/football/177028568-premier-league/177028568-premier-league-14.jpg",
+    "/yupoo-products/football/177028568-premier-league/177028568-premier-league-15.jpg",
+    "/yupoo-products/football/177028568-premier-league/177028568-premier-league-16.jpg",
+    "/yupoo-products/football/177028568-premier-league/177028568-premier-league-17.jpg",
+    "/yupoo-products/football/177028568-premier-league/177028568-premier-league-18.jpg",
+    "/yupoo-products/football/177028568-premier-league/177028568-premier-league-19.jpg",
+    "/yupoo-products/football/177028568-premier-league/177028568-premier-league-20.jpg",
+    "/yupoo-products/football/177028568-premier-league/177028568-premier-league-21.jpg",
+    "/yupoo-products/football/177028568-premier-league/177028568-premier-league-22.jpg",
+    "/yupoo-products/football/177028568-premier-league/177028568-premier-league-23.jpg",
+    "/yupoo-products/football/177028568-premier-league/177028568-premier-league-24.jpg",
+    "/yupoo-products/football/177028568-premier-league/177028568-premier-league-25.jpg",
+    "/yupoo-products/football/177028568-premier-league/177028568-premier-league-26.jpg",
+    "/yupoo-products/football/177028568-premier-league/177028568-premier-league-27.jpg",
+    "/yupoo-products/football/177028568-premier-league/177028568-premier-league-28.jpg",
+    "/yupoo-products/football/177028568-premier-league/177028568-premier-league-29.jpg",
+    "/yupoo-products/football/177028568-premier-league/177028568-premier-league-30.jpg",
+    "/yupoo-products/football/177028568-premier-league/177028568-premier-league-31.jpg",
+    "/yupoo-products/football/177028568-premier-league/177028568-premier-league-32.jpg",
+    "/yupoo-products/football/177028568-premier-league/177028568-premier-league-33.jpg",
+    "/yupoo-products/football/177028568-premier-league/177028568-premier-league-34.jpg",
+    "/yupoo-products/football/177028568-premier-league/177028568-premier-league-35.jpg",
+    "/yupoo-products/football/177028568-premier-league/177028568-premier-league-36.jpg",
+    "/yupoo-products/football/177028568-premier-league/177028568-premier-league-37.jpg",
+    "/yupoo-products/football/177028568-premier-league/177028568-premier-league-38.jpg",
+    "/yupoo-products/football/177028568-premier-league/177028568-premier-league-39.jpg",
+    "/yupoo-products/football/177028568-premier-league/177028568-premier-league-40.jpg",
+    "/yupoo-products/football/177028568-premier-league/177028568-premier-league-41.jpg",
+    "/yupoo-products/football/177028568-premier-league/177028568-premier-league-42.jpg",
+    "/yupoo-products/football/177028568-premier-league/177028568-premier-league-43.jpg",
+    "/yupoo-products/football/177028568-premier-league/177028568-premier-league-44.jpg"
+  ],
+  "galleryLabels": [
+    "Style 1",
+    "Style 2",
+    "Style 3",
+    "Style 4",
+    "Style 5",
+    "Style 6",
+    "Style 7",
+    "Style 8",
+    "Style 9",
+    "Style 10",
+    "Style 11",
+    "Style 12",
+    "Style 13",
+    "Style 14",
+    "Style 15",
+    "Style 16",
+    "Style 17",
+    "Style 18",
+    "Style 19",
+    "Style 20",
+    "Style 21",
+    "Style 22",
+    "Style 23",
+    "Style 24",
+    "Style 25",
+    "Style 26",
+    "Style 27",
+    "Style 28",
+    "Style 29",
+    "Style 30",
+    "Style 31",
+    "Style 32",
+    "Style 33",
+    "Style 34",
+    "Style 35",
+    "Style 36",
+    "Style 37",
+    "Style 38",
+    "Style 39",
+    "Style 40",
+    "Style 41",
+    "Style 42",
+    "Style 43",
+    "Style 44"
+  ],
+  "specs": [
+    {
+      "label": "Category",
+      "value": "Football"
+    },
+    {
+      "label": "Album",
+      "value": "Premier League"
+    },
+    {
+      "label": "Images",
+      "value": "44"
+    }
+  ],
+  "translations": {
+    "en": {
+      "name": "Premier League",
+      "category": "Football",
+      "album": "Premier League",
+      "description": "Premier League football style with 44 product images for inquiry and team purchasing.",
+      "scenario": "Football clubs, schools, team purchase and sports goods retail",
+      "highlights": [
+        "Football product catalog",
+        "Multiple images available",
+        "Bulk inquiry support"
+      ]
+    },
+    "zh": {
+      "name": "Premier League",
+      "category": "足球",
+      "album": "Premier League",
+      "description": "Premier League 足球款式，包含 44 张产品图片，适合询盘、选款和团队采购。",
+      "scenario": "足球俱乐部、学校训练、团队采购、体育用品零售",
+      "highlights": [
+        "足球款式图集",
+        "多图可查看",
+        "支持批量询盘"
+      ]
+    },
+    "es": {
+      "name": "Premier League",
+      "category": "Futbol",
+      "album": "Premier League",
+      "description": "Modelo de futbol Premier League con 44 imagenes para consulta y compra por equipo.",
+      "scenario": "Clubes, escuelas, equipos y venta deportiva",
+      "highlights": [
+        "Catalogo de futbol",
+        "Varias imagenes",
+        "Consulta por volumen"
+      ]
+    }
+  },
+  "detailSections": [
+    {
+      "title": "Product Details",
+      "body": "Contact us for price, customization and delivery details."
+    }
+  ]
+}
