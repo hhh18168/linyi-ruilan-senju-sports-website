@@ -1,0 +1,89 @@
+{
+  "id": "football-177208682-club",
+  "name": "Club",
+  "category": "Football",
+  "categorySlug": "football",
+  "album": "Club",
+  "image": "/yupoo-products/football/177208682-club/177208682-club-01.jpg",
+  "visible": true,
+  "sortOrder": 11,
+  "prices": {
+    "baseCurrency": "USD",
+    "basePrice": 16,
+    "priceUnit": "piece"
+  },
+  "galleryImages": [
+    "/yupoo-products/football/177208682-club/177208682-club-01.jpg",
+    "/yupoo-products/football/177208682-club/177208682-club-02.jpg",
+    "/yupoo-products/football/177208682-club/177208682-club-03.jpg",
+    "/yupoo-products/football/177208682-club/177208682-club-04.jpg",
+    "/yupoo-products/football/177208682-club/177208682-club-05.jpg",
+    "/yupoo-products/football/177208682-club/177208682-club-06.jpg"
+  ],
+  "galleryLabels": [
+    "Style 1",
+    "Style 2",
+    "Style 3",
+    "Style 4",
+    "Style 5",
+    "Style 6"
+  ],
+  "specs": [
+    {
+      "label": "Category",
+      "value": "Football"
+    },
+    {
+      "label": "Album",
+      "value": "Club"
+    },
+    {
+      "label": "Images",
+      "value": "6"
+    }
+  ],
+  "translations": {
+    "en": {
+      "name": "Club",
+      "category": "Football",
+      "album": "Club",
+      "description": "Club football style with 6 product images for inquiry and team purchasing.",
+      "scenario": "Football clubs, schools, team purchase and sports goods retail",
+      "highlights": [
+        "Football product catalog",
+        "Multiple images available",
+        "Bulk inquiry support"
+      ]
+    },
+    "zh": {
+      "name": "Club",
+      "category": "足球",
+      "album": "Club",
+      "description": "Club 足球款式，包含 6 张产品图片，适合询盘、选款和团队采购。",
+      "scenario": "足球俱乐部、学校训练、团队采购、体育用品零售",
+      "highlights": [
+        "足球款式图集",
+        "多图可查看",
+        "支持批量询盘"
+      ]
+    },
+    "es": {
+      "name": "Club",
+      "category": "Futbol",
+      "album": "Club",
+      "description": "Modelo de futbol Club con 6 imagenes para consulta y compra por equipo.",
+      "scenario": "Clubes, escuelas, equipos y venta deportiva",
+      "highlights": [
+        "Catalogo de futbol",
+        "Varias imagenes",
+        "Consulta por volumen"
+      ]
+    }
+  },
+  "detailSections": [
+    {
+      "title": "Product Details",
+      "body": "Contact us for price, customization and delivery details."
+    }
+  ]
+}
