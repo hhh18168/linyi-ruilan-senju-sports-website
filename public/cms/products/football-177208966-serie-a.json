@@ -1,0 +1,89 @@
+{
+  "id": "football-177208966-serie-a",
+  "name": "Serie A",
+  "category": "Football",
+  "categorySlug": "football",
+  "album": "Serie A",
+  "image": "/yupoo-products/football/177208966-serie-a/177208966-serie-a-01.jpg",
+  "visible": true,
+  "sortOrder": 7,
+  "prices": {
+    "baseCurrency": "USD",
+    "basePrice": 24,
+    "priceUnit": "piece"
+  },
+  "galleryImages": [
+    "/yupoo-products/football/177208966-serie-a/177208966-serie-a-01.jpg",
+    "/yupoo-products/football/177208966-serie-a/177208966-serie-a-02.jpg",
+    "/yupoo-products/football/177208966-serie-a/177208966-serie-a-03.jpg",
+    "/yupoo-products/football/177208966-serie-a/177208966-serie-a-04.jpg",
+    "/yupoo-products/football/177208966-serie-a/177208966-serie-a-05.jpg",
+    "/yupoo-products/football/177208966-serie-a/177208966-serie-a-06.jpg"
+  ],
+  "galleryLabels": [
+    "Style 1",
+    "Style 2",
+    "Style 3",
+    "Style 4",
+    "Style 5",
+    "Style 6"
+  ],
+  "specs": [
+    {
+      "label": "Category",
+      "value": "Football"
+    },
+    {
+      "label": "Album",
+      "value": "Serie A"
+    },
+    {
+      "label": "Images",
+      "value": "6"
+    }
+  ],
+  "translations": {
+    "en": {
+      "name": "Serie A",
+      "category": "Football",
+      "album": "Serie A",
+      "description": "Serie A football style with 6 product images for inquiry and team purchasing.",
+      "scenario": "Football clubs, schools, team purchase and sports goods retail",
+      "highlights": [
+        "Football product catalog",
+        "Multiple images available",
+        "Bulk inquiry support"
+      ]
+    },
+    "zh": {
+      "name": "Serie A",
+      "category": "足球",
+      "album": "Serie A",
+      "description": "Serie A 足球款式，包含 6 张产品图片，适合询盘、选款和团队采购。",
+      "scenario": "足球俱乐部、学校训练、团队采购、体育用品零售",
+      "highlights": [
+        "足球款式图集",
+        "多图可查看",
+        "支持批量询盘"
+      ]
+    },
+    "es": {
+      "name": "Serie A",
+      "category": "Futbol",
+      "album": "Serie A",
+      "description": "Modelo de futbol Serie A con 6 imagenes para consulta y compra por equipo.",
+      "scenario": "Clubes, escuelas, equipos y venta deportiva",
+      "highlights": [
+        "Catalogo de futbol",
+        "Varias imagenes",
+        "Consulta por volumen"
+      ]
+    }
+  },
+  "detailSections": [
+    {
+      "title": "Product Details",
+      "body": "Contact us for price, customization and delivery details."
+    }
+  ]
+}
