@@ -1,0 +1,127 @@
+{
+  "id": "football-177221201",
+  "name": "欧冠",
+  "category": "Football",
+  "categorySlug": "football",
+  "album": "欧冠",
+  "image": "/yupoo-products/football/177221201/177221201-01.jpg",
+  "visible": true,
+  "sortOrder": 15,
+  "prices": {
+    "baseCurrency": "USD",
+    "basePrice": 24,
+    "priceUnit": "piece"
+  },
+  "galleryImages": [
+    "/yupoo-products/football/177221201/177221201-01.jpg",
+    "/yupoo-products/football/177221201/177221201-02.jpg",
+    "/yupoo-products/football/177221201/177221201-03.jpg",
+    "/yupoo-products/football/177221201/177221201-04.jpg",
+    "/yupoo-products/football/177221201/177221201-05.jpg",
+    "/yupoo-products/football/177221201/177221201-06.jpg",
+    "/yupoo-products/football/177221201/177221201-07.jpg",
+    "/yupoo-products/football/177221201/177221201-08.jpg",
+    "/yupoo-products/football/177221201/177221201-09.jpg",
+    "/yupoo-products/football/177221201/177221201-10.jpg",
+    "/yupoo-products/football/177221201/177221201-11.jpg",
+    "/yupoo-products/football/177221201/177221201-12.jpg",
+    "/yupoo-products/football/177221201/177221201-13.jpg",
+    "/yupoo-products/football/177221201/177221201-14.jpg",
+    "/yupoo-products/football/177221201/177221201-15.jpg",
+    "/yupoo-products/football/177221201/177221201-16.jpg",
+    "/yupoo-products/football/177221201/177221201-17.jpg",
+    "/yupoo-products/football/177221201/177221201-18.jpg",
+    "/yupoo-products/football/177221201/177221201-19.jpg",
+    "/yupoo-products/football/177221201/177221201-20.jpg",
+    "/yupoo-products/football/177221201/177221201-21.jpg",
+    "/yupoo-products/football/177221201/177221201-22.jpg",
+    "/yupoo-products/football/177221201/177221201-23.jpg",
+    "/yupoo-products/football/177221201/177221201-24.jpg",
+    "/yupoo-products/football/177221201/177221201-25.jpg"
+  ],
+  "galleryLabels": [
+    "Style 1",
+    "Style 2",
+    "Style 3",
+    "Style 4",
+    "Style 5",
+    "Style 6",
+    "Style 7",
+    "Style 8",
+    "Style 9",
+    "Style 10",
+    "Style 11",
+    "Style 12",
+    "Style 13",
+    "Style 14",
+    "Style 15",
+    "Style 16",
+    "Style 17",
+    "Style 18",
+    "Style 19",
+    "Style 20",
+    "Style 21",
+    "Style 22",
+    "Style 23",
+    "Style 24",
+    "Style 25"
+  ],
+  "specs": [
+    {
+      "label": "Category",
+      "value": "Football"
+    },
+    {
+      "label": "Album",
+      "value": "欧冠"
+    },
+    {
+      "label": "Images",
+      "value": "25"
+    }
+  ],
+  "translations": {
+    "en": {
+      "name": "欧冠",
+      "category": "Football",
+      "album": "欧冠",
+      "description": "欧冠 football style with 25 product images for inquiry and team purchasing.",
+      "scenario": "Football clubs, schools, team purchase and sports goods retail",
+      "highlights": [
+        "Football product catalog",
+        "Multiple images available",
+        "Bulk inquiry support"
+      ]
+    },
+    "zh": {
+      "name": "欧冠",
+      "category": "足球",
+      "album": "欧冠",
+      "description": "欧冠 足球款式，包含 25 张产品图片，适合询盘、选款和团队采购。",
+      "scenario": "足球俱乐部、学校训练、团队采购、体育用品零售",
+      "highlights": [
+        "足球款式图集",
+        "多图可查看",
+        "支持批量询盘"
+      ]
+    },
+    "es": {
+      "name": "欧冠",
+      "category": "Futbol",
+      "album": "欧冠",
+      "description": "Modelo de futbol 欧冠 con 25 imagenes para consulta y compra por equipo.",
+      "scenario": "Clubes, escuelas, equipos y venta deportiva",
+      "highlights": [
+        "Catalogo de futbol",
+        "Varias imagenes",
+        "Consulta por volumen"
+      ]
+    }
+  },
+  "detailSections": [
+    {
+      "title": "Product Details",
+      "body": "Contact us for price, customization and delivery details."
+    }
+  ]
+}
