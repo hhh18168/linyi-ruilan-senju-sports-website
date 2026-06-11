@@ -1,0 +1,73 @@
+{
+  "id": "sports-tshirt-2",
+  "name": "Custom Team T-shirt",
+  "category": "Sports T-shirt",
+  "categorySlug": "sports-tshirt",
+  "album": "Sports T-shirt",
+  "image": "/assets/tshirt.svg",
+  "visible": true,
+  "sortOrder": 38,
+  "prices": {
+    "baseCurrency": "USD",
+    "basePrice": 15,
+    "priceUnit": "piece"
+  },
+  "galleryImages": [
+    "/assets/tshirt.svg"
+  ],
+  "galleryLabels": [],
+  "specs": [
+    {
+      "label": "Category",
+      "value": "Sports T-shirt"
+    },
+    {
+      "label": "Use Case",
+      "value": "Training and team purchase"
+    }
+  ],
+  "translations": {
+    "en": {
+      "name": "Custom Team T-shirt",
+      "category": "Sports T-shirt",
+      "album": "Sports T-shirt",
+      "description": "Custom Team T-shirt for training, retail sourcing and team purchase.",
+      "scenario": "School training, club sourcing, retail sale",
+      "highlights": [
+        "Ready for inquiry",
+        "Bulk purchase support",
+        "Custom sourcing support"
+      ]
+    },
+    "zh": {
+      "name": "队服定制T恤",
+      "category": "运动T恤",
+      "album": "运动T恤",
+      "description": "队服定制T恤，适合训练、门店选品和团队采购。",
+      "scenario": "学校训练、俱乐部采购、门店零售",
+      "highlights": [
+        "现货目录商品",
+        "支持批量询盘",
+        "支持定制采购"
+      ]
+    },
+    "es": {
+      "name": "Sports T-shirt producto 2",
+      "category": "Sports T-shirt",
+      "album": "Sports T-shirt",
+      "description": "Producto deportivo para entrenamiento y compra por equipo.",
+      "scenario": "Entrenamiento, clubes y venta minorista",
+      "highlights": [
+        "Consulta disponible",
+        "Compra por volumen",
+        "Soporte personalizado"
+      ]
+    }
+  },
+  "detailSections": [
+    {
+      "title": "Product Details",
+      "body": "Contact us for price, customization and delivery details."
+    }
+  ]
+}
