@@ -1,12 +1,11 @@
-[
+﻿[
   {
-    "id": "thermal-bonded-world-cup-01",
-    "name": "World Cup-01",
+    "id": "football-177031341-world-cup",
+    "name": "World Cup",
     "category": "Football",
     "categorySlug": "football",
     "album": "World Cup",
-    "image": "/yupoo-products/thermal-bonded/world-cup-01.jpg",
-    "sourceUrl": "https://qubu.x.yupoo.com/albums/177031341?uid=1&isSubCate=false&referrercate=4696117",
+    "image": "/yupoo-products/football/177031341-world-cup/177031341-world-cup-01.jpg",
     "visible": true,
     "sortOrder": 1,
     "prices": {
@@ -15,9 +14,37 @@
       "priceUnit": "piece"
     },
     "galleryImages": [
-      "/yupoo-products/thermal-bonded/world-cup-01.jpg"
+      "/yupoo-products/football/177031341-world-cup/177031341-world-cup-01.jpg",
+      "/yupoo-products/football/177031341-world-cup/177031341-world-cup-02.jpg",
+      "/yupoo-products/football/177031341-world-cup/177031341-world-cup-03.jpg",
+      "/yupoo-products/football/177031341-world-cup/177031341-world-cup-04.jpg",
+      "/yupoo-products/football/177031341-world-cup/177031341-world-cup-05.jpg",
+      "/yupoo-products/football/177031341-world-cup/177031341-world-cup-06.jpg",
+      "/yupoo-products/football/177031341-world-cup/177031341-world-cup-07.jpg",
+      "/yupoo-products/football/177031341-world-cup/177031341-world-cup-08.jpg",
+      "/yupoo-products/football/177031341-world-cup/177031341-world-cup-09.jpg",
+      "/yupoo-products/football/177031341-world-cup/177031341-world-cup-10.jpg",
+      "/yupoo-products/football/177031341-world-cup/177031341-world-cup-11.jpg",
+      "/yupoo-products/football/177031341-world-cup/177031341-world-cup-12.jpg",
+      "/yupoo-products/football/177031341-world-cup/177031341-world-cup-13.jpg",
+      "/yupoo-products/football/177031341-world-cup/177031341-world-cup-14.jpg"
     ],
-    "galleryLabels": [],
+    "galleryLabels": [
+      "Style 1",
+      "Style 2",
+      "Style 3",
+      "Style 4",
+      "Style 5",
+      "Style 6",
+      "Style 7",
+      "Style 8",
+      "Style 9",
+      "Style 10",
+      "Style 11",
+      "Style 12",
+      "Style 13",
+      "Style 14"
+    ],
     "specs": [
       {
         "label": "Category",
@@ -26,31 +53,47 @@
       {
         "label": "Album",
         "value": "World Cup"
+      },
+      {
+        "label": "Images",
+        "value": "14"
       }
     ],
     "translations": {
       "en": {
-        "name": "World Cup-01",
+        "name": "World Cup",
         "category": "Football",
         "album": "World Cup",
-        "description": "World Cup-01 from World Cup, suitable for team purchase and product inquiry.",
-        "scenario": "Club training, school sourcing, sports goods retail",
+        "description": "World Cup football style with 14 product images for inquiry and team purchasing.",
+        "scenario": "Football clubs, schools, team purchase and sports goods retail",
         "highlights": [
-          "Selected catalog item",
-          "Bulk inquiry available",
-          "Custom sourcing support"
+          "Football product catalog",
+          "Multiple images available",
+          "Bulk inquiry support"
         ]
       },
       "zh": {
-        "name": "World Cup-01",
+        "name": "World Cup",
         "category": "足球",
         "album": "World Cup",
-        "description": "足球商品，适合团队采购、学校训练和体育用品零售。",
-        "scenario": "团队采购、学校训练、体育用品零售",
+        "description": "World Cup 足球款式，包含 14 张产品图片，适合询盘、选款和团队采购。",
+        "scenario": "足球俱乐部、学校训练、团队采购、体育用品零售",
         "highlights": [
-          "足球样品",
-          "支持批量询盘",
-          "支持定制沟通"
+          "足球款式图集",
+          "多图可查看",
+          "支持批量询盘"
+        ]
+      },
+      "es": {
+        "name": "World Cup",
+        "category": "Futbol",
+        "album": "World Cup",
+        "description": "Modelo de futbol World Cup con 14 imagenes para consulta y compra por equipo.",
+        "scenario": "Clubes, escuelas, equipos y venta deportiva",
+        "highlights": [
+          "Catalogo de futbol",
+          "Varias imagenes",
+          "Consulta por volumen"
         ]
       }
     },
@@ -62,13 +105,12 @@
     ]
   },
   {
-    "id": "thermal-bonded-world-cup-02",
-    "name": "World Cup-02",
+    "id": "football-177208648-european-cup",
+    "name": "European Cup",
     "category": "Football",
     "categorySlug": "football",
-    "album": "World Cup",
-    "image": "/yupoo-products/thermal-bonded/world-cup-02.jpg",
-    "sourceUrl": "https://qubu.x.yupoo.com/albums/177031341?uid=1&isSubCate=false&referrercate=4696117",
+    "album": "European Cup",
+    "image": "/yupoo-products/football/177208648-european-cup/177208648-european-cup-01.jpg",
     "visible": true,
     "sortOrder": 2,
     "prices": {
@@ -77,9 +119,25 @@
       "priceUnit": "piece"
     },
     "galleryImages": [
-      "/yupoo-products/thermal-bonded/world-cup-02.jpg"
+      "/yupoo-products/football/177208648-european-cup/177208648-european-cup-01.jpg",
+      "/yupoo-products/football/177208648-european-cup/177208648-european-cup-02.jpg",
+      "/yupoo-products/football/177208648-european-cup/177208648-european-cup-03.jpg",
+      "/yupoo-products/football/177208648-european-cup/177208648-european-cup-04.jpg",
+      "/yupoo-products/football/177208648-european-cup/177208648-european-cup-05.jpg",
+      "/yupoo-products/football/177208648-european-cup/177208648-european-cup-06.jpg",
+      "/yupoo-products/football/177208648-european-cup/177208648-european-cup-07.jpg",
+      "/yupoo-products/football/177208648-european-cup/177208648-european-cup-08.jpg"
     ],
-    "galleryLabels": [],
+    "galleryLabels": [
+      "Style 1",
+      "Style 2",
+      "Style 3",
+      "Style 4",
+      "Style 5",
+      "Style 6",
+      "Style 7",
+      "Style 8"
+    ],
     "specs": [
       {
         "label": "Category",
@@ -87,32 +145,48 @@
       },
       {
         "label": "Album",
-        "value": "World Cup"
+        "value": "European Cup"
+      },
+      {
+        "label": "Images",
+        "value": "8"
       }
     ],
     "translations": {
       "en": {
-        "name": "World Cup-02",
+        "name": "European Cup",
         "category": "Football",
-        "album": "World Cup",
-        "description": "World Cup-02 from World Cup, suitable for team purchase and product inquiry.",
-        "scenario": "Club training, school sourcing, sports goods retail",
+        "album": "European Cup",
+        "description": "European Cup football style with 8 product images for inquiry and team purchasing.",
+        "scenario": "Football clubs, schools, team purchase and sports goods retail",
         "highlights": [
-          "Selected catalog item",
-          "Bulk inquiry available",
-          "Custom sourcing support"
+          "Football product catalog",
+          "Multiple images available",
+          "Bulk inquiry support"
         ]
       },
       "zh": {
-        "name": "World Cup-02",
+        "name": "European Cup",
         "category": "足球",
-        "album": "World Cup",
-        "description": "足球商品，适合团队采购、学校训练和体育用品零售。",
-        "scenario": "团队采购、学校训练、体育用品零售",
+        "album": "European Cup",
+        "description": "European Cup 足球款式，包含 8 张产品图片，适合询盘、选款和团队采购。",
+        "scenario": "足球俱乐部、学校训练、团队采购、体育用品零售",
         "highlights": [
-          "足球样品",
-          "支持批量询盘",
-          "支持定制沟通"
+          "足球款式图集",
+          "多图可查看",
+          "支持批量询盘"
+        ]
+      },
+      "es": {
+        "name": "European Cup",
+        "category": "Futbol",
+        "album": "European Cup",
+        "description": "Modelo de futbol European Cup con 8 imagenes para consulta y compra por equipo.",
+        "scenario": "Clubes, escuelas, equipos y venta deportiva",
+        "highlights": [
+          "Catalogo de futbol",
+          "Varias imagenes",
+          "Consulta por volumen"
         ]
       }
     },
@@ -124,13 +198,12 @@
     ]
   },
   {
-    "id": "thermal-bonded-world-cup-03",
-    "name": "World Cup-03",
+    "id": "football-177028558-uefa-champions-league",
+    "name": "UEFA Champions League",
     "category": "Football",
     "categorySlug": "football",
-    "album": "World Cup",
-    "image": "/yupoo-products/thermal-bonded/world-cup-03.jpg",
-    "sourceUrl": "https://qubu.x.yupoo.com/albums/177031341?uid=1&isSubCate=false&referrercate=4696117",
+    "album": "UEFA Champions League",
+    "image": "/yupoo-products/football/177028558-uefa-champions-league/177028558-uefa-champions-league-01.jpg",
     "visible": true,
     "sortOrder": 3,
     "prices": {
@@ -139,9 +212,95 @@
       "priceUnit": "piece"
     },
     "galleryImages": [
-      "/yupoo-products/thermal-bonded/world-cup-03.jpg"
+      "/yupoo-products/football/177028558-uefa-champions-league/177028558-uefa-champions-league-01.jpg",
+      "/yupoo-products/football/177028558-uefa-champions-league/177028558-uefa-champions-league-02.jpg",
+      "/yupoo-products/football/177028558-uefa-champions-league/177028558-uefa-champions-league-03.jpg",
+      "/yupoo-products/football/177028558-uefa-champions-league/177028558-uefa-champions-league-04.jpg",
+      "/yupoo-products/football/177028558-uefa-champions-league/177028558-uefa-champions-league-05.jpg",
+      "/yupoo-products/football/177028558-uefa-champions-league/177028558-uefa-champions-league-06.jpg",
+      "/yupoo-products/football/177028558-uefa-champions-league/177028558-uefa-champions-league-07.jpg",
+      "/yupoo-products/football/177028558-uefa-champions-league/177028558-uefa-champions-league-08.jpg",
+      "/yupoo-products/football/177028558-uefa-champions-league/177028558-uefa-champions-league-09.jpg",
+      "/yupoo-products/football/177028558-uefa-champions-league/177028558-uefa-champions-league-10.jpg",
+      "/yupoo-products/football/177028558-uefa-champions-league/177028558-uefa-champions-league-11.jpg",
+      "/yupoo-products/football/177028558-uefa-champions-league/177028558-uefa-champions-league-12.jpg",
+      "/yupoo-products/football/177028558-uefa-champions-league/177028558-uefa-champions-league-13.jpg",
+      "/yupoo-products/football/177028558-uefa-champions-league/177028558-uefa-champions-league-14.jpg",
+      "/yupoo-products/football/177028558-uefa-champions-league/177028558-uefa-champions-league-15.jpg",
+      "/yupoo-products/football/177028558-uefa-champions-league/177028558-uefa-champions-league-16.jpg",
+      "/yupoo-products/football/177028558-uefa-champions-league/177028558-uefa-champions-league-17.jpg",
+      "/yupoo-products/football/177028558-uefa-champions-league/177028558-uefa-champions-league-18.jpg",
+      "/yupoo-products/football/177028558-uefa-champions-league/177028558-uefa-champions-league-19.jpg",
+      "/yupoo-products/football/177028558-uefa-champions-league/177028558-uefa-champions-league-20.jpg",
+      "/yupoo-products/football/177028558-uefa-champions-league/177028558-uefa-champions-league-21.jpg",
+      "/yupoo-products/football/177028558-uefa-champions-league/177028558-uefa-champions-league-22.jpg",
+      "/yupoo-products/football/177028558-uefa-champions-league/177028558-uefa-champions-league-23.jpg",
+      "/yupoo-products/football/177028558-uefa-champions-league/177028558-uefa-champions-league-24.jpg",
+      "/yupoo-products/football/177028558-uefa-champions-league/177028558-uefa-champions-league-25.jpg",
+      "/yupoo-products/football/177028558-uefa-champions-league/177028558-uefa-champions-league-26.jpg",
+      "/yupoo-products/football/177028558-uefa-champions-league/177028558-uefa-champions-league-27.jpg",
+      "/yupoo-products/football/177028558-uefa-champions-league/177028558-uefa-champions-league-28.jpg",
+      "/yupoo-products/football/177028558-uefa-champions-league/177028558-uefa-champions-league-29.jpg",
+      "/yupoo-products/football/177028558-uefa-champions-league/177028558-uefa-champions-league-30.jpg",
+      "/yupoo-products/football/177028558-uefa-champions-league/177028558-uefa-champions-league-31.jpg",
+      "/yupoo-products/football/177028558-uefa-champions-league/177028558-uefa-champions-league-32.jpg",
+      "/yupoo-products/football/177028558-uefa-champions-league/177028558-uefa-champions-league-33.jpg",
+      "/yupoo-products/football/177028558-uefa-champions-league/177028558-uefa-champions-league-34.jpg",
+      "/yupoo-products/football/177028558-uefa-champions-league/177028558-uefa-champions-league-35.jpg",
+      "/yupoo-products/football/177028558-uefa-champions-league/177028558-uefa-champions-league-36.jpg",
+      "/yupoo-products/football/177028558-uefa-champions-league/177028558-uefa-champions-league-37.jpg",
+      "/yupoo-products/football/177028558-uefa-champions-league/177028558-uefa-champions-league-38.jpg",
+      "/yupoo-products/football/177028558-uefa-champions-league/177028558-uefa-champions-league-39.jpg",
+      "/yupoo-products/football/177028558-uefa-champions-league/177028558-uefa-champions-league-40.jpg",
+      "/yupoo-products/football/177028558-uefa-champions-league/177028558-uefa-champions-league-41.jpg",
+      "/yupoo-products/football/177028558-uefa-champions-league/177028558-uefa-champions-league-42.jpg",
+      "/yupoo-products/football/177028558-uefa-champions-league/177028558-uefa-champions-league-43.jpg"
     ],
-    "galleryLabels": [],
+    "galleryLabels": [
+      "Style 1",
+      "Style 2",
+      "Style 3",
+      "Style 4",
+      "Style 5",
+      "Style 6",
+      "Style 7",
+      "Style 8",
+      "Style 9",
+      "Style 10",
+      "Style 11",
+      "Style 12",
+      "Style 13",
+      "Style 14",
+      "Style 15",
+      "Style 16",
+      "Style 17",
+      "Style 18",
+      "Style 19",
+      "Style 20",
+      "Style 21",
+      "Style 22",
+      "Style 23",
+      "Style 24",
+      "Style 25",
+      "Style 26",
+      "Style 27",
+      "Style 28",
+      "Style 29",
+      "Style 30",
+      "Style 31",
+      "Style 32",
+      "Style 33",
+      "Style 34",
+      "Style 35",
+      "Style 36",
+      "Style 37",
+      "Style 38",
+      "Style 39",
+      "Style 40",
+      "Style 41",
+      "Style 42",
+      "Style 43"
+    ],
     "specs": [
       {
         "label": "Category",
@@ -149,32 +308,48 @@
       },
       {
         "label": "Album",
-        "value": "World Cup"
+        "value": "UEFA Champions League"
+      },
+      {
+        "label": "Images",
+        "value": "43"
       }
     ],
     "translations": {
       "en": {
-        "name": "World Cup-03",
+        "name": "UEFA Champions League",
         "category": "Football",
-        "album": "World Cup",
-        "description": "World Cup-03 from World Cup, suitable for team purchase and product inquiry.",
-        "scenario": "Club training, school sourcing, sports goods retail",
+        "album": "UEFA Champions League",
+        "description": "UEFA Champions League football style with 43 product images for inquiry and team purchasing.",
+        "scenario": "Football clubs, schools, team purchase and sports goods retail",
         "highlights": [
-          "Selected catalog item",
-          "Bulk inquiry available",
-          "Custom sourcing support"
+          "Football product catalog",
+          "Multiple images available",
+          "Bulk inquiry support"
         ]
       },
       "zh": {
-        "name": "World Cup-03",
+        "name": "UEFA Champions League",
         "category": "足球",
-        "album": "World Cup",
-        "description": "足球商品，适合团队采购、学校训练和体育用品零售。",
-        "scenario": "团队采购、学校训练、体育用品零售",
+        "album": "UEFA Champions League",
+        "description": "UEFA Champions League 足球款式，包含 43 张产品图片，适合询盘、选款和团队采购。",
+        "scenario": "足球俱乐部、学校训练、团队采购、体育用品零售",
         "highlights": [
-          "足球样品",
-          "支持批量询盘",
-          "支持定制沟通"
+          "足球款式图集",
+          "多图可查看",
+          "支持批量询盘"
+        ]
+      },
+      "es": {
+        "name": "UEFA Champions League",
+        "category": "Futbol",
+        "album": "UEFA Champions League",
+        "description": "Modelo de futbol UEFA Champions League con 43 imagenes para consulta y compra por equipo.",
+        "scenario": "Clubes, escuelas, equipos y venta deportiva",
+        "highlights": [
+          "Catalogo de futbol",
+          "Varias imagenes",
+          "Consulta por volumen"
         ]
       }
     },
@@ -186,13 +361,12 @@
     ]
   },
   {
-    "id": "thermal-bonded-world-cup-04",
-    "name": "World Cup-04",
+    "id": "football-177028568-premier-league",
+    "name": "Premier League",
     "category": "Football",
     "categorySlug": "football",
-    "album": "World Cup",
-    "image": "/yupoo-products/thermal-bonded/world-cup-04.jpg",
-    "sourceUrl": "https://qubu.x.yupoo.com/albums/177031341?uid=1&isSubCate=false&referrercate=4696117",
+    "album": "Premier League",
+    "image": "/yupoo-products/football/177028568-premier-league/177028568-premier-league-01.jpg",
     "visible": true,
     "sortOrder": 4,
     "prices": {
@@ -201,9 +375,97 @@
       "priceUnit": "piece"
     },
     "galleryImages": [
-      "/yupoo-products/thermal-bonded/world-cup-04.jpg"
+      "/yupoo-products/football/177028568-premier-league/177028568-premier-league-01.jpg",
+      "/yupoo-products/football/177028568-premier-league/177028568-premier-league-02.jpg",
+      "/yupoo-products/football/177028568-premier-league/177028568-premier-league-03.jpg",
+      "/yupoo-products/football/177028568-premier-league/177028568-premier-league-04.jpg",
+      "/yupoo-products/football/177028568-premier-league/177028568-premier-league-05.jpg",
+      "/yupoo-products/football/177028568-premier-league/177028568-premier-league-06.jpg",
+      "/yupoo-products/football/177028568-premier-league/177028568-premier-league-07.jpg",
+      "/yupoo-products/football/177028568-premier-league/177028568-premier-league-08.jpg",
+      "/yupoo-products/football/177028568-premier-league/177028568-premier-league-09.jpg",
+      "/yupoo-products/football/177028568-premier-league/177028568-premier-league-10.jpg",
+      "/yupoo-products/football/177028568-premier-league/177028568-premier-league-11.jpg",
+      "/yupoo-products/football/177028568-premier-league/177028568-premier-league-12.jpg",
+      "/yupoo-products/football/177028568-premier-league/177028568-premier-league-13.jpg",
+      "/yupoo-products/football/177028568-premier-league/177028568-premier-league-14.jpg",
+      "/yupoo-products/football/177028568-premier-league/177028568-premier-league-15.jpg",
+      "/yupoo-products/football/177028568-premier-league/177028568-premier-league-16.jpg",
+      "/yupoo-products/football/177028568-premier-league/177028568-premier-league-17.jpg",
+      "/yupoo-products/football/177028568-premier-league/177028568-premier-league-18.jpg",
+      "/yupoo-products/football/177028568-premier-league/177028568-premier-league-19.jpg",
+      "/yupoo-products/football/177028568-premier-league/177028568-premier-league-20.jpg",
+      "/yupoo-products/football/177028568-premier-league/177028568-premier-league-21.jpg",
+      "/yupoo-products/football/177028568-premier-league/177028568-premier-league-22.jpg",
+      "/yupoo-products/football/177028568-premier-league/177028568-premier-league-23.jpg",
+      "/yupoo-products/football/177028568-premier-league/177028568-premier-league-24.jpg",
+      "/yupoo-products/football/177028568-premier-league/177028568-premier-league-25.jpg",
+      "/yupoo-products/football/177028568-premier-league/177028568-premier-league-26.jpg",
+      "/yupoo-products/football/177028568-premier-league/177028568-premier-league-27.jpg",
+      "/yupoo-products/football/177028568-premier-league/177028568-premier-league-28.jpg",
+      "/yupoo-products/football/177028568-premier-league/177028568-premier-league-29.jpg",
+      "/yupoo-products/football/177028568-premier-league/177028568-premier-league-30.jpg",
+      "/yupoo-products/football/177028568-premier-league/177028568-premier-league-31.jpg",
+      "/yupoo-products/football/177028568-premier-league/177028568-premier-league-32.jpg",
+      "/yupoo-products/football/177028568-premier-league/177028568-premier-league-33.jpg",
+      "/yupoo-products/football/177028568-premier-league/177028568-premier-league-34.jpg",
+      "/yupoo-products/football/177028568-premier-league/177028568-premier-league-35.jpg",
+      "/yupoo-products/football/177028568-premier-league/177028568-premier-league-36.jpg",
+      "/yupoo-products/football/177028568-premier-league/177028568-premier-league-37.jpg",
+      "/yupoo-products/football/177028568-premier-league/177028568-premier-league-38.jpg",
+      "/yupoo-products/football/177028568-premier-league/177028568-premier-league-39.jpg",
+      "/yupoo-products/football/177028568-premier-league/177028568-premier-league-40.jpg",
+      "/yupoo-products/football/177028568-premier-league/177028568-premier-league-41.jpg",
+      "/yupoo-products/football/177028568-premier-league/177028568-premier-league-42.jpg",
+      "/yupoo-products/football/177028568-premier-league/177028568-premier-league-43.jpg",
+      "/yupoo-products/football/177028568-premier-league/177028568-premier-league-44.jpg"
     ],
-    "galleryLabels": [],
+    "galleryLabels": [
+      "Style 1",
+      "Style 2",
+      "Style 3",
+      "Style 4",
+      "Style 5",
+      "Style 6",
+      "Style 7",
+      "Style 8",
+      "Style 9",
+      "Style 10",
+      "Style 11",
+      "Style 12",
+      "Style 13",
+      "Style 14",
+      "Style 15",
+      "Style 16",
+      "Style 17",
+      "Style 18",
+      "Style 19",
+      "Style 20",
+      "Style 21",
+      "Style 22",
+      "Style 23",
+      "Style 24",
+      "Style 25",
+      "Style 26",
+      "Style 27",
+      "Style 28",
+      "Style 29",
+      "Style 30",
+      "Style 31",
+      "Style 32",
+      "Style 33",
+      "Style 34",
+      "Style 35",
+      "Style 36",
+      "Style 37",
+      "Style 38",
+      "Style 39",
+      "Style 40",
+      "Style 41",
+      "Style 42",
+      "Style 43",
+      "Style 44"
+    ],
     "specs": [
       {
         "label": "Category",
@@ -211,32 +473,48 @@
       },
       {
         "label": "Album",
-        "value": "World Cup"
+        "value": "Premier League"
+      },
+      {
+        "label": "Images",
+        "value": "44"
       }
     ],
     "translations": {
       "en": {
-        "name": "World Cup-04",
+        "name": "Premier League",
         "category": "Football",
-        "album": "World Cup",
-        "description": "World Cup-04 from World Cup, suitable for team purchase and product inquiry.",
-        "scenario": "Club training, school sourcing, sports goods retail",
+        "album": "Premier League",
+        "description": "Premier League football style with 44 product images for inquiry and team purchasing.",
+        "scenario": "Football clubs, schools, team purchase and sports goods retail",
         "highlights": [
-          "Selected catalog item",
-          "Bulk inquiry available",
-          "Custom sourcing support"
+          "Football product catalog",
+          "Multiple images available",
+          "Bulk inquiry support"
         ]
       },
       "zh": {
-        "name": "World Cup-04",
+        "name": "Premier League",
         "category": "足球",
-        "album": "World Cup",
-        "description": "足球商品，适合团队采购、学校训练和体育用品零售。",
-        "scenario": "团队采购、学校训练、体育用品零售",
+        "album": "Premier League",
+        "description": "Premier League 足球款式，包含 44 张产品图片，适合询盘、选款和团队采购。",
+        "scenario": "足球俱乐部、学校训练、团队采购、体育用品零售",
         "highlights": [
-          "足球样品",
-          "支持批量询盘",
-          "支持定制沟通"
+          "足球款式图集",
+          "多图可查看",
+          "支持批量询盘"
+        ]
+      },
+      "es": {
+        "name": "Premier League",
+        "category": "Futbol",
+        "album": "Premier League",
+        "description": "Modelo de futbol Premier League con 44 imagenes para consulta y compra por equipo.",
+        "scenario": "Clubes, escuelas, equipos y venta deportiva",
+        "highlights": [
+          "Catalogo de futbol",
+          "Varias imagenes",
+          "Consulta por volumen"
         ]
       }
     },
@@ -248,13 +526,12 @@
     ]
   },
   {
-    "id": "thermal-bonded-world-cup-05",
-    "name": "World Cup-05",
+    "id": "football-177208927-la-liga",
+    "name": "La Liga",
     "category": "Football",
     "categorySlug": "football",
-    "album": "World Cup",
-    "image": "/yupoo-products/thermal-bonded/world-cup-05.jpg",
-    "sourceUrl": "https://qubu.x.yupoo.com/albums/177031341?uid=1&isSubCate=false&referrercate=4696117",
+    "album": "La Liga",
+    "image": "/yupoo-products/football/177208927-la-liga/177208927-la-liga-01.jpg",
     "visible": true,
     "sortOrder": 5,
     "prices": {
@@ -263,9 +540,17 @@
       "priceUnit": "piece"
     },
     "galleryImages": [
-      "/yupoo-products/thermal-bonded/world-cup-05.jpg"
+      "/yupoo-products/football/177208927-la-liga/177208927-la-liga-01.jpg",
+      "/yupoo-products/football/177208927-la-liga/177208927-la-liga-02.jpg",
+      "/yupoo-products/football/177208927-la-liga/177208927-la-liga-03.jpg",
+      "/yupoo-products/football/177208927-la-liga/177208927-la-liga-04.jpg"
     ],
-    "galleryLabels": [],
+    "galleryLabels": [
+      "Style 1",
+      "Style 2",
+      "Style 3",
+      "Style 4"
+    ],
     "specs": [
       {
         "label": "Category",
@@ -273,32 +558,48 @@
       },
       {
         "label": "Album",
-        "value": "World Cup"
+        "value": "La Liga"
+      },
+      {
+        "label": "Images",
+        "value": "4"
       }
     ],
     "translations": {
       "en": {
-        "name": "World Cup-05",
+        "name": "La Liga",
         "category": "Football",
-        "album": "World Cup",
-        "description": "World Cup-05 from World Cup, suitable for team purchase and product inquiry.",
-        "scenario": "Club training, school sourcing, sports goods retail",
+        "album": "La Liga",
+        "description": "La Liga football style with 4 product images for inquiry and team purchasing.",
+        "scenario": "Football clubs, schools, team purchase and sports goods retail",
         "highlights": [
-          "Selected catalog item",
-          "Bulk inquiry available",
-          "Custom sourcing support"
+          "Football product catalog",
+          "Multiple images available",
+          "Bulk inquiry support"
         ]
       },
       "zh": {
-        "name": "World Cup-05",
+        "name": "La Liga",
         "category": "足球",
-        "album": "World Cup",
-        "description": "足球商品，适合团队采购、学校训练和体育用品零售。",
-        "scenario": "团队采购、学校训练、体育用品零售",
+        "album": "La Liga",
+        "description": "La Liga 足球款式，包含 4 张产品图片，适合询盘、选款和团队采购。",
+        "scenario": "足球俱乐部、学校训练、团队采购、体育用品零售",
         "highlights": [
-          "足球样品",
-          "支持批量询盘",
-          "支持定制沟通"
+          "足球款式图集",
+          "多图可查看",
+          "支持批量询盘"
+        ]
+      },
+      "es": {
+        "name": "La Liga",
+        "category": "Futbol",
+        "album": "La Liga",
+        "description": "Modelo de futbol La Liga con 4 imagenes para consulta y compra por equipo.",
+        "scenario": "Clubes, escuelas, equipos y venta deportiva",
+        "highlights": [
+          "Catalogo de futbol",
+          "Varias imagenes",
+          "Consulta por volumen"
         ]
       }
     },
@@ -310,13 +611,12 @@
     ]
   },
   {
-    "id": "thermal-bonded-world-cup-06",
-    "name": "World Cup-06",
+    "id": "football-177208883-bundesliga",
+    "name": "Bundesliga",
     "category": "Football",
     "categorySlug": "football",
-    "album": "World Cup",
-    "image": "/yupoo-products/thermal-bonded/world-cup-06.jpg",
-    "sourceUrl": "https://qubu.x.yupoo.com/albums/177031341?uid=1&isSubCate=false&referrercate=4696117",
+    "album": "Bundesliga",
+    "image": "/yupoo-products/football/177208883-bundesliga/177208883-bundesliga-01.jpg",
     "visible": true,
     "sortOrder": 6,
     "prices": {
@@ -325,9 +625,17 @@
       "priceUnit": "piece"
     },
     "galleryImages": [
-      "/yupoo-products/thermal-bonded/world-cup-06.jpg"
+      "/yupoo-products/football/177208883-bundesliga/177208883-bundesliga-01.jpg",
+      "/yupoo-products/football/177208883-bundesliga/177208883-bundesliga-02.jpg",
+      "/yupoo-products/football/177208883-bundesliga/177208883-bundesliga-03.jpg",
+      "/yupoo-products/football/177208883-bundesliga/177208883-bundesliga-04.jpg"
     ],
-    "galleryLabels": [],
+    "galleryLabels": [
+      "Style 1",
+      "Style 2",
+      "Style 3",
+      "Style 4"
+    ],
     "specs": [
       {
         "label": "Category",
@@ -335,32 +643,48 @@
       },
       {
         "label": "Album",
-        "value": "World Cup"
+        "value": "Bundesliga"
+      },
+      {
+        "label": "Images",
+        "value": "4"
       }
     ],
     "translations": {
       "en": {
-        "name": "World Cup-06",
+        "name": "Bundesliga",
         "category": "Football",
-        "album": "World Cup",
-        "description": "World Cup-06 from World Cup, suitable for team purchase and product inquiry.",
-        "scenario": "Club training, school sourcing, sports goods retail",
+        "album": "Bundesliga",
+        "description": "Bundesliga football style with 4 product images for inquiry and team purchasing.",
+        "scenario": "Football clubs, schools, team purchase and sports goods retail",
         "highlights": [
-          "Selected catalog item",
-          "Bulk inquiry available",
-          "Custom sourcing support"
+          "Football product catalog",
+          "Multiple images available",
+          "Bulk inquiry support"
         ]
       },
       "zh": {
-        "name": "World Cup-06",
+        "name": "Bundesliga",
         "category": "足球",
-        "album": "World Cup",
-        "description": "足球商品，适合团队采购、学校训练和体育用品零售。",
-        "scenario": "团队采购、学校训练、体育用品零售",
+        "album": "Bundesliga",
+        "description": "Bundesliga 足球款式，包含 4 张产品图片，适合询盘、选款和团队采购。",
+        "scenario": "足球俱乐部、学校训练、团队采购、体育用品零售",
         "highlights": [
-          "足球样品",
-          "支持批量询盘",
-          "支持定制沟通"
+          "足球款式图集",
+          "多图可查看",
+          "支持批量询盘"
+        ]
+      },
+      "es": {
+        "name": "Bundesliga",
+        "category": "Futbol",
+        "album": "Bundesliga",
+        "description": "Modelo de futbol Bundesliga con 4 imagenes para consulta y compra por equipo.",
+        "scenario": "Clubes, escuelas, equipos y venta deportiva",
+        "highlights": [
+          "Catalogo de futbol",
+          "Varias imagenes",
+          "Consulta por volumen"
         ]
       }
     },
@@ -372,24 +696,201 @@
     ]
   },
   {
-    "id": "thermal-bonded-european-cup-01",
-    "name": "European Cup-01",
+    "id": "football-177208966-serie-a",
+    "name": "Serie A",
     "category": "Football",
     "categorySlug": "football",
-    "album": "European Cup",
-    "image": "/yupoo-products/thermal-bonded/european-cup-01.jpg",
-    "sourceUrl": "https://qubu.x.yupoo.com/albums/177208648?uid=1&isSubCate=false&referrercate=4696117",
+    "album": "Serie A",
+    "image": "/yupoo-products/football/177208966-serie-a/177208966-serie-a-01.jpg",
     "visible": true,
     "sortOrder": 7,
+    "prices": {
+      "baseCurrency": "USD",
+      "basePrice": 24,
+      "priceUnit": "piece"
+    },
+    "galleryImages": [
+      "/yupoo-products/football/177208966-serie-a/177208966-serie-a-01.jpg",
+      "/yupoo-products/football/177208966-serie-a/177208966-serie-a-02.jpg",
+      "/yupoo-products/football/177208966-serie-a/177208966-serie-a-03.jpg",
+      "/yupoo-products/football/177208966-serie-a/177208966-serie-a-04.jpg",
+      "/yupoo-products/football/177208966-serie-a/177208966-serie-a-05.jpg",
+      "/yupoo-products/football/177208966-serie-a/177208966-serie-a-06.jpg"
+    ],
+    "galleryLabels": [
+      "Style 1",
+      "Style 2",
+      "Style 3",
+      "Style 4",
+      "Style 5",
+      "Style 6"
+    ],
+    "specs": [
+      {
+        "label": "Category",
+        "value": "Football"
+      },
+      {
+        "label": "Album",
+        "value": "Serie A"
+      },
+      {
+        "label": "Images",
+        "value": "6"
+      }
+    ],
+    "translations": {
+      "en": {
+        "name": "Serie A",
+        "category": "Football",
+        "album": "Serie A",
+        "description": "Serie A football style with 6 product images for inquiry and team purchasing.",
+        "scenario": "Football clubs, schools, team purchase and sports goods retail",
+        "highlights": [
+          "Football product catalog",
+          "Multiple images available",
+          "Bulk inquiry support"
+        ]
+      },
+      "zh": {
+        "name": "Serie A",
+        "category": "足球",
+        "album": "Serie A",
+        "description": "Serie A 足球款式，包含 6 张产品图片，适合询盘、选款和团队采购。",
+        "scenario": "足球俱乐部、学校训练、团队采购、体育用品零售",
+        "highlights": [
+          "足球款式图集",
+          "多图可查看",
+          "支持批量询盘"
+        ]
+      },
+      "es": {
+        "name": "Serie A",
+        "category": "Futbol",
+        "album": "Serie A",
+        "description": "Modelo de futbol Serie A con 6 imagenes para consulta y compra por equipo.",
+        "scenario": "Clubes, escuelas, equipos y venta deportiva",
+        "highlights": [
+          "Catalogo de futbol",
+          "Varias imagenes",
+          "Consulta por volumen"
+        ]
+      }
+    },
+    "detailSections": [
+      {
+        "title": "Product Details",
+        "body": "Contact us for price, customization and delivery details."
+      }
+    ]
+  },
+  {
+    "id": "football-177331049-uefa-nations-league",
+    "name": "UEFA Nations League",
+    "category": "Football",
+    "categorySlug": "football",
+    "album": "UEFA Nations League",
+    "image": "/yupoo-products/football/177331049-uefa-nations-league/177331049-uefa-nations-league-01.jpg",
+    "visible": true,
+    "sortOrder": 8,
+    "prices": {
+      "baseCurrency": "USD",
+      "basePrice": 26,
+      "priceUnit": "piece"
+    },
+    "galleryImages": [
+      "/yupoo-products/football/177331049-uefa-nations-league/177331049-uefa-nations-league-01.jpg",
+      "/yupoo-products/football/177331049-uefa-nations-league/177331049-uefa-nations-league-02.jpg",
+      "/yupoo-products/football/177331049-uefa-nations-league/177331049-uefa-nations-league-03.jpg"
+    ],
+    "galleryLabels": [
+      "Style 1",
+      "Style 2",
+      "Style 3"
+    ],
+    "specs": [
+      {
+        "label": "Category",
+        "value": "Football"
+      },
+      {
+        "label": "Album",
+        "value": "UEFA Nations League"
+      },
+      {
+        "label": "Images",
+        "value": "3"
+      }
+    ],
+    "translations": {
+      "en": {
+        "name": "UEFA Nations League",
+        "category": "Football",
+        "album": "UEFA Nations League",
+        "description": "UEFA Nations League football style with 3 product images for inquiry and team purchasing.",
+        "scenario": "Football clubs, schools, team purchase and sports goods retail",
+        "highlights": [
+          "Football product catalog",
+          "Multiple images available",
+          "Bulk inquiry support"
+        ]
+      },
+      "zh": {
+        "name": "UEFA Nations League",
+        "category": "足球",
+        "album": "UEFA Nations League",
+        "description": "UEFA Nations League 足球款式，包含 3 张产品图片，适合询盘、选款和团队采购。",
+        "scenario": "足球俱乐部、学校训练、团队采购、体育用品零售",
+        "highlights": [
+          "足球款式图集",
+          "多图可查看",
+          "支持批量询盘"
+        ]
+      },
+      "es": {
+        "name": "UEFA Nations League",
+        "category": "Futbol",
+        "album": "UEFA Nations League",
+        "description": "Modelo de futbol UEFA Nations League con 3 imagenes para consulta y compra por equipo.",
+        "scenario": "Clubes, escuelas, equipos y venta deportiva",
+        "highlights": [
+          "Catalogo de futbol",
+          "Varias imagenes",
+          "Consulta por volumen"
+        ]
+      }
+    },
+    "detailSections": [
+      {
+        "title": "Product Details",
+        "body": "Contact us for price, customization and delivery details."
+      }
+    ]
+  },
+  {
+    "id": "football-177330935-major-league-soccer",
+    "name": "Major League Soccer",
+    "category": "Football",
+    "categorySlug": "football",
+    "album": "Major League Soccer",
+    "image": "/yupoo-products/football/177330935-major-league-soccer/177330935-major-league-soccer-01.jpg",
+    "visible": true,
+    "sortOrder": 9,
     "prices": {
       "baseCurrency": "USD",
       "basePrice": 12,
       "priceUnit": "piece"
     },
     "galleryImages": [
-      "/yupoo-products/thermal-bonded/european-cup-01.jpg"
+      "/yupoo-products/football/177330935-major-league-soccer/177330935-major-league-soccer-01.jpg",
+      "/yupoo-products/football/177330935-major-league-soccer/177330935-major-league-soccer-02.jpg",
+      "/yupoo-products/football/177330935-major-league-soccer/177330935-major-league-soccer-03.jpg"
     ],
-    "galleryLabels": [],
+    "galleryLabels": [
+      "Style 1",
+      "Style 2",
+      "Style 3"
+    ],
     "specs": [
       {
         "label": "Category",
@@ -397,32 +898,48 @@
       },
       {
         "label": "Album",
-        "value": "European Cup"
+        "value": "Major League Soccer"
+      },
+      {
+        "label": "Images",
+        "value": "3"
       }
     ],
     "translations": {
       "en": {
-        "name": "European Cup-01",
+        "name": "Major League Soccer",
         "category": "Football",
-        "album": "European Cup",
-        "description": "European Cup-01 from European Cup, suitable for team purchase and product inquiry.",
-        "scenario": "Club training, school sourcing, sports goods retail",
+        "album": "Major League Soccer",
+        "description": "Major League Soccer football style with 3 product images for inquiry and team purchasing.",
+        "scenario": "Football clubs, schools, team purchase and sports goods retail",
         "highlights": [
-          "Selected catalog item",
-          "Bulk inquiry available",
-          "Custom sourcing support"
+          "Football product catalog",
+          "Multiple images available",
+          "Bulk inquiry support"
         ]
       },
       "zh": {
-        "name": "European Cup-01",
+        "name": "Major League Soccer",
         "category": "足球",
-        "album": "European Cup",
-        "description": "足球商品，适合团队采购、学校训练和体育用品零售。",
-        "scenario": "团队采购、学校训练、体育用品零售",
+        "album": "Major League Soccer",
+        "description": "Major League Soccer 足球款式，包含 3 张产品图片，适合询盘、选款和团队采购。",
+        "scenario": "足球俱乐部、学校训练、团队采购、体育用品零售",
         "highlights": [
-          "足球样品",
-          "支持批量询盘",
-          "支持定制沟通"
+          "足球款式图集",
+          "多图可查看",
+          "支持批量询盘"
+        ]
+      },
+      "es": {
+        "name": "Major League Soccer",
+        "category": "Futbol",
+        "album": "Major League Soccer",
+        "description": "Modelo de futbol Major League Soccer con 3 imagenes para consulta y compra por equipo.",
+        "scenario": "Clubes, escuelas, equipos y venta deportiva",
+        "highlights": [
+          "Catalogo de futbol",
+          "Varias imagenes",
+          "Consulta por volumen"
         ]
       }
     },
@@ -434,24 +951,59 @@
     ]
   },
   {
-    "id": "thermal-bonded-european-cup-02",
-    "name": "European Cup-02",
+    "id": "football-177208736-molten",
+    "name": "Molten",
     "category": "Football",
     "categorySlug": "football",
-    "album": "European Cup",
-    "image": "/yupoo-products/thermal-bonded/european-cup-02.jpg",
-    "sourceUrl": "https://qubu.x.yupoo.com/albums/177208648?uid=1&isSubCate=false&referrercate=4696117",
+    "album": "Molten",
+    "image": "/yupoo-products/football/177208736-molten/177208736-molten-01.jpg",
     "visible": true,
-    "sortOrder": 8,
+    "sortOrder": 10,
     "prices": {
       "baseCurrency": "USD",
       "basePrice": 14,
       "priceUnit": "piece"
     },
     "galleryImages": [
-      "/yupoo-products/thermal-bonded/european-cup-02.jpg"
+      "/yupoo-products/football/177208736-molten/177208736-molten-01.jpg",
+      "/yupoo-products/football/177208736-molten/177208736-molten-02.jpg",
+      "/yupoo-products/football/177208736-molten/177208736-molten-03.jpg",
+      "/yupoo-products/football/177208736-molten/177208736-molten-04.jpg",
+      "/yupoo-products/football/177208736-molten/177208736-molten-05.jpg",
+      "/yupoo-products/football/177208736-molten/177208736-molten-06.jpg",
+      "/yupoo-products/football/177208736-molten/177208736-molten-07.jpg",
+      "/yupoo-products/football/177208736-molten/177208736-molten-08.jpg",
+      "/yupoo-products/football/177208736-molten/177208736-molten-09.jpg",
+      "/yupoo-products/football/177208736-molten/177208736-molten-10.jpg",
+      "/yupoo-products/football/177208736-molten/177208736-molten-11.jpg",
+      "/yupoo-products/football/177208736-molten/177208736-molten-12.jpg",
+      "/yupoo-products/football/177208736-molten/177208736-molten-13.jpg",
+      "/yupoo-products/football/177208736-molten/177208736-molten-14.jpg",
+      "/yupoo-products/football/177208736-molten/177208736-molten-15.jpg",
+      "/yupoo-products/football/177208736-molten/177208736-molten-16.jpg",
+      "/yupoo-products/football/177208736-molten/177208736-molten-17.jpg",
+      "/yupoo-products/football/177208736-molten/177208736-molten-18.jpg"
     ],
-    "galleryLabels": [],
+    "galleryLabels": [
+      "Style 1",
+      "Style 2",
+      "Style 3",
+      "Style 4",
+      "Style 5",
+      "Style 6",
+      "Style 7",
+      "Style 8",
+      "Style 9",
+      "Style 10",
+      "Style 11",
+      "Style 12",
+      "Style 13",
+      "Style 14",
+      "Style 15",
+      "Style 16",
+      "Style 17",
+      "Style 18"
+    ],
     "specs": [
       {
         "label": "Category",
@@ -459,32 +1011,48 @@
       },
       {
         "label": "Album",
-        "value": "European Cup"
+        "value": "Molten"
+      },
+      {
+        "label": "Images",
+        "value": "18"
       }
     ],
     "translations": {
       "en": {
-        "name": "European Cup-02",
+        "name": "Molten",
         "category": "Football",
-        "album": "European Cup",
-        "description": "European Cup-02 from European Cup, suitable for team purchase and product inquiry.",
-        "scenario": "Club training, school sourcing, sports goods retail",
+        "album": "Molten",
+        "description": "Molten football style with 18 product images for inquiry and team purchasing.",
+        "scenario": "Football clubs, schools, team purchase and sports goods retail",
         "highlights": [
-          "Selected catalog item",
-          "Bulk inquiry available",
-          "Custom sourcing support"
+          "Football product catalog",
+          "Multiple images available",
+          "Bulk inquiry support"
         ]
       },
       "zh": {
-        "name": "European Cup-02",
+        "name": "Molten",
         "category": "足球",
-        "album": "European Cup",
-        "description": "足球商品，适合团队采购、学校训练和体育用品零售。",
-        "scenario": "团队采购、学校训练、体育用品零售",
+        "album": "Molten",
+        "description": "Molten 足球款式，包含 18 张产品图片，适合询盘、选款和团队采购。",
+        "scenario": "足球俱乐部、学校训练、团队采购、体育用品零售",
         "highlights": [
-          "足球样品",
-          "支持批量询盘",
-          "支持定制沟通"
+          "足球款式图集",
+          "多图可查看",
+          "支持批量询盘"
+        ]
+      },
+      "es": {
+        "name": "Molten",
+        "category": "Futbol",
+        "album": "Molten",
+        "description": "Modelo de futbol Molten con 18 imagenes para consulta y compra por equipo.",
+        "scenario": "Clubes, escuelas, equipos y venta deportiva",
+        "highlights": [
+          "Catalogo de futbol",
+          "Varias imagenes",
+          "Consulta por volumen"
         ]
       }
     },
@@ -496,24 +1064,35 @@
     ]
   },
   {
-    "id": "thermal-bonded-european-cup-03",
-    "name": "European Cup-03",
+    "id": "football-177208682-club",
+    "name": "Club",
     "category": "Football",
     "categorySlug": "football",
-    "album": "European Cup",
-    "image": "/yupoo-products/thermal-bonded/european-cup-03.jpg",
-    "sourceUrl": "https://qubu.x.yupoo.com/albums/177208648?uid=1&isSubCate=false&referrercate=4696117",
+    "album": "Club",
+    "image": "/yupoo-products/football/177208682-club/177208682-club-01.jpg",
     "visible": true,
-    "sortOrder": 9,
+    "sortOrder": 11,
     "prices": {
       "baseCurrency": "USD",
       "basePrice": 16,
       "priceUnit": "piece"
     },
     "galleryImages": [
-      "/yupoo-products/thermal-bonded/european-cup-03.jpg"
+      "/yupoo-products/football/177208682-club/177208682-club-01.jpg",
+      "/yupoo-products/football/177208682-club/177208682-club-02.jpg",
+      "/yupoo-products/football/177208682-club/177208682-club-03.jpg",
+      "/yupoo-products/football/177208682-club/177208682-club-04.jpg",
+      "/yupoo-products/football/177208682-club/177208682-club-05.jpg",
+      "/yupoo-products/football/177208682-club/177208682-club-06.jpg"
     ],
-    "galleryLabels": [],
+    "galleryLabels": [
+      "Style 1",
+      "Style 2",
+      "Style 3",
+      "Style 4",
+      "Style 5",
+      "Style 6"
+    ],
     "specs": [
       {
         "label": "Category",
@@ -521,32 +1100,48 @@
       },
       {
         "label": "Album",
-        "value": "European Cup"
+        "value": "Club"
+      },
+      {
+        "label": "Images",
+        "value": "6"
       }
     ],
     "translations": {
       "en": {
-        "name": "European Cup-03",
+        "name": "Club",
         "category": "Football",
-        "album": "European Cup",
-        "description": "European Cup-03 from European Cup, suitable for team purchase and product inquiry.",
-        "scenario": "Club training, school sourcing, sports goods retail",
+        "album": "Club",
+        "description": "Club football style with 6 product images for inquiry and team purchasing.",
+        "scenario": "Football clubs, schools, team purchase and sports goods retail",
         "highlights": [
-          "Selected catalog item",
-          "Bulk inquiry available",
-          "Custom sourcing support"
+          "Football product catalog",
+          "Multiple images available",
+          "Bulk inquiry support"
         ]
       },
       "zh": {
-        "name": "European Cup-03",
+        "name": "Club",
         "category": "足球",
-        "album": "European Cup",
-        "description": "足球商品，适合团队采购、学校训练和体育用品零售。",
-        "scenario": "团队采购、学校训练、体育用品零售",
+        "album": "Club",
+        "description": "Club 足球款式，包含 6 张产品图片，适合询盘、选款和团队采购。",
+        "scenario": "足球俱乐部、学校训练、团队采购、体育用品零售",
         "highlights": [
-          "足球样品",
-          "支持批量询盘",
-          "支持定制沟通"
+          "足球款式图集",
+          "多图可查看",
+          "支持批量询盘"
+        ]
+      },
+      "es": {
+        "name": "Club",
+        "category": "Futbol",
+        "album": "Club",
+        "description": "Modelo de futbol Club con 6 imagenes para consulta y compra por equipo.",
+        "scenario": "Clubes, escuelas, equipos y venta deportiva",
+        "highlights": [
+          "Catalogo de futbol",
+          "Varias imagenes",
+          "Consulta por volumen"
         ]
       }
     },
@@ -558,24 +1153,53 @@
     ]
   },
   {
-    "id": "thermal-bonded-european-cup-04",
-    "name": "European Cup-04",
+    "id": "football-177208778-other",
+    "name": "Other",
     "category": "Football",
     "categorySlug": "football",
-    "album": "European Cup",
-    "image": "/yupoo-products/thermal-bonded/european-cup-04.jpg",
-    "sourceUrl": "https://qubu.x.yupoo.com/albums/177208648?uid=1&isSubCate=false&referrercate=4696117",
+    "album": "Other",
+    "image": "/yupoo-products/football/177208778-other/177208778-other-01.jpg",
     "visible": true,
-    "sortOrder": 10,
+    "sortOrder": 12,
     "prices": {
       "baseCurrency": "USD",
       "basePrice": 18,
       "priceUnit": "piece"
     },
     "galleryImages": [
-      "/yupoo-products/thermal-bonded/european-cup-04.jpg"
+      "/yupoo-products/football/177208778-other/177208778-other-01.jpg",
+      "/yupoo-products/football/177208778-other/177208778-other-02.jpg",
+      "/yupoo-products/football/177208778-other/177208778-other-03.jpg",
+      "/yupoo-products/football/177208778-other/177208778-other-04.jpg",
+      "/yupoo-products/football/177208778-other/177208778-other-05.jpg",
+      "/yupoo-products/football/177208778-other/177208778-other-06.jpg",
+      "/yupoo-products/football/177208778-other/177208778-other-07.jpg",
+      "/yupoo-products/football/177208778-other/177208778-other-08.jpg",
+      "/yupoo-products/football/177208778-other/177208778-other-09.jpg",
+      "/yupoo-products/football/177208778-other/177208778-other-10.jpg",
+      "/yupoo-products/football/177208778-other/177208778-other-11.jpg",
+      "/yupoo-products/football/177208778-other/177208778-other-12.jpg",
+      "/yupoo-products/football/177208778-other/177208778-other-13.jpg",
+      "/yupoo-products/football/177208778-other/177208778-other-14.jpg",
+      "/yupoo-products/football/177208778-other/177208778-other-15.jpg"
     ],
-    "galleryLabels": [],
+    "galleryLabels": [
+      "Style 1",
+      "Style 2",
+      "Style 3",
+      "Style 4",
+      "Style 5",
+      "Style 6",
+      "Style 7",
+      "Style 8",
+      "Style 9",
+      "Style 10",
+      "Style 11",
+      "Style 12",
+      "Style 13",
+      "Style 14",
+      "Style 15"
+    ],
     "specs": [
       {
         "label": "Category",
@@ -583,32 +1207,48 @@
       },
       {
         "label": "Album",
-        "value": "European Cup"
+        "value": "Other"
+      },
+      {
+        "label": "Images",
+        "value": "15"
       }
     ],
     "translations": {
       "en": {
-        "name": "European Cup-04",
+        "name": "Other",
         "category": "Football",
-        "album": "European Cup",
-        "description": "European Cup-04 from European Cup, suitable for team purchase and product inquiry.",
-        "scenario": "Club training, school sourcing, sports goods retail",
+        "album": "Other",
+        "description": "Other football style with 15 product images for inquiry and team purchasing.",
+        "scenario": "Football clubs, schools, team purchase and sports goods retail",
         "highlights": [
-          "Selected catalog item",
-          "Bulk inquiry available",
-          "Custom sourcing support"
+          "Football product catalog",
+          "Multiple images available",
+          "Bulk inquiry support"
         ]
       },
       "zh": {
-        "name": "European Cup-04",
+        "name": "Other",
         "category": "足球",
-        "album": "European Cup",
-        "description": "足球商品，适合团队采购、学校训练和体育用品零售。",
-        "scenario": "团队采购、学校训练、体育用品零售",
+        "album": "Other",
+        "description": "Other 足球款式，包含 15 张产品图片，适合询盘、选款和团队采购。",
+        "scenario": "足球俱乐部、学校训练、团队采购、体育用品零售",
         "highlights": [
-          "足球样品",
-          "支持批量询盘",
-          "支持定制沟通"
+          "足球款式图集",
+          "多图可查看",
+          "支持批量询盘"
+        ]
+      },
+      "es": {
+        "name": "Other",
+        "category": "Futbol",
+        "album": "Other",
+        "description": "Modelo de futbol Other con 15 imagenes para consulta y compra por equipo.",
+        "scenario": "Clubes, escuelas, equipos y venta deportiva",
+        "highlights": [
+          "Catalogo de futbol",
+          "Varias imagenes",
+          "Consulta por volumen"
         ]
       }
     },
@@ -620,24 +1260,43 @@
     ]
   },
   {
-    "id": "thermal-bonded-european-cup-05",
-    "name": "European Cup-05",
+    "id": "football-177221340",
+    "name": "世界杯",
     "category": "Football",
     "categorySlug": "football",
-    "album": "European Cup",
-    "image": "/yupoo-products/thermal-bonded/european-cup-05.jpg",
-    "sourceUrl": "https://qubu.x.yupoo.com/albums/177208648?uid=1&isSubCate=false&referrercate=4696117",
+    "album": "世界杯",
+    "image": "/yupoo-products/football/177221340/177221340-01.jpg",
     "visible": true,
-    "sortOrder": 11,
+    "sortOrder": 13,
     "prices": {
       "baseCurrency": "USD",
       "basePrice": 20,
       "priceUnit": "piece"
     },
     "galleryImages": [
-      "/yupoo-products/thermal-bonded/european-cup-05.jpg"
+      "/yupoo-products/football/177221340/177221340-01.jpg",
+      "/yupoo-products/football/177221340/177221340-02.jpg",
+      "/yupoo-products/football/177221340/177221340-03.jpg",
+      "/yupoo-products/football/177221340/177221340-04.jpg",
+      "/yupoo-products/football/177221340/177221340-05.jpg",
+      "/yupoo-products/football/177221340/177221340-06.jpg",
+      "/yupoo-products/football/177221340/177221340-07.jpg",
+      "/yupoo-products/football/177221340/177221340-08.jpg",
+      "/yupoo-products/football/177221340/177221340-09.jpg",
+      "/yupoo-products/football/177221340/177221340-10.jpg"
     ],
-    "galleryLabels": [],
+    "galleryLabels": [
+      "Style 1",
+      "Style 2",
+      "Style 3",
+      "Style 4",
+      "Style 5",
+      "Style 6",
+      "Style 7",
+      "Style 8",
+      "Style 9",
+      "Style 10"
+    ],
     "specs": [
       {
         "label": "Category",
@@ -645,32 +1304,48 @@
       },
       {
         "label": "Album",
-        "value": "European Cup"
+        "value": "世界杯"
+      },
+      {
+        "label": "Images",
+        "value": "10"
       }
     ],
     "translations": {
       "en": {
-        "name": "European Cup-05",
+        "name": "世界杯",
         "category": "Football",
-        "album": "European Cup",
-        "description": "European Cup-05 from European Cup, suitable for team purchase and product inquiry.",
-        "scenario": "Club training, school sourcing, sports goods retail",
+        "album": "世界杯",
+        "description": "世界杯 football style with 10 product images for inquiry and team purchasing.",
+        "scenario": "Football clubs, schools, team purchase and sports goods retail",
         "highlights": [
-          "Selected catalog item",
-          "Bulk inquiry available",
-          "Custom sourcing support"
+          "Football product catalog",
+          "Multiple images available",
+          "Bulk inquiry support"
         ]
       },
       "zh": {
-        "name": "European Cup-05",
+        "name": "世界杯",
         "category": "足球",
-        "album": "European Cup",
-        "description": "足球商品，适合团队采购、学校训练和体育用品零售。",
-        "scenario": "团队采购、学校训练、体育用品零售",
+        "album": "世界杯",
+        "description": "世界杯 足球款式，包含 10 张产品图片，适合询盘、选款和团队采购。",
+        "scenario": "足球俱乐部、学校训练、团队采购、体育用品零售",
         "highlights": [
-          "足球样品",
-          "支持批量询盘",
-          "支持定制沟通"
+          "足球款式图集",
+          "多图可查看",
+          "支持批量询盘"
+        ]
+      },
+      "es": {
+        "name": "世界杯",
+        "category": "Futbol",
+        "album": "世界杯",
+        "description": "Modelo de futbol 世界杯 con 10 imagenes para consulta y compra por equipo.",
+        "scenario": "Clubes, escuelas, equipos y venta deportiva",
+        "highlights": [
+          "Catalogo de futbol",
+          "Varias imagenes",
+          "Consulta por volumen"
         ]
       }
     },
@@ -682,24 +1357,27 @@
     ]
   },
   {
-    "id": "thermal-bonded-european-cup-06",
-    "name": "European Cup-06",
+    "id": "football-177221352",
+    "name": "欧洲杯",
     "category": "Football",
     "categorySlug": "football",
-    "album": "European Cup",
-    "image": "/yupoo-products/thermal-bonded/european-cup-06.jpg",
-    "sourceUrl": "https://qubu.x.yupoo.com/albums/177208648?uid=1&isSubCate=false&referrercate=4696117",
+    "album": "欧洲杯",
+    "image": "/yupoo-products/football/177221352/177221352-01.jpg",
     "visible": true,
-    "sortOrder": 12,
+    "sortOrder": 14,
     "prices": {
       "baseCurrency": "USD",
       "basePrice": 22,
       "priceUnit": "piece"
     },
     "galleryImages": [
-      "/yupoo-products/thermal-bonded/european-cup-06.jpg"
+      "/yupoo-products/football/177221352/177221352-01.jpg",
+      "/yupoo-products/football/177221352/177221352-02.jpg"
     ],
-    "galleryLabels": [],
+    "galleryLabels": [
+      "Style 1",
+      "Style 2"
+    ],
     "specs": [
       {
         "label": "Category",
@@ -707,32 +1385,48 @@
       },
       {
         "label": "Album",
-        "value": "European Cup"
+        "value": "欧洲杯"
+      },
+      {
+        "label": "Images",
+        "value": "2"
       }
     ],
     "translations": {
       "en": {
-        "name": "European Cup-06",
+        "name": "欧洲杯",
         "category": "Football",
-        "album": "European Cup",
-        "description": "European Cup-06 from European Cup, suitable for team purchase and product inquiry.",
-        "scenario": "Club training, school sourcing, sports goods retail",
+        "album": "欧洲杯",
+        "description": "欧洲杯 football style with 2 product images for inquiry and team purchasing.",
+        "scenario": "Football clubs, schools, team purchase and sports goods retail",
         "highlights": [
-          "Selected catalog item",
-          "Bulk inquiry available",
-          "Custom sourcing support"
+          "Football product catalog",
+          "Multiple images available",
+          "Bulk inquiry support"
         ]
       },
       "zh": {
-        "name": "European Cup-06",
+        "name": "欧洲杯",
         "category": "足球",
-        "album": "European Cup",
-        "description": "足球商品，适合团队采购、学校训练和体育用品零售。",
-        "scenario": "团队采购、学校训练、体育用品零售",
+        "album": "欧洲杯",
+        "description": "欧洲杯 足球款式，包含 2 张产品图片，适合询盘、选款和团队采购。",
+        "scenario": "足球俱乐部、学校训练、团队采购、体育用品零售",
         "highlights": [
-          "足球样品",
-          "支持批量询盘",
-          "支持定制沟通"
+          "足球款式图集",
+          "多图可查看",
+          "支持批量询盘"
+        ]
+      },
+      "es": {
+        "name": "欧洲杯",
+        "category": "Futbol",
+        "album": "欧洲杯",
+        "description": "Modelo de futbol 欧洲杯 con 2 imagenes para consulta y compra por equipo.",
+        "scenario": "Clubes, escuelas, equipos y venta deportiva",
+        "highlights": [
+          "Catalogo de futbol",
+          "Varias imagenes",
+          "Consulta por volumen"
         ]
       }
     },
@@ -744,24 +1438,305 @@
     ]
   },
   {
-    "id": "machine-stitched-item-hz916t-01",
-    "name": "Machine Stitched-01",
+    "id": "football-177221201",
+    "name": "欧冠",
     "category": "Football",
     "categorySlug": "football",
-    "album": "Machine Stitched",
-    "image": "/yupoo-products/machine-stitched/item-hz916t-01.jpg",
-    "sourceUrl": "https://qubu.x.yupoo.com/albums/177221340?uid=1&isSubCate=false&referrercate=4694653",
+    "album": "欧冠",
+    "image": "/yupoo-products/football/177221201/177221201-01.jpg",
     "visible": true,
-    "sortOrder": 13,
+    "sortOrder": 15,
+    "prices": {
+      "baseCurrency": "USD",
+      "basePrice": 24,
+      "priceUnit": "piece"
+    },
+    "galleryImages": [
+      "/yupoo-products/football/177221201/177221201-01.jpg",
+      "/yupoo-products/football/177221201/177221201-02.jpg",
+      "/yupoo-products/football/177221201/177221201-03.jpg",
+      "/yupoo-products/football/177221201/177221201-04.jpg",
+      "/yupoo-products/football/177221201/177221201-05.jpg",
+      "/yupoo-products/football/177221201/177221201-06.jpg",
+      "/yupoo-products/football/177221201/177221201-07.jpg",
+      "/yupoo-products/football/177221201/177221201-08.jpg",
+      "/yupoo-products/football/177221201/177221201-09.jpg",
+      "/yupoo-products/football/177221201/177221201-10.jpg",
+      "/yupoo-products/football/177221201/177221201-11.jpg",
+      "/yupoo-products/football/177221201/177221201-12.jpg",
+      "/yupoo-products/football/177221201/177221201-13.jpg",
+      "/yupoo-products/football/177221201/177221201-14.jpg",
+      "/yupoo-products/football/177221201/177221201-15.jpg",
+      "/yupoo-products/football/177221201/177221201-16.jpg",
+      "/yupoo-products/football/177221201/177221201-17.jpg",
+      "/yupoo-products/football/177221201/177221201-18.jpg",
+      "/yupoo-products/football/177221201/177221201-19.jpg",
+      "/yupoo-products/football/177221201/177221201-20.jpg",
+      "/yupoo-products/football/177221201/177221201-21.jpg",
+      "/yupoo-products/football/177221201/177221201-22.jpg",
+      "/yupoo-products/football/177221201/177221201-23.jpg",
+      "/yupoo-products/football/177221201/177221201-24.jpg",
+      "/yupoo-products/football/177221201/177221201-25.jpg"
+    ],
+    "galleryLabels": [
+      "Style 1",
+      "Style 2",
+      "Style 3",
+      "Style 4",
+      "Style 5",
+      "Style 6",
+      "Style 7",
+      "Style 8",
+      "Style 9",
+      "Style 10",
+      "Style 11",
+      "Style 12",
+      "Style 13",
+      "Style 14",
+      "Style 15",
+      "Style 16",
+      "Style 17",
+      "Style 18",
+      "Style 19",
+      "Style 20",
+      "Style 21",
+      "Style 22",
+      "Style 23",
+      "Style 24",
+      "Style 25"
+    ],
+    "specs": [
+      {
+        "label": "Category",
+        "value": "Football"
+      },
+      {
+        "label": "Album",
+        "value": "欧冠"
+      },
+      {
+        "label": "Images",
+        "value": "25"
+      }
+    ],
+    "translations": {
+      "en": {
+        "name": "欧冠",
+        "category": "Football",
+        "album": "欧冠",
+        "description": "欧冠 football style with 25 product images for inquiry and team purchasing.",
+        "scenario": "Football clubs, schools, team purchase and sports goods retail",
+        "highlights": [
+          "Football product catalog",
+          "Multiple images available",
+          "Bulk inquiry support"
+        ]
+      },
+      "zh": {
+        "name": "欧冠",
+        "category": "足球",
+        "album": "欧冠",
+        "description": "欧冠 足球款式，包含 25 张产品图片，适合询盘、选款和团队采购。",
+        "scenario": "足球俱乐部、学校训练、团队采购、体育用品零售",
+        "highlights": [
+          "足球款式图集",
+          "多图可查看",
+          "支持批量询盘"
+        ]
+      },
+      "es": {
+        "name": "欧冠",
+        "category": "Futbol",
+        "album": "欧冠",
+        "description": "Modelo de futbol 欧冠 con 25 imagenes para consulta y compra por equipo.",
+        "scenario": "Clubes, escuelas, equipos y venta deportiva",
+        "highlights": [
+          "Catalogo de futbol",
+          "Varias imagenes",
+          "Consulta por volumen"
+        ]
+      }
+    },
+    "detailSections": [
+      {
+        "title": "Product Details",
+        "body": "Contact us for price, customization and delivery details."
+      }
+    ]
+  },
+  {
+    "id": "football-177028535",
+    "name": "英超",
+    "category": "Football",
+    "categorySlug": "football",
+    "album": "英超",
+    "image": "/yupoo-products/football/177028535/177028535-01.jpg",
+    "visible": true,
+    "sortOrder": 16,
+    "prices": {
+      "baseCurrency": "USD",
+      "basePrice": 26,
+      "priceUnit": "piece"
+    },
+    "galleryImages": [
+      "/yupoo-products/football/177028535/177028535-01.jpg",
+      "/yupoo-products/football/177028535/177028535-02.jpg",
+      "/yupoo-products/football/177028535/177028535-03.jpg",
+      "/yupoo-products/football/177028535/177028535-04.jpg",
+      "/yupoo-products/football/177028535/177028535-05.jpg",
+      "/yupoo-products/football/177028535/177028535-06.jpg",
+      "/yupoo-products/football/177028535/177028535-07.jpg",
+      "/yupoo-products/football/177028535/177028535-08.jpg",
+      "/yupoo-products/football/177028535/177028535-09.jpg",
+      "/yupoo-products/football/177028535/177028535-10.jpg",
+      "/yupoo-products/football/177028535/177028535-11.jpg",
+      "/yupoo-products/football/177028535/177028535-12.jpg",
+      "/yupoo-products/football/177028535/177028535-13.jpg",
+      "/yupoo-products/football/177028535/177028535-14.jpg",
+      "/yupoo-products/football/177028535/177028535-15.jpg",
+      "/yupoo-products/football/177028535/177028535-16.jpg",
+      "/yupoo-products/football/177028535/177028535-17.jpg",
+      "/yupoo-products/football/177028535/177028535-18.jpg",
+      "/yupoo-products/football/177028535/177028535-19.jpg",
+      "/yupoo-products/football/177028535/177028535-20.jpg",
+      "/yupoo-products/football/177028535/177028535-21.jpg",
+      "/yupoo-products/football/177028535/177028535-22.jpg",
+      "/yupoo-products/football/177028535/177028535-23.jpg",
+      "/yupoo-products/football/177028535/177028535-24.jpg",
+      "/yupoo-products/football/177028535/177028535-25.jpg",
+      "/yupoo-products/football/177028535/177028535-26.jpg",
+      "/yupoo-products/football/177028535/177028535-27.jpg",
+      "/yupoo-products/football/177028535/177028535-28.jpg",
+      "/yupoo-products/football/177028535/177028535-29.jpg",
+      "/yupoo-products/football/177028535/177028535-30.jpg",
+      "/yupoo-products/football/177028535/177028535-31.jpg",
+      "/yupoo-products/football/177028535/177028535-32.jpg",
+      "/yupoo-products/football/177028535/177028535-33.jpg",
+      "/yupoo-products/football/177028535/177028535-34.jpg",
+      "/yupoo-products/football/177028535/177028535-35.jpg",
+      "/yupoo-products/football/177028535/177028535-36.jpg",
+      "/yupoo-products/football/177028535/177028535-37.jpg"
+    ],
+    "galleryLabels": [
+      "Style 1",
+      "Style 2",
+      "Style 3",
+      "Style 4",
+      "Style 5",
+      "Style 6",
+      "Style 7",
+      "Style 8",
+      "Style 9",
+      "Style 10",
+      "Style 11",
+      "Style 12",
+      "Style 13",
+      "Style 14",
+      "Style 15",
+      "Style 16",
+      "Style 17",
+      "Style 18",
+      "Style 19",
+      "Style 20",
+      "Style 21",
+      "Style 22",
+      "Style 23",
+      "Style 24",
+      "Style 25",
+      "Style 26",
+      "Style 27",
+      "Style 28",
+      "Style 29",
+      "Style 30",
+      "Style 31",
+      "Style 32",
+      "Style 33",
+      "Style 34",
+      "Style 35",
+      "Style 36",
+      "Style 37"
+    ],
+    "specs": [
+      {
+        "label": "Category",
+        "value": "Football"
+      },
+      {
+        "label": "Album",
+        "value": "英超"
+      },
+      {
+        "label": "Images",
+        "value": "37"
+      }
+    ],
+    "translations": {
+      "en": {
+        "name": "英超",
+        "category": "Football",
+        "album": "英超",
+        "description": "英超 football style with 37 product images for inquiry and team purchasing.",
+        "scenario": "Football clubs, schools, team purchase and sports goods retail",
+        "highlights": [
+          "Football product catalog",
+          "Multiple images available",
+          "Bulk inquiry support"
+        ]
+      },
+      "zh": {
+        "name": "英超",
+        "category": "足球",
+        "album": "英超",
+        "description": "英超 足球款式，包含 37 张产品图片，适合询盘、选款和团队采购。",
+        "scenario": "足球俱乐部、学校训练、团队采购、体育用品零售",
+        "highlights": [
+          "足球款式图集",
+          "多图可查看",
+          "支持批量询盘"
+        ]
+      },
+      "es": {
+        "name": "英超",
+        "category": "Futbol",
+        "album": "英超",
+        "description": "Modelo de futbol 英超 con 37 imagenes para consulta y compra por equipo.",
+        "scenario": "Clubes, escuelas, equipos y venta deportiva",
+        "highlights": [
+          "Catalogo de futbol",
+          "Varias imagenes",
+          "Consulta por volumen"
+        ]
+      }
+    },
+    "detailSections": [
+      {
+        "title": "Product Details",
+        "body": "Contact us for price, customization and delivery details."
+      }
+    ]
+  },
+  {
+    "id": "football-177221277",
+    "name": "德甲",
+    "category": "Football",
+    "categorySlug": "football",
+    "album": "德甲",
+    "image": "/yupoo-products/football/177221277/177221277-01.jpg",
+    "visible": true,
+    "sortOrder": 17,
     "prices": {
       "baseCurrency": "USD",
       "basePrice": 12,
       "priceUnit": "piece"
     },
     "galleryImages": [
-      "/yupoo-products/machine-stitched/item-hz916t-01.jpg"
+      "/yupoo-products/football/177221277/177221277-01.jpg",
+      "/yupoo-products/football/177221277/177221277-02.jpg"
     ],
-    "galleryLabels": [],
+    "galleryLabels": [
+      "Style 1",
+      "Style 2"
+    ],
     "specs": [
       {
         "label": "Category",
@@ -769,32 +1744,48 @@
       },
       {
         "label": "Album",
-        "value": "Machine Stitched"
+        "value": "德甲"
+      },
+      {
+        "label": "Images",
+        "value": "2"
       }
     ],
     "translations": {
       "en": {
-        "name": "Machine Stitched-01",
+        "name": "德甲",
         "category": "Football",
-        "album": "Machine Stitched",
-        "description": "Machine Stitched-01 from Machine Stitched, suitable for team purchase and product inquiry.",
-        "scenario": "Club training, school sourcing, sports goods retail",
+        "album": "德甲",
+        "description": "德甲 football style with 2 product images for inquiry and team purchasing.",
+        "scenario": "Football clubs, schools, team purchase and sports goods retail",
         "highlights": [
-          "Selected catalog item",
-          "Bulk inquiry available",
-          "Custom sourcing support"
+          "Football product catalog",
+          "Multiple images available",
+          "Bulk inquiry support"
         ]
       },
       "zh": {
-        "name": "Machine Stitched-01",
+        "name": "德甲",
         "category": "足球",
-        "album": "Machine Stitched",
-        "description": "足球商品，适合团队采购、学校训练和体育用品零售。",
-        "scenario": "团队采购、学校训练、体育用品零售",
+        "album": "德甲",
+        "description": "德甲 足球款式，包含 2 张产品图片，适合询盘、选款和团队采购。",
+        "scenario": "足球俱乐部、学校训练、团队采购、体育用品零售",
         "highlights": [
-          "足球样品",
-          "支持批量询盘",
-          "支持定制沟通"
+          "足球款式图集",
+          "多图可查看",
+          "支持批量询盘"
+        ]
+      },
+      "es": {
+        "name": "德甲",
+        "category": "Futbol",
+        "album": "德甲",
+        "description": "Modelo de futbol 德甲 con 2 imagenes para consulta y compra por equipo.",
+        "scenario": "Clubes, escuelas, equipos y venta deportiva",
+        "highlights": [
+          "Catalogo de futbol",
+          "Varias imagenes",
+          "Consulta por volumen"
         ]
       }
     },
@@ -806,24 +1797,27 @@
     ]
   },
   {
-    "id": "machine-stitched-item-hz916t-02",
-    "name": "Machine Stitched-02",
+    "id": "football-177349633",
+    "name": "大联盟",
     "category": "Football",
     "categorySlug": "football",
-    "album": "Machine Stitched",
-    "image": "/yupoo-products/machine-stitched/item-hz916t-02.jpg",
-    "sourceUrl": "https://qubu.x.yupoo.com/albums/177221340?uid=1&isSubCate=false&referrercate=4694653",
+    "album": "大联盟",
+    "image": "/yupoo-products/football/177349633/177349633-01.jpg",
     "visible": true,
-    "sortOrder": 14,
+    "sortOrder": 18,
     "prices": {
       "baseCurrency": "USD",
       "basePrice": 14,
       "priceUnit": "piece"
     },
     "galleryImages": [
-      "/yupoo-products/machine-stitched/item-hz916t-02.jpg"
+      "/yupoo-products/football/177349633/177349633-01.jpg",
+      "/yupoo-products/football/177349633/177349633-02.jpg"
     ],
-    "galleryLabels": [],
+    "galleryLabels": [
+      "Style 1",
+      "Style 2"
+    ],
     "specs": [
       {
         "label": "Category",
@@ -831,32 +1825,377 @@
       },
       {
         "label": "Album",
-        "value": "Machine Stitched"
+        "value": "大联盟"
+      },
+      {
+        "label": "Images",
+        "value": "2"
       }
     ],
     "translations": {
       "en": {
-        "name": "Machine Stitched-02",
+        "name": "大联盟",
         "category": "Football",
-        "album": "Machine Stitched",
-        "description": "Machine Stitched-02 from Machine Stitched, suitable for team purchase and product inquiry.",
-        "scenario": "Club training, school sourcing, sports goods retail",
+        "album": "大联盟",
+        "description": "大联盟 football style with 2 product images for inquiry and team purchasing.",
+        "scenario": "Football clubs, schools, team purchase and sports goods retail",
         "highlights": [
-          "Selected catalog item",
-          "Bulk inquiry available",
-          "Custom sourcing support"
+          "Football product catalog",
+          "Multiple images available",
+          "Bulk inquiry support"
         ]
       },
       "zh": {
-        "name": "Machine Stitched-02",
+        "name": "大联盟",
         "category": "足球",
-        "album": "Machine Stitched",
-        "description": "足球商品，适合团队采购、学校训练和体育用品零售。",
-        "scenario": "团队采购、学校训练、体育用品零售",
+        "album": "大联盟",
+        "description": "大联盟 足球款式，包含 2 张产品图片，适合询盘、选款和团队采购。",
+        "scenario": "足球俱乐部、学校训练、团队采购、体育用品零售",
         "highlights": [
-          "足球样品",
-          "支持批量询盘",
-          "支持定制沟通"
+          "足球款式图集",
+          "多图可查看",
+          "支持批量询盘"
+        ]
+      },
+      "es": {
+        "name": "大联盟",
+        "category": "Futbol",
+        "album": "大联盟",
+        "description": "Modelo de futbol 大联盟 con 2 imagenes para consulta y compra por equipo.",
+        "scenario": "Clubes, escuelas, equipos y venta deportiva",
+        "highlights": [
+          "Catalogo de futbol",
+          "Varias imagenes",
+          "Consulta por volumen"
+        ]
+      }
+    },
+    "detailSections": [
+      {
+        "title": "Product Details",
+        "body": "Contact us for price, customization and delivery details."
+      }
+    ]
+  },
+  {
+    "id": "football-177221390",
+    "name": "摩腾",
+    "category": "Football",
+    "categorySlug": "football",
+    "album": "摩腾",
+    "image": "/yupoo-products/football/177221390/177221390-01.jpg",
+    "visible": true,
+    "sortOrder": 19,
+    "prices": {
+      "baseCurrency": "USD",
+      "basePrice": 16,
+      "priceUnit": "piece"
+    },
+    "galleryImages": [
+      "/yupoo-products/football/177221390/177221390-01.jpg",
+      "/yupoo-products/football/177221390/177221390-02.jpg",
+      "/yupoo-products/football/177221390/177221390-03.jpg",
+      "/yupoo-products/football/177221390/177221390-04.jpg",
+      "/yupoo-products/football/177221390/177221390-05.jpg",
+      "/yupoo-products/football/177221390/177221390-06.jpg",
+      "/yupoo-products/football/177221390/177221390-07.jpg",
+      "/yupoo-products/football/177221390/177221390-08.jpg",
+      "/yupoo-products/football/177221390/177221390-09.jpg",
+      "/yupoo-products/football/177221390/177221390-10.jpg",
+      "/yupoo-products/football/177221390/177221390-11.jpg",
+      "/yupoo-products/football/177221390/177221390-12.jpg",
+      "/yupoo-products/football/177221390/177221390-13.jpg",
+      "/yupoo-products/football/177221390/177221390-14.jpg",
+      "/yupoo-products/football/177221390/177221390-15.jpg",
+      "/yupoo-products/football/177221390/177221390-16.jpg",
+      "/yupoo-products/football/177221390/177221390-17.jpg",
+      "/yupoo-products/football/177221390/177221390-18.jpg",
+      "/yupoo-products/football/177221390/177221390-19.jpg",
+      "/yupoo-products/football/177221390/177221390-20.jpg",
+      "/yupoo-products/football/177221390/177221390-21.jpg",
+      "/yupoo-products/football/177221390/177221390-22.jpg",
+      "/yupoo-products/football/177221390/177221390-23.jpg",
+      "/yupoo-products/football/177221390/177221390-24.jpg",
+      "/yupoo-products/football/177221390/177221390-25.jpg",
+      "/yupoo-products/football/177221390/177221390-26.jpg",
+      "/yupoo-products/football/177221390/177221390-27.jpg",
+      "/yupoo-products/football/177221390/177221390-28.jpg"
+    ],
+    "galleryLabels": [
+      "Style 1",
+      "Style 2",
+      "Style 3",
+      "Style 4",
+      "Style 5",
+      "Style 6",
+      "Style 7",
+      "Style 8",
+      "Style 9",
+      "Style 10",
+      "Style 11",
+      "Style 12",
+      "Style 13",
+      "Style 14",
+      "Style 15",
+      "Style 16",
+      "Style 17",
+      "Style 18",
+      "Style 19",
+      "Style 20",
+      "Style 21",
+      "Style 22",
+      "Style 23",
+      "Style 24",
+      "Style 25",
+      "Style 26",
+      "Style 27",
+      "Style 28"
+    ],
+    "specs": [
+      {
+        "label": "Category",
+        "value": "Football"
+      },
+      {
+        "label": "Album",
+        "value": "摩腾"
+      },
+      {
+        "label": "Images",
+        "value": "28"
+      }
+    ],
+    "translations": {
+      "en": {
+        "name": "摩腾",
+        "category": "Football",
+        "album": "摩腾",
+        "description": "摩腾 football style with 28 product images for inquiry and team purchasing.",
+        "scenario": "Football clubs, schools, team purchase and sports goods retail",
+        "highlights": [
+          "Football product catalog",
+          "Multiple images available",
+          "Bulk inquiry support"
+        ]
+      },
+      "zh": {
+        "name": "摩腾",
+        "category": "足球",
+        "album": "摩腾",
+        "description": "摩腾 足球款式，包含 28 张产品图片，适合询盘、选款和团队采购。",
+        "scenario": "足球俱乐部、学校训练、团队采购、体育用品零售",
+        "highlights": [
+          "足球款式图集",
+          "多图可查看",
+          "支持批量询盘"
+        ]
+      },
+      "es": {
+        "name": "摩腾",
+        "category": "Futbol",
+        "album": "摩腾",
+        "description": "Modelo de futbol 摩腾 con 28 imagenes para consulta y compra por equipo.",
+        "scenario": "Clubes, escuelas, equipos y venta deportiva",
+        "highlights": [
+          "Catalogo de futbol",
+          "Varias imagenes",
+          "Consulta por volumen"
+        ]
+      }
+    },
+    "detailSections": [
+      {
+        "title": "Product Details",
+        "body": "Contact us for price, customization and delivery details."
+      }
+    ]
+  },
+  {
+    "id": "football-177221370",
+    "name": "队标",
+    "category": "Football",
+    "categorySlug": "football",
+    "album": "队标",
+    "image": "/yupoo-products/football/177221370/177221370-01.jpg",
+    "visible": true,
+    "sortOrder": 20,
+    "prices": {
+      "baseCurrency": "USD",
+      "basePrice": 18,
+      "priceUnit": "piece"
+    },
+    "galleryImages": [
+      "/yupoo-products/football/177221370/177221370-01.jpg",
+      "/yupoo-products/football/177221370/177221370-02.jpg",
+      "/yupoo-products/football/177221370/177221370-03.jpg",
+      "/yupoo-products/football/177221370/177221370-04.jpg",
+      "/yupoo-products/football/177221370/177221370-05.jpg",
+      "/yupoo-products/football/177221370/177221370-06.jpg",
+      "/yupoo-products/football/177221370/177221370-07.jpg",
+      "/yupoo-products/football/177221370/177221370-08.jpg",
+      "/yupoo-products/football/177221370/177221370-09.jpg",
+      "/yupoo-products/football/177221370/177221370-10.jpg",
+      "/yupoo-products/football/177221370/177221370-11.jpg",
+      "/yupoo-products/football/177221370/177221370-12.jpg",
+      "/yupoo-products/football/177221370/177221370-13.jpg",
+      "/yupoo-products/football/177221370/177221370-14.jpg",
+      "/yupoo-products/football/177221370/177221370-15.jpg",
+      "/yupoo-products/football/177221370/177221370-16.jpg"
+    ],
+    "galleryLabels": [
+      "Style 1",
+      "Style 2",
+      "Style 3",
+      "Style 4",
+      "Style 5",
+      "Style 6",
+      "Style 7",
+      "Style 8",
+      "Style 9",
+      "Style 10",
+      "Style 11",
+      "Style 12",
+      "Style 13",
+      "Style 14",
+      "Style 15",
+      "Style 16"
+    ],
+    "specs": [
+      {
+        "label": "Category",
+        "value": "Football"
+      },
+      {
+        "label": "Album",
+        "value": "队标"
+      },
+      {
+        "label": "Images",
+        "value": "16"
+      }
+    ],
+    "translations": {
+      "en": {
+        "name": "队标",
+        "category": "Football",
+        "album": "队标",
+        "description": "队标 football style with 16 product images for inquiry and team purchasing.",
+        "scenario": "Football clubs, schools, team purchase and sports goods retail",
+        "highlights": [
+          "Football product catalog",
+          "Multiple images available",
+          "Bulk inquiry support"
+        ]
+      },
+      "zh": {
+        "name": "队标",
+        "category": "足球",
+        "album": "队标",
+        "description": "队标 足球款式，包含 16 张产品图片，适合询盘、选款和团队采购。",
+        "scenario": "足球俱乐部、学校训练、团队采购、体育用品零售",
+        "highlights": [
+          "足球款式图集",
+          "多图可查看",
+          "支持批量询盘"
+        ]
+      },
+      "es": {
+        "name": "队标",
+        "category": "Futbol",
+        "album": "队标",
+        "description": "Modelo de futbol 队标 con 16 imagenes para consulta y compra por equipo.",
+        "scenario": "Clubes, escuelas, equipos y venta deportiva",
+        "highlights": [
+          "Catalogo de futbol",
+          "Varias imagenes",
+          "Consulta por volumen"
+        ]
+      }
+    },
+    "detailSections": [
+      {
+        "title": "Product Details",
+        "body": "Contact us for price, customization and delivery details."
+      }
+    ]
+  },
+  {
+    "id": "football-177221397",
+    "name": "其他",
+    "category": "Football",
+    "categorySlug": "football",
+    "album": "其他",
+    "image": "/yupoo-products/football/177221397/177221397-01.jpg",
+    "visible": true,
+    "sortOrder": 21,
+    "prices": {
+      "baseCurrency": "USD",
+      "basePrice": 20,
+      "priceUnit": "piece"
+    },
+    "galleryImages": [
+      "/yupoo-products/football/177221397/177221397-01.jpg",
+      "/yupoo-products/football/177221397/177221397-02.jpg",
+      "/yupoo-products/football/177221397/177221397-03.jpg",
+      "/yupoo-products/football/177221397/177221397-04.jpg",
+      "/yupoo-products/football/177221397/177221397-05.jpg"
+    ],
+    "galleryLabels": [
+      "Style 1",
+      "Style 2",
+      "Style 3",
+      "Style 4",
+      "Style 5"
+    ],
+    "specs": [
+      {
+        "label": "Category",
+        "value": "Football"
+      },
+      {
+        "label": "Album",
+        "value": "其他"
+      },
+      {
+        "label": "Images",
+        "value": "5"
+      }
+    ],
+    "translations": {
+      "en": {
+        "name": "其他",
+        "category": "Football",
+        "album": "其他",
+        "description": "其他 football style with 5 product images for inquiry and team purchasing.",
+        "scenario": "Football clubs, schools, team purchase and sports goods retail",
+        "highlights": [
+          "Football product catalog",
+          "Multiple images available",
+          "Bulk inquiry support"
+        ]
+      },
+      "zh": {
+        "name": "其他",
+        "category": "足球",
+        "album": "其他",
+        "description": "其他 足球款式，包含 5 张产品图片，适合询盘、选款和团队采购。",
+        "scenario": "足球俱乐部、学校训练、团队采购、体育用品零售",
+        "highlights": [
+          "足球款式图集",
+          "多图可查看",
+          "支持批量询盘"
+        ]
+      },
+      "es": {
+        "name": "其他",
+        "category": "Futbol",
+        "album": "其他",
+        "description": "Modelo de futbol 其他 con 5 imagenes para consulta y compra por equipo.",
+        "scenario": "Clubes, escuelas, equipos y venta deportiva",
+        "highlights": [
+          "Catalogo de futbol",
+          "Varias imagenes",
+          "Consulta por volumen"
         ]
       }
     },
@@ -875,7 +2214,7 @@
     "album": "Volleyball",
     "image": "/assets/volleyball.svg",
     "visible": true,
-    "sortOrder": 15,
+    "sortOrder": 22,
     "prices": {
       "baseCurrency": "USD",
       "basePrice": 16,
@@ -948,7 +2287,7 @@
     "album": "Volleyball",
     "image": "/assets/volleyball.svg",
     "visible": true,
-    "sortOrder": 16,
+    "sortOrder": 23,
     "prices": {
       "baseCurrency": "USD",
       "basePrice": 19,
@@ -1021,7 +2360,7 @@
     "album": "Volleyball",
     "image": "/assets/volleyball.svg",
     "visible": true,
-    "sortOrder": 17,
+    "sortOrder": 24,
     "prices": {
       "baseCurrency": "USD",
       "basePrice": 22,
@@ -1094,7 +2433,7 @@
     "album": "Basketball",
     "image": "/assets/basketball.svg",
     "visible": true,
-    "sortOrder": 18,
+    "sortOrder": 25,
     "prices": {
       "baseCurrency": "USD",
       "basePrice": 18,
@@ -1167,7 +2506,7 @@
     "album": "Basketball",
     "image": "/assets/basketball.svg",
     "visible": true,
-    "sortOrder": 19,
+    "sortOrder": 26,
     "prices": {
       "baseCurrency": "USD",
       "basePrice": 21,
@@ -1240,7 +2579,7 @@
     "album": "Basketball",
     "image": "/assets/basketball.svg",
     "visible": true,
-    "sortOrder": 20,
+    "sortOrder": 27,
     "prices": {
       "baseCurrency": "USD",
       "basePrice": 24,
@@ -1313,7 +2652,7 @@
     "album": "Tennis",
     "image": "/assets/tennis.svg",
     "visible": true,
-    "sortOrder": 21,
+    "sortOrder": 28,
     "prices": {
       "baseCurrency": "USD",
       "basePrice": 28,
@@ -1386,7 +2725,7 @@
     "album": "Tennis",
     "image": "/assets/tennis.svg",
     "visible": true,
-    "sortOrder": 22,
+    "sortOrder": 29,
     "prices": {
       "baseCurrency": "USD",
       "basePrice": 31,
@@ -1459,7 +2798,7 @@
     "album": "Tennis",
     "image": "/assets/tennis.svg",
     "visible": true,
-    "sortOrder": 23,
+    "sortOrder": 30,
     "prices": {
       "baseCurrency": "USD",
       "basePrice": 34,
@@ -1532,7 +2871,7 @@
     "album": "Badminton",
     "image": "/assets/badminton.svg",
     "visible": true,
-    "sortOrder": 24,
+    "sortOrder": 31,
     "prices": {
       "baseCurrency": "USD",
       "basePrice": 20,
@@ -1605,7 +2944,7 @@
     "album": "Badminton",
     "image": "/assets/badminton.svg",
     "visible": true,
-    "sortOrder": 25,
+    "sortOrder": 32,
     "prices": {
       "baseCurrency": "USD",
       "basePrice": 23,
@@ -1678,7 +3017,7 @@
     "album": "Badminton",
     "image": "/assets/badminton.svg",
     "visible": true,
-    "sortOrder": 26,
+    "sortOrder": 33,
     "prices": {
       "baseCurrency": "USD",
       "basePrice": 26,
@@ -1751,7 +3090,7 @@
     "album": "Sports Bag",
     "image": "/assets/backpack.svg",
     "visible": true,
-    "sortOrder": 27,
+    "sortOrder": 34,
     "prices": {
       "baseCurrency": "USD",
       "basePrice": 18,
@@ -1824,7 +3163,7 @@
     "album": "Sports Bag",
     "image": "/assets/backpack.svg",
     "visible": true,
-    "sortOrder": 28,
+    "sortOrder": 35,
     "prices": {
       "baseCurrency": "USD",
       "basePrice": 21,
@@ -1897,7 +3236,7 @@
     "album": "Sports Bag",
     "image": "/assets/backpack.svg",
     "visible": true,
-    "sortOrder": 29,
+    "sortOrder": 36,
     "prices": {
       "baseCurrency": "USD",
       "basePrice": 24,
@@ -1970,7 +3309,7 @@
     "album": "Sports T-shirt",
     "image": "/assets/tshirt.svg",
     "visible": true,
-    "sortOrder": 30,
+    "sortOrder": 37,
     "prices": {
       "baseCurrency": "USD",
       "basePrice": 12,
@@ -2043,7 +3382,7 @@
     "album": "Sports T-shirt",
     "image": "/assets/tshirt.svg",
     "visible": true,
-    "sortOrder": 31,
+    "sortOrder": 38,
     "prices": {
       "baseCurrency": "USD",
       "basePrice": 15,
@@ -2116,7 +3455,7 @@
     "album": "Sports T-shirt",
     "image": "/assets/tshirt.svg",
     "visible": true,
-    "sortOrder": 32,
+    "sortOrder": 39,
     "prices": {
       "baseCurrency": "USD",
       "basePrice": 18,
@@ -2182,3 +3521,4 @@
     ]
   }
 ]
+
