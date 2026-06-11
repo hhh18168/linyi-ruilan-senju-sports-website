@@ -43,6 +43,14 @@ type RouteState = {
 
 const initialForm: FormState = { name: '', contact: '', product: '', quantity: '', message: '' };
 const pageSize = 12;
+const liteProduct = (product: CmsProduct): CmsProduct => ({
+  ...product,
+  image: lightProductImage(product),
+  galleryImages: [lightProductImage(product)],
+  galleryLabels: [],
+  detailSections: [],
+  specs: [],
+});
 
 const ui: Record<string, Record<string, string>> = {
   zh: {
@@ -186,6 +194,7 @@ function App() {
   const [activeCategory, setActiveCategory] = useState('all');
   const [cmsProducts, setCmsProducts] = useState<CmsProduct[]>(defaultCmsProducts);
   const [productsLoaded, setProductsLoaded] = useState(false);
+  const [fullProducts, setFullProducts] = useState<CmsProduct[] | null>(null);
   const [siteSettings, setSiteSettings] = useState<SiteSettings>(defaultSiteSettings);
   const [layoutSettings, setLayoutSettings] = useState<LayoutSettings>(defaultLayoutSettings);
   const [exchangeRates, setExchangeRates] = useState<ExchangeRates>(defaultExchangeRates);
@@ -202,7 +211,7 @@ function App() {
 
   useEffect(() => {
     Promise.all([
-      fetchCmsJson<CmsProduct[]>('/cms/products.json', defaultCmsProducts),
+      fetchCmsJson<CmsProduct[]>('/cms/products-lite.json', defaultCmsProducts.map(liteProduct)),
       fetchCmsJson<SiteSettings>('/cms/site-settings.json', defaultSiteSettings),
       fetchCmsJson<LayoutSettings>('/cms/layout-settings.json', defaultLayoutSettings),
       fetchCmsJson<ExchangeRates>('/cms/exchange-rates.json', defaultExchangeRates),
@@ -247,7 +256,16 @@ function App() {
     return visibleProducts.filter((product) => (product.categorySlug || slugify(product.category)) === routeCategory);
   }, [routeCategory, visibleProducts]);
   const pagedProducts = listedProducts.slice(0, catalogPage * pageSize);
-  const selectedProduct = route.type === 'product' ? visibleProducts.find((product) => product.id === route.productId) || null : null;
+  useEffect(() => {
+    if (route.type !== 'product' || fullProducts) return;
+    fetchCmsJson<CmsProduct[]>('/cms/products.json', []).then((nextProducts) => {
+      if (nextProducts.length) setFullProducts(nextProducts.map(normalizeProduct));
+    });
+  }, [fullProducts, route.type]);
+
+  const selectedProduct = route.type === 'product'
+    ? (fullProducts || visibleProducts).find((product) => product.id === route.productId) || visibleProducts.find((product) => product.id === route.productId) || null
+    : null;
   const homeProducts = route.type === 'home' && !productsLoaded ? defaultCmsProducts : visibleProducts;
 
   useEffect(() => setCatalogPage(1), [routeCategory]);
@@ -260,7 +278,14 @@ function App() {
     setMenuOpen(false);
   };
 
-  const openProduct = (productId: string) => navigate(`/products/${productId}`, { type: 'product', productId });
+  const openProduct = (productId: string) => {
+    navigate(`/products/${productId}`, { type: 'product', productId });
+    if (!fullProducts) {
+      fetchCmsJson<CmsProduct[]>('/cms/products.json', []).then((nextProducts) => {
+        if (nextProducts.length) setFullProducts(nextProducts.map(normalizeProduct));
+      });
+    }
+  };
   const openCategory = (slug: string) => {
     setActiveCategory(slug);
     navigate(slug === 'all' ? '/' : `/categories/${slug}`, slug === 'all' ? { type: 'home' } : { type: 'category', slug }, false);
