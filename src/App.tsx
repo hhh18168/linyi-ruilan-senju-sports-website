@@ -42,7 +42,7 @@ type RouteState = {
 };
 
 const initialForm: FormState = { name: '', contact: '', product: '', quantity: '', message: '' };
-const pageSize = 24;
+const pageSize = 12;
 
 const ui: Record<string, Record<string, string>> = {
   zh: {
@@ -185,6 +185,7 @@ function App() {
   const [lastListPath, setLastListPath] = useState('/');
   const [activeCategory, setActiveCategory] = useState('all');
   const [cmsProducts, setCmsProducts] = useState<CmsProduct[]>(defaultCmsProducts);
+  const [productsLoaded, setProductsLoaded] = useState(false);
   const [siteSettings, setSiteSettings] = useState<SiteSettings>(defaultSiteSettings);
   const [layoutSettings, setLayoutSettings] = useState<LayoutSettings>(defaultLayoutSettings);
   const [exchangeRates, setExchangeRates] = useState<ExchangeRates>(defaultExchangeRates);
@@ -207,6 +208,7 @@ function App() {
       fetchCmsJson<ExchangeRates>('/cms/exchange-rates.json', defaultExchangeRates),
     ]).then(([nextProducts, nextSettings, nextLayout, nextRates]) => {
       setCmsProducts(nextProducts.map(normalizeProduct));
+      setProductsLoaded(true);
       setSiteSettings(nextSettings);
       setLayoutSettings(nextLayout);
       setExchangeRates(nextRates);
@@ -246,6 +248,7 @@ function App() {
   }, [routeCategory, visibleProducts]);
   const pagedProducts = listedProducts.slice(0, catalogPage * pageSize);
   const selectedProduct = route.type === 'product' ? visibleProducts.find((product) => product.id === route.productId) || null : null;
+  const homeProducts = route.type === 'home' && !productsLoaded ? defaultCmsProducts : visibleProducts;
 
   useEffect(() => setCatalogPage(1), [routeCategory]);
 
@@ -390,7 +393,7 @@ function App() {
                 text={text}
                 language={language}
                 cmsCopy={cmsCopy}
-                products={visibleProducts}
+                products={homeProducts}
                 categories={categories}
                 openProduct={openProduct}
                 openCategory={openCategory}
@@ -406,15 +409,15 @@ function App() {
                 language={language}
                 title={route.type === 'category' ? translateTerm(language, categories.find((item) => item.slug === routeCategory)?.name || t(language, 'products')) : cmsCopy.catalogTitle}
                 intro={cmsCopy.catalogIntro}
-                products={pagedProducts}
-                total={listedProducts.length}
+                products={productsLoaded ? pagedProducts : homeProducts.slice(0, pageSize)}
+                total={productsLoaded ? listedProducts.length : homeProducts.length}
                 categories={categories}
                 activeCategory={routeCategory || 'all'}
                 gridClass={catalogGridClass}
                 openCategory={openCategory}
                 openProduct={openProduct}
                 loadMore={() => setCatalogPage((page) => page + 1)}
-                hasMore={pagedProducts.length < listedProducts.length}
+                hasMore={productsLoaded && pagedProducts.length < listedProducts.length}
                 rates={exchangeRates}
               />
             )}
@@ -844,11 +847,11 @@ function ProductDetail({ product, language, rates, onBack }: { product: CmsProdu
             <img className="aspect-square w-full rounded-md bg-field object-cover ring-1 ring-slate-200" src={activeImage} alt={copy.name || product.name} />
             {images.length > 1 && (
               <div>
-                <h2 className="mb-3 text-sm font-black text-slate-600">{t(language, 'colors')}</h2>
-                <div className="grid grid-cols-4 gap-3 sm:grid-cols-6">
-                  {images.slice(0, 18).map((image, index) => (
+                <h2 className="mb-3 text-sm font-black text-slate-600">{t(language, 'colors')} · {images.length}</h2>
+                <div className="grid max-h-[520px] grid-cols-4 gap-3 overflow-y-auto pr-1 sm:grid-cols-6">
+                  {images.map((image, index) => (
                     <button key={`${image}-${index}`} type="button" onClick={() => setActiveImage(image)} className={`rounded-md ring-2 ${activeImage === image ? 'ring-court' : 'ring-slate-200'}`}>
-                      <img className="aspect-square rounded-md bg-field object-cover" src={image} alt={`${copy.name || product.name}-${index + 1}`} />
+                      <img loading="lazy" decoding="async" className="aspect-square rounded-md bg-field object-cover" src={image} alt={`${copy.name || product.name}-${index + 1}`} />
                     </button>
                   ))}
                 </div>
