@@ -1,0 +1,73 @@
+{
+  "id": "tennis-1",
+  "name": "Control Tennis Racket",
+  "category": "Tennis",
+  "categorySlug": "tennis",
+  "album": "Tennis",
+  "image": "/assets/tennis.svg",
+  "visible": true,
+  "sortOrder": 28,
+  "prices": {
+    "baseCurrency": "USD",
+    "basePrice": 28,
+    "priceUnit": "piece"
+  },
+  "galleryImages": [
+    "/assets/tennis.svg"
+  ],
+  "galleryLabels": [],
+  "specs": [
+    {
+      "label": "Category",
+      "value": "Tennis"
+    },
+    {
+      "label": "Use Case",
+      "value": "Training and team purchase"
+    }
+  ],
+  "translations": {
+    "en": {
+      "name": "Control Tennis Racket",
+      "category": "Tennis",
+      "album": "Tennis",
+      "description": "Control Tennis Racket for training, retail sourcing and team purchase.",
+      "scenario": "School training, club sourcing, retail sale",
+      "highlights": [
+        "Ready for inquiry",
+        "Bulk purchase support",
+        "Custom sourcing support"
+      ]
+    },
+    "zh": {
+      "name": "控球型网球拍",
+      "category": "网球",
+      "album": "网球",
+      "description": "控球型网球拍，适合训练、门店选品和团队采购。",
+      "scenario": "学校训练、俱乐部采购、门店零售",
+      "highlights": [
+        "现货目录商品",
+        "支持批量询盘",
+        "支持定制采购"
+      ]
+    },
+    "es": {
+      "name": "Tennis producto 1",
+      "category": "Tennis",
+      "album": "Tennis",
+      "description": "Producto deportivo para entrenamiento y compra por equipo.",
+      "scenario": "Entrenamiento, clubes y venta minorista",
+      "highlights": [
+        "Consulta disponible",
+        "Compra por volumen",
+        "Soporte personalizado"
+      ]
+    }
+  },
+  "detailSections": [
+    {
+      "title": "Product Details",
+      "body": "Contact us for price, customization and delivery details."
+    }
+  ]
+}
