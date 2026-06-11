@@ -28,15 +28,18 @@ const emptyProduct: CmsProduct = {
 };
 
 async function api<T>(url: string, options?: RequestInit): Promise<T> {
+  const controller = new AbortController();
+  const timer = window.setTimeout(() => controller.abort(), 20000);
   const response = await fetch(url, {
     ...options,
+    signal: controller.signal,
+    credentials: 'same-origin',
     headers: { 'Content-Type': 'application/json', ...(options?.headers || {}) },
-  });
+  }).finally(() => window.clearTimeout(timer));
   const data = await response.json().catch(() => ({}));
-  if (!response.ok) throw new Error(data.error || '请求失败');
+  if (!response.ok) throw new Error(data.error || '请求失败，请检查登录信息或稍后重试。');
   return data as T;
 }
-
 function slugify(value: string) {
   return value.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '').slice(0, 80);
 }
@@ -71,6 +74,8 @@ function AdminApp() {
   const [inquiries, setInquiries] = useState<Inquiry[]>([]);
   const [mergeIds, setMergeIds] = useState<string[]>([]);
   const [draggingId, setDraggingId] = useState('');
+  const [loginSubmitting, setLoginSubmitting] = useState(false);
+  const [codeSubmitting, setCodeSubmitting] = useState(false);
 
   const visibleProducts = useMemo(() => products.filter((product) => product.visible).length, [products]);
   const sortedProducts = useMemo(() => products.slice().sort((a, b) => a.sortOrder - b.sortOrder), [products]);
@@ -114,26 +119,25 @@ function AdminApp() {
 
   const submitLogin = async (event: FormEvent) => {
     event.preventDefault();
+    if (loginSubmitting) return;
     setMessage('');
-    try {
-      await api('/api/admin/login', { method: 'POST', body: JSON.stringify(login) });
-      await refreshSession();
-    } catch (error) {
-      setMessage(error instanceof Error ? error.message : '登录失败');
-    }
+    if (!login.username.trim() || !login.password) { setMessage('请输入管理员账号和登录密码。'); return; }
+    setLoginSubmitting(true);
+    try { await api('/api/admin/login', { method: 'POST', body: JSON.stringify(login) }); await refreshSession(); }
+    catch (error) { setMessage(error instanceof Error ? error.message : '登录失败，请检查账号和密码。'); }
+    finally { setLoginSubmitting(false); }
   };
 
   const submitCode = async (event: FormEvent) => {
     event.preventDefault();
+    if (codeSubmitting) return;
     setMessage('');
-    try {
-      await api('/api/admin/verify-code', { method: 'POST', body: JSON.stringify({ code: permissionCode }) });
-      await refreshSession();
-    } catch (error) {
-      setMessage(error instanceof Error ? error.message : '权限码验证失败');
-    }
+    if (!permissionCode.trim()) { setMessage('请输入权限码。'); return; }
+    setCodeSubmitting(true);
+    try { await api('/api/admin/verify-code', { method: 'POST', body: JSON.stringify({ code: permissionCode }) }); await refreshSession(); }
+    catch (error) { setMessage(error instanceof Error ? error.message : '权限码验证失败。'); }
+    finally { setCodeSubmitting(false); }
   };
-
   const logout = async () => {
     await api('/api/admin/logout', { method: 'POST' });
     setSession({ loggedIn: false, username: null, codeVerified: false });
@@ -279,9 +283,9 @@ function AdminApp() {
     return (
       <AdminShell title="管理员登录">
         <form className="admin-card mx-auto max-w-md" onSubmit={submitLogin}>
-          <AdminField label="管理员账号"><input className="input" value={login.username} onChange={(event) => setLogin({ ...login, username: event.target.value })} /></AdminField>
-          <AdminField label="登录密码"><input className="input" type="text" value={login.password} onChange={(event) => setLogin({ ...login, password: event.target.value })} /></AdminField>
-          <button className="admin-primary" type="submit">登录</button>
+          <AdminField label="管理员账号"><input className="input" autoComplete="username" value={login.username} onChange={(event) => setLogin({ ...login, username: event.target.value })} /></AdminField>
+          <AdminField label="登录密码"><input className="input" autoComplete="current-password" type="text" value={login.password} onChange={(event) => setLogin({ ...login, password: event.target.value })} /></AdminField>
+          <button className="admin-primary w-full disabled:cursor-not-allowed disabled:opacity-60" disabled={loginSubmitting} type="submit">{loginSubmitting ? '正在登录...' : '登录'}</button>
           {message && <p className="admin-message">{message}</p>}
         </form>
       </AdminShell>
@@ -291,14 +295,13 @@ function AdminApp() {
     return (
       <AdminShell title="输入权限码">
         <form className="admin-card mx-auto max-w-md" onSubmit={submitCode}>
-          <AdminField label="权限码"><input className="input" type="text" value={permissionCode} onChange={(event) => setPermissionCode(event.target.value)} /></AdminField>
-          <button className="admin-primary" type="submit">进入后台</button>
+          <AdminField label="权限码"><input className="input" autoComplete="one-time-code" type="text" value={permissionCode} onChange={(event) => setPermissionCode(event.target.value)} /></AdminField>
+          <button className="admin-primary w-full disabled:cursor-not-allowed disabled:opacity-60" disabled={codeSubmitting} type="submit">{codeSubmitting ? '正在验证...' : '进入后台'}</button>
           {message && <p className="admin-message">{message}</p>}
         </form>
       </AdminShell>
     );
   }
-
   return (
     <AdminShell title="临沂瑞澜森炬后台管理">
       <div className="mb-5 flex flex-col gap-3 rounded-md bg-white p-4 shadow-sm ring-1 ring-slate-200 sm:flex-row sm:items-center sm:justify-between">

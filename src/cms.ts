@@ -96,7 +96,7 @@ export const defaultCmsProducts: CmsProduct[] = yupooProducts.map((product, inde
 
 export async function fetchCmsJson<T>(path: string, fallback: T): Promise<T> {
   try {
-    const response = await fetch(path, { cache: 'no-store' });
+    const response = await fetch(path);
     if (!response.ok) return fallback;
     return (await response.json()) as T;
   } catch {

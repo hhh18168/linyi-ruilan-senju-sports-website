@@ -1,7 +1,11 @@
-import { FormEvent, useEffect, useMemo, useState, type CSSProperties } from 'react';
+import { FormEvent, useEffect, useMemo, useRef, useState, type CSSProperties } from 'react';
 import {
   ArrowRight,
   BadgeCheck,
+  ChevronDown,
+  ChevronLeft,
+  ChevronRight,
+  ChevronUp,
   Dumbbell,
   Globe2,
   Mail,
@@ -74,6 +78,11 @@ const ui: Record<string, Record<string, string>> = {
     highlight1: '\u652f\u6301\u6279\u91cf\u8be2\u76d8',
     highlight2: '\u652f\u6301\u5b9a\u5236\u91c7\u8d2d\u6c9f\u901a',
     contactFailed: '\u63d0\u4ea4\u5931\u8d25\uff0c\u8bf7\u901a\u8fc7\u90ae\u7bb1\u6216 WhatsApp \u8054\u7cfb\u6211\u4eec\u3002',
+    loadingImages: '\u6b63\u5728\u52a0\u8f7d\u5b8c\u6574\u914d\u8272\u56fe\u96c6...',
+    previousImage: '\u4e0a\u4e00\u5f20',
+    nextImage: '\u4e0b\u4e00\u5f20',
+    scrollUp: '\u5411\u4e0a\u67e5\u770b',
+    scrollDown: '\u5411\u4e0b\u67e5\u770b',
   },
   en: {
     catalog: 'Product Catalog',
@@ -96,6 +105,11 @@ const ui: Record<string, Record<string, string>> = {
     highlight1: 'Bulk inquiry available',
     highlight2: 'Customization support',
     contactFailed: 'Submit failed. Please contact us by email or WhatsApp.',
+    loadingImages: 'Loading full color gallery...',
+    previousImage: 'Previous image',
+    nextImage: 'Next image',
+    scrollUp: 'Scroll up',
+    scrollDown: 'Scroll down',
   },
   es: {
     catalog: 'Catalogo de productos',
@@ -118,6 +132,11 @@ const ui: Record<string, Record<string, string>> = {
     highlight1: 'Consulta por volumen disponible',
     highlight2: 'Soporte de personalizacion',
     contactFailed: 'Error al enviar. Contactenos por correo o WhatsApp.',
+    loadingImages: 'Cargando galeria completa...',
+    previousImage: 'Imagen anterior',
+    nextImage: 'Imagen siguiente',
+    scrollUp: 'Subir',
+    scrollDown: 'Bajar',
   },
 };
 
@@ -417,7 +436,13 @@ function App() {
 
       <main className="flex flex-col">
         {selectedProduct ? (
-          <ProductDetail product={selectedProduct} language={language} rates={exchangeRates} onBack={closeProduct} />
+          <ProductDetail
+            product={selectedProduct}
+            language={language}
+            rates={exchangeRates}
+            onBack={closeProduct}
+            loadingFullGallery={Boolean(route.type === 'product' && route.productId && !productDetails[route.productId])}
+          />
         ) : (
           <>
             {route.type === 'home' && (
@@ -851,14 +876,37 @@ function Field({ label, error, children }: { label: string; error?: string; chil
   );
 }
 
-function ProductDetail({ product, language, rates, onBack }: { product: CmsProduct; language: LanguageCode; rates: ExchangeRates; onBack: () => void }) {
+function ProductDetail({
+  product,
+  language,
+  rates,
+  onBack,
+  loadingFullGallery,
+}: {
+  product: CmsProduct;
+  language: LanguageCode;
+  rates: ExchangeRates;
+  onBack: () => void;
+  loadingFullGallery?: boolean;
+}) {
   const copy = productCopy(product, language);
   const images = product.galleryImages?.length ? product.galleryImages : [product.image].filter(Boolean);
   const [activeImage, setActiveImage] = useState(images[0] || product.image);
+  const thumbnailRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     setActiveImage(images[0] || product.image);
-  }, [product.id, product.image]);
+  }, [product.id, product.image, images.length]);
+
+  const activeIndex = Math.max(0, images.findIndex((image) => image === activeImage));
+  const goImage = (step: number) => {
+    if (!images.length) return;
+    const nextIndex = (activeIndex + step + images.length) % images.length;
+    setActiveImage(images[nextIndex]);
+  };
+  const scrollThumbnails = (step: number) => {
+    thumbnailRef.current?.scrollBy({ top: step * 240, behavior: 'smooth' });
+  };
 
   const specs = product.specs?.length
     ? product.specs.map((spec) => ({
@@ -876,11 +924,27 @@ function ProductDetail({ product, language, rates, onBack }: { product: CmsProdu
         <button className="mb-6 inline-flex min-h-11 items-center justify-center rounded-md bg-field px-4 text-sm font-black text-slate-700 ring-1 ring-slate-200" type="button" onClick={onBack}>{t(language, 'back')}</button>
         <div className="grid gap-8 lg:grid-cols-[0.95fr_1.05fr]">
           <div className="grid gap-4">
-            <img className="aspect-square w-full rounded-md bg-field object-contain ring-1 ring-slate-200" src={activeImage} alt={copy.name || product.name} />
+            <div className="relative">
+              <img className="aspect-square w-full rounded-md bg-field object-contain ring-1 ring-slate-200" src={activeImage} alt={copy.name || product.name} />
+              {images.length > 1 && (
+                <>
+                  <button type="button" onClick={() => goImage(-1)} aria-label={t(language, 'previousImage')} className="absolute left-3 top-1/2 inline-flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full bg-white/95 text-court shadow-lg ring-1 ring-slate-200 transition hover:bg-court hover:text-white"><ChevronLeft size={22} /></button>
+                  <button type="button" onClick={() => goImage(1)} aria-label={t(language, 'nextImage')} className="absolute right-3 top-1/2 inline-flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full bg-white/95 text-court shadow-lg ring-1 ring-slate-200 transition hover:bg-court hover:text-white"><ChevronRight size={22} /></button>
+                  <div className="absolute bottom-3 right-3 rounded-md bg-ink/80 px-3 py-1 text-xs font-black text-white">{activeIndex + 1} / {images.length}</div>
+                </>
+              )}
+            </div>
+            {loadingFullGallery && <div className="rounded-md bg-amber-50 px-4 py-3 text-sm font-black text-amber-800 ring-1 ring-amber-200">{t(language, 'loadingImages')}</div>}
             {images.length > 1 && (
               <div>
-                <h2 className="mb-3 text-sm font-black text-slate-600">{t(language, 'colors')} · {images.length}</h2>
-                <div className="grid max-h-[520px] grid-cols-4 gap-3 overflow-y-auto pr-1 sm:grid-cols-6">
+                <div className="mb-3 flex items-center justify-between gap-3">
+                  <h2 className="text-sm font-black text-slate-600">{t(language, 'colors')} / {images.length}</h2>
+                  <div className="flex gap-2">
+                    <button type="button" onClick={() => scrollThumbnails(-1)} aria-label={t(language, 'scrollUp')} className="inline-flex h-9 w-9 items-center justify-center rounded-md bg-white text-court ring-1 ring-slate-200 hover:bg-field"><ChevronUp size={18} /></button>
+                    <button type="button" onClick={() => scrollThumbnails(1)} aria-label={t(language, 'scrollDown')} className="inline-flex h-9 w-9 items-center justify-center rounded-md bg-white text-court ring-1 ring-slate-200 hover:bg-field"><ChevronDown size={18} /></button>
+                  </div>
+                </div>
+                <div ref={thumbnailRef} className="grid max-h-[520px] grid-cols-4 gap-3 overflow-y-auto pr-1 sm:grid-cols-6">
                   {images.map((image, index) => (
                     <button key={`${image}-${index}`} type="button" onClick={() => setActiveImage(image)} className={`rounded-md ring-2 ${activeImage === image ? 'ring-court' : 'ring-slate-200'}`}>
                       <img loading="lazy" decoding="async" className="aspect-square rounded-md bg-field object-cover" src={image} alt={`${copy.name || product.name}-${index + 1}`} />
