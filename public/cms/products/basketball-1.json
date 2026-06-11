@@ -1,0 +1,73 @@
+{
+  "id": "basketball-1",
+  "name": "Outdoor Street Basketball",
+  "category": "Basketball",
+  "categorySlug": "basketball",
+  "album": "Basketball",
+  "image": "/assets/basketball.svg",
+  "visible": true,
+  "sortOrder": 25,
+  "prices": {
+    "baseCurrency": "USD",
+    "basePrice": 18,
+    "priceUnit": "piece"
+  },
+  "galleryImages": [
+    "/assets/basketball.svg"
+  ],
+  "galleryLabels": [],
+  "specs": [
+    {
+      "label": "Category",
+      "value": "Basketball"
+    },
+    {
+      "label": "Use Case",
+      "value": "Training and team purchase"
+    }
+  ],
+  "translations": {
+    "en": {
+      "name": "Outdoor Street Basketball",
+      "category": "Basketball",
+      "album": "Basketball",
+      "description": "Outdoor Street Basketball for training, retail sourcing and team purchase.",
+      "scenario": "School training, club sourcing, retail sale",
+      "highlights": [
+        "Ready for inquiry",
+        "Bulk purchase support",
+        "Custom sourcing support"
+      ]
+    },
+    "zh": {
+      "name": "户外街头篮球",
+      "category": "篮球",
+      "album": "篮球",
+      "description": "户外街头篮球，适合训练、门店选品和团队采购。",
+      "scenario": "学校训练、俱乐部采购、门店零售",
+      "highlights": [
+        "现货目录商品",
+        "支持批量询盘",
+        "支持定制采购"
+      ]
+    },
+    "es": {
+      "name": "Basketball producto 1",
+      "category": "Basketball",
+      "album": "Basketball",
+      "description": "Producto deportivo para entrenamiento y compra por equipo.",
+      "scenario": "Entrenamiento, clubes y venta minorista",
+      "highlights": [
+        "Consulta disponible",
+        "Compra por volumen",
+        "Soporte personalizado"
+      ]
+    }
+  },
+  "detailSections": [
+    {
+      "title": "Product Details",
+      "body": "Contact us for price, customization and delivery details."
+    }
+  ]
+}
