@@ -49,8 +49,8 @@ const initialForm: FormState = { name: '', contact: '', product: '', quantity: '
 const pageSize = 12;
 const liteProduct = (product: CmsProduct): CmsProduct => ({
   ...product,
-  image: lightProductImage(product),
-  galleryImages: [lightProductImage(product)],
+  image: product.image || lightProductImage(product),
+  galleryImages: [product.image || lightProductImage(product)],
   galleryLabels: [],
   detailSections: [],
   specs: [],
@@ -577,7 +577,7 @@ function HomeSections({
             <div className="grid grid-cols-2 gap-3">
               {featured.map((product) => (
                 <button key={product.id} type="button" onClick={() => openProduct(product.id)} className="overflow-hidden rounded-md bg-white/12 text-left ring-1 ring-white/15 transition hover:-translate-y-1">
-                  <img loading="lazy" decoding="async" className="aspect-[4/3] w-full object-contain p-6" src={lightProductImage(product)} alt={productCopy(product, language).name || product.name} />
+                  <img loading="lazy" decoding="async" onError={(event) => fallbackProductImage(event, product)} className="aspect-[4/3] w-full object-contain p-6" src={displayProductImage(product)} alt={productCopy(product, language).name || product.name} />
                 </button>
               ))}
             </div>
@@ -603,7 +603,7 @@ function HomeSections({
               return (
                 <button key={category.slug} type="button" onClick={() => openCategory(category.slug)} className="group overflow-hidden rounded-md bg-white text-left shadow-sm ring-1 ring-slate-200 transition hover:-translate-y-1 hover:shadow-lift">
                   <div className="relative aspect-[4/3] overflow-hidden bg-slate-200">
-                    {sample && <img loading="lazy" decoding="async" className="h-full w-full object-contain p-8 transition duration-500 group-hover:scale-105" src={lightProductImage(sample)} alt={translateTerm(language, category.name)} />}
+                    {sample && <img loading="lazy" decoding="async" onError={(event) => fallbackProductImage(event, sample)} className="h-full w-full object-contain p-8 transition duration-500 group-hover:scale-105" src={displayProductImage(sample)} alt={translateTerm(language, category.name)} />}
                     <div className="absolute inset-0 bg-gradient-to-t from-ink/70 to-transparent" />
                     <span className="absolute bottom-3 left-3 right-3 rounded-md bg-white px-3 py-1 text-sm font-black text-ink">{translateTerm(language, category.name)}</span>
                   </div>

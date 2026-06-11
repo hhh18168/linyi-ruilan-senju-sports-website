@@ -1,7 +1,29 @@
 import { json, method, readJsonBody, requireAdmin } from '../_lib/admin.js';
-import { readJson, writeJson } from '../_lib/github.js';
+import { readFile, readJson, writeJson } from '../_lib/github.js';
 
 const FILE_PATH = 'public/cms/products.json';
+const LITE_FILE_PATH = 'public/cms/products-lite.json';
+
+async function readProductsSafely() {
+  try {
+    const { data } = await readJson(FILE_PATH);
+    if (Array.isArray(data)) return data;
+  } catch {
+    // Fall back to the lightweight catalog when the legacy full JSON is invalid.
+  }
+
+  const { data: liteProducts } = await readJson(LITE_FILE_PATH);
+  if (!Array.isArray(liteProducts)) return [];
+
+  return Promise.all(liteProducts.map(async (product) => {
+    try {
+      const file = await readFile(`public/cms/products/${product.id}.json`);
+      return JSON.parse(file.content);
+    } catch {
+      return product;
+    }
+  }));
+}
 
 export default async function handler(req, res) {
   if (!method(req, res, ['GET', 'PUT'])) return;
@@ -9,8 +31,7 @@ export default async function handler(req, res) {
 
   try {
     if (req.method === 'GET') {
-      const { data } = await readJson(FILE_PATH);
-      json(res, 200, data);
+      json(res, 200, await readProductsSafely());
       return;
     }
 
