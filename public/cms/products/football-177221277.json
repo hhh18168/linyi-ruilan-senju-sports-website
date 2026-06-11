@@ -1,0 +1,81 @@
+{
+  "id": "football-177221277",
+  "name": "德甲",
+  "category": "Football",
+  "categorySlug": "football",
+  "album": "德甲",
+  "image": "/yupoo-products/football/177221277/177221277-01.jpg",
+  "visible": true,
+  "sortOrder": 17,
+  "prices": {
+    "baseCurrency": "USD",
+    "basePrice": 12,
+    "priceUnit": "piece"
+  },
+  "galleryImages": [
+    "/yupoo-products/football/177221277/177221277-01.jpg",
+    "/yupoo-products/football/177221277/177221277-02.jpg"
+  ],
+  "galleryLabels": [
+    "Style 1",
+    "Style 2"
+  ],
+  "specs": [
+    {
+      "label": "Category",
+      "value": "Football"
+    },
+    {
+      "label": "Album",
+      "value": "德甲"
+    },
+    {
+      "label": "Images",
+      "value": "2"
+    }
+  ],
+  "translations": {
+    "en": {
+      "name": "德甲",
+      "category": "Football",
+      "album": "德甲",
+      "description": "德甲 football style with 2 product images for inquiry and team purchasing.",
+      "scenario": "Football clubs, schools, team purchase and sports goods retail",
+      "highlights": [
+        "Football product catalog",
+        "Multiple images available",
+        "Bulk inquiry support"
+      ]
+    },
+    "zh": {
+      "name": "德甲",
+      "category": "足球",
+      "album": "德甲",
+      "description": "德甲 足球款式，包含 2 张产品图片，适合询盘、选款和团队采购。",
+      "scenario": "足球俱乐部、学校训练、团队采购、体育用品零售",
+      "highlights": [
+        "足球款式图集",
+        "多图可查看",
+        "支持批量询盘"
+      ]
+    },
+    "es": {
+      "name": "德甲",
+      "category": "Futbol",
+      "album": "德甲",
+      "description": "Modelo de futbol 德甲 con 2 imagenes para consulta y compra por equipo.",
+      "scenario": "Clubes, escuelas, equipos y venta deportiva",
+      "highlights": [
+        "Catalogo de futbol",
+        "Varias imagenes",
+        "Consulta por volumen"
+      ]
+    }
+  },
+  "detailSections": [
+    {
+      "title": "Product Details",
+      "body": "Contact us for price, customization and delivery details."
+    }
+  ]
+}
