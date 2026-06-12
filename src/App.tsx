@@ -144,20 +144,20 @@ const ui: Record<string, Record<string, string>> = {
 };
 
 const termTranslations: Record<string, Record<string, string>> = {
-  zh: { Football: '足球', Volleyball: '排球', Basketball: '篮球', Tennis: '网球', Badminton: '羽毛球', 'Sports Bag': '运动书包', 'Sports T-shirt': '运动T恤', 'Thermal Bonded': '热粘合', 'Machine Stitched': '机缝', 'World Cup': '世界杯', 'European Cup': '欧洲杯', Product: '商品' },
-  es: { Football: 'Futbol', Volleyball: 'Voleibol', Basketball: 'Baloncesto', Tennis: 'Tenis', Badminton: 'Badminton', 'Sports Bag': 'Bolsa deportiva', 'Sports T-shirt': 'Camiseta deportiva', 'Thermal Bonded': 'Termosellado', 'Machine Stitched': 'Cosido a maquina', 'World Cup': 'Copa Mundial', 'European Cup': 'Copa Europea', Product: 'Producto' },
-  fr: { Football: 'Football', Volleyball: 'Volley-ball', Basketball: 'Basket-ball', Tennis: 'Tennis', Badminton: 'Badminton', 'Sports Bag': 'Sac de sport', 'Sports T-shirt': 'T-shirt de sport', Product: 'Produit' },
-  de: { Football: 'Fussball', Volleyball: 'Volleyball', Basketball: 'Basketball', Tennis: 'Tennis', Badminton: 'Badminton', 'Sports Bag': 'Sporttasche', 'Sports T-shirt': 'Sport-T-Shirt', Product: 'Produkt' },
-  pt: { Football: 'Futebol', Volleyball: 'Voleibol', Basketball: 'Basquete', Tennis: 'Tenis', Badminton: 'Badminton', 'Sports Bag': 'Bolsa esportiva', 'Sports T-shirt': 'Camiseta esportiva', Product: 'Produto' },
-  ru: { Football: 'Футбол', Volleyball: 'Волейбол', Basketball: 'Баскетбол', Tennis: 'Теннис', Badminton: 'Бадминтон', 'Sports Bag': 'Спортивный рюкзак', 'Sports T-shirt': 'Спортивная футболка', Product: 'Товар' },
-  ar: { Football: 'كرة القدم', Volleyball: 'الكرة الطائرة', Basketball: 'كرة السلة', Tennis: 'التنس', Badminton: 'الريشة الطائرة', 'Sports Bag': 'حقيبة رياضية', 'Sports T-shirt': 'قميص رياضي', Product: 'منتج' },
-  ja: { Football: 'サッカー', Volleyball: 'バレーボール', Basketball: 'バスケットボール', Tennis: 'テニス', Badminton: 'バドミントン', 'Sports Bag': 'スポーツバッグ', 'Sports T-shirt': 'スポーツTシャツ', Product: '商品' },
-  ko: { Football: '축구', Volleyball: '배구', Basketball: '농구', Tennis: '테니스', Badminton: '배드민턴', 'Sports Bag': '스포츠 백팩', 'Sports T-shirt': '스포츠 티셔츠', Product: '상품' },
-  it: { Football: 'Calcio', Volleyball: 'Pallavolo', Basketball: 'Basket', Tennis: 'Tennis', Badminton: 'Badminton', 'Sports Bag': 'Borsa sportiva', 'Sports T-shirt': 'T-shirt sportiva', Product: 'Prodotto' },
-  nl: { Football: 'Voetbal', Volleyball: 'Volleybal', Basketball: 'Basketbal', Tennis: 'Tennis', Badminton: 'Badminton', 'Sports Bag': 'Sporttas', 'Sports T-shirt': 'Sport T-shirt', Product: 'Product' },
-  tr: { Football: 'Futbol', Volleyball: 'Voleybol', Basketball: 'Basketbol', Tennis: 'Tenis', Badminton: 'Badminton', 'Sports Bag': 'Spor çantası', 'Sports T-shirt': 'Spor tişörtü', Product: 'Ürün' },
-  vi: { Football: 'Bong da', Volleyball: 'Bong chuyen', Basketball: 'Bong ro', Tennis: 'Quan vot tennis', Badminton: 'Cau long', 'Sports Bag': 'Ba lo the thao', 'Sports T-shirt': 'Ao thun the thao', Product: 'San pham' },
-  id: { Football: 'Sepak bola', Volleyball: 'Voli', Basketball: 'Bola basket', Tennis: 'Tenis', Badminton: 'Bulu tangkis', 'Sports Bag': 'Tas olahraga', 'Sports T-shirt': 'Kaos olahraga', Product: 'Produk' },
+  zh: { Football: '足球', Volleyball: '排球', Basketball: '篮球', Tennis: '网球', Badminton: '羽毛球', 'Sports T-shirt': '运动T恤', 'Thermal Bonded': '热粘合', 'Machine Stitched': '机缝', 'World Cup': '世界杯', 'European Cup': '欧洲杯', Product: '商品' },
+  es: { Football: 'Futbol', Volleyball: 'Voleibol', Basketball: 'Baloncesto', Tennis: 'Tenis', Badminton: 'Badminton', 'Sports T-shirt': 'Camiseta deportiva', 'Thermal Bonded': 'Termosellado', 'Machine Stitched': 'Cosido a maquina', 'World Cup': 'Copa Mundial', 'European Cup': 'Copa Europea', Product: 'Producto' },
+  fr: { Football: 'Football', Volleyball: 'Volley-ball', Basketball: 'Basket-ball', Tennis: 'Tennis', Badminton: 'Badminton', 'Sports T-shirt': 'T-shirt de sport', Product: 'Produit' },
+  de: { Football: 'Fussball', Volleyball: 'Volleyball', Basketball: 'Basketball', Tennis: 'Tennis', Badminton: 'Badminton', 'Sports T-shirt': 'Sport-T-Shirt', Product: 'Produkt' },
+  pt: { Football: 'Futebol', Volleyball: 'Voleibol', Basketball: 'Basquete', Tennis: 'Tenis', Badminton: 'Badminton', 'Sports T-shirt': 'Camiseta esportiva', Product: 'Produto' },
+  ru: { Football: 'Футбол', Volleyball: 'Волейбол', Basketball: 'Баскетбол', Tennis: 'Теннис', Badminton: 'Бадминтон', 'Sports T-shirt': 'Спортивная футболка', Product: 'Товар' },
+  ar: { Football: 'كرة القدم', Volleyball: 'الكرة الطائرة', Basketball: 'كرة السلة', Tennis: 'التنس', Badminton: 'الريشة الطائرة', 'Sports T-shirt': 'قميص رياضي', Product: 'منتج' },
+  ja: { Football: 'サッカー', Volleyball: 'バレーボール', Basketball: 'バスケットボール', Tennis: 'テニス', Badminton: 'バドミントン', 'Sports T-shirt': 'スポーツTシャツ', Product: '商品' },
+  ko: { Football: '축구', Volleyball: '배구', Basketball: '농구', Tennis: '테니스', Badminton: '배드민턴', 'Sports T-shirt': '스포츠 티셔츠', Product: '상품' },
+  it: { Football: 'Calcio', Volleyball: 'Pallavolo', Basketball: 'Basket', Tennis: 'Tennis', Badminton: 'Badminton', 'Sports T-shirt': 'T-shirt sportiva', Product: 'Prodotto' },
+  nl: { Football: 'Voetbal', Volleyball: 'Volleybal', Basketball: 'Basketbal', Tennis: 'Tennis', Badminton: 'Badminton', 'Sports T-shirt': 'Sport T-shirt', Product: 'Product' },
+  tr: { Football: 'Futbol', Volleyball: 'Voleybol', Basketball: 'Basketbol', Tennis: 'Tenis', Badminton: 'Badminton', 'Sports T-shirt': 'Spor tişörtü', Product: 'Ürün' },
+  vi: { Football: 'Bong da', Volleyball: 'Bong chuyen', Basketball: 'Bong ro', Tennis: 'Quan vot tennis', Badminton: 'Cau long', 'Sports T-shirt': 'Ao thun the thao', Product: 'San pham' },
+  id: { Football: 'Sepak bola', Volleyball: 'Voli', Basketball: 'Bola basket', Tennis: 'Tenis', Badminton: 'Bulu tangkis', 'Sports T-shirt': 'Kaos olahraga', Product: 'Produk' },
 };
 
 type ImageVariant = 'thumb' | 'card' | 'detail';
@@ -166,6 +166,7 @@ type ImagePriority = 'high' | 'low' | 'auto';
 const t = (language: string, key: string) => ui[language]?.[key] || ui.en[key] || key;
 const slugify = (value: string) => value.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '').slice(0, 80);
 const isCricket = (value = '') => /cricket|板球|\u677f\u7403/i.test(value);
+const isSportsBag = (value = '') => /sports[- ]?bag|backpack|运动书包|运动包|书包|背包|\u8fd0\u52a8\u4e66\u5305|\u8fd0\u52a8\u5305|\u4e66\u5305|\u80cc\u5305/i.test(value);
 const lightProductImage = (product: CmsProduct) => {
   const categoryIcon: Record<string, string> = {
     football: '/assets/football.svg',
@@ -173,7 +174,6 @@ const lightProductImage = (product: CmsProduct) => {
     basketball: '/assets/basketball.svg',
     tennis: '/assets/tennis.svg',
     badminton: '/assets/badminton.svg',
-    'sports-bag': '/assets/backpack.svg',
     'sports-tshirt': '/assets/tshirt.svg',
   };
   return categoryIcon[product.categorySlug] || product.image;
@@ -316,7 +316,22 @@ function App() {
   }, [direction, language, text.brand, text.tagline]);
 
   const visibleProducts = useMemo(
-    () => cmsProducts.filter((product) => product.visible && !isCricket(product.category) && !isCricket(product.categorySlug) && !isCricket(product.name)).sort((a, b) => a.sortOrder - b.sortOrder),
+    () => cmsProducts
+      .filter((product) => product.visible)
+      .filter((product) => {
+        const values = [
+          product.category,
+          product.categorySlug,
+          product.name,
+          product.album,
+          product.image,
+          ...(product.translations
+            ? Object.values(product.translations).flatMap((copy) => [copy.name, copy.category, copy.album, copy.description])
+            : []),
+        ];
+        return !values.some((value) => isCricket(value || '') || isSportsBag(value || ''));
+      })
+      .sort((a, b) => a.sortOrder - b.sortOrder),
     [cmsProducts],
   );
 
@@ -602,7 +617,6 @@ function HomeSections({
   sectionOrder: (id: LayoutSettings['sections'][number]['id']) => number;
 }) {
   const featured = products.slice(0, 4);
-  const hotProducts = products.slice(0, 8);
   return (
     <>
       <section id="home" className="relative overflow-hidden bg-ink text-white">
@@ -681,41 +695,6 @@ function HomeSections({
         </section>
       )}
 
-      {sectionVisible('products') && (
-        <section id="hot-products" style={{ order: sectionOrder('products') }} className="bg-white py-16">
-          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
-              <div>
-                <p className="text-sm font-black uppercase tracking-[0.18em] text-court">{text.sections.productsEyebrow}</p>
-                <h2 className="mt-2 text-3xl font-black tracking-normal sm:text-4xl">{text.sections.productsTitle}</h2>
-              </div>
-              <button type="button" onClick={() => openCategory('all')} className="inline-flex min-h-11 items-center justify-center gap-2 rounded-md bg-court px-4 text-sm font-black text-white transition hover:bg-flame">
-                {t(language, 'allProducts')} <ArrowRight size={17} />
-              </button>
-            </div>
-            <div className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
-              {hotProducts.map((product) => {
-                const copy = productCopy(product, language);
-                return (
-                  <article key={product.id} className="cursor-pointer overflow-hidden rounded-md border border-slate-200 bg-field shadow-sm transition hover:-translate-y-1 hover:shadow-lift" onClick={() => openProduct(product.id)}>
-                    <div className="relative aspect-[4/3] bg-white">
-                      <OptimizedImage variant="card" product={product} className="h-full w-full object-contain p-4" src={displayProductImage(product)} alt={copy.name || product.name} />
-                      <div className="absolute left-3 top-3 rounded-md bg-white px-3 py-1 text-xs font-black text-court shadow-sm">{translateTerm(language, copy.category || product.category)}</div>
-                    </div>
-                    <div className="p-4">
-                      <h3 className="line-clamp-2 min-h-12 text-base font-black tracking-normal">{copy.name || product.name}</h3>
-                      <p className="mt-2 text-lg font-black text-court">{formatProductPrice(product, language, rates)}</p>
-                      <button type="button" onClick={(event) => { event.stopPropagation(); openProduct(product.id); }} className="mt-4 inline-flex min-h-10 w-full items-center justify-center rounded-md bg-court px-3 text-sm font-black text-white transition hover:bg-flame">
-                        {t(language, 'details')}
-                      </button>
-                    </div>
-                  </article>
-                );
-              })}
-            </div>
-          </div>
-        </section>
-      )}
     </>
   );
 }
@@ -798,6 +777,27 @@ function CatalogSection({
   );
 }
 
+const craftCards: Record<string, { title: string; text: string }[]> = {
+  zh: [
+    { title: '足球', text: '可选 PU、PVC、TPU 表层，支持热粘合与机缝工艺，适合训练球、比赛球和俱乐部批量采购。' },
+    { title: '篮球', text: '耐磨 PU 或橡胶外皮，深沟纹防滑设计，兼顾室内手感与室外耐打需求。' },
+    { title: '排球', text: '柔软触感表层配合稳定气密内胆，适合学校训练、俱乐部课程和赛事备货。' },
+    { title: '网球', text: '耐磨毛毡与稳定弹性结构，适合训练消耗、门店补货和课程采购。' },
+    { title: '羽毛球', text: '提供耐打羽毛球与尼龙球选择，飞行稳定，适合日常训练和团体采购。' },
+    { title: '运动T恤', text: '速干透气面料，支持队服、训练服和活动服定制，适合学校、赛事和俱乐部。' },
+  ],
+  en: [
+    { title: 'Football', text: 'PU, PVC and TPU covers with thermal bonded or machine stitched options for training, match and club purchasing.' },
+    { title: 'Basketball', text: 'Wear-resistant PU or rubber covers with deep channels for indoor touch and outdoor durability.' },
+    { title: 'Volleyball', text: 'Soft-touch covers and stable air-retention bladders for school training, club classes and event supply.' },
+    { title: 'Tennis', text: 'Durable felt and consistent bounce for training consumption, retail replenishment and coaching programs.' },
+    { title: 'Badminton', text: 'Durable feather and nylon shuttle options with stable flight for daily training and team purchasing.' },
+    { title: 'Sports T-shirt', text: 'Quick-dry breathable fabric for teamwear, training wear and event customization.' },
+  ],
+};
+
+const getCraftCards = (language: LanguageCode) => craftCards[language] || craftCards.en;
+
 function AboutContact({
   text,
   language,
@@ -840,16 +840,13 @@ function AboutContact({
               <p className="mt-4 text-sm leading-7 text-slate-200">{cmsCopy.aboutText || text.sections.aboutText}</p>
             </div>
             <div className="grid gap-5 sm:grid-cols-2">
-              {products.slice(0, 4).map((product) => {
-                const copy = productCopy(product, language);
-                return (
-                  <div key={product.id} className="rounded-md border border-white/12 bg-white/8 p-5">
-                    <BadgeCheck className="text-lime" size={22} />
-                    <h3 className="mt-4 text-lg font-black">{translateTerm(language, copy.category || product.category)}</h3>
-                    <p className="mt-2 text-sm leading-7 text-slate-200">{copy.description}</p>
-                  </div>
-                );
-              })}
+              {getCraftCards(language).map((card) => (
+                <div key={card.title} className="rounded-md border border-white/12 bg-white/8 p-5">
+                  <BadgeCheck className="text-lime" size={22} />
+                  <h3 className="mt-4 text-lg font-black">{card.title}</h3>
+                  <p className="mt-2 text-sm leading-7 text-slate-200">{card.text}</p>
+                </div>
+              ))}
             </div>
           </div>
         </section>

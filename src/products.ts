@@ -7,7 +7,6 @@ export type CategoryId =
   | 'tennis'
   | 'cricket'
   | 'badminton'
-  | 'sportsBag'
   | 'sportsTshirt';
 
 export type Product = {
@@ -29,7 +28,6 @@ export const categoryIds: CategoryId[] = [
   'tennis',
   'cricket',
   'badminton',
-  'sportsBag',
   'sportsTshirt',
 ];
 
@@ -40,7 +38,6 @@ export const categoryImages: Record<CategoryId, string> = {
   tennis: '/assets/tennis.svg',
   cricket: '/assets/cricket.svg',
   badminton: '/assets/badminton.svg',
-  sportsBag: '/assets/backpack.svg',
   sportsTshirt: '/assets/tshirt.svg',
 };
 
@@ -52,7 +49,6 @@ export const categoryLabels: Record<LanguageCode, Record<CategoryId, string>> = 
     tennis: '网球',
     cricket: '板球',
     badminton: '羽毛球',
-    sportsBag: '运动书包',
     sportsTshirt: '运动T恤',
   },
   en: {
@@ -62,7 +58,6 @@ export const categoryLabels: Record<LanguageCode, Record<CategoryId, string>> = 
     tennis: 'Tennis',
     cricket: 'Cricket',
     badminton: 'Badminton',
-    sportsBag: 'Sports Bag',
     sportsTshirt: 'Sports T-shirt',
   },
   es: {
@@ -72,7 +67,6 @@ export const categoryLabels: Record<LanguageCode, Record<CategoryId, string>> = 
     tennis: 'Tenis',
     cricket: 'Críquet',
     badminton: 'Bádminton',
-    sportsBag: 'Bolsa deportiva',
     sportsTshirt: 'Camiseta deportiva',
   },
   fr: {
@@ -82,7 +76,6 @@ export const categoryLabels: Record<LanguageCode, Record<CategoryId, string>> = 
     tennis: 'Tennis',
     cricket: 'Cricket',
     badminton: 'Badminton',
-    sportsBag: 'Sac de sport',
     sportsTshirt: 'T-shirt de sport',
   },
   de: {
@@ -92,7 +85,6 @@ export const categoryLabels: Record<LanguageCode, Record<CategoryId, string>> = 
     tennis: 'Tennis',
     cricket: 'Cricket',
     badminton: 'Badminton',
-    sportsBag: 'Sporttasche',
     sportsTshirt: 'Sport-T-Shirt',
   },
   pt: {
@@ -102,7 +94,6 @@ export const categoryLabels: Record<LanguageCode, Record<CategoryId, string>> = 
     tennis: 'Tênis',
     cricket: 'Críquete',
     badminton: 'Badminton',
-    sportsBag: 'Bolsa esportiva',
     sportsTshirt: 'Camiseta esportiva',
   },
   ru: {
@@ -112,7 +103,6 @@ export const categoryLabels: Record<LanguageCode, Record<CategoryId, string>> = 
     tennis: 'Теннис',
     cricket: 'Крикет',
     badminton: 'Бадминтон',
-    sportsBag: 'Спортивная сумка',
     sportsTshirt: 'Спортивная футболка',
   },
   ar: {
@@ -122,7 +112,6 @@ export const categoryLabels: Record<LanguageCode, Record<CategoryId, string>> = 
     tennis: 'التنس',
     cricket: 'الكريكيت',
     badminton: 'الريشة الطائرة',
-    sportsBag: 'حقيبة رياضية',
     sportsTshirt: 'قميص رياضي',
   },
   ja: {
@@ -132,7 +121,6 @@ export const categoryLabels: Record<LanguageCode, Record<CategoryId, string>> = 
     tennis: 'テニス',
     cricket: 'クリケット',
     badminton: 'バドミントン',
-    sportsBag: 'スポーツバッグ',
     sportsTshirt: 'スポーツTシャツ',
   },
   ko: {
@@ -142,7 +130,6 @@ export const categoryLabels: Record<LanguageCode, Record<CategoryId, string>> = 
     tennis: '테니스',
     cricket: '크리켓',
     badminton: '배드민턴',
-    sportsBag: '스포츠 가방',
     sportsTshirt: '스포츠 티셔츠',
   },
   it: {
@@ -152,7 +139,6 @@ export const categoryLabels: Record<LanguageCode, Record<CategoryId, string>> = 
     tennis: 'Tennis',
     cricket: 'Cricket',
     badminton: 'Badminton',
-    sportsBag: 'Borsa sportiva',
     sportsTshirt: 'T-shirt sportiva',
   },
   nl: {
@@ -162,7 +148,6 @@ export const categoryLabels: Record<LanguageCode, Record<CategoryId, string>> = 
     tennis: 'Tennis',
     cricket: 'Cricket',
     badminton: 'Badminton',
-    sportsBag: 'Sporttas',
     sportsTshirt: 'Sport T-shirt',
   },
   tr: {
@@ -172,7 +157,6 @@ export const categoryLabels: Record<LanguageCode, Record<CategoryId, string>> = 
     tennis: 'Tenis',
     cricket: 'Kriket',
     badminton: 'Badminton',
-    sportsBag: 'Spor Çantası',
     sportsTshirt: 'Spor Tişörtü',
   },
   vi: {
@@ -182,7 +166,6 @@ export const categoryLabels: Record<LanguageCode, Record<CategoryId, string>> = 
     tennis: 'Quần vợt',
     cricket: 'Cricket',
     badminton: 'Cầu lông',
-    sportsBag: 'Túi thể thao',
     sportsTshirt: 'Áo thun thể thao',
   },
   id: {
@@ -192,7 +175,6 @@ export const categoryLabels: Record<LanguageCode, Record<CategoryId, string>> = 
     tennis: 'Tenis',
     cricket: 'Kriket',
     badminton: 'Bulu tangkis',
-    sportsBag: 'Tas olahraga',
     sportsTshirt: 'Kaos olahraga',
   },
 };
@@ -358,30 +340,6 @@ export const products: Product[] = [
     { name: 'Anti-slip Badminton Shoes', highlight: 'Gum outsole and side support for quick indoor movement.', scenario: 'Indoor courts, focused drills, matches' },
   ),
   product(
-    'backpack-team',
-    'sportsBag',
-    '$18-31',
-    '/assets/backpack.svg',
-    { name: '团队训练运动书包', highlight: '大容量主仓，球鞋、毛巾、水杯分区收纳。', scenario: '校队训练、健身通勤、俱乐部定制' },
-    { name: 'Team Training Sports Backpack', highlight: 'Large main compartment with separate space for shoes, towels and bottles.', scenario: 'School teams, gym commuting, club customization' },
-  ),
-  product(
-    'backpack-waterproof',
-    'sportsBag',
-    '$22-38',
-    '/assets/backpack.svg',
-    { name: '防泼水运动背包', highlight: '防泼水面料和透气背负，户外训练更实用。', scenario: '户外球场、骑行通勤、旅行运动' },
-    { name: 'Water-repellent Sports Backpack', highlight: 'Water-repellent fabric and breathable carry system for outdoor use.', scenario: 'Outdoor courts, cycling commute, travel sports' },
-  ),
-  product(
-    'backpack-light',
-    'sportsBag',
-    '$6-12',
-    '/assets/backpack.svg',
-    { name: '轻量抽绳训练包', highlight: '轻便易折叠，适合装球衣和基础装备。', scenario: '短途训练、校园活动、赛事赠品' },
-    { name: 'Light Drawstring Training Bag', highlight: 'Light and foldable for jerseys and basic gear.', scenario: 'Short training, campus events, giveaways' },
-  ),
-  product(
     'tshirt-dry',
     'sportsTshirt',
     '$10-17',
@@ -412,7 +370,6 @@ export const featuredProducts = products.filter((product) =>
     'football-match-pro',
     'basketball-indoor',
     'badminton-racket-speed',
-    'backpack-team',
     'tshirt-team',
     'tennis-racket-control',
   ].includes(product.id),
