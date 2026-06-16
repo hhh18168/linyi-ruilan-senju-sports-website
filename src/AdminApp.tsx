@@ -267,6 +267,21 @@ function AdminApp() {
     }
   };
 
+
+  const updateRateFromCurrency = (currency: string, inputValue: string) => {
+    const nextValue = Number(inputValue);
+    if (!Number.isFinite(nextValue) || nextValue <= 0) return;
+    setRates((current) => {
+      const currentValue = current.rates[currency as keyof typeof current.rates] || 1;
+      const multiplier = nextValue / currentValue;
+      const nextRates = Object.fromEntries(
+        Object.entries(current.rates).map(([code, value]) => [code, Number((value * multiplier).toFixed(6))]),
+      ) as ExchangeRates['rates'];
+      nextRates[currency as keyof typeof nextRates] = nextValue;
+      return { ...current, rates: nextRates };
+    });
+  };
+
   const addModule = () => {
     const id = `module-${Date.now()}`;
     setLayout({
@@ -429,7 +444,7 @@ function AdminApp() {
         <section className="admin-card">
           <div className="flex items-center justify-between gap-3"><h2 className="admin-title">汇率与价格</h2><button className="admin-primary" type="button" onClick={saveRates}><Save size={16} /> 保存汇率</button></div>
           <p className="mt-3 text-sm text-slate-500">产品价格以 USD 为基础，前台会按语言自动换算币种。</p>
-          <div className="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-5">{Object.entries(rates.rates).map(([currency, value]) => <AdminField key={currency} label={currency}><input className="input" type="number" value={value} onChange={(event) => setRates({ ...rates, rates: { ...rates.rates, [currency]: Number(event.target.value) } })} /></AdminField>)}</div>
+          <div className="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-5">{Object.entries(rates.rates).map(([currency, value]) => <AdminField key={currency} label={currency}><input className="input" type="number" value={value} onChange={(event) => updateRateFromCurrency(currency, event.target.value)} /></AdminField>)}</div>
         </section>
       )}
       {tab === 'analytics' && (
