@@ -590,7 +590,6 @@ function App() {
             <span>Copyright © {new Date().getFullYear()} {displayBrand}. All Rights Reserved.</span>
           </div>
           <div className="flex flex-col gap-2 sm:flex-row sm:flex-wrap sm:items-center sm:justify-between">
-            <span>备案信息：备案号待完善</span>
             <span>邮箱：{contactEmails.join(' / ')}</span>
             <span>WhatsApp：{siteSettings.whatsapp.join(' / ')}</span>
           </div>
