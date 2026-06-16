@@ -1,7 +1,7 @@
 import { ChangeEvent, FormEvent, useEffect, useMemo, useState } from 'react';
 import { BarChart3, ImagePlus, LayoutDashboard, LogOut, PackagePlus, Save, Settings, Trash2 } from 'lucide-react';
 import { defaultCmsProducts, defaultExchangeRates, defaultLayoutSettings, defaultSiteSettings, normalizeProduct } from './cms';
-import type { CmsProduct, ExchangeRates, Inquiry, LayoutSettings, LayoutSection, SiteSettings } from './cmsTypes';
+import type { CmsProduct, CurrencyCode, ExchangeRates, Inquiry, LayoutSettings, LayoutSection, SiteSettings } from './cmsTypes';
 
 type Session = { loggedIn: boolean; username: string | null; codeVerified: boolean };
 type Tab = 'products' | 'inquiries' | 'content' | 'layout' | 'rates' | 'analytics';
@@ -45,6 +45,18 @@ const linesToList = (value: string) => value.split('\n').map((item) => item.trim
 const listToLines = (value?: string[]) => (value || []).join('\n');
 const cloneEmpty = (): CmsProduct => JSON.parse(JSON.stringify(emptyProduct));
 
+const roundAmount = (value: number) => Number(value.toFixed(6));
+
+const normalizeExchangeRates = (value: ExchangeRates): ExchangeRates => {
+  const baseRate = value.rates[value.baseCurrency] || 1;
+  return {
+    ...value,
+    rates: Object.fromEntries(
+      Object.entries(value.rates).map(([currency, rate]) => [currency, roundAmount(rate / baseRate)]),
+    ) as ExchangeRates['rates'],
+  };
+};
+
 function normalizeForSave(products: CmsProduct[]) {
   return products
     .map((product, index) => ({
@@ -68,6 +80,7 @@ function AdminApp() {
   const [settings, setSettings] = useState<SiteSettings>(defaultSiteSettings);
   const [layout, setLayout] = useState<LayoutSettings>(defaultLayoutSettings);
   const [rates, setRates] = useState<ExchangeRates>(defaultExchangeRates);
+  const [rateBaseAmount, setRateBaseAmount] = useState(1);
   const [inquiries, setInquiries] = useState<Inquiry[]>([]);
   const [mergeIds, setMergeIds] = useState<string[]>([]);
   const [draggingId, setDraggingId] = useState('');
@@ -107,7 +120,8 @@ function AdminApp() {
       setProducts(normalizeForSave(nextProducts.map(normalizeProduct)));
       setSettings(nextSettings);
       setLayout(nextLayout);
-      setRates(nextRates);
+      setRates(normalizeExchangeRates(nextRates));
+      setRateBaseAmount(1);
       setInquiries(inquiryData.inquiries);
     } catch (error) {
       setMessage(error instanceof Error ? error.message : '后台数据加载失败');
@@ -260,7 +274,10 @@ function AdminApp() {
   const saveRates = async () => {
     setMessage('正在保存汇率...');
     try {
-      await api('/api/admin/exchange-rates', { method: 'PUT', body: JSON.stringify({ rates }) });
+      const normalizedRates = normalizeExchangeRates(rates);
+      await api('/api/admin/exchange-rates', { method: 'PUT', body: JSON.stringify({ rates: normalizedRates }) });
+      setRates(normalizedRates);
+      setRateBaseAmount(1);
       setMessage('汇率已保存，Vercel 会自动重新部署。');
     } catch (error) {
       setMessage(error instanceof Error ? error.message : '保存失败');
@@ -268,18 +285,18 @@ function AdminApp() {
   };
 
 
+  const rateAmountForCurrency = (currency: string) => {
+    const baseRate = rates.rates[rates.baseCurrency] || 1;
+    const targetRate = rates.rates[currency as CurrencyCode] || 1;
+    return roundAmount((rateBaseAmount * targetRate) / baseRate);
+  };
+
   const updateRateFromCurrency = (currency: string, inputValue: string) => {
     const nextValue = Number(inputValue);
     if (!Number.isFinite(nextValue) || nextValue <= 0) return;
-    setRates((current) => {
-      const currentValue = current.rates[currency as keyof typeof current.rates] || 1;
-      const multiplier = nextValue / currentValue;
-      const nextRates = Object.fromEntries(
-        Object.entries(current.rates).map(([code, value]) => [code, Number((value * multiplier).toFixed(6))]),
-      ) as ExchangeRates['rates'];
-      nextRates[currency as keyof typeof nextRates] = nextValue;
-      return { ...current, rates: nextRates };
-    });
+    const baseRate = rates.rates[rates.baseCurrency] || 1;
+    const targetRate = rates.rates[currency as CurrencyCode] || 1;
+    setRateBaseAmount(roundAmount((nextValue * baseRate) / targetRate));
   };
 
   const addModule = () => {
@@ -443,8 +460,8 @@ function AdminApp() {
       {tab === 'rates' && (
         <section className="admin-card">
           <div className="flex items-center justify-between gap-3"><h2 className="admin-title">汇率与价格</h2><button className="admin-primary" type="button" onClick={saveRates}><Save size={16} /> 保存汇率</button></div>
-          <p className="mt-3 text-sm text-slate-500">产品价格以 USD 为基础，前台会按语言自动换算币种。</p>
-          <div className="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-5">{Object.entries(rates.rates).map(([currency, value]) => <AdminField key={currency} label={currency}><input className="input" type="number" value={value} onChange={(event) => updateRateFromCurrency(currency, event.target.value)} /></AdminField>)}</div>
+          <p className="mt-3 text-sm text-slate-500">这里是价格换算器：修改任意币种金额，其他币种会自动换算；保存时会按 1 USD 标准汇率写入网站。</p>
+          <div className="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-5">{Object.entries(rates.rates).map(([currency]) => <AdminField key={currency} label={currency}><input className="input" type="number" value={rateAmountForCurrency(currency)} onChange={(event) => updateRateFromCurrency(currency, event.target.value)} /></AdminField>)}</div>
         </section>
       )}
       {tab === 'analytics' && (
