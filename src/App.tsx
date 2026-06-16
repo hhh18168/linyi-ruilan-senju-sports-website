@@ -584,9 +584,16 @@ function App() {
         )}
       </main>
       <footer className="border-t border-slate-200 bg-white py-8">
-        <div className="mx-auto flex max-w-7xl flex-col gap-3 px-4 text-sm text-slate-500 sm:flex-row sm:items-center sm:justify-between sm:px-6 lg:px-8">
-          <span className="font-bold text-ink">{displayBrand}</span>
-          <span>{cmsCopy.footerText || text.footer}</span>
+        <div className="mx-auto flex max-w-7xl flex-col gap-3 px-4 text-sm text-slate-500 sm:px-6 lg:px-8">
+          <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
+            <span className="font-bold text-ink">{displayBrand}</span>
+            <span>Copyright © {new Date().getFullYear()} {displayBrand}. All Rights Reserved.</span>
+          </div>
+          <div className="flex flex-col gap-2 sm:flex-row sm:flex-wrap sm:items-center sm:justify-between">
+            <span>备案信息：备案号待完善</span>
+            <span>邮箱：{contactEmails.join(' / ')}</span>
+            <span>WhatsApp：{siteSettings.whatsapp.join(' / ')}</span>
+          </div>
         </div>
       </footer>
     </div>

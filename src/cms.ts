@@ -19,7 +19,7 @@ export const defaultSiteSettings: SiteSettings = {
     'We help buyers select practical sports products for training, retail and team events with clear categories and fast inquiry flow.',
   contactTitle: 'Send a purchase inquiry',
   contactIntro: 'Tell us your target product, quantity and use case. We will contact you by email or WhatsApp.',
-  footerText: 'Sports goods showcase website for international buyers',
+  footerText: 'Copyright and filing information',
   emails: ['bayi35250@gmail.com', 'lyslsm8888@gmail.com'],
   whatsapp: ['+86 152 6539 8250', '+86 180 6316 9020'],
 };
