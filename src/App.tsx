@@ -549,6 +549,7 @@ function App() {
                   language={language}
                   cmsCopy={cmsCopy}
                   products={visibleProducts}
+                  categories={categories}
                   contactEmails={contactEmails}
                   whatsappContacts={whatsappContacts}
                   form={form}
@@ -809,6 +810,7 @@ function AboutContact({
   language,
   cmsCopy,
   products,
+  categories,
   contactEmails,
   whatsappContacts,
   form,
@@ -824,6 +826,7 @@ function AboutContact({
   language: LanguageCode;
   cmsCopy: Record<string, string>;
   products: CmsProduct[];
+  categories: { slug: string; name: string }[];
   contactEmails: string[];
   whatsappContacts: { label: string; href: string }[];
   form: FormState;
@@ -889,7 +892,11 @@ function AboutContact({
                 <Field label={text.form.product} error={errors.product}>
                   <select className="input" value={form.product} onChange={(event) => updateForm('product', event.target.value)}>
                     <option value="">{text.form.productPlaceholder}</option>
-                    {products.map((product) => <option key={product.id} value={product.name}>{productCopy(product, language).name || product.name}</option>)}
+                    {categories.map((category) => (
+                      <option key={category.slug} value={translateTerm(language, category.name)}>
+                        {translateTerm(language, category.name)}
+                      </option>
+                    ))}
                   </select>
                 </Field>
                 <Field label={text.form.quantity} error={errors.quantity}><input className="input" inputMode="numeric" value={form.quantity} onChange={(event) => updateForm('quantity', event.target.value)} placeholder={text.form.quantityPlaceholder} /></Field>
