@@ -857,19 +857,23 @@ function AboutContact({
   return (
     <>
       {sectionVisible('about') && (
-        <section id="about" style={{ order: sectionOrder('about') }} className="bg-ink py-16 text-white">
-          <div className="mx-auto grid max-w-7xl gap-10 px-4 sm:px-6 lg:grid-cols-[0.9fr_1.1fr] lg:px-8">
-            <div>
+        <section id="about" style={{ order: sectionOrder('about') }} className="bg-ink py-16 text-white sm:py-20">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div className="max-w-3xl">
               <p className="text-sm font-black uppercase tracking-[0.18em] text-lime">{text.sections.aboutEyebrow}</p>
-              <h2 className="mt-2 text-3xl font-black tracking-normal sm:text-4xl">{cmsCopy.aboutTitle || text.sections.aboutTitle}</h2>
-              <p className="mt-4 text-sm leading-7 text-slate-200">{cmsCopy.aboutText || text.sections.aboutText}</p>
+              <h2 className="mt-3 text-3xl font-black tracking-normal sm:text-4xl lg:text-5xl">{cmsCopy.aboutTitle || text.sections.aboutTitle}</h2>
+              <p className="mt-5 max-w-2xl text-sm leading-7 text-slate-200 sm:text-base">{cmsCopy.aboutText || text.sections.aboutText}</p>
             </div>
-            <div className="grid gap-5 sm:grid-cols-2">
+            <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
               {getCraftCards(language).map((card) => (
-                <div key={card.title} className="rounded-md border border-white/12 bg-white/8 p-5">
-                  <BadgeCheck className="text-lime" size={22} />
-                  <h3 className="mt-4 text-lg font-black">{card.title}</h3>
-                  <p className="mt-2 text-sm leading-7 text-slate-200">{card.text}</p>
+                <div key={card.title} className="min-h-[176px] rounded-md border border-white/12 bg-white/[0.06] p-5 shadow-sm transition hover:border-lime/50 hover:bg-white/[0.09]">
+                  <div className="flex items-center gap-3">
+                    <span className="inline-flex h-9 w-9 shrink-0 items-center justify-center rounded-md bg-lime/10 text-lime ring-1 ring-lime/30">
+                      <BadgeCheck size={19} />
+                    </span>
+                    <h3 className="text-base font-black leading-tight">{card.title}</h3>
+                  </div>
+                  <p className="mt-4 text-sm leading-7 text-slate-200">{card.text}</p>
                 </div>
               ))}
             </div>
