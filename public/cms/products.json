@@ -3300,5 +3300,1220 @@
         "body": "Contact us for price, customization and delivery details."
       }
     ]
+  },
+  {
+    "id": "tennis-racket-1",
+    "name": "Control Tennis Racket",
+    "category": "Tennis Racket",
+    "categorySlug": "tennis-racket",
+    "album": "Tennis Racket",
+    "image": "/assets/tennis-racket.svg",
+    "visible": true,
+    "sortOrder": 40,
+    "prices": {
+      "baseCurrency": "USD",
+      "basePrice": 28,
+      "priceUnit": "piece"
+    },
+    "galleryImages": [
+      "/assets/tennis-racket.svg"
+    ],
+    "galleryLabels": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "Aluminum alloy or carbon composite frame"
+      },
+      {
+        "label": "Use Case",
+        "value": "Tennis clubs, school classes, retail stores"
+      },
+      {
+        "label": "MOQ Reference",
+        "value": "5000 pieces or contact us for project quotation"
+      }
+    ],
+    "translations": {
+      "en": {
+        "name": "Control Tennis Racket",
+        "category": "Tennis Racket",
+        "album": "Tennis Racket",
+        "description": "Balanced control tennis racket for training programs, clubs and retail replenishment.",
+        "scenario": "Tennis clubs, school classes, retail stores",
+        "highlights": [
+          "Bulk inquiry available",
+          "Team purchase support",
+          "Customization support"
+        ]
+      },
+      "zh": {
+        "name": "控球型网球拍",
+        "category": "网球拍",
+        "album": "网球拍",
+        "description": "控球型网球拍，适合课程训练、俱乐部采购和门店补货。",
+        "scenario": "学校训练、俱乐部采购、体育用品门店和团队采购",
+        "highlights": [
+          "支持批量询盘",
+          "支持团队采购",
+          "可沟通定制需求"
+        ]
+      },
+      "es": {
+        "name": "Control Tennis Racket",
+        "category": "Tennis Racket",
+        "album": "Tennis Racket",
+        "description": "Producto deportivo para entrenamiento, venta minorista y compra por equipo.",
+        "scenario": "Escuelas, clubes y venta deportiva",
+        "highlights": [
+          "Consulta por volumen",
+          "Compra de equipo",
+          "Soporte personalizado"
+        ]
+      }
+    },
+    "detailSections": [
+      {
+        "title": "Product Details",
+        "body": "Contact us for price, customization, packing and delivery details."
+      },
+      {
+        "title": "采购说明",
+        "body": "可根据采购数量、包装方式、颜色和使用场景沟通报价。"
+      }
+    ]
+  },
+  {
+    "id": "tennis-racket-2",
+    "name": "Power Tennis Racket",
+    "category": "Tennis Racket",
+    "categorySlug": "tennis-racket",
+    "album": "Tennis Racket",
+    "image": "/assets/tennis-racket.svg",
+    "visible": true,
+    "sortOrder": 41,
+    "prices": {
+      "baseCurrency": "USD",
+      "basePrice": 36,
+      "priceUnit": "piece"
+    },
+    "galleryImages": [
+      "/assets/tennis-racket.svg"
+    ],
+    "galleryLabels": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "Carbon composite frame with reinforced throat"
+      },
+      {
+        "label": "Use Case",
+        "value": "Intermediate players, club training, team purchase"
+      },
+      {
+        "label": "MOQ Reference",
+        "value": "5000 pieces or contact us for project quotation"
+      }
+    ],
+    "translations": {
+      "en": {
+        "name": "Power Tennis Racket",
+        "category": "Tennis Racket",
+        "album": "Tennis Racket",
+        "description": "Power-focused tennis racket with stronger frame response for training and club sourcing.",
+        "scenario": "Intermediate players, club training, team purchase",
+        "highlights": [
+          "Bulk inquiry available",
+          "Team purchase support",
+          "Customization support"
+        ]
+      },
+      "zh": {
+        "name": "力量型网球拍",
+        "category": "网球拍",
+        "album": "网球拍",
+        "description": "力量型网球拍，拍框反馈更强，适合进阶训练和团队采购。",
+        "scenario": "学校训练、俱乐部采购、体育用品门店和团队采购",
+        "highlights": [
+          "支持批量询盘",
+          "支持团队采购",
+          "可沟通定制需求"
+        ]
+      },
+      "es": {
+        "name": "Power Tennis Racket",
+        "category": "Tennis Racket",
+        "album": "Tennis Racket",
+        "description": "Producto deportivo para entrenamiento, venta minorista y compra por equipo.",
+        "scenario": "Escuelas, clubes y venta deportiva",
+        "highlights": [
+          "Consulta por volumen",
+          "Compra de equipo",
+          "Soporte personalizado"
+        ]
+      }
+    },
+    "detailSections": [
+      {
+        "title": "Product Details",
+        "body": "Contact us for price, customization, packing and delivery details."
+      },
+      {
+        "title": "采购说明",
+        "body": "可根据采购数量、包装方式、颜色和使用场景沟通报价。"
+      }
+    ]
+  },
+  {
+    "id": "tennis-racket-3",
+    "name": "Junior Tennis Racket",
+    "category": "Tennis Racket",
+    "categorySlug": "tennis-racket",
+    "album": "Tennis Racket",
+    "image": "/assets/tennis-racket.svg",
+    "visible": true,
+    "sortOrder": 42,
+    "prices": {
+      "baseCurrency": "USD",
+      "basePrice": 18,
+      "priceUnit": "piece"
+    },
+    "galleryImages": [
+      "/assets/tennis-racket.svg"
+    ],
+    "galleryLabels": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "Lightweight aluminum alloy frame"
+      },
+      {
+        "label": "Use Case",
+        "value": "Schools, youth clubs, beginner training"
+      },
+      {
+        "label": "MOQ Reference",
+        "value": "5000 pieces or contact us for project quotation"
+      }
+    ],
+    "translations": {
+      "en": {
+        "name": "Junior Tennis Racket",
+        "category": "Tennis Racket",
+        "album": "Tennis Racket",
+        "description": "Light junior tennis racket for school training, beginner lessons and youth sports programs.",
+        "scenario": "Schools, youth clubs, beginner training",
+        "highlights": [
+          "Bulk inquiry available",
+          "Team purchase support",
+          "Customization support"
+        ]
+      },
+      "zh": {
+        "name": "青少年网球拍",
+        "category": "网球拍",
+        "album": "网球拍",
+        "description": "轻量青少年网球拍，适合学校训练、入门课程和青少年运动项目。",
+        "scenario": "学校训练、俱乐部采购、体育用品门店和团队采购",
+        "highlights": [
+          "支持批量询盘",
+          "支持团队采购",
+          "可沟通定制需求"
+        ]
+      },
+      "es": {
+        "name": "Junior Tennis Racket",
+        "category": "Tennis Racket",
+        "album": "Tennis Racket",
+        "description": "Producto deportivo para entrenamiento, venta minorista y compra por equipo.",
+        "scenario": "Escuelas, clubes y venta deportiva",
+        "highlights": [
+          "Consulta por volumen",
+          "Compra de equipo",
+          "Soporte personalizado"
+        ]
+      }
+    },
+    "detailSections": [
+      {
+        "title": "Product Details",
+        "body": "Contact us for price, customization, packing and delivery details."
+      },
+      {
+        "title": "采购说明",
+        "body": "可根据采购数量、包装方式、颜色和使用场景沟通报价。"
+      }
+    ]
+  },
+  {
+    "id": "badminton-racket-1",
+    "name": "Speed Badminton Racket",
+    "category": "Badminton Racket",
+    "categorySlug": "badminton-racket",
+    "album": "Badminton Racket",
+    "image": "/assets/badminton-racket.svg",
+    "visible": true,
+    "sortOrder": 43,
+    "prices": {
+      "baseCurrency": "USD",
+      "basePrice": 16,
+      "priceUnit": "piece"
+    },
+    "galleryImages": [
+      "/assets/badminton-racket.svg"
+    ],
+    "galleryLabels": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "Aluminum or carbon shaft options"
+      },
+      {
+        "label": "Use Case",
+        "value": "Badminton halls, school training, clubs"
+      },
+      {
+        "label": "MOQ Reference",
+        "value": "5000 pieces or contact us for project quotation"
+      }
+    ],
+    "translations": {
+      "en": {
+        "name": "Speed Badminton Racket",
+        "category": "Badminton Racket",
+        "album": "Badminton Racket",
+        "description": "Light badminton racket for fast rallies, daily training and club replenishment.",
+        "scenario": "Badminton halls, school training, clubs",
+        "highlights": [
+          "Bulk inquiry available",
+          "Team purchase support",
+          "Customization support"
+        ]
+      },
+      "zh": {
+        "name": "速度型羽毛球拍",
+        "category": "羽毛球拍",
+        "album": "羽毛球拍",
+        "description": "速度型羽毛球拍，适合快速对打、日常训练和俱乐部补货。",
+        "scenario": "学校训练、俱乐部采购、体育用品门店和团队采购",
+        "highlights": [
+          "支持批量询盘",
+          "支持团队采购",
+          "可沟通定制需求"
+        ]
+      },
+      "es": {
+        "name": "Speed Badminton Racket",
+        "category": "Badminton Racket",
+        "album": "Badminton Racket",
+        "description": "Producto deportivo para entrenamiento, venta minorista y compra por equipo.",
+        "scenario": "Escuelas, clubes y venta deportiva",
+        "highlights": [
+          "Consulta por volumen",
+          "Compra de equipo",
+          "Soporte personalizado"
+        ]
+      }
+    },
+    "detailSections": [
+      {
+        "title": "Product Details",
+        "body": "Contact us for price, customization, packing and delivery details."
+      },
+      {
+        "title": "采购说明",
+        "body": "可根据采购数量、包装方式、颜色和使用场景沟通报价。"
+      }
+    ]
+  },
+  {
+    "id": "badminton-racket-2",
+    "name": "Carbon Badminton Racket",
+    "category": "Badminton Racket",
+    "categorySlug": "badminton-racket",
+    "album": "Badminton Racket",
+    "image": "/assets/badminton-racket.svg",
+    "visible": true,
+    "sortOrder": 44,
+    "prices": {
+      "baseCurrency": "USD",
+      "basePrice": 24,
+      "priceUnit": "piece"
+    },
+    "galleryImages": [
+      "/assets/badminton-racket.svg"
+    ],
+    "galleryLabels": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "Carbon composite shaft and frame"
+      },
+      {
+        "label": "Use Case",
+        "value": "Club classes, team purchase, retail selection"
+      },
+      {
+        "label": "MOQ Reference",
+        "value": "5000 pieces or contact us for project quotation"
+      }
+    ],
+    "translations": {
+      "en": {
+        "name": "Carbon Badminton Racket",
+        "category": "Badminton Racket",
+        "album": "Badminton Racket",
+        "description": "Carbon badminton racket with stable swing feel for club training and team purchase.",
+        "scenario": "Club classes, team purchase, retail selection",
+        "highlights": [
+          "Bulk inquiry available",
+          "Team purchase support",
+          "Customization support"
+        ]
+      },
+      "zh": {
+        "name": "碳素羽毛球拍",
+        "category": "羽毛球拍",
+        "album": "羽毛球拍",
+        "description": "碳素羽毛球拍，挥拍稳定，适合俱乐部训练和团队采购。",
+        "scenario": "学校训练、俱乐部采购、体育用品门店和团队采购",
+        "highlights": [
+          "支持批量询盘",
+          "支持团队采购",
+          "可沟通定制需求"
+        ]
+      },
+      "es": {
+        "name": "Carbon Badminton Racket",
+        "category": "Badminton Racket",
+        "album": "Badminton Racket",
+        "description": "Producto deportivo para entrenamiento, venta minorista y compra por equipo.",
+        "scenario": "Escuelas, clubes y venta deportiva",
+        "highlights": [
+          "Consulta por volumen",
+          "Compra de equipo",
+          "Soporte personalizado"
+        ]
+      }
+    },
+    "detailSections": [
+      {
+        "title": "Product Details",
+        "body": "Contact us for price, customization, packing and delivery details."
+      },
+      {
+        "title": "采购说明",
+        "body": "可根据采购数量、包装方式、颜色和使用场景沟通报价。"
+      }
+    ]
+  },
+  {
+    "id": "badminton-racket-3",
+    "name": "Student Badminton Racket Set",
+    "category": "Badminton Racket",
+    "categorySlug": "badminton-racket",
+    "album": "Badminton Racket",
+    "image": "/assets/badminton-racket.svg",
+    "visible": true,
+    "sortOrder": 45,
+    "prices": {
+      "baseCurrency": "USD",
+      "basePrice": 12,
+      "priceUnit": "piece"
+    },
+    "galleryImages": [
+      "/assets/badminton-racket.svg"
+    ],
+    "galleryLabels": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "Aluminum alloy frame with training strings"
+      },
+      {
+        "label": "Use Case",
+        "value": "Schools, campus events, beginner programs"
+      },
+      {
+        "label": "MOQ Reference",
+        "value": "5000 pieces or contact us for project quotation"
+      }
+    ],
+    "translations": {
+      "en": {
+        "name": "Student Badminton Racket Set",
+        "category": "Badminton Racket",
+        "album": "Badminton Racket",
+        "description": "Student badminton racket set for schools, campus activities and beginner training.",
+        "scenario": "Schools, campus events, beginner programs",
+        "highlights": [
+          "Bulk inquiry available",
+          "Team purchase support",
+          "Customization support"
+        ]
+      },
+      "zh": {
+        "name": "学生羽毛球拍套装",
+        "category": "羽毛球拍",
+        "album": "羽毛球拍",
+        "description": "学生羽毛球拍套装，适合学校课程、校园活动和入门训练。",
+        "scenario": "学校训练、俱乐部采购、体育用品门店和团队采购",
+        "highlights": [
+          "支持批量询盘",
+          "支持团队采购",
+          "可沟通定制需求"
+        ]
+      },
+      "es": {
+        "name": "Student Badminton Racket Set",
+        "category": "Badminton Racket",
+        "album": "Badminton Racket",
+        "description": "Producto deportivo para entrenamiento, venta minorista y compra por equipo.",
+        "scenario": "Escuelas, clubes y venta deportiva",
+        "highlights": [
+          "Consulta por volumen",
+          "Compra de equipo",
+          "Soporte personalizado"
+        ]
+      }
+    },
+    "detailSections": [
+      {
+        "title": "Product Details",
+        "body": "Contact us for price, customization, packing and delivery details."
+      },
+      {
+        "title": "采购说明",
+        "body": "可根据采购数量、包装方式、颜色和使用场景沟通报价。"
+      }
+    ]
+  },
+  {
+    "id": "table-tennis-racket-1",
+    "name": "Training Table Tennis Racket",
+    "category": "Table Tennis Racket",
+    "categorySlug": "table-tennis-racket",
+    "album": "Table Tennis Racket",
+    "image": "/assets/table-tennis-racket.svg",
+    "visible": true,
+    "sortOrder": 46,
+    "prices": {
+      "baseCurrency": "USD",
+      "basePrice": 6,
+      "priceUnit": "piece"
+    },
+    "galleryImages": [
+      "/assets/table-tennis-racket.svg"
+    ],
+    "galleryLabels": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "Wood blade with rubber surface"
+      },
+      {
+        "label": "Use Case",
+        "value": "Schools, clubs, training rooms"
+      },
+      {
+        "label": "MOQ Reference",
+        "value": "5000 pieces or contact us for project quotation"
+      }
+    ],
+    "translations": {
+      "en": {
+        "name": "Training Table Tennis Racket",
+        "category": "Table Tennis Racket",
+        "album": "Table Tennis Racket",
+        "description": "Training table tennis racket for school classes, club lessons and beginner use.",
+        "scenario": "Schools, clubs, training rooms",
+        "highlights": [
+          "Bulk inquiry available",
+          "Team purchase support",
+          "Customization support"
+        ]
+      },
+      "zh": {
+        "name": "训练乒乓球拍",
+        "category": "乒乓球拍",
+        "album": "乒乓球拍",
+        "description": "训练乒乓球拍，适合学校课程、俱乐部教学和入门训练。",
+        "scenario": "学校训练、俱乐部采购、体育用品门店和团队采购",
+        "highlights": [
+          "支持批量询盘",
+          "支持团队采购",
+          "可沟通定制需求"
+        ]
+      },
+      "es": {
+        "name": "Training Table Tennis Racket",
+        "category": "Table Tennis Racket",
+        "album": "Table Tennis Racket",
+        "description": "Producto deportivo para entrenamiento, venta minorista y compra por equipo.",
+        "scenario": "Escuelas, clubes y venta deportiva",
+        "highlights": [
+          "Consulta por volumen",
+          "Compra de equipo",
+          "Soporte personalizado"
+        ]
+      }
+    },
+    "detailSections": [
+      {
+        "title": "Product Details",
+        "body": "Contact us for price, customization, packing and delivery details."
+      },
+      {
+        "title": "采购说明",
+        "body": "可根据采购数量、包装方式、颜色和使用场景沟通报价。"
+      }
+    ]
+  },
+  {
+    "id": "table-tennis-racket-2",
+    "name": "Competition Table Tennis Racket",
+    "category": "Table Tennis Racket",
+    "categorySlug": "table-tennis-racket",
+    "album": "Table Tennis Racket",
+    "image": "/assets/table-tennis-racket.svg",
+    "visible": true,
+    "sortOrder": 47,
+    "prices": {
+      "baseCurrency": "USD",
+      "basePrice": 12,
+      "priceUnit": "piece"
+    },
+    "galleryImages": [
+      "/assets/table-tennis-racket.svg"
+    ],
+    "galleryLabels": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "Layered wood blade with higher grip rubber"
+      },
+      {
+        "label": "Use Case",
+        "value": "Clubs, training centers, retail sourcing"
+      },
+      {
+        "label": "MOQ Reference",
+        "value": "5000 pieces or contact us for project quotation"
+      }
+    ],
+    "translations": {
+      "en": {
+        "name": "Competition Table Tennis Racket",
+        "category": "Table Tennis Racket",
+        "album": "Table Tennis Racket",
+        "description": "Competition table tennis racket with stronger grip and control for club training.",
+        "scenario": "Clubs, training centers, retail sourcing",
+        "highlights": [
+          "Bulk inquiry available",
+          "Team purchase support",
+          "Customization support"
+        ]
+      },
+      "zh": {
+        "name": "比赛乒乓球拍",
+        "category": "乒乓球拍",
+        "album": "乒乓球拍",
+        "description": "比赛乒乓球拍，胶皮抓球感更强，适合俱乐部训练和比赛备货。",
+        "scenario": "学校训练、俱乐部采购、体育用品门店和团队采购",
+        "highlights": [
+          "支持批量询盘",
+          "支持团队采购",
+          "可沟通定制需求"
+        ]
+      },
+      "es": {
+        "name": "Competition Table Tennis Racket",
+        "category": "Table Tennis Racket",
+        "album": "Table Tennis Racket",
+        "description": "Producto deportivo para entrenamiento, venta minorista y compra por equipo.",
+        "scenario": "Escuelas, clubes y venta deportiva",
+        "highlights": [
+          "Consulta por volumen",
+          "Compra de equipo",
+          "Soporte personalizado"
+        ]
+      }
+    },
+    "detailSections": [
+      {
+        "title": "Product Details",
+        "body": "Contact us for price, customization, packing and delivery details."
+      },
+      {
+        "title": "采购说明",
+        "body": "可根据采购数量、包装方式、颜色和使用场景沟通报价。"
+      }
+    ]
+  },
+  {
+    "id": "table-tennis-racket-3",
+    "name": "Student Table Tennis Racket Set",
+    "category": "Table Tennis Racket",
+    "categorySlug": "table-tennis-racket",
+    "album": "Table Tennis Racket",
+    "image": "/assets/table-tennis-racket.svg",
+    "visible": true,
+    "sortOrder": 48,
+    "prices": {
+      "baseCurrency": "USD",
+      "basePrice": 5,
+      "priceUnit": "piece"
+    },
+    "galleryImages": [
+      "/assets/table-tennis-racket.svg"
+    ],
+    "galleryLabels": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "Wood blade with durable rubber"
+      },
+      {
+        "label": "Use Case",
+        "value": "Schools, campus activities, beginner training"
+      },
+      {
+        "label": "MOQ Reference",
+        "value": "5000 pieces or contact us for project quotation"
+      }
+    ],
+    "translations": {
+      "en": {
+        "name": "Student Table Tennis Racket Set",
+        "category": "Table Tennis Racket",
+        "album": "Table Tennis Racket",
+        "description": "Student table tennis racket set for school sports classes and campus activity purchasing.",
+        "scenario": "Schools, campus activities, beginner training",
+        "highlights": [
+          "Bulk inquiry available",
+          "Team purchase support",
+          "Customization support"
+        ]
+      },
+      "zh": {
+        "name": "学生乒乓球拍套装",
+        "category": "乒乓球拍",
+        "album": "乒乓球拍",
+        "description": "学生乒乓球拍套装，适合学校体育课和校园活动采购。",
+        "scenario": "学校训练、俱乐部采购、体育用品门店和团队采购",
+        "highlights": [
+          "支持批量询盘",
+          "支持团队采购",
+          "可沟通定制需求"
+        ]
+      },
+      "es": {
+        "name": "Student Table Tennis Racket Set",
+        "category": "Table Tennis Racket",
+        "album": "Table Tennis Racket",
+        "description": "Producto deportivo para entrenamiento, venta minorista y compra por equipo.",
+        "scenario": "Escuelas, clubes y venta deportiva",
+        "highlights": [
+          "Consulta por volumen",
+          "Compra de equipo",
+          "Soporte personalizado"
+        ]
+      }
+    },
+    "detailSections": [
+      {
+        "title": "Product Details",
+        "body": "Contact us for price, customization, packing and delivery details."
+      },
+      {
+        "title": "采购说明",
+        "body": "可根据采购数量、包装方式、颜色和使用场景沟通报价。"
+      }
+    ]
+  },
+  {
+    "id": "table-tennis-1",
+    "name": "Training Table Tennis Balls",
+    "category": "Table Tennis",
+    "categorySlug": "table-tennis",
+    "album": "Table Tennis",
+    "image": "/assets/table-tennis.svg",
+    "visible": true,
+    "sortOrder": 49,
+    "prices": {
+      "baseCurrency": "USD",
+      "basePrice": 3,
+      "priceUnit": "piece"
+    },
+    "galleryImages": [
+      "/assets/table-tennis.svg"
+    ],
+    "galleryLabels": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "ABS plastic with stable roundness"
+      },
+      {
+        "label": "Use Case",
+        "value": "Schools, clubs, training rooms and sports retail"
+      },
+      {
+        "label": "MOQ Reference",
+        "value": "5000 pieces or contact us for project quotation"
+      }
+    ],
+    "translations": {
+      "en": {
+        "name": "Training Table Tennis Balls",
+        "category": "Table Tennis",
+        "album": "Table Tennis",
+        "description": "Training table tennis balls for school classes, club practice and retail replenishment.",
+        "scenario": "Schools, clubs, training rooms and sports retail",
+        "highlights": [
+          "Bulk inquiry available",
+          "Team purchase support",
+          "Customization support"
+        ]
+      },
+      "zh": {
+        "name": "训练乒乓球",
+        "category": "乒乓球",
+        "album": "乒乓球",
+        "description": "训练乒乓球，适合学校课程、俱乐部练习和门店补货。",
+        "scenario": "学校训练、俱乐部采购、体育用品门店和团队采购",
+        "highlights": [
+          "支持批量询盘",
+          "支持团队采购",
+          "可沟通定制需求"
+        ]
+      },
+      "es": {
+        "name": "Training Table Tennis Balls",
+        "category": "Table Tennis",
+        "album": "Table Tennis",
+        "description": "Producto deportivo para entrenamiento, venta minorista y compra por equipo.",
+        "scenario": "Escuelas, clubes y venta deportiva",
+        "highlights": [
+          "Consulta por volumen",
+          "Compra de equipo",
+          "Soporte personalizado"
+        ]
+      }
+    },
+    "detailSections": [
+      {
+        "title": "Product Details",
+        "body": "Contact us for price, customization, packing and delivery details."
+      },
+      {
+        "title": "采购说明",
+        "body": "可根据采购数量、包装方式、颜色和使用场景沟通报价。"
+      }
+    ]
+  },
+  {
+    "id": "table-tennis-2",
+    "name": "Competition Table Tennis Balls",
+    "category": "Table Tennis",
+    "categorySlug": "table-tennis",
+    "album": "Table Tennis",
+    "image": "/assets/table-tennis.svg",
+    "visible": true,
+    "sortOrder": 50,
+    "prices": {
+      "baseCurrency": "USD",
+      "basePrice": 5,
+      "priceUnit": "piece"
+    },
+    "galleryImages": [
+      "/assets/table-tennis.svg"
+    ],
+    "galleryLabels": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "ABS plastic with competition bounce consistency"
+      },
+      {
+        "label": "Use Case",
+        "value": "Clubs, matches, training centers"
+      },
+      {
+        "label": "MOQ Reference",
+        "value": "5000 pieces or contact us for project quotation"
+      }
+    ],
+    "translations": {
+      "en": {
+        "name": "Competition Table Tennis Balls",
+        "category": "Table Tennis",
+        "album": "Table Tennis",
+        "description": "Competition table tennis balls with stable bounce for matches and training centers.",
+        "scenario": "Clubs, matches, training centers",
+        "highlights": [
+          "Bulk inquiry available",
+          "Team purchase support",
+          "Customization support"
+        ]
+      },
+      "zh": {
+        "name": "比赛乒乓球",
+        "category": "乒乓球",
+        "album": "乒乓球",
+        "description": "比赛乒乓球，弹跳稳定，适合赛事、俱乐部和训练中心采购。",
+        "scenario": "学校训练、俱乐部采购、体育用品门店和团队采购",
+        "highlights": [
+          "支持批量询盘",
+          "支持团队采购",
+          "可沟通定制需求"
+        ]
+      },
+      "es": {
+        "name": "Competition Table Tennis Balls",
+        "category": "Table Tennis",
+        "album": "Table Tennis",
+        "description": "Producto deportivo para entrenamiento, venta minorista y compra por equipo.",
+        "scenario": "Escuelas, clubes y venta deportiva",
+        "highlights": [
+          "Consulta por volumen",
+          "Compra de equipo",
+          "Soporte personalizado"
+        ]
+      }
+    },
+    "detailSections": [
+      {
+        "title": "Product Details",
+        "body": "Contact us for price, customization, packing and delivery details."
+      },
+      {
+        "title": "采购说明",
+        "body": "可根据采购数量、包装方式、颜色和使用场景沟通报价。"
+      }
+    ]
+  },
+  {
+    "id": "table-tennis-3",
+    "name": "Table Tennis Ball Pack",
+    "category": "Table Tennis",
+    "categorySlug": "table-tennis",
+    "album": "Table Tennis",
+    "image": "/assets/table-tennis.svg",
+    "visible": true,
+    "sortOrder": 51,
+    "prices": {
+      "baseCurrency": "USD",
+      "basePrice": 4,
+      "priceUnit": "piece"
+    },
+    "galleryImages": [
+      "/assets/table-tennis.svg"
+    ],
+    "galleryLabels": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "Durable ABS training balls"
+      },
+      {
+        "label": "Use Case",
+        "value": "Training rooms, schools, sports retail"
+      },
+      {
+        "label": "MOQ Reference",
+        "value": "5000 pieces or contact us for project quotation"
+      }
+    ],
+    "translations": {
+      "en": {
+        "name": "Table Tennis Ball Pack",
+        "category": "Table Tennis",
+        "album": "Table Tennis",
+        "description": "Bulk table tennis ball pack for training rooms, schools and retail replenishment.",
+        "scenario": "Training rooms, schools, sports retail",
+        "highlights": [
+          "Bulk inquiry available",
+          "Team purchase support",
+          "Customization support"
+        ]
+      },
+      "zh": {
+        "name": "乒乓球训练装",
+        "category": "乒乓球",
+        "album": "乒乓球",
+        "description": "乒乓球训练装，适合训练室、学校和门店批量补货。",
+        "scenario": "学校训练、俱乐部采购、体育用品门店和团队采购",
+        "highlights": [
+          "支持批量询盘",
+          "支持团队采购",
+          "可沟通定制需求"
+        ]
+      },
+      "es": {
+        "name": "Table Tennis Ball Pack",
+        "category": "Table Tennis",
+        "album": "Table Tennis",
+        "description": "Producto deportivo para entrenamiento, venta minorista y compra por equipo.",
+        "scenario": "Escuelas, clubes y venta deportiva",
+        "highlights": [
+          "Consulta por volumen",
+          "Compra de equipo",
+          "Soporte personalizado"
+        ]
+      }
+    },
+    "detailSections": [
+      {
+        "title": "Product Details",
+        "body": "Contact us for price, customization, packing and delivery details."
+      },
+      {
+        "title": "采购说明",
+        "body": "可根据采购数量、包装方式、颜色和使用场景沟通报价。"
+      }
+    ]
+  },
+  {
+    "id": "jump-rope-1",
+    "name": "Adjustable Training Jump Rope",
+    "category": "Jump Rope",
+    "categorySlug": "jump-rope",
+    "album": "Jump Rope",
+    "image": "/assets/jump-rope.svg",
+    "visible": true,
+    "sortOrder": 52,
+    "prices": {
+      "baseCurrency": "USD",
+      "basePrice": 4,
+      "priceUnit": "piece"
+    },
+    "galleryImages": [
+      "/assets/jump-rope.svg"
+    ],
+    "galleryLabels": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "PVC rope with adjustable handle length"
+      },
+      {
+        "label": "Use Case",
+        "value": "Schools, fitness programs, campus events"
+      },
+      {
+        "label": "MOQ Reference",
+        "value": "5000 pieces or contact us for project quotation"
+      }
+    ],
+    "translations": {
+      "en": {
+        "name": "Adjustable Training Jump Rope",
+        "category": "Jump Rope",
+        "album": "Jump Rope",
+        "description": "Adjustable jump rope for fitness tests, school classes and daily exercise.",
+        "scenario": "Schools, fitness programs, campus events",
+        "highlights": [
+          "Bulk inquiry available",
+          "Team purchase support",
+          "Customization support"
+        ]
+      },
+      "zh": {
+        "name": "可调节训练跳绳",
+        "category": "跳绳",
+        "album": "跳绳",
+        "description": "可调节训练跳绳，适合体测、学校课程和日常锻炼。",
+        "scenario": "学校训练、俱乐部采购、体育用品门店和团队采购",
+        "highlights": [
+          "支持批量询盘",
+          "支持团队采购",
+          "可沟通定制需求"
+        ]
+      },
+      "es": {
+        "name": "Adjustable Training Jump Rope",
+        "category": "Jump Rope",
+        "album": "Jump Rope",
+        "description": "Producto deportivo para entrenamiento, venta minorista y compra por equipo.",
+        "scenario": "Escuelas, clubes y venta deportiva",
+        "highlights": [
+          "Consulta por volumen",
+          "Compra de equipo",
+          "Soporte personalizado"
+        ]
+      }
+    },
+    "detailSections": [
+      {
+        "title": "Product Details",
+        "body": "Contact us for price, customization, packing and delivery details."
+      },
+      {
+        "title": "采购说明",
+        "body": "可根据采购数量、包装方式、颜色和使用场景沟通报价。"
+      }
+    ]
+  },
+  {
+    "id": "jump-rope-2",
+    "name": "Speed Bearing Jump Rope",
+    "category": "Jump Rope",
+    "categorySlug": "jump-rope",
+    "album": "Jump Rope",
+    "image": "/assets/jump-rope.svg",
+    "visible": true,
+    "sortOrder": 53,
+    "prices": {
+      "baseCurrency": "USD",
+      "basePrice": 7,
+      "priceUnit": "piece"
+    },
+    "galleryImages": [
+      "/assets/jump-rope.svg"
+    ],
+    "galleryLabels": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "Steel wire rope with bearing handles"
+      },
+      {
+        "label": "Use Case",
+        "value": "Fitness classes, speed training, competitions"
+      },
+      {
+        "label": "MOQ Reference",
+        "value": "5000 pieces or contact us for project quotation"
+      }
+    ],
+    "translations": {
+      "en": {
+        "name": "Speed Bearing Jump Rope",
+        "category": "Jump Rope",
+        "album": "Jump Rope",
+        "description": "Speed bearing jump rope for fast skipping, fitness classes and competition training.",
+        "scenario": "Fitness classes, speed training, competitions",
+        "highlights": [
+          "Bulk inquiry available",
+          "Team purchase support",
+          "Customization support"
+        ]
+      },
+      "zh": {
+        "name": "竞速轴承跳绳",
+        "category": "跳绳",
+        "album": "跳绳",
+        "description": "竞速轴承跳绳，适合快速跳绳、健身课程和比赛训练。",
+        "scenario": "学校训练、俱乐部采购、体育用品门店和团队采购",
+        "highlights": [
+          "支持批量询盘",
+          "支持团队采购",
+          "可沟通定制需求"
+        ]
+      },
+      "es": {
+        "name": "Speed Bearing Jump Rope",
+        "category": "Jump Rope",
+        "album": "Jump Rope",
+        "description": "Producto deportivo para entrenamiento, venta minorista y compra por equipo.",
+        "scenario": "Escuelas, clubes y venta deportiva",
+        "highlights": [
+          "Consulta por volumen",
+          "Compra de equipo",
+          "Soporte personalizado"
+        ]
+      }
+    },
+    "detailSections": [
+      {
+        "title": "Product Details",
+        "body": "Contact us for price, customization, packing and delivery details."
+      },
+      {
+        "title": "采购说明",
+        "body": "可根据采购数量、包装方式、颜色和使用场景沟通报价。"
+      }
+    ]
+  },
+  {
+    "id": "jump-rope-3",
+    "name": "Kids Fitness Jump Rope",
+    "category": "Jump Rope",
+    "categorySlug": "jump-rope",
+    "album": "Jump Rope",
+    "image": "/assets/jump-rope.svg",
+    "visible": true,
+    "sortOrder": 54,
+    "prices": {
+      "baseCurrency": "USD",
+      "basePrice": 3,
+      "priceUnit": "piece"
+    },
+    "galleryImages": [
+      "/assets/jump-rope.svg"
+    ],
+    "galleryLabels": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "Soft PVC rope with lightweight handles"
+      },
+      {
+        "label": "Use Case",
+        "value": "Kids training, schools, activity kits"
+      },
+      {
+        "label": "MOQ Reference",
+        "value": "5000 pieces or contact us for project quotation"
+      }
+    ],
+    "translations": {
+      "en": {
+        "name": "Kids Fitness Jump Rope",
+        "category": "Jump Rope",
+        "album": "Jump Rope",
+        "description": "Kids jump rope for school sports, campus activities and beginner fitness training.",
+        "scenario": "Kids training, schools, activity kits",
+        "highlights": [
+          "Bulk inquiry available",
+          "Team purchase support",
+          "Customization support"
+        ]
+      },
+      "zh": {
+        "name": "儿童健身跳绳",
+        "category": "跳绳",
+        "album": "跳绳",
+        "description": "儿童健身跳绳，适合学校体育、校园活动和儿童运动训练。",
+        "scenario": "学校训练、俱乐部采购、体育用品门店和团队采购",
+        "highlights": [
+          "支持批量询盘",
+          "支持团队采购",
+          "可沟通定制需求"
+        ]
+      },
+      "es": {
+        "name": "Kids Fitness Jump Rope",
+        "category": "Jump Rope",
+        "album": "Jump Rope",
+        "description": "Producto deportivo para entrenamiento, venta minorista y compra por equipo.",
+        "scenario": "Escuelas, clubes y venta deportiva",
+        "highlights": [
+          "Consulta por volumen",
+          "Compra de equipo",
+          "Soporte personalizado"
+        ]
+      }
+    },
+    "detailSections": [
+      {
+        "title": "Product Details",
+        "body": "Contact us for price, customization, packing and delivery details."
+      },
+      {
+        "title": "采购说明",
+        "body": "可根据采购数量、包装方式、颜色和使用场景沟通报价。"
+      }
+    ]
   }
 ]

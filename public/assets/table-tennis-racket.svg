@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 620" role="img" aria-label="Table tennis racket">
+  <rect width="900" height="620" fill="#f5ffe5"/>
+  <rect y="390" width="900" height="230" fill="#0d6b5f"/>
+  <circle cx="365" cy="220" r="120" fill="#e9582f" stroke="#17202a" stroke-width="12"/>
+  <path d="M432 322 555 505" stroke="#17202a" stroke-width="34" stroke-linecap="round"/>
+  <circle cx="610" cy="208" r="68" fill="#fff" stroke="#17202a" stroke-width="10"/>
+  <path d="M285 220h160M365 140v160" stroke="#fff" stroke-width="8" stroke-linecap="round" opacity=".85"/>
+  <text x="450" y="555" text-anchor="middle" font-family="Arial, sans-serif" font-size="40" font-weight="800" fill="#fff">PING PONG PADDLE</text>
+</svg>

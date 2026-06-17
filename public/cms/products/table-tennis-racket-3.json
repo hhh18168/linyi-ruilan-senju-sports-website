@@ -1,0 +1,81 @@
+{
+  "id": "table-tennis-racket-3",
+  "name": "Student Table Tennis Racket Set",
+  "category": "Table Tennis Racket",
+  "categorySlug": "table-tennis-racket",
+  "album": "Table Tennis Racket",
+  "image": "/assets/table-tennis-racket.svg",
+  "visible": true,
+  "sortOrder": 48,
+  "prices": {
+    "baseCurrency": "USD",
+    "basePrice": 5,
+    "priceUnit": "piece"
+  },
+  "galleryImages": [
+    "/assets/table-tennis-racket.svg"
+  ],
+  "galleryLabels": [],
+  "specs": [
+    {
+      "label": "Material",
+      "value": "Wood blade with durable rubber"
+    },
+    {
+      "label": "Use Case",
+      "value": "Schools, campus activities, beginner training"
+    },
+    {
+      "label": "MOQ Reference",
+      "value": "5000 pieces or contact us for project quotation"
+    }
+  ],
+  "translations": {
+    "en": {
+      "name": "Student Table Tennis Racket Set",
+      "category": "Table Tennis Racket",
+      "album": "Table Tennis Racket",
+      "description": "Student table tennis racket set for school sports classes and campus activity purchasing.",
+      "scenario": "Schools, campus activities, beginner training",
+      "highlights": [
+        "Bulk inquiry available",
+        "Team purchase support",
+        "Customization support"
+      ]
+    },
+    "zh": {
+      "name": "学生乒乓球拍套装",
+      "category": "乒乓球拍",
+      "album": "乒乓球拍",
+      "description": "学生乒乓球拍套装，适合学校体育课和校园活动采购。",
+      "scenario": "学校训练、俱乐部采购、体育用品门店和团队采购",
+      "highlights": [
+        "支持批量询盘",
+        "支持团队采购",
+        "可沟通定制需求"
+      ]
+    },
+    "es": {
+      "name": "Student Table Tennis Racket Set",
+      "category": "Table Tennis Racket",
+      "album": "Table Tennis Racket",
+      "description": "Producto deportivo para entrenamiento, venta minorista y compra por equipo.",
+      "scenario": "Escuelas, clubes y venta deportiva",
+      "highlights": [
+        "Consulta por volumen",
+        "Compra de equipo",
+        "Soporte personalizado"
+      ]
+    }
+  },
+  "detailSections": [
+    {
+      "title": "Product Details",
+      "body": "Contact us for price, customization, packing and delivery details."
+    },
+    {
+      "title": "采购说明",
+      "body": "可根据采购数量、包装方式、颜色和使用场景沟通报价。"
+    }
+  ]
+}

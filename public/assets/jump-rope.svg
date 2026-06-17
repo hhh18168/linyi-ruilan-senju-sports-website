@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 620" role="img" aria-label="Jump rope equipment">
+  <rect width="900" height="620" fill="#f5ffe5"/>
+  <rect y="390" width="900" height="230" fill="#0d6b5f"/>
+  <path d="M258 390C200 260 270 130 450 130s250 130 192 260" fill="none" stroke="#2676d6" stroke-width="18" stroke-linecap="round"/>
+  <rect x="196" y="368" width="72" height="150" rx="28" fill="#17202a"/>
+  <rect x="632" y="368" width="72" height="150" rx="28" fill="#17202a"/>
+  <path d="M232 388c58 62 132 94 218 94s160-32 218-94" fill="none" stroke="#c7ef4e" stroke-width="14" stroke-linecap="round"/>
+  <circle cx="450" cy="220" r="72" fill="#e9582f" stroke="#17202a" stroke-width="10"/>
+  <text x="450" y="555" text-anchor="middle" font-family="Arial, sans-serif" font-size="48" font-weight="800" fill="#fff">JUMP ROPE</text>
+</svg>

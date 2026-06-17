@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 620" role="img" aria-label="Table tennis equipment">
+  <rect width="900" height="620" fill="#f5ffe5"/>
+  <rect y="390" width="900" height="230" fill="#0d6b5f"/>
+  <circle cx="330" cy="230" r="118" fill="#e9582f" stroke="#17202a" stroke-width="12"/>
+  <rect x="398" y="320" width="74" height="170" rx="34" transform="rotate(-28 435 405)" fill="#17202a"/>
+  <circle cx="598" cy="212" r="72" fill="#ffffff" stroke="#17202a" stroke-width="10"/>
+  <path d="M530 410h230M530 455h230" stroke="#c7ef4e" stroke-width="12" stroke-linecap="round"/>
+  <text x="450" y="555" text-anchor="middle" font-family="Arial, sans-serif" font-size="44" font-weight="800" fill="#fff">TABLE TENNIS</text>
+</svg>

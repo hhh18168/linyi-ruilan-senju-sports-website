@@ -1,0 +1,81 @@
+{
+  "id": "jump-rope-2",
+  "name": "Speed Bearing Jump Rope",
+  "category": "Jump Rope",
+  "categorySlug": "jump-rope",
+  "album": "Jump Rope",
+  "image": "/assets/jump-rope.svg",
+  "visible": true,
+  "sortOrder": 53,
+  "prices": {
+    "baseCurrency": "USD",
+    "basePrice": 7,
+    "priceUnit": "piece"
+  },
+  "galleryImages": [
+    "/assets/jump-rope.svg"
+  ],
+  "galleryLabels": [],
+  "specs": [
+    {
+      "label": "Material",
+      "value": "Steel wire rope with bearing handles"
+    },
+    {
+      "label": "Use Case",
+      "value": "Fitness classes, speed training, competitions"
+    },
+    {
+      "label": "MOQ Reference",
+      "value": "5000 pieces or contact us for project quotation"
+    }
+  ],
+  "translations": {
+    "en": {
+      "name": "Speed Bearing Jump Rope",
+      "category": "Jump Rope",
+      "album": "Jump Rope",
+      "description": "Speed bearing jump rope for fast skipping, fitness classes and competition training.",
+      "scenario": "Fitness classes, speed training, competitions",
+      "highlights": [
+        "Bulk inquiry available",
+        "Team purchase support",
+        "Customization support"
+      ]
+    },
+    "zh": {
+      "name": "竞速轴承跳绳",
+      "category": "跳绳",
+      "album": "跳绳",
+      "description": "竞速轴承跳绳，适合快速跳绳、健身课程和比赛训练。",
+      "scenario": "学校训练、俱乐部采购、体育用品门店和团队采购",
+      "highlights": [
+        "支持批量询盘",
+        "支持团队采购",
+        "可沟通定制需求"
+      ]
+    },
+    "es": {
+      "name": "Speed Bearing Jump Rope",
+      "category": "Jump Rope",
+      "album": "Jump Rope",
+      "description": "Producto deportivo para entrenamiento, venta minorista y compra por equipo.",
+      "scenario": "Escuelas, clubes y venta deportiva",
+      "highlights": [
+        "Consulta por volumen",
+        "Compra de equipo",
+        "Soporte personalizado"
+      ]
+    }
+  },
+  "detailSections": [
+    {
+      "title": "Product Details",
+      "body": "Contact us for price, customization, packing and delivery details."
+    },
+    {
+      "title": "采购说明",
+      "body": "可根据采购数量、包装方式、颜色和使用场景沟通报价。"
+    }
+  ]
+}

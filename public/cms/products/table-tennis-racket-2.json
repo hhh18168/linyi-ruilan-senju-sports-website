@@ -1,0 +1,81 @@
+{
+  "id": "table-tennis-racket-2",
+  "name": "Competition Table Tennis Racket",
+  "category": "Table Tennis Racket",
+  "categorySlug": "table-tennis-racket",
+  "album": "Table Tennis Racket",
+  "image": "/assets/table-tennis-racket.svg",
+  "visible": true,
+  "sortOrder": 47,
+  "prices": {
+    "baseCurrency": "USD",
+    "basePrice": 12,
+    "priceUnit": "piece"
+  },
+  "galleryImages": [
+    "/assets/table-tennis-racket.svg"
+  ],
+  "galleryLabels": [],
+  "specs": [
+    {
+      "label": "Material",
+      "value": "Layered wood blade with higher grip rubber"
+    },
+    {
+      "label": "Use Case",
+      "value": "Clubs, training centers, retail sourcing"
+    },
+    {
+      "label": "MOQ Reference",
+      "value": "5000 pieces or contact us for project quotation"
+    }
+  ],
+  "translations": {
+    "en": {
+      "name": "Competition Table Tennis Racket",
+      "category": "Table Tennis Racket",
+      "album": "Table Tennis Racket",
+      "description": "Competition table tennis racket with stronger grip and control for club training.",
+      "scenario": "Clubs, training centers, retail sourcing",
+      "highlights": [
+        "Bulk inquiry available",
+        "Team purchase support",
+        "Customization support"
+      ]
+    },
+    "zh": {
+      "name": "比赛乒乓球拍",
+      "category": "乒乓球拍",
+      "album": "乒乓球拍",
+      "description": "比赛乒乓球拍，胶皮抓球感更强，适合俱乐部训练和比赛备货。",
+      "scenario": "学校训练、俱乐部采购、体育用品门店和团队采购",
+      "highlights": [
+        "支持批量询盘",
+        "支持团队采购",
+        "可沟通定制需求"
+      ]
+    },
+    "es": {
+      "name": "Competition Table Tennis Racket",
+      "category": "Table Tennis Racket",
+      "album": "Table Tennis Racket",
+      "description": "Producto deportivo para entrenamiento, venta minorista y compra por equipo.",
+      "scenario": "Escuelas, clubes y venta deportiva",
+      "highlights": [
+        "Consulta por volumen",
+        "Compra de equipo",
+        "Soporte personalizado"
+      ]
+    }
+  },
+  "detailSections": [
+    {
+      "title": "Product Details",
+      "body": "Contact us for price, customization, packing and delivery details."
+    },
+    {
+      "title": "采购说明",
+      "body": "可根据采购数量、包装方式、颜色和使用场景沟通报价。"
+    }
+  ]
+}

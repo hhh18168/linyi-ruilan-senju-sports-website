@@ -1,0 +1,81 @@
+{
+  "id": "jump-rope-3",
+  "name": "Kids Fitness Jump Rope",
+  "category": "Jump Rope",
+  "categorySlug": "jump-rope",
+  "album": "Jump Rope",
+  "image": "/assets/jump-rope.svg",
+  "visible": true,
+  "sortOrder": 54,
+  "prices": {
+    "baseCurrency": "USD",
+    "basePrice": 3,
+    "priceUnit": "piece"
+  },
+  "galleryImages": [
+    "/assets/jump-rope.svg"
+  ],
+  "galleryLabels": [],
+  "specs": [
+    {
+      "label": "Material",
+      "value": "Soft PVC rope with lightweight handles"
+    },
+    {
+      "label": "Use Case",
+      "value": "Kids training, schools, activity kits"
+    },
+    {
+      "label": "MOQ Reference",
+      "value": "5000 pieces or contact us for project quotation"
+    }
+  ],
+  "translations": {
+    "en": {
+      "name": "Kids Fitness Jump Rope",
+      "category": "Jump Rope",
+      "album": "Jump Rope",
+      "description": "Kids jump rope for school sports, campus activities and beginner fitness training.",
+      "scenario": "Kids training, schools, activity kits",
+      "highlights": [
+        "Bulk inquiry available",
+        "Team purchase support",
+        "Customization support"
+      ]
+    },
+    "zh": {
+      "name": "儿童健身跳绳",
+      "category": "跳绳",
+      "album": "跳绳",
+      "description": "儿童健身跳绳，适合学校体育、校园活动和儿童运动训练。",
+      "scenario": "学校训练、俱乐部采购、体育用品门店和团队采购",
+      "highlights": [
+        "支持批量询盘",
+        "支持团队采购",
+        "可沟通定制需求"
+      ]
+    },
+    "es": {
+      "name": "Kids Fitness Jump Rope",
+      "category": "Jump Rope",
+      "album": "Jump Rope",
+      "description": "Producto deportivo para entrenamiento, venta minorista y compra por equipo.",
+      "scenario": "Escuelas, clubes y venta deportiva",
+      "highlights": [
+        "Consulta por volumen",
+        "Compra de equipo",
+        "Soporte personalizado"
+      ]
+    }
+  },
+  "detailSections": [
+    {
+      "title": "Product Details",
+      "body": "Contact us for price, customization, packing and delivery details."
+    },
+    {
+      "title": "采购说明",
+      "body": "可根据采购数量、包装方式、颜色和使用场景沟通报价。"
+    }
+  ]
+}

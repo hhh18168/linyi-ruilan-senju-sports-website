@@ -1,0 +1,81 @@
+{
+  "id": "tennis-racket-3",
+  "name": "Junior Tennis Racket",
+  "category": "Tennis Racket",
+  "categorySlug": "tennis-racket",
+  "album": "Tennis Racket",
+  "image": "/assets/tennis-racket.svg",
+  "visible": true,
+  "sortOrder": 42,
+  "prices": {
+    "baseCurrency": "USD",
+    "basePrice": 18,
+    "priceUnit": "piece"
+  },
+  "galleryImages": [
+    "/assets/tennis-racket.svg"
+  ],
+  "galleryLabels": [],
+  "specs": [
+    {
+      "label": "Material",
+      "value": "Lightweight aluminum alloy frame"
+    },
+    {
+      "label": "Use Case",
+      "value": "Schools, youth clubs, beginner training"
+    },
+    {
+      "label": "MOQ Reference",
+      "value": "5000 pieces or contact us for project quotation"
+    }
+  ],
+  "translations": {
+    "en": {
+      "name": "Junior Tennis Racket",
+      "category": "Tennis Racket",
+      "album": "Tennis Racket",
+      "description": "Light junior tennis racket for school training, beginner lessons and youth sports programs.",
+      "scenario": "Schools, youth clubs, beginner training",
+      "highlights": [
+        "Bulk inquiry available",
+        "Team purchase support",
+        "Customization support"
+      ]
+    },
+    "zh": {
+      "name": "青少年网球拍",
+      "category": "网球拍",
+      "album": "网球拍",
+      "description": "轻量青少年网球拍，适合学校训练、入门课程和青少年运动项目。",
+      "scenario": "学校训练、俱乐部采购、体育用品门店和团队采购",
+      "highlights": [
+        "支持批量询盘",
+        "支持团队采购",
+        "可沟通定制需求"
+      ]
+    },
+    "es": {
+      "name": "Junior Tennis Racket",
+      "category": "Tennis Racket",
+      "album": "Tennis Racket",
+      "description": "Producto deportivo para entrenamiento, venta minorista y compra por equipo.",
+      "scenario": "Escuelas, clubes y venta deportiva",
+      "highlights": [
+        "Consulta por volumen",
+        "Compra de equipo",
+        "Soporte personalizado"
+      ]
+    }
+  },
+  "detailSections": [
+    {
+      "title": "Product Details",
+      "body": "Contact us for price, customization, packing and delivery details."
+    },
+    {
+      "title": "采购说明",
+      "body": "可根据采购数量、包装方式、颜色和使用场景沟通报价。"
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "id": "table-tennis-1",
+  "name": "Training Table Tennis Balls",
+  "category": "Table Tennis",
+  "categorySlug": "table-tennis",
+  "album": "Table Tennis",
+  "image": "/assets/table-tennis.svg",
+  "visible": true,
+  "sortOrder": 49,
+  "prices": {
+    "baseCurrency": "USD",
+    "basePrice": 3,
+    "priceUnit": "piece"
+  },
+  "galleryImages": [
+    "/assets/table-tennis.svg"
+  ],
+  "galleryLabels": [],
+  "specs": [
+    {
+      "label": "Material",
+      "value": "ABS plastic with stable roundness"
+    },
+    {
+      "label": "Use Case",
+      "value": "Schools, clubs, training rooms and sports retail"
+    },
+    {
+      "label": "MOQ Reference",
+      "value": "5000 pieces or contact us for project quotation"
+    }
+  ],
+  "translations": {
+    "en": {
+      "name": "Training Table Tennis Balls",
+      "category": "Table Tennis",
+      "album": "Table Tennis",
+      "description": "Training table tennis balls for school classes, club practice and retail replenishment.",
+      "scenario": "Schools, clubs, training rooms and sports retail",
+      "highlights": [
+        "Bulk inquiry available",
+        "Team purchase support",
+        "Customization support"
+      ]
+    },
+    "zh": {
+      "name": "训练乒乓球",
+      "category": "乒乓球",
+      "album": "乒乓球",
+      "description": "训练乒乓球，适合学校课程、俱乐部练习和门店补货。",
+      "scenario": "学校训练、俱乐部采购、体育用品门店和团队采购",
+      "highlights": [
+        "支持批量询盘",
+        "支持团队采购",
+        "可沟通定制需求"
+      ]
+    },
+    "es": {
+      "name": "Training Table Tennis Balls",
+      "category": "Table Tennis",
+      "album": "Table Tennis",
+      "description": "Producto deportivo para entrenamiento, venta minorista y compra por equipo.",
+      "scenario": "Escuelas, clubes y venta deportiva",
+      "highlights": [
+        "Consulta por volumen",
+        "Compra de equipo",
+        "Soporte personalizado"
+      ]
+    }
+  },
+  "detailSections": [
+    {
+      "title": "Product Details",
+      "body": "Contact us for price, customization, packing and delivery details."
+    },
+    {
+      "title": "采购说明",
+      "body": "可根据采购数量、包装方式、颜色和使用场景沟通报价。"
+    }
+  ]
+}

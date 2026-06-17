@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 620" role="img" aria-label="Tennis racket">
+  <rect width="900" height="620" fill="#f5ffe5"/>
+  <rect y="390" width="900" height="230" fill="#0d6b5f"/>
+  <ellipse cx="355" cy="215" rx="118" ry="165" fill="none" stroke="#17202a" stroke-width="18"/>
+  <path d="M418 350 575 520" stroke="#17202a" stroke-width="26" stroke-linecap="round"/>
+  <path d="M292 82v266M333 55v320M374 55v320M415 82v266M242 150h226M236 215h238M242 282h226" stroke="#2676d6" stroke-width="7" stroke-linecap="round"/>
+  <circle cx="626" cy="215" r="62" fill="#c7ef4e" stroke="#17202a" stroke-width="10"/>
+  <text x="450" y="555" text-anchor="middle" font-family="Arial, sans-serif" font-size="44" font-weight="800" fill="#fff">TENNIS RACKET</text>
+</svg>

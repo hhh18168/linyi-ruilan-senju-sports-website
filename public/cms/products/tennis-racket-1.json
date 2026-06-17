@@ -1,0 +1,81 @@
+{
+  "id": "tennis-racket-1",
+  "name": "Control Tennis Racket",
+  "category": "Tennis Racket",
+  "categorySlug": "tennis-racket",
+  "album": "Tennis Racket",
+  "image": "/assets/tennis-racket.svg",
+  "visible": true,
+  "sortOrder": 40,
+  "prices": {
+    "baseCurrency": "USD",
+    "basePrice": 28,
+    "priceUnit": "piece"
+  },
+  "galleryImages": [
+    "/assets/tennis-racket.svg"
+  ],
+  "galleryLabels": [],
+  "specs": [
+    {
+      "label": "Material",
+      "value": "Aluminum alloy or carbon composite frame"
+    },
+    {
+      "label": "Use Case",
+      "value": "Tennis clubs, school classes, retail stores"
+    },
+    {
+      "label": "MOQ Reference",
+      "value": "5000 pieces or contact us for project quotation"
+    }
+  ],
+  "translations": {
+    "en": {
+      "name": "Control Tennis Racket",
+      "category": "Tennis Racket",
+      "album": "Tennis Racket",
+      "description": "Balanced control tennis racket for training programs, clubs and retail replenishment.",
+      "scenario": "Tennis clubs, school classes, retail stores",
+      "highlights": [
+        "Bulk inquiry available",
+        "Team purchase support",
+        "Customization support"
+      ]
+    },
+    "zh": {
+      "name": "控球型网球拍",
+      "category": "网球拍",
+      "album": "网球拍",
+      "description": "控球型网球拍，适合课程训练、俱乐部采购和门店补货。",
+      "scenario": "学校训练、俱乐部采购、体育用品门店和团队采购",
+      "highlights": [
+        "支持批量询盘",
+        "支持团队采购",
+        "可沟通定制需求"
+      ]
+    },
+    "es": {
+      "name": "Control Tennis Racket",
+      "category": "Tennis Racket",
+      "album": "Tennis Racket",
+      "description": "Producto deportivo para entrenamiento, venta minorista y compra por equipo.",
+      "scenario": "Escuelas, clubes y venta deportiva",
+      "highlights": [
+        "Consulta por volumen",
+        "Compra de equipo",
+        "Soporte personalizado"
+      ]
+    }
+  },
+  "detailSections": [
+    {
+      "title": "Product Details",
+      "body": "Contact us for price, customization, packing and delivery details."
+    },
+    {
+      "title": "采购说明",
+      "body": "可根据采购数量、包装方式、颜色和使用场景沟通报价。"
+    }
+  ]
+}

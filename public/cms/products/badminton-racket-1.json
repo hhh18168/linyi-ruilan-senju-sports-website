@@ -1,0 +1,81 @@
+{
+  "id": "badminton-racket-1",
+  "name": "Speed Badminton Racket",
+  "category": "Badminton Racket",
+  "categorySlug": "badminton-racket",
+  "album": "Badminton Racket",
+  "image": "/assets/badminton-racket.svg",
+  "visible": true,
+  "sortOrder": 43,
+  "prices": {
+    "baseCurrency": "USD",
+    "basePrice": 16,
+    "priceUnit": "piece"
+  },
+  "galleryImages": [
+    "/assets/badminton-racket.svg"
+  ],
+  "galleryLabels": [],
+  "specs": [
+    {
+      "label": "Material",
+      "value": "Aluminum or carbon shaft options"
+    },
+    {
+      "label": "Use Case",
+      "value": "Badminton halls, school training, clubs"
+    },
+    {
+      "label": "MOQ Reference",
+      "value": "5000 pieces or contact us for project quotation"
+    }
+  ],
+  "translations": {
+    "en": {
+      "name": "Speed Badminton Racket",
+      "category": "Badminton Racket",
+      "album": "Badminton Racket",
+      "description": "Light badminton racket for fast rallies, daily training and club replenishment.",
+      "scenario": "Badminton halls, school training, clubs",
+      "highlights": [
+        "Bulk inquiry available",
+        "Team purchase support",
+        "Customization support"
+      ]
+    },
+    "zh": {
+      "name": "速度型羽毛球拍",
+      "category": "羽毛球拍",
+      "album": "羽毛球拍",
+      "description": "速度型羽毛球拍，适合快速对打、日常训练和俱乐部补货。",
+      "scenario": "学校训练、俱乐部采购、体育用品门店和团队采购",
+      "highlights": [
+        "支持批量询盘",
+        "支持团队采购",
+        "可沟通定制需求"
+      ]
+    },
+    "es": {
+      "name": "Speed Badminton Racket",
+      "category": "Badminton Racket",
+      "album": "Badminton Racket",
+      "description": "Producto deportivo para entrenamiento, venta minorista y compra por equipo.",
+      "scenario": "Escuelas, clubes y venta deportiva",
+      "highlights": [
+        "Consulta por volumen",
+        "Compra de equipo",
+        "Soporte personalizado"
+      ]
+    }
+  },
+  "detailSections": [
+    {
+      "title": "Product Details",
+      "body": "Contact us for price, customization, packing and delivery details."
+    },
+    {
+      "title": "采购说明",
+      "body": "可根据采购数量、包装方式、颜色和使用场景沟通报价。"
+    }
+  ]
+}

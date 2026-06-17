@@ -144,20 +144,21 @@ const ui: Record<string, Record<string, string>> = {
 };
 
 const termTranslations: Record<string, Record<string, string>> = {
-  zh: { Football: '足球', Volleyball: '排球', Basketball: '篮球', Tennis: '网球', Badminton: '羽毛球', 'Sports T-shirt': '运动T恤', 'Thermal Bonded': '热粘合', 'Machine Stitched': '机缝', 'World Cup': '世界杯', 'European Cup': '欧洲杯', Product: '商品' },
-  es: { Football: 'Futbol', Volleyball: 'Voleibol', Basketball: 'Baloncesto', Tennis: 'Tenis', Badminton: 'Badminton', 'Sports T-shirt': 'Camiseta deportiva', 'Thermal Bonded': 'Termosellado', 'Machine Stitched': 'Cosido a maquina', 'World Cup': 'Copa Mundial', 'European Cup': 'Copa Europea', Product: 'Producto' },
-  fr: { Football: 'Football', Volleyball: 'Volley-ball', Basketball: 'Basket-ball', Tennis: 'Tennis', Badminton: 'Badminton', 'Sports T-shirt': 'T-shirt de sport', Product: 'Produit' },
-  de: { Football: 'Fussball', Volleyball: 'Volleyball', Basketball: 'Basketball', Tennis: 'Tennis', Badminton: 'Badminton', 'Sports T-shirt': 'Sport-T-Shirt', Product: 'Produkt' },
-  pt: { Football: 'Futebol', Volleyball: 'Voleibol', Basketball: 'Basquete', Tennis: 'Tenis', Badminton: 'Badminton', 'Sports T-shirt': 'Camiseta esportiva', Product: 'Produto' },
-  ru: { Football: 'Футбол', Volleyball: 'Волейбол', Basketball: 'Баскетбол', Tennis: 'Теннис', Badminton: 'Бадминтон', 'Sports T-shirt': 'Спортивная футболка', Product: 'Товар' },
-  ar: { Football: 'كرة القدم', Volleyball: 'الكرة الطائرة', Basketball: 'كرة السلة', Tennis: 'التنس', Badminton: 'الريشة الطائرة', 'Sports T-shirt': 'قميص رياضي', Product: 'منتج' },
-  ja: { Football: 'サッカー', Volleyball: 'バレーボール', Basketball: 'バスケットボール', Tennis: 'テニス', Badminton: 'バドミントン', 'Sports T-shirt': 'スポーツTシャツ', Product: '商品' },
-  ko: { Football: '축구', Volleyball: '배구', Basketball: '농구', Tennis: '테니스', Badminton: '배드민턴', 'Sports T-shirt': '스포츠 티셔츠', Product: '상품' },
-  it: { Football: 'Calcio', Volleyball: 'Pallavolo', Basketball: 'Basket', Tennis: 'Tennis', Badminton: 'Badminton', 'Sports T-shirt': 'T-shirt sportiva', Product: 'Prodotto' },
-  nl: { Football: 'Voetbal', Volleyball: 'Volleybal', Basketball: 'Basketbal', Tennis: 'Tennis', Badminton: 'Badminton', 'Sports T-shirt': 'Sport T-shirt', Product: 'Product' },
-  tr: { Football: 'Futbol', Volleyball: 'Voleybol', Basketball: 'Basketbol', Tennis: 'Tenis', Badminton: 'Badminton', 'Sports T-shirt': 'Spor tişörtü', Product: 'Ürün' },
-  vi: { Football: 'Bong da', Volleyball: 'Bong chuyen', Basketball: 'Bong ro', Tennis: 'Quan vot tennis', Badminton: 'Cau long', 'Sports T-shirt': 'Ao thun the thao', Product: 'San pham' },
-  id: { Football: 'Sepak bola', Volleyball: 'Voli', Basketball: 'Bola basket', Tennis: 'Tenis', Badminton: 'Bulu tangkis', 'Sports T-shirt': 'Kaos olahraga', Product: 'Produk' },
+  zh: { Football: '\u8db3\u7403', Volleyball: '\u6392\u7403', Basketball: '\u7bee\u7403', Tennis: '\u7f51\u7403', Badminton: '\u7fbd\u6bdb\u7403', 'Tennis Racket': '\u7f51\u7403\u62cd', 'Badminton Racket': '\u7fbd\u6bdb\u7403\u62cd', 'Table Tennis Racket': '\u4e52\u4e53\u7403\u62cd', 'Table Tennis': '\u4e52\u4e53\u7403', 'Jump Rope': '\u8df3\u7ef3', 'Sports T-shirt': '\u8fd0\u52a8T\u6064', 'Thermal Bonded': '\u70ed\u7c98\u5408', 'Machine Stitched': '\u673a\u7f1d', 'World Cup': '\u4e16\u754c\u676f', 'European Cup': '\u6b27\u6d32\u676f', Product: '\u5546\u54c1' },
+  en: { Football: 'Football', Volleyball: 'Volleyball', Basketball: 'Basketball', Tennis: 'Tennis', Badminton: 'Badminton', 'Tennis Racket': 'Tennis Racket', 'Badminton Racket': 'Badminton Racket', 'Table Tennis Racket': 'Table Tennis Racket', 'Table Tennis': 'Table Tennis', 'Jump Rope': 'Jump Rope', 'Sports T-shirt': 'Sports T-shirt', 'Thermal Bonded': 'Thermal Bonded', 'Machine Stitched': 'Machine Stitched', 'World Cup': 'World Cup', 'European Cup': 'European Cup', Product: 'Product' },
+  es: { Football: 'Futbol', Volleyball: 'Voleibol', Basketball: 'Baloncesto', Tennis: 'Tenis', Badminton: 'Badminton', 'Tennis Racket': 'Raqueta de tenis', 'Badminton Racket': 'Raqueta de badminton', 'Table Tennis Racket': 'Raqueta de tenis de mesa', 'Table Tennis': 'Tenis de mesa', 'Jump Rope': 'Cuerda para saltar', 'Sports T-shirt': 'Camiseta deportiva', 'Thermal Bonded': 'Termosellado', 'Machine Stitched': 'Cosido a maquina', 'World Cup': 'Copa Mundial', 'European Cup': 'Copa Europea', Product: 'Producto' },
+  fr: { Football: 'Football', Volleyball: 'Volley-ball', Basketball: 'Basket-ball', Tennis: 'Tennis', Badminton: 'Badminton', 'Tennis Racket': 'Raquette de tennis', 'Badminton Racket': 'Raquette de badminton', 'Table Tennis Racket': 'Raquette de tennis de table', 'Table Tennis': 'Tennis de table', 'Jump Rope': 'Corde a sauter', 'Sports T-shirt': 'T-shirt de sport', Product: 'Produit' },
+  de: { Football: 'Fussball', Volleyball: 'Volleyball', Basketball: 'Basketball', Tennis: 'Tennis', Badminton: 'Badminton', 'Tennis Racket': 'Tennisschlager', 'Badminton Racket': 'Badmintonschlager', 'Table Tennis Racket': 'Tischtennisschlager', 'Table Tennis': 'Tischtennis', 'Jump Rope': 'Springseil', 'Sports T-shirt': 'Sport-T-Shirt', Product: 'Produkt' },
+  pt: { Football: 'Futebol', Volleyball: 'Voleibol', Basketball: 'Basquete', Tennis: 'Tenis', Badminton: 'Badminton', 'Tennis Racket': 'Raquete de tenis', 'Badminton Racket': 'Raquete de badminton', 'Table Tennis Racket': 'Raquete de tenis de mesa', 'Table Tennis': 'Tenis de mesa', 'Jump Rope': 'Corda de pular', 'Sports T-shirt': 'Camiseta esportiva', Product: 'Produto' },
+  ru: { Football: 'Futbol', Volleyball: 'Voleybol', Basketball: 'Basketbol', Tennis: 'Tennis', Badminton: 'Badminton', 'Tennis Racket': 'Tennis racket', 'Badminton Racket': 'Badminton racket', 'Table Tennis Racket': 'Table tennis racket', 'Table Tennis': 'Nastolny tennis', 'Jump Rope': 'Skakalka', 'Sports T-shirt': 'Sportivnaya futbolka', Product: 'Tovar' },
+  ar: { Football: 'Football', Volleyball: 'Volleyball', Basketball: 'Basketball', Tennis: 'Tennis', Badminton: 'Badminton', 'Tennis Racket': 'Tennis Racket', 'Badminton Racket': 'Badminton Racket', 'Table Tennis Racket': 'Table Tennis Racket', 'Table Tennis': 'Table Tennis', 'Jump Rope': 'Jump Rope', 'Sports T-shirt': 'Sports T-shirt', Product: 'Product' },
+  ja: { Football: 'Soccer', Volleyball: 'Volleyball', Basketball: 'Basketball', Tennis: 'Tennis', Badminton: 'Badminton', 'Tennis Racket': 'Tennis Racket', 'Badminton Racket': 'Badminton Racket', 'Table Tennis Racket': 'Table Tennis Racket', 'Table Tennis': 'Table Tennis', 'Jump Rope': 'Jump Rope', 'Sports T-shirt': 'Sports T-shirt', Product: 'Product' },
+  ko: { Football: 'Football', Volleyball: 'Volleyball', Basketball: 'Basketball', Tennis: 'Tennis', Badminton: 'Badminton', 'Tennis Racket': 'Tennis Racket', 'Badminton Racket': 'Badminton Racket', 'Table Tennis Racket': 'Table Tennis Racket', 'Table Tennis': 'Table Tennis', 'Jump Rope': 'Jump Rope', 'Sports T-shirt': 'Sports T-shirt', Product: 'Product' },
+  it: { Football: 'Calcio', Volleyball: 'Pallavolo', Basketball: 'Basket', Tennis: 'Tennis', Badminton: 'Badminton', 'Tennis Racket': 'Racchetta da tennis', 'Badminton Racket': 'Racchetta da badminton', 'Table Tennis Racket': 'Racchetta da ping pong', 'Table Tennis': 'Tennis da tavolo', 'Jump Rope': 'Corda per saltare', 'Sports T-shirt': 'T-shirt sportiva', Product: 'Prodotto' },
+  nl: { Football: 'Voetbal', Volleyball: 'Volleybal', Basketball: 'Basketbal', Tennis: 'Tennis', Badminton: 'Badminton', 'Tennis Racket': 'Tennisracket', 'Badminton Racket': 'Badmintonracket', 'Table Tennis Racket': 'Tafeltennisbat', 'Table Tennis': 'Tafeltennis', 'Jump Rope': 'Springtouw', 'Sports T-shirt': 'Sport T-shirt', Product: 'Product' },
+  tr: { Football: 'Futbol', Volleyball: 'Voleybol', Basketball: 'Basketbol', Tennis: 'Tenis', Badminton: 'Badminton', 'Tennis Racket': 'Tenis raketi', 'Badminton Racket': 'Badminton raketi', 'Table Tennis Racket': 'Masa tenisi raketi', 'Table Tennis': 'Masa tenisi', 'Jump Rope': 'Atlama ipi', 'Sports T-shirt': 'Spor tisortu', Product: 'Urun' },
+  vi: { Football: 'Bong da', Volleyball: 'Bong chuyen', Basketball: 'Bong ro', Tennis: 'Quan vot tennis', Badminton: 'Cau long', 'Tennis Racket': 'Vot tennis', 'Badminton Racket': 'Vot cau long', 'Table Tennis Racket': 'Vot bong ban', 'Table Tennis': 'Bong ban', 'Jump Rope': 'Day nhay', 'Sports T-shirt': 'Ao thun the thao', Product: 'San pham' },
+  id: { Football: 'Sepak bola', Volleyball: 'Voli', Basketball: 'Bola basket', Tennis: 'Tenis', Badminton: 'Bulu tangkis', 'Tennis Racket': 'Raket tenis', 'Badminton Racket': 'Raket badminton', 'Table Tennis Racket': 'Bet tenis meja', 'Table Tennis': 'Tenis meja', 'Jump Rope': 'Tali skipping', 'Sports T-shirt': 'Kaos olahraga', Product: 'Produk' },
 };
 
 type ImageVariant = 'thumb' | 'card' | 'detail';
@@ -174,6 +175,11 @@ const lightProductImage = (product: CmsProduct) => {
     basketball: '/assets/basketball.svg',
     tennis: '/assets/tennis.svg',
     badminton: '/assets/badminton.svg',
+    'tennis-racket': '/assets/tennis-racket.svg',
+    'badminton-racket': '/assets/badminton-racket.svg',
+    'table-tennis-racket': '/assets/table-tennis-racket.svg',
+    'table-tennis': '/assets/table-tennis.svg',
+    'jump-rope': '/assets/jump-rope.svg',
     'sports-tshirt': '/assets/tshirt.svg',
   };
   return categoryIcon[product.categorySlug] || product.image;
@@ -786,12 +792,17 @@ function CatalogSection({
 
 const craftCards: Record<string, { title: string; text: string }[]> = {
   zh: [
-    { title: '足球', text: '可选 PU、PVC、TPU 表层，支持热粘合与机缝工艺，适合训练球、比赛球和俱乐部批量采购。' },
-    { title: '篮球', text: '耐磨 PU 或橡胶外皮，深沟纹防滑设计，兼顾室内手感与室外耐打需求。' },
-    { title: '排球', text: '柔软触感表层配合稳定气密内胆，适合学校训练、俱乐部课程和赛事备货。' },
-    { title: '网球', text: '耐磨毛毡与稳定弹性结构，适合训练消耗、门店补货和课程采购。' },
-    { title: '羽毛球', text: '提供耐打羽毛球与尼龙球选择，飞行稳定，适合日常训练和团体采购。' },
-    { title: '运动T恤', text: '速干透气面料，支持队服、训练服和活动服定制，适合学校、赛事和俱乐部。' },
+    { title: '\u8db3\u7403', text: '\u53ef\u9009 PU\u3001PVC\u3001TPU \u8868\u5c42\uff0c\u652f\u6301\u70ed\u7c98\u5408\u4e0e\u673a\u7f1d\u5de5\u827a\uff0c\u9002\u5408\u8bad\u7ec3\u7403\u3001\u6bd4\u8d5b\u7403\u548c\u4ff1\u4e50\u90e8\u6279\u91cf\u91c7\u8d2d\u3002' },
+    { title: '\u7bee\u7403', text: '\u8010\u78e8 PU \u6216\u6a61\u80f6\u5916\u76ae\uff0c\u6df1\u6c9f\u7eb9\u9632\u6ed1\u8bbe\u8ba1\uff0c\u517c\u987e\u5ba4\u5185\u624b\u611f\u4e0e\u5ba4\u5916\u8010\u6253\u9700\u6c42\u3002' },
+    { title: '\u6392\u7403', text: '\u67d4\u8f6f\u89e6\u611f\u8868\u5c42\u914d\u5408\u7a33\u5b9a\u6c14\u5bc6\u5185\u80c6\uff0c\u9002\u5408\u5b66\u6821\u8bad\u7ec3\u3001\u4ff1\u4e50\u90e8\u8bfe\u7a0b\u548c\u8d5b\u4e8b\u5907\u8d27\u3002' },
+    { title: '\u7f51\u7403', text: '\u8010\u78e8\u6bdb\u6be1\u4e0e\u7a33\u5b9a\u5f39\u6027\u7ed3\u6784\uff0c\u9002\u5408\u8bad\u7ec3\u6d88\u8017\u3001\u95e8\u5e97\u8865\u8d27\u548c\u8bfe\u7a0b\u91c7\u8d2d\u3002' },
+    { title: '\u7fbd\u6bdb\u7403', text: '\u63d0\u4f9b\u8010\u6253\u7fbd\u6bdb\u7403\u4e0e\u5c3c\u9f99\u7403\u9009\u62e9\uff0c\u98de\u884c\u7a33\u5b9a\uff0c\u9002\u5408\u65e5\u5e38\u8bad\u7ec3\u548c\u56e2\u4f53\u91c7\u8d2d\u3002' },
+    { title: '\u7f51\u7403\u62cd', text: '\u53ef\u9009\u94dd\u5408\u91d1\u6216\u78b3\u7d20\u590d\u5408\u62cd\u6846\uff0c\u9002\u5408\u4ff1\u4e50\u90e8\u8bfe\u7a0b\u3001\u5b66\u6821\u8bad\u7ec3\u548c\u95e8\u5e97\u8865\u8d27\u3002' },
+    { title: '\u7fbd\u6bdb\u7403\u62cd', text: '\u63d0\u4f9b\u5165\u95e8\u8bad\u7ec3\u3001\u78b3\u7d20\u8f7b\u91cf\u548c\u5b66\u751f\u5957\u88c5\u9009\u62e9\uff0c\u9002\u5408\u7403\u9986\u3001\u5b66\u6821\u548c\u56e2\u961f\u91c7\u8d2d\u3002' },
+    { title: '\u4e52\u4e53\u7403\u62cd', text: '\u6728\u8d28\u5e95\u677f\u914d\u8010\u7528\u80f6\u76ae\uff0c\u53ef\u7528\u4e8e\u5b66\u6821\u8bfe\u7a0b\u3001\u4ff1\u4e50\u90e8\u6559\u5b66\u548c\u95e8\u5e97\u5957\u88c5\u9500\u552e\u3002' },
+    { title: '\u4e52\u4e53\u7403', text: '\u7403\u62cd\u3001\u4e52\u4e53\u7403\u548c\u8bad\u7ec3\u5957\u88c5\u53ef\u7528\u4e8e\u5b66\u6821\u3001\u4ff1\u4e50\u90e8\u8bfe\u7a0b\u548c\u95e8\u5e97\u8865\u8d27\uff0c\u9002\u5408\u6279\u91cf\u91c7\u8d2d\u3002' },
+    { title: '\u8df3\u7ef3', text: '\u63d0\u4f9b\u53ef\u8c03\u8282\u8bad\u7ec3\u8df3\u7ef3\u3001\u7ade\u901f\u8f74\u627f\u8df3\u7ef3\u548c\u513f\u7ae5\u8df3\u7ef3\uff0c\u9002\u5408\u4f53\u6d4b\u3001\u5065\u8eab\u548c\u6821\u56ed\u6d3b\u52a8\u3002' },
+    { title: '\u8fd0\u52a8T\u6064', text: '\u901f\u5e72\u900f\u6c14\u9762\u6599\uff0c\u652f\u6301\u961f\u670d\u3001\u8bad\u7ec3\u670d\u548c\u6d3b\u52a8\u670d\u5b9a\u5236\uff0c\u9002\u5408\u5b66\u6821\u3001\u8d5b\u4e8b\u548c\u4ff1\u4e50\u90e8\u3002' },
   ],
   en: [
     { title: 'Football', text: 'PU, PVC and TPU covers with thermal bonded or machine stitched options for training, match and club purchasing.' },
@@ -799,6 +810,11 @@ const craftCards: Record<string, { title: string; text: string }[]> = {
     { title: 'Volleyball', text: 'Soft-touch covers and stable air-retention bladders for school training, club classes and event supply.' },
     { title: 'Tennis', text: 'Durable felt and consistent bounce for training consumption, retail replenishment and coaching programs.' },
     { title: 'Badminton', text: 'Durable feather and nylon shuttle options with stable flight for daily training and team purchasing.' },
+    { title: 'Tennis Racket', text: 'Aluminum alloy and carbon composite rackets for clubs, school training and retail replenishment.' },
+    { title: 'Badminton Racket', text: 'Light training, carbon and student set options for badminton halls, schools and team purchasing.' },
+    { title: 'Table Tennis Racket', text: 'Wood blades with durable rubber surfaces for school classes, club lessons and retail sets.' },
+    { title: 'Table Tennis', text: 'Paddles, balls and training sets for schools, club lessons, retail replenishment and bulk purchase.' },
+    { title: 'Jump Rope', text: 'Adjustable, speed bearing and kids jump ropes for fitness tests, training classes and campus events.' },
     { title: 'Sports T-shirt', text: 'Quick-dry breathable fabric for teamwear, training wear and event customization.' },
   ],
 };

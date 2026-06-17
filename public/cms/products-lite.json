@@ -14,10 +14,51 @@
       "priceUnit": "piece"
     },
     "galleryImages": [
-      "/yupoo-products/football/177031341-world-cup/177031341-world-cup-01.jpg"
+      "/yupoo-products/football/177031341-world-cup/177031341-world-cup-01.jpg",
+      "/yupoo-products/football/177031341-world-cup/177031341-world-cup-02.jpg",
+      "/yupoo-products/football/177031341-world-cup/177031341-world-cup-03.jpg",
+      "/yupoo-products/football/177031341-world-cup/177031341-world-cup-04.jpg",
+      "/yupoo-products/football/177031341-world-cup/177031341-world-cup-05.jpg",
+      "/yupoo-products/football/177031341-world-cup/177031341-world-cup-06.jpg",
+      "/yupoo-products/football/177031341-world-cup/177031341-world-cup-07.jpg",
+      "/yupoo-products/football/177031341-world-cup/177031341-world-cup-08.jpg",
+      "/yupoo-products/football/177031341-world-cup/177031341-world-cup-09.jpg",
+      "/yupoo-products/football/177031341-world-cup/177031341-world-cup-10.jpg",
+      "/yupoo-products/football/177031341-world-cup/177031341-world-cup-11.jpg",
+      "/yupoo-products/football/177031341-world-cup/177031341-world-cup-12.jpg",
+      "/yupoo-products/football/177031341-world-cup/177031341-world-cup-13.jpg",
+      "/yupoo-products/football/177031341-world-cup/177031341-world-cup-14.jpg"
     ],
-    "galleryLabels": [],
-    "specs": [],
+    "galleryLabels": [
+      "Style 1",
+      "Style 2",
+      "Style 3",
+      "Style 4",
+      "Style 5",
+      "Style 6",
+      "Style 7",
+      "Style 8",
+      "Style 9",
+      "Style 10",
+      "Style 11",
+      "Style 12",
+      "Style 13",
+      "Style 14"
+    ],
+    "specs": [
+      {
+        "label": "Category",
+        "value": "Football"
+      },
+      {
+        "label": "Album",
+        "value": "World Cup"
+      },
+      {
+        "label": "Images",
+        "value": "14"
+      }
+    ],
     "translations": {
       "en": {
         "name": "World Cup",
@@ -56,7 +97,12 @@
         ]
       }
     },
-    "detailSections": []
+    "detailSections": [
+      {
+        "title": "Product Details",
+        "body": "Contact us for price, customization and delivery details."
+      }
+    ]
   },
   {
     "id": "football-177208648-european-cup",
@@ -73,10 +119,39 @@
       "priceUnit": "piece"
     },
     "galleryImages": [
-      "/yupoo-products/football/177208648-european-cup/177208648-european-cup-01.jpg"
+      "/yupoo-products/football/177208648-european-cup/177208648-european-cup-01.jpg",
+      "/yupoo-products/football/177208648-european-cup/177208648-european-cup-02.jpg",
+      "/yupoo-products/football/177208648-european-cup/177208648-european-cup-03.jpg",
+      "/yupoo-products/football/177208648-european-cup/177208648-european-cup-04.jpg",
+      "/yupoo-products/football/177208648-european-cup/177208648-european-cup-05.jpg",
+      "/yupoo-products/football/177208648-european-cup/177208648-european-cup-06.jpg",
+      "/yupoo-products/football/177208648-european-cup/177208648-european-cup-07.jpg",
+      "/yupoo-products/football/177208648-european-cup/177208648-european-cup-08.jpg"
     ],
-    "galleryLabels": [],
-    "specs": [],
+    "galleryLabels": [
+      "Style 1",
+      "Style 2",
+      "Style 3",
+      "Style 4",
+      "Style 5",
+      "Style 6",
+      "Style 7",
+      "Style 8"
+    ],
+    "specs": [
+      {
+        "label": "Category",
+        "value": "Football"
+      },
+      {
+        "label": "Album",
+        "value": "European Cup"
+      },
+      {
+        "label": "Images",
+        "value": "8"
+      }
+    ],
     "translations": {
       "en": {
         "name": "European Cup",
@@ -115,7 +190,12 @@
         ]
       }
     },
-    "detailSections": []
+    "detailSections": [
+      {
+        "title": "Product Details",
+        "body": "Contact us for price, customization and delivery details."
+      }
+    ]
   },
   {
     "id": "football-177028558-uefa-champions-league",
@@ -132,10 +212,109 @@
       "priceUnit": "piece"
     },
     "galleryImages": [
-      "/yupoo-products/football/177028558-uefa-champions-league/177028558-uefa-champions-league-01.jpg"
+      "/yupoo-products/football/177028558-uefa-champions-league/177028558-uefa-champions-league-01.jpg",
+      "/yupoo-products/football/177028558-uefa-champions-league/177028558-uefa-champions-league-02.jpg",
+      "/yupoo-products/football/177028558-uefa-champions-league/177028558-uefa-champions-league-03.jpg",
+      "/yupoo-products/football/177028558-uefa-champions-league/177028558-uefa-champions-league-04.jpg",
+      "/yupoo-products/football/177028558-uefa-champions-league/177028558-uefa-champions-league-05.jpg",
+      "/yupoo-products/football/177028558-uefa-champions-league/177028558-uefa-champions-league-06.jpg",
+      "/yupoo-products/football/177028558-uefa-champions-league/177028558-uefa-champions-league-07.jpg",
+      "/yupoo-products/football/177028558-uefa-champions-league/177028558-uefa-champions-league-08.jpg",
+      "/yupoo-products/football/177028558-uefa-champions-league/177028558-uefa-champions-league-09.jpg",
+      "/yupoo-products/football/177028558-uefa-champions-league/177028558-uefa-champions-league-10.jpg",
+      "/yupoo-products/football/177028558-uefa-champions-league/177028558-uefa-champions-league-11.jpg",
+      "/yupoo-products/football/177028558-uefa-champions-league/177028558-uefa-champions-league-12.jpg",
+      "/yupoo-products/football/177028558-uefa-champions-league/177028558-uefa-champions-league-13.jpg",
+      "/yupoo-products/football/177028558-uefa-champions-league/177028558-uefa-champions-league-14.jpg",
+      "/yupoo-products/football/177028558-uefa-champions-league/177028558-uefa-champions-league-15.jpg",
+      "/yupoo-products/football/177028558-uefa-champions-league/177028558-uefa-champions-league-16.jpg",
+      "/yupoo-products/football/177028558-uefa-champions-league/177028558-uefa-champions-league-17.jpg",
+      "/yupoo-products/football/177028558-uefa-champions-league/177028558-uefa-champions-league-18.jpg",
+      "/yupoo-products/football/177028558-uefa-champions-league/177028558-uefa-champions-league-19.jpg",
+      "/yupoo-products/football/177028558-uefa-champions-league/177028558-uefa-champions-league-20.jpg",
+      "/yupoo-products/football/177028558-uefa-champions-league/177028558-uefa-champions-league-21.jpg",
+      "/yupoo-products/football/177028558-uefa-champions-league/177028558-uefa-champions-league-22.jpg",
+      "/yupoo-products/football/177028558-uefa-champions-league/177028558-uefa-champions-league-23.jpg",
+      "/yupoo-products/football/177028558-uefa-champions-league/177028558-uefa-champions-league-24.jpg",
+      "/yupoo-products/football/177028558-uefa-champions-league/177028558-uefa-champions-league-25.jpg",
+      "/yupoo-products/football/177028558-uefa-champions-league/177028558-uefa-champions-league-26.jpg",
+      "/yupoo-products/football/177028558-uefa-champions-league/177028558-uefa-champions-league-27.jpg",
+      "/yupoo-products/football/177028558-uefa-champions-league/177028558-uefa-champions-league-28.jpg",
+      "/yupoo-products/football/177028558-uefa-champions-league/177028558-uefa-champions-league-29.jpg",
+      "/yupoo-products/football/177028558-uefa-champions-league/177028558-uefa-champions-league-30.jpg",
+      "/yupoo-products/football/177028558-uefa-champions-league/177028558-uefa-champions-league-31.jpg",
+      "/yupoo-products/football/177028558-uefa-champions-league/177028558-uefa-champions-league-32.jpg",
+      "/yupoo-products/football/177028558-uefa-champions-league/177028558-uefa-champions-league-33.jpg",
+      "/yupoo-products/football/177028558-uefa-champions-league/177028558-uefa-champions-league-34.jpg",
+      "/yupoo-products/football/177028558-uefa-champions-league/177028558-uefa-champions-league-35.jpg",
+      "/yupoo-products/football/177028558-uefa-champions-league/177028558-uefa-champions-league-36.jpg",
+      "/yupoo-products/football/177028558-uefa-champions-league/177028558-uefa-champions-league-37.jpg",
+      "/yupoo-products/football/177028558-uefa-champions-league/177028558-uefa-champions-league-38.jpg",
+      "/yupoo-products/football/177028558-uefa-champions-league/177028558-uefa-champions-league-39.jpg",
+      "/yupoo-products/football/177028558-uefa-champions-league/177028558-uefa-champions-league-40.jpg",
+      "/yupoo-products/football/177028558-uefa-champions-league/177028558-uefa-champions-league-41.jpg",
+      "/yupoo-products/football/177028558-uefa-champions-league/177028558-uefa-champions-league-42.jpg",
+      "/yupoo-products/football/177028558-uefa-champions-league/177028558-uefa-champions-league-43.jpg"
     ],
-    "galleryLabels": [],
-    "specs": [],
+    "galleryLabels": [
+      "Style 1",
+      "Style 2",
+      "Style 3",
+      "Style 4",
+      "Style 5",
+      "Style 6",
+      "Style 7",
+      "Style 8",
+      "Style 9",
+      "Style 10",
+      "Style 11",
+      "Style 12",
+      "Style 13",
+      "Style 14",
+      "Style 15",
+      "Style 16",
+      "Style 17",
+      "Style 18",
+      "Style 19",
+      "Style 20",
+      "Style 21",
+      "Style 22",
+      "Style 23",
+      "Style 24",
+      "Style 25",
+      "Style 26",
+      "Style 27",
+      "Style 28",
+      "Style 29",
+      "Style 30",
+      "Style 31",
+      "Style 32",
+      "Style 33",
+      "Style 34",
+      "Style 35",
+      "Style 36",
+      "Style 37",
+      "Style 38",
+      "Style 39",
+      "Style 40",
+      "Style 41",
+      "Style 42",
+      "Style 43"
+    ],
+    "specs": [
+      {
+        "label": "Category",
+        "value": "Football"
+      },
+      {
+        "label": "Album",
+        "value": "UEFA Champions League"
+      },
+      {
+        "label": "Images",
+        "value": "43"
+      }
+    ],
     "translations": {
       "en": {
         "name": "UEFA Champions League",
@@ -174,7 +353,12 @@
         ]
       }
     },
-    "detailSections": []
+    "detailSections": [
+      {
+        "title": "Product Details",
+        "body": "Contact us for price, customization and delivery details."
+      }
+    ]
   },
   {
     "id": "football-177028568-premier-league",
@@ -191,10 +375,111 @@
       "priceUnit": "piece"
     },
     "galleryImages": [
-      "/yupoo-products/football/177028568-premier-league/177028568-premier-league-01.jpg"
+      "/yupoo-products/football/177028568-premier-league/177028568-premier-league-01.jpg",
+      "/yupoo-products/football/177028568-premier-league/177028568-premier-league-02.jpg",
+      "/yupoo-products/football/177028568-premier-league/177028568-premier-league-03.jpg",
+      "/yupoo-products/football/177028568-premier-league/177028568-premier-league-04.jpg",
+      "/yupoo-products/football/177028568-premier-league/177028568-premier-league-05.jpg",
+      "/yupoo-products/football/177028568-premier-league/177028568-premier-league-06.jpg",
+      "/yupoo-products/football/177028568-premier-league/177028568-premier-league-07.jpg",
+      "/yupoo-products/football/177028568-premier-league/177028568-premier-league-08.jpg",
+      "/yupoo-products/football/177028568-premier-league/177028568-premier-league-09.jpg",
+      "/yupoo-products/football/177028568-premier-league/177028568-premier-league-10.jpg",
+      "/yupoo-products/football/177028568-premier-league/177028568-premier-league-11.jpg",
+      "/yupoo-products/football/177028568-premier-league/177028568-premier-league-12.jpg",
+      "/yupoo-products/football/177028568-premier-league/177028568-premier-league-13.jpg",
+      "/yupoo-products/football/177028568-premier-league/177028568-premier-league-14.jpg",
+      "/yupoo-products/football/177028568-premier-league/177028568-premier-league-15.jpg",
+      "/yupoo-products/football/177028568-premier-league/177028568-premier-league-16.jpg",
+      "/yupoo-products/football/177028568-premier-league/177028568-premier-league-17.jpg",
+      "/yupoo-products/football/177028568-premier-league/177028568-premier-league-18.jpg",
+      "/yupoo-products/football/177028568-premier-league/177028568-premier-league-19.jpg",
+      "/yupoo-products/football/177028568-premier-league/177028568-premier-league-20.jpg",
+      "/yupoo-products/football/177028568-premier-league/177028568-premier-league-21.jpg",
+      "/yupoo-products/football/177028568-premier-league/177028568-premier-league-22.jpg",
+      "/yupoo-products/football/177028568-premier-league/177028568-premier-league-23.jpg",
+      "/yupoo-products/football/177028568-premier-league/177028568-premier-league-24.jpg",
+      "/yupoo-products/football/177028568-premier-league/177028568-premier-league-25.jpg",
+      "/yupoo-products/football/177028568-premier-league/177028568-premier-league-26.jpg",
+      "/yupoo-products/football/177028568-premier-league/177028568-premier-league-27.jpg",
+      "/yupoo-products/football/177028568-premier-league/177028568-premier-league-28.jpg",
+      "/yupoo-products/football/177028568-premier-league/177028568-premier-league-29.jpg",
+      "/yupoo-products/football/177028568-premier-league/177028568-premier-league-30.jpg",
+      "/yupoo-products/football/177028568-premier-league/177028568-premier-league-31.jpg",
+      "/yupoo-products/football/177028568-premier-league/177028568-premier-league-32.jpg",
+      "/yupoo-products/football/177028568-premier-league/177028568-premier-league-33.jpg",
+      "/yupoo-products/football/177028568-premier-league/177028568-premier-league-34.jpg",
+      "/yupoo-products/football/177028568-premier-league/177028568-premier-league-35.jpg",
+      "/yupoo-products/football/177028568-premier-league/177028568-premier-league-36.jpg",
+      "/yupoo-products/football/177028568-premier-league/177028568-premier-league-37.jpg",
+      "/yupoo-products/football/177028568-premier-league/177028568-premier-league-38.jpg",
+      "/yupoo-products/football/177028568-premier-league/177028568-premier-league-39.jpg",
+      "/yupoo-products/football/177028568-premier-league/177028568-premier-league-40.jpg",
+      "/yupoo-products/football/177028568-premier-league/177028568-premier-league-41.jpg",
+      "/yupoo-products/football/177028568-premier-league/177028568-premier-league-42.jpg",
+      "/yupoo-products/football/177028568-premier-league/177028568-premier-league-43.jpg",
+      "/yupoo-products/football/177028568-premier-league/177028568-premier-league-44.jpg"
     ],
-    "galleryLabels": [],
-    "specs": [],
+    "galleryLabels": [
+      "Style 1",
+      "Style 2",
+      "Style 3",
+      "Style 4",
+      "Style 5",
+      "Style 6",
+      "Style 7",
+      "Style 8",
+      "Style 9",
+      "Style 10",
+      "Style 11",
+      "Style 12",
+      "Style 13",
+      "Style 14",
+      "Style 15",
+      "Style 16",
+      "Style 17",
+      "Style 18",
+      "Style 19",
+      "Style 20",
+      "Style 21",
+      "Style 22",
+      "Style 23",
+      "Style 24",
+      "Style 25",
+      "Style 26",
+      "Style 27",
+      "Style 28",
+      "Style 29",
+      "Style 30",
+      "Style 31",
+      "Style 32",
+      "Style 33",
+      "Style 34",
+      "Style 35",
+      "Style 36",
+      "Style 37",
+      "Style 38",
+      "Style 39",
+      "Style 40",
+      "Style 41",
+      "Style 42",
+      "Style 43",
+      "Style 44"
+    ],
+    "specs": [
+      {
+        "label": "Category",
+        "value": "Football"
+      },
+      {
+        "label": "Album",
+        "value": "Premier League"
+      },
+      {
+        "label": "Images",
+        "value": "44"
+      }
+    ],
     "translations": {
       "en": {
         "name": "Premier League",
@@ -233,7 +518,12 @@
         ]
       }
     },
-    "detailSections": []
+    "detailSections": [
+      {
+        "title": "Product Details",
+        "body": "Contact us for price, customization and delivery details."
+      }
+    ]
   },
   {
     "id": "football-177208927-la-liga",
@@ -250,10 +540,31 @@
       "priceUnit": "piece"
     },
     "galleryImages": [
-      "/yupoo-products/football/177208927-la-liga/177208927-la-liga-01.jpg"
+      "/yupoo-products/football/177208927-la-liga/177208927-la-liga-01.jpg",
+      "/yupoo-products/football/177208927-la-liga/177208927-la-liga-02.jpg",
+      "/yupoo-products/football/177208927-la-liga/177208927-la-liga-03.jpg",
+      "/yupoo-products/football/177208927-la-liga/177208927-la-liga-04.jpg"
     ],
-    "galleryLabels": [],
-    "specs": [],
+    "galleryLabels": [
+      "Style 1",
+      "Style 2",
+      "Style 3",
+      "Style 4"
+    ],
+    "specs": [
+      {
+        "label": "Category",
+        "value": "Football"
+      },
+      {
+        "label": "Album",
+        "value": "La Liga"
+      },
+      {
+        "label": "Images",
+        "value": "4"
+      }
+    ],
     "translations": {
       "en": {
         "name": "La Liga",
@@ -292,7 +603,12 @@
         ]
       }
     },
-    "detailSections": []
+    "detailSections": [
+      {
+        "title": "Product Details",
+        "body": "Contact us for price, customization and delivery details."
+      }
+    ]
   },
   {
     "id": "football-177208883-bundesliga",
@@ -309,10 +625,31 @@
       "priceUnit": "piece"
     },
     "galleryImages": [
-      "/yupoo-products/football/177208883-bundesliga/177208883-bundesliga-01.jpg"
+      "/yupoo-products/football/177208883-bundesliga/177208883-bundesliga-01.jpg",
+      "/yupoo-products/football/177208883-bundesliga/177208883-bundesliga-02.jpg",
+      "/yupoo-products/football/177208883-bundesliga/177208883-bundesliga-03.jpg",
+      "/yupoo-products/football/177208883-bundesliga/177208883-bundesliga-04.jpg"
     ],
-    "galleryLabels": [],
-    "specs": [],
+    "galleryLabels": [
+      "Style 1",
+      "Style 2",
+      "Style 3",
+      "Style 4"
+    ],
+    "specs": [
+      {
+        "label": "Category",
+        "value": "Football"
+      },
+      {
+        "label": "Album",
+        "value": "Bundesliga"
+      },
+      {
+        "label": "Images",
+        "value": "4"
+      }
+    ],
     "translations": {
       "en": {
         "name": "Bundesliga",
@@ -351,7 +688,12 @@
         ]
       }
     },
-    "detailSections": []
+    "detailSections": [
+      {
+        "title": "Product Details",
+        "body": "Contact us for price, customization and delivery details."
+      }
+    ]
   },
   {
     "id": "football-177208966-serie-a",
@@ -368,10 +710,35 @@
       "priceUnit": "piece"
     },
     "galleryImages": [
-      "/yupoo-products/football/177208966-serie-a/177208966-serie-a-01.jpg"
+      "/yupoo-products/football/177208966-serie-a/177208966-serie-a-01.jpg",
+      "/yupoo-products/football/177208966-serie-a/177208966-serie-a-02.jpg",
+      "/yupoo-products/football/177208966-serie-a/177208966-serie-a-03.jpg",
+      "/yupoo-products/football/177208966-serie-a/177208966-serie-a-04.jpg",
+      "/yupoo-products/football/177208966-serie-a/177208966-serie-a-05.jpg",
+      "/yupoo-products/football/177208966-serie-a/177208966-serie-a-06.jpg"
     ],
-    "galleryLabels": [],
-    "specs": [],
+    "galleryLabels": [
+      "Style 1",
+      "Style 2",
+      "Style 3",
+      "Style 4",
+      "Style 5",
+      "Style 6"
+    ],
+    "specs": [
+      {
+        "label": "Category",
+        "value": "Football"
+      },
+      {
+        "label": "Album",
+        "value": "Serie A"
+      },
+      {
+        "label": "Images",
+        "value": "6"
+      }
+    ],
     "translations": {
       "en": {
         "name": "Serie A",
@@ -410,7 +777,12 @@
         ]
       }
     },
-    "detailSections": []
+    "detailSections": [
+      {
+        "title": "Product Details",
+        "body": "Contact us for price, customization and delivery details."
+      }
+    ]
   },
   {
     "id": "football-177331049-uefa-nations-league",
@@ -427,10 +799,29 @@
       "priceUnit": "piece"
     },
     "galleryImages": [
-      "/yupoo-products/football/177331049-uefa-nations-league/177331049-uefa-nations-league-01.jpg"
+      "/yupoo-products/football/177331049-uefa-nations-league/177331049-uefa-nations-league-01.jpg",
+      "/yupoo-products/football/177331049-uefa-nations-league/177331049-uefa-nations-league-02.jpg",
+      "/yupoo-products/football/177331049-uefa-nations-league/177331049-uefa-nations-league-03.jpg"
     ],
-    "galleryLabels": [],
-    "specs": [],
+    "galleryLabels": [
+      "Style 1",
+      "Style 2",
+      "Style 3"
+    ],
+    "specs": [
+      {
+        "label": "Category",
+        "value": "Football"
+      },
+      {
+        "label": "Album",
+        "value": "UEFA Nations League"
+      },
+      {
+        "label": "Images",
+        "value": "3"
+      }
+    ],
     "translations": {
       "en": {
         "name": "UEFA Nations League",
@@ -469,7 +860,12 @@
         ]
       }
     },
-    "detailSections": []
+    "detailSections": [
+      {
+        "title": "Product Details",
+        "body": "Contact us for price, customization and delivery details."
+      }
+    ]
   },
   {
     "id": "football-177330935-major-league-soccer",
@@ -486,10 +882,29 @@
       "priceUnit": "piece"
     },
     "galleryImages": [
-      "/yupoo-products/football/177330935-major-league-soccer/177330935-major-league-soccer-01.jpg"
+      "/yupoo-products/football/177330935-major-league-soccer/177330935-major-league-soccer-01.jpg",
+      "/yupoo-products/football/177330935-major-league-soccer/177330935-major-league-soccer-02.jpg",
+      "/yupoo-products/football/177330935-major-league-soccer/177330935-major-league-soccer-03.jpg"
     ],
-    "galleryLabels": [],
-    "specs": [],
+    "galleryLabels": [
+      "Style 1",
+      "Style 2",
+      "Style 3"
+    ],
+    "specs": [
+      {
+        "label": "Category",
+        "value": "Football"
+      },
+      {
+        "label": "Album",
+        "value": "Major League Soccer"
+      },
+      {
+        "label": "Images",
+        "value": "3"
+      }
+    ],
     "translations": {
       "en": {
         "name": "Major League Soccer",
@@ -528,7 +943,12 @@
         ]
       }
     },
-    "detailSections": []
+    "detailSections": [
+      {
+        "title": "Product Details",
+        "body": "Contact us for price, customization and delivery details."
+      }
+    ]
   },
   {
     "id": "football-177208736-molten",
@@ -545,10 +965,59 @@
       "priceUnit": "piece"
     },
     "galleryImages": [
-      "/yupoo-products/football/177208736-molten/177208736-molten-01.jpg"
+      "/yupoo-products/football/177208736-molten/177208736-molten-01.jpg",
+      "/yupoo-products/football/177208736-molten/177208736-molten-02.jpg",
+      "/yupoo-products/football/177208736-molten/177208736-molten-03.jpg",
+      "/yupoo-products/football/177208736-molten/177208736-molten-04.jpg",
+      "/yupoo-products/football/177208736-molten/177208736-molten-05.jpg",
+      "/yupoo-products/football/177208736-molten/177208736-molten-06.jpg",
+      "/yupoo-products/football/177208736-molten/177208736-molten-07.jpg",
+      "/yupoo-products/football/177208736-molten/177208736-molten-08.jpg",
+      "/yupoo-products/football/177208736-molten/177208736-molten-09.jpg",
+      "/yupoo-products/football/177208736-molten/177208736-molten-10.jpg",
+      "/yupoo-products/football/177208736-molten/177208736-molten-11.jpg",
+      "/yupoo-products/football/177208736-molten/177208736-molten-12.jpg",
+      "/yupoo-products/football/177208736-molten/177208736-molten-13.jpg",
+      "/yupoo-products/football/177208736-molten/177208736-molten-14.jpg",
+      "/yupoo-products/football/177208736-molten/177208736-molten-15.jpg",
+      "/yupoo-products/football/177208736-molten/177208736-molten-16.jpg",
+      "/yupoo-products/football/177208736-molten/177208736-molten-17.jpg",
+      "/yupoo-products/football/177208736-molten/177208736-molten-18.jpg"
     ],
-    "galleryLabels": [],
-    "specs": [],
+    "galleryLabels": [
+      "Style 1",
+      "Style 2",
+      "Style 3",
+      "Style 4",
+      "Style 5",
+      "Style 6",
+      "Style 7",
+      "Style 8",
+      "Style 9",
+      "Style 10",
+      "Style 11",
+      "Style 12",
+      "Style 13",
+      "Style 14",
+      "Style 15",
+      "Style 16",
+      "Style 17",
+      "Style 18"
+    ],
+    "specs": [
+      {
+        "label": "Category",
+        "value": "Football"
+      },
+      {
+        "label": "Album",
+        "value": "Molten"
+      },
+      {
+        "label": "Images",
+        "value": "18"
+      }
+    ],
     "translations": {
       "en": {
         "name": "Molten",
@@ -587,7 +1056,12 @@
         ]
       }
     },
-    "detailSections": []
+    "detailSections": [
+      {
+        "title": "Product Details",
+        "body": "Contact us for price, customization and delivery details."
+      }
+    ]
   },
   {
     "id": "football-177208682-club",
@@ -604,10 +1078,35 @@
       "priceUnit": "piece"
     },
     "galleryImages": [
-      "/yupoo-products/football/177208682-club/177208682-club-01.jpg"
+      "/yupoo-products/football/177208682-club/177208682-club-01.jpg",
+      "/yupoo-products/football/177208682-club/177208682-club-02.jpg",
+      "/yupoo-products/football/177208682-club/177208682-club-03.jpg",
+      "/yupoo-products/football/177208682-club/177208682-club-04.jpg",
+      "/yupoo-products/football/177208682-club/177208682-club-05.jpg",
+      "/yupoo-products/football/177208682-club/177208682-club-06.jpg"
     ],
-    "galleryLabels": [],
-    "specs": [],
+    "galleryLabels": [
+      "Style 1",
+      "Style 2",
+      "Style 3",
+      "Style 4",
+      "Style 5",
+      "Style 6"
+    ],
+    "specs": [
+      {
+        "label": "Category",
+        "value": "Football"
+      },
+      {
+        "label": "Album",
+        "value": "Club"
+      },
+      {
+        "label": "Images",
+        "value": "6"
+      }
+    ],
     "translations": {
       "en": {
         "name": "Club",
@@ -646,7 +1145,12 @@
         ]
       }
     },
-    "detailSections": []
+    "detailSections": [
+      {
+        "title": "Product Details",
+        "body": "Contact us for price, customization and delivery details."
+      }
+    ]
   },
   {
     "id": "football-177208778-other",
@@ -663,10 +1167,53 @@
       "priceUnit": "piece"
     },
     "galleryImages": [
-      "/yupoo-products/football/177208778-other/177208778-other-01.jpg"
+      "/yupoo-products/football/177208778-other/177208778-other-01.jpg",
+      "/yupoo-products/football/177208778-other/177208778-other-02.jpg",
+      "/yupoo-products/football/177208778-other/177208778-other-03.jpg",
+      "/yupoo-products/football/177208778-other/177208778-other-04.jpg",
+      "/yupoo-products/football/177208778-other/177208778-other-05.jpg",
+      "/yupoo-products/football/177208778-other/177208778-other-06.jpg",
+      "/yupoo-products/football/177208778-other/177208778-other-07.jpg",
+      "/yupoo-products/football/177208778-other/177208778-other-08.jpg",
+      "/yupoo-products/football/177208778-other/177208778-other-09.jpg",
+      "/yupoo-products/football/177208778-other/177208778-other-10.jpg",
+      "/yupoo-products/football/177208778-other/177208778-other-11.jpg",
+      "/yupoo-products/football/177208778-other/177208778-other-12.jpg",
+      "/yupoo-products/football/177208778-other/177208778-other-13.jpg",
+      "/yupoo-products/football/177208778-other/177208778-other-14.jpg",
+      "/yupoo-products/football/177208778-other/177208778-other-15.jpg"
     ],
-    "galleryLabels": [],
-    "specs": [],
+    "galleryLabels": [
+      "Style 1",
+      "Style 2",
+      "Style 3",
+      "Style 4",
+      "Style 5",
+      "Style 6",
+      "Style 7",
+      "Style 8",
+      "Style 9",
+      "Style 10",
+      "Style 11",
+      "Style 12",
+      "Style 13",
+      "Style 14",
+      "Style 15"
+    ],
+    "specs": [
+      {
+        "label": "Category",
+        "value": "Football"
+      },
+      {
+        "label": "Album",
+        "value": "Other"
+      },
+      {
+        "label": "Images",
+        "value": "15"
+      }
+    ],
     "translations": {
       "en": {
         "name": "Other",
@@ -705,7 +1252,12 @@
         ]
       }
     },
-    "detailSections": []
+    "detailSections": [
+      {
+        "title": "Product Details",
+        "body": "Contact us for price, customization and delivery details."
+      }
+    ]
   },
   {
     "id": "football-177221340",
@@ -722,10 +1274,43 @@
       "priceUnit": "piece"
     },
     "galleryImages": [
-      "/yupoo-products/football/177221340/177221340-01.jpg"
+      "/yupoo-products/football/177221340/177221340-01.jpg",
+      "/yupoo-products/football/177221340/177221340-02.jpg",
+      "/yupoo-products/football/177221340/177221340-03.jpg",
+      "/yupoo-products/football/177221340/177221340-04.jpg",
+      "/yupoo-products/football/177221340/177221340-05.jpg",
+      "/yupoo-products/football/177221340/177221340-06.jpg",
+      "/yupoo-products/football/177221340/177221340-07.jpg",
+      "/yupoo-products/football/177221340/177221340-08.jpg",
+      "/yupoo-products/football/177221340/177221340-09.jpg",
+      "/yupoo-products/football/177221340/177221340-10.jpg"
     ],
-    "galleryLabels": [],
-    "specs": [],
+    "galleryLabels": [
+      "Style 1",
+      "Style 2",
+      "Style 3",
+      "Style 4",
+      "Style 5",
+      "Style 6",
+      "Style 7",
+      "Style 8",
+      "Style 9",
+      "Style 10"
+    ],
+    "specs": [
+      {
+        "label": "Category",
+        "value": "Football"
+      },
+      {
+        "label": "Album",
+        "value": "世界杯"
+      },
+      {
+        "label": "Images",
+        "value": "10"
+      }
+    ],
     "translations": {
       "en": {
         "name": "世界杯",
@@ -764,7 +1349,12 @@
         ]
       }
     },
-    "detailSections": []
+    "detailSections": [
+      {
+        "title": "Product Details",
+        "body": "Contact us for price, customization and delivery details."
+      }
+    ]
   },
   {
     "id": "football-177221352",
@@ -781,10 +1371,27 @@
       "priceUnit": "piece"
     },
     "galleryImages": [
-      "/yupoo-products/football/177221352/177221352-01.jpg"
+      "/yupoo-products/football/177221352/177221352-01.jpg",
+      "/yupoo-products/football/177221352/177221352-02.jpg"
     ],
-    "galleryLabels": [],
-    "specs": [],
+    "galleryLabels": [
+      "Style 1",
+      "Style 2"
+    ],
+    "specs": [
+      {
+        "label": "Category",
+        "value": "Football"
+      },
+      {
+        "label": "Album",
+        "value": "欧洲杯"
+      },
+      {
+        "label": "Images",
+        "value": "2"
+      }
+    ],
     "translations": {
       "en": {
         "name": "欧洲杯",
@@ -823,7 +1430,12 @@
         ]
       }
     },
-    "detailSections": []
+    "detailSections": [
+      {
+        "title": "Product Details",
+        "body": "Contact us for price, customization and delivery details."
+      }
+    ]
   },
   {
     "id": "football-177221201",
@@ -840,10 +1452,73 @@
       "priceUnit": "piece"
     },
     "galleryImages": [
-      "/yupoo-products/football/177221201/177221201-01.jpg"
+      "/yupoo-products/football/177221201/177221201-01.jpg",
+      "/yupoo-products/football/177221201/177221201-02.jpg",
+      "/yupoo-products/football/177221201/177221201-03.jpg",
+      "/yupoo-products/football/177221201/177221201-04.jpg",
+      "/yupoo-products/football/177221201/177221201-05.jpg",
+      "/yupoo-products/football/177221201/177221201-06.jpg",
+      "/yupoo-products/football/177221201/177221201-07.jpg",
+      "/yupoo-products/football/177221201/177221201-08.jpg",
+      "/yupoo-products/football/177221201/177221201-09.jpg",
+      "/yupoo-products/football/177221201/177221201-10.jpg",
+      "/yupoo-products/football/177221201/177221201-11.jpg",
+      "/yupoo-products/football/177221201/177221201-12.jpg",
+      "/yupoo-products/football/177221201/177221201-13.jpg",
+      "/yupoo-products/football/177221201/177221201-14.jpg",
+      "/yupoo-products/football/177221201/177221201-15.jpg",
+      "/yupoo-products/football/177221201/177221201-16.jpg",
+      "/yupoo-products/football/177221201/177221201-17.jpg",
+      "/yupoo-products/football/177221201/177221201-18.jpg",
+      "/yupoo-products/football/177221201/177221201-19.jpg",
+      "/yupoo-products/football/177221201/177221201-20.jpg",
+      "/yupoo-products/football/177221201/177221201-21.jpg",
+      "/yupoo-products/football/177221201/177221201-22.jpg",
+      "/yupoo-products/football/177221201/177221201-23.jpg",
+      "/yupoo-products/football/177221201/177221201-24.jpg",
+      "/yupoo-products/football/177221201/177221201-25.jpg"
     ],
-    "galleryLabels": [],
-    "specs": [],
+    "galleryLabels": [
+      "Style 1",
+      "Style 2",
+      "Style 3",
+      "Style 4",
+      "Style 5",
+      "Style 6",
+      "Style 7",
+      "Style 8",
+      "Style 9",
+      "Style 10",
+      "Style 11",
+      "Style 12",
+      "Style 13",
+      "Style 14",
+      "Style 15",
+      "Style 16",
+      "Style 17",
+      "Style 18",
+      "Style 19",
+      "Style 20",
+      "Style 21",
+      "Style 22",
+      "Style 23",
+      "Style 24",
+      "Style 25"
+    ],
+    "specs": [
+      {
+        "label": "Category",
+        "value": "Football"
+      },
+      {
+        "label": "Album",
+        "value": "欧冠"
+      },
+      {
+        "label": "Images",
+        "value": "25"
+      }
+    ],
     "translations": {
       "en": {
         "name": "欧冠",
@@ -882,7 +1557,12 @@
         ]
       }
     },
-    "detailSections": []
+    "detailSections": [
+      {
+        "title": "Product Details",
+        "body": "Contact us for price, customization and delivery details."
+      }
+    ]
   },
   {
     "id": "football-177028535",
@@ -899,10 +1579,97 @@
       "priceUnit": "piece"
     },
     "galleryImages": [
-      "/yupoo-products/football/177028535/177028535-01.jpg"
+      "/yupoo-products/football/177028535/177028535-01.jpg",
+      "/yupoo-products/football/177028535/177028535-02.jpg",
+      "/yupoo-products/football/177028535/177028535-03.jpg",
+      "/yupoo-products/football/177028535/177028535-04.jpg",
+      "/yupoo-products/football/177028535/177028535-05.jpg",
+      "/yupoo-products/football/177028535/177028535-06.jpg",
+      "/yupoo-products/football/177028535/177028535-07.jpg",
+      "/yupoo-products/football/177028535/177028535-08.jpg",
+      "/yupoo-products/football/177028535/177028535-09.jpg",
+      "/yupoo-products/football/177028535/177028535-10.jpg",
+      "/yupoo-products/football/177028535/177028535-11.jpg",
+      "/yupoo-products/football/177028535/177028535-12.jpg",
+      "/yupoo-products/football/177028535/177028535-13.jpg",
+      "/yupoo-products/football/177028535/177028535-14.jpg",
+      "/yupoo-products/football/177028535/177028535-15.jpg",
+      "/yupoo-products/football/177028535/177028535-16.jpg",
+      "/yupoo-products/football/177028535/177028535-17.jpg",
+      "/yupoo-products/football/177028535/177028535-18.jpg",
+      "/yupoo-products/football/177028535/177028535-19.jpg",
+      "/yupoo-products/football/177028535/177028535-20.jpg",
+      "/yupoo-products/football/177028535/177028535-21.jpg",
+      "/yupoo-products/football/177028535/177028535-22.jpg",
+      "/yupoo-products/football/177028535/177028535-23.jpg",
+      "/yupoo-products/football/177028535/177028535-24.jpg",
+      "/yupoo-products/football/177028535/177028535-25.jpg",
+      "/yupoo-products/football/177028535/177028535-26.jpg",
+      "/yupoo-products/football/177028535/177028535-27.jpg",
+      "/yupoo-products/football/177028535/177028535-28.jpg",
+      "/yupoo-products/football/177028535/177028535-29.jpg",
+      "/yupoo-products/football/177028535/177028535-30.jpg",
+      "/yupoo-products/football/177028535/177028535-31.jpg",
+      "/yupoo-products/football/177028535/177028535-32.jpg",
+      "/yupoo-products/football/177028535/177028535-33.jpg",
+      "/yupoo-products/football/177028535/177028535-34.jpg",
+      "/yupoo-products/football/177028535/177028535-35.jpg",
+      "/yupoo-products/football/177028535/177028535-36.jpg",
+      "/yupoo-products/football/177028535/177028535-37.jpg"
     ],
-    "galleryLabels": [],
-    "specs": [],
+    "galleryLabels": [
+      "Style 1",
+      "Style 2",
+      "Style 3",
+      "Style 4",
+      "Style 5",
+      "Style 6",
+      "Style 7",
+      "Style 8",
+      "Style 9",
+      "Style 10",
+      "Style 11",
+      "Style 12",
+      "Style 13",
+      "Style 14",
+      "Style 15",
+      "Style 16",
+      "Style 17",
+      "Style 18",
+      "Style 19",
+      "Style 20",
+      "Style 21",
+      "Style 22",
+      "Style 23",
+      "Style 24",
+      "Style 25",
+      "Style 26",
+      "Style 27",
+      "Style 28",
+      "Style 29",
+      "Style 30",
+      "Style 31",
+      "Style 32",
+      "Style 33",
+      "Style 34",
+      "Style 35",
+      "Style 36",
+      "Style 37"
+    ],
+    "specs": [
+      {
+        "label": "Category",
+        "value": "Football"
+      },
+      {
+        "label": "Album",
+        "value": "英超"
+      },
+      {
+        "label": "Images",
+        "value": "37"
+      }
+    ],
     "translations": {
       "en": {
         "name": "英超",
@@ -941,7 +1708,12 @@
         ]
       }
     },
-    "detailSections": []
+    "detailSections": [
+      {
+        "title": "Product Details",
+        "body": "Contact us for price, customization and delivery details."
+      }
+    ]
   },
   {
     "id": "football-177221277",
@@ -958,10 +1730,27 @@
       "priceUnit": "piece"
     },
     "galleryImages": [
-      "/yupoo-products/football/177221277/177221277-01.jpg"
+      "/yupoo-products/football/177221277/177221277-01.jpg",
+      "/yupoo-products/football/177221277/177221277-02.jpg"
     ],
-    "galleryLabels": [],
-    "specs": [],
+    "galleryLabels": [
+      "Style 1",
+      "Style 2"
+    ],
+    "specs": [
+      {
+        "label": "Category",
+        "value": "Football"
+      },
+      {
+        "label": "Album",
+        "value": "德甲"
+      },
+      {
+        "label": "Images",
+        "value": "2"
+      }
+    ],
     "translations": {
       "en": {
         "name": "德甲",
@@ -1000,7 +1789,12 @@
         ]
       }
     },
-    "detailSections": []
+    "detailSections": [
+      {
+        "title": "Product Details",
+        "body": "Contact us for price, customization and delivery details."
+      }
+    ]
   },
   {
     "id": "football-177349633",
@@ -1017,10 +1811,27 @@
       "priceUnit": "piece"
     },
     "galleryImages": [
-      "/yupoo-products/football/177349633/177349633-01.jpg"
+      "/yupoo-products/football/177349633/177349633-01.jpg",
+      "/yupoo-products/football/177349633/177349633-02.jpg"
     ],
-    "galleryLabels": [],
-    "specs": [],
+    "galleryLabels": [
+      "Style 1",
+      "Style 2"
+    ],
+    "specs": [
+      {
+        "label": "Category",
+        "value": "Football"
+      },
+      {
+        "label": "Album",
+        "value": "大联盟"
+      },
+      {
+        "label": "Images",
+        "value": "2"
+      }
+    ],
     "translations": {
       "en": {
         "name": "大联盟",
@@ -1059,7 +1870,12 @@
         ]
       }
     },
-    "detailSections": []
+    "detailSections": [
+      {
+        "title": "Product Details",
+        "body": "Contact us for price, customization and delivery details."
+      }
+    ]
   },
   {
     "id": "football-177221390",
@@ -1076,10 +1892,79 @@
       "priceUnit": "piece"
     },
     "galleryImages": [
-      "/yupoo-products/football/177221390/177221390-01.jpg"
+      "/yupoo-products/football/177221390/177221390-01.jpg",
+      "/yupoo-products/football/177221390/177221390-02.jpg",
+      "/yupoo-products/football/177221390/177221390-03.jpg",
+      "/yupoo-products/football/177221390/177221390-04.jpg",
+      "/yupoo-products/football/177221390/177221390-05.jpg",
+      "/yupoo-products/football/177221390/177221390-06.jpg",
+      "/yupoo-products/football/177221390/177221390-07.jpg",
+      "/yupoo-products/football/177221390/177221390-08.jpg",
+      "/yupoo-products/football/177221390/177221390-09.jpg",
+      "/yupoo-products/football/177221390/177221390-10.jpg",
+      "/yupoo-products/football/177221390/177221390-11.jpg",
+      "/yupoo-products/football/177221390/177221390-12.jpg",
+      "/yupoo-products/football/177221390/177221390-13.jpg",
+      "/yupoo-products/football/177221390/177221390-14.jpg",
+      "/yupoo-products/football/177221390/177221390-15.jpg",
+      "/yupoo-products/football/177221390/177221390-16.jpg",
+      "/yupoo-products/football/177221390/177221390-17.jpg",
+      "/yupoo-products/football/177221390/177221390-18.jpg",
+      "/yupoo-products/football/177221390/177221390-19.jpg",
+      "/yupoo-products/football/177221390/177221390-20.jpg",
+      "/yupoo-products/football/177221390/177221390-21.jpg",
+      "/yupoo-products/football/177221390/177221390-22.jpg",
+      "/yupoo-products/football/177221390/177221390-23.jpg",
+      "/yupoo-products/football/177221390/177221390-24.jpg",
+      "/yupoo-products/football/177221390/177221390-25.jpg",
+      "/yupoo-products/football/177221390/177221390-26.jpg",
+      "/yupoo-products/football/177221390/177221390-27.jpg",
+      "/yupoo-products/football/177221390/177221390-28.jpg"
     ],
-    "galleryLabels": [],
-    "specs": [],
+    "galleryLabels": [
+      "Style 1",
+      "Style 2",
+      "Style 3",
+      "Style 4",
+      "Style 5",
+      "Style 6",
+      "Style 7",
+      "Style 8",
+      "Style 9",
+      "Style 10",
+      "Style 11",
+      "Style 12",
+      "Style 13",
+      "Style 14",
+      "Style 15",
+      "Style 16",
+      "Style 17",
+      "Style 18",
+      "Style 19",
+      "Style 20",
+      "Style 21",
+      "Style 22",
+      "Style 23",
+      "Style 24",
+      "Style 25",
+      "Style 26",
+      "Style 27",
+      "Style 28"
+    ],
+    "specs": [
+      {
+        "label": "Category",
+        "value": "Football"
+      },
+      {
+        "label": "Album",
+        "value": "摩腾"
+      },
+      {
+        "label": "Images",
+        "value": "28"
+      }
+    ],
     "translations": {
       "en": {
         "name": "摩腾",
@@ -1118,7 +2003,12 @@
         ]
       }
     },
-    "detailSections": []
+    "detailSections": [
+      {
+        "title": "Product Details",
+        "body": "Contact us for price, customization and delivery details."
+      }
+    ]
   },
   {
     "id": "football-177221370",
@@ -1135,10 +2025,55 @@
       "priceUnit": "piece"
     },
     "galleryImages": [
-      "/yupoo-products/football/177221370/177221370-01.jpg"
+      "/yupoo-products/football/177221370/177221370-01.jpg",
+      "/yupoo-products/football/177221370/177221370-02.jpg",
+      "/yupoo-products/football/177221370/177221370-03.jpg",
+      "/yupoo-products/football/177221370/177221370-04.jpg",
+      "/yupoo-products/football/177221370/177221370-05.jpg",
+      "/yupoo-products/football/177221370/177221370-06.jpg",
+      "/yupoo-products/football/177221370/177221370-07.jpg",
+      "/yupoo-products/football/177221370/177221370-08.jpg",
+      "/yupoo-products/football/177221370/177221370-09.jpg",
+      "/yupoo-products/football/177221370/177221370-10.jpg",
+      "/yupoo-products/football/177221370/177221370-11.jpg",
+      "/yupoo-products/football/177221370/177221370-12.jpg",
+      "/yupoo-products/football/177221370/177221370-13.jpg",
+      "/yupoo-products/football/177221370/177221370-14.jpg",
+      "/yupoo-products/football/177221370/177221370-15.jpg",
+      "/yupoo-products/football/177221370/177221370-16.jpg"
     ],
-    "galleryLabels": [],
-    "specs": [],
+    "galleryLabels": [
+      "Style 1",
+      "Style 2",
+      "Style 3",
+      "Style 4",
+      "Style 5",
+      "Style 6",
+      "Style 7",
+      "Style 8",
+      "Style 9",
+      "Style 10",
+      "Style 11",
+      "Style 12",
+      "Style 13",
+      "Style 14",
+      "Style 15",
+      "Style 16"
+    ],
+    "specs": [
+      {
+        "label": "Category",
+        "value": "Football"
+      },
+      {
+        "label": "Album",
+        "value": "队标"
+      },
+      {
+        "label": "Images",
+        "value": "16"
+      }
+    ],
     "translations": {
       "en": {
         "name": "队标",
@@ -1177,7 +2112,12 @@
         ]
       }
     },
-    "detailSections": []
+    "detailSections": [
+      {
+        "title": "Product Details",
+        "body": "Contact us for price, customization and delivery details."
+      }
+    ]
   },
   {
     "id": "football-177221397",
@@ -1194,10 +2134,33 @@
       "priceUnit": "piece"
     },
     "galleryImages": [
-      "/yupoo-products/football/177221397/177221397-01.jpg"
+      "/yupoo-products/football/177221397/177221397-01.jpg",
+      "/yupoo-products/football/177221397/177221397-02.jpg",
+      "/yupoo-products/football/177221397/177221397-03.jpg",
+      "/yupoo-products/football/177221397/177221397-04.jpg",
+      "/yupoo-products/football/177221397/177221397-05.jpg"
     ],
-    "galleryLabels": [],
-    "specs": [],
+    "galleryLabels": [
+      "Style 1",
+      "Style 2",
+      "Style 3",
+      "Style 4",
+      "Style 5"
+    ],
+    "specs": [
+      {
+        "label": "Category",
+        "value": "Football"
+      },
+      {
+        "label": "Album",
+        "value": "其他"
+      },
+      {
+        "label": "Images",
+        "value": "5"
+      }
+    ],
     "translations": {
       "en": {
         "name": "其他",
@@ -1236,7 +2199,12 @@
         ]
       }
     },
-    "detailSections": []
+    "detailSections": [
+      {
+        "title": "Product Details",
+        "body": "Contact us for price, customization and delivery details."
+      }
+    ]
   },
   {
     "id": "volleyball-1",
@@ -1256,7 +2224,16 @@
       "/assets/volleyball.svg"
     ],
     "galleryLabels": [],
-    "specs": [],
+    "specs": [
+      {
+        "label": "Category",
+        "value": "Volleyball"
+      },
+      {
+        "label": "Use Case",
+        "value": "Training and team purchase"
+      }
+    ],
     "translations": {
       "en": {
         "name": "Indoor Training Volleyball",
@@ -1295,7 +2272,12 @@
         ]
       }
     },
-    "detailSections": []
+    "detailSections": [
+      {
+        "title": "Product Details",
+        "body": "Contact us for price, customization and delivery details."
+      }
+    ]
   },
   {
     "id": "volleyball-2",
@@ -1315,7 +2297,16 @@
       "/assets/volleyball.svg"
     ],
     "galleryLabels": [],
-    "specs": [],
+    "specs": [
+      {
+        "label": "Category",
+        "value": "Volleyball"
+      },
+      {
+        "label": "Use Case",
+        "value": "Training and team purchase"
+      }
+    ],
     "translations": {
       "en": {
         "name": "Beach Volleyball",
@@ -1354,7 +2345,12 @@
         ]
       }
     },
-    "detailSections": []
+    "detailSections": [
+      {
+        "title": "Product Details",
+        "body": "Contact us for price, customization and delivery details."
+      }
+    ]
   },
   {
     "id": "volleyball-3",
@@ -1374,7 +2370,16 @@
       "/assets/volleyball.svg"
     ],
     "galleryLabels": [],
-    "specs": [],
+    "specs": [
+      {
+        "label": "Category",
+        "value": "Volleyball"
+      },
+      {
+        "label": "Use Case",
+        "value": "Training and team purchase"
+      }
+    ],
     "translations": {
       "en": {
         "name": "Match Composite Volleyball",
@@ -1413,7 +2418,12 @@
         ]
       }
     },
-    "detailSections": []
+    "detailSections": [
+      {
+        "title": "Product Details",
+        "body": "Contact us for price, customization and delivery details."
+      }
+    ]
   },
   {
     "id": "basketball-1",
@@ -1433,7 +2443,16 @@
       "/assets/basketball.svg"
     ],
     "galleryLabels": [],
-    "specs": [],
+    "specs": [
+      {
+        "label": "Category",
+        "value": "Basketball"
+      },
+      {
+        "label": "Use Case",
+        "value": "Training and team purchase"
+      }
+    ],
     "translations": {
       "en": {
         "name": "Outdoor Street Basketball",
@@ -1472,7 +2491,12 @@
         ]
       }
     },
-    "detailSections": []
+    "detailSections": [
+      {
+        "title": "Product Details",
+        "body": "Contact us for price, customization and delivery details."
+      }
+    ]
   },
   {
     "id": "basketball-2",
@@ -1492,7 +2516,16 @@
       "/assets/basketball.svg"
     ],
     "galleryLabels": [],
-    "specs": [],
+    "specs": [
+      {
+        "label": "Category",
+        "value": "Basketball"
+      },
+      {
+        "label": "Use Case",
+        "value": "Training and team purchase"
+      }
+    ],
     "translations": {
       "en": {
         "name": "Indoor Composite Basketball",
@@ -1531,7 +2564,12 @@
         ]
       }
     },
-    "detailSections": []
+    "detailSections": [
+      {
+        "title": "Product Details",
+        "body": "Contact us for price, customization and delivery details."
+      }
+    ]
   },
   {
     "id": "basketball-3",
@@ -1551,7 +2589,16 @@
       "/assets/basketball.svg"
     ],
     "galleryLabels": [],
-    "specs": [],
+    "specs": [
+      {
+        "label": "Category",
+        "value": "Basketball"
+      },
+      {
+        "label": "Use Case",
+        "value": "Training and team purchase"
+      }
+    ],
     "translations": {
       "en": {
         "name": "Youth Training Basketball",
@@ -1590,7 +2637,12 @@
         ]
       }
     },
-    "detailSections": []
+    "detailSections": [
+      {
+        "title": "Product Details",
+        "body": "Contact us for price, customization and delivery details."
+      }
+    ]
   },
   {
     "id": "tennis-1",
@@ -1610,7 +2662,16 @@
       "/assets/tennis.svg"
     ],
     "galleryLabels": [],
-    "specs": [],
+    "specs": [
+      {
+        "label": "Category",
+        "value": "Tennis"
+      },
+      {
+        "label": "Use Case",
+        "value": "Training and team purchase"
+      }
+    ],
     "translations": {
       "en": {
         "name": "Control Tennis Racket",
@@ -1649,7 +2710,12 @@
         ]
       }
     },
-    "detailSections": []
+    "detailSections": [
+      {
+        "title": "Product Details",
+        "body": "Contact us for price, customization and delivery details."
+      }
+    ]
   },
   {
     "id": "tennis-2",
@@ -1669,7 +2735,16 @@
       "/assets/tennis.svg"
     ],
     "galleryLabels": [],
-    "specs": [],
+    "specs": [
+      {
+        "label": "Category",
+        "value": "Tennis"
+      },
+      {
+        "label": "Use Case",
+        "value": "Training and team purchase"
+      }
+    ],
     "translations": {
       "en": {
         "name": "Training Tennis Balls",
@@ -1708,7 +2783,12 @@
         ]
       }
     },
-    "detailSections": []
+    "detailSections": [
+      {
+        "title": "Product Details",
+        "body": "Contact us for price, customization and delivery details."
+      }
+    ]
   },
   {
     "id": "tennis-3",
@@ -1728,7 +2808,16 @@
       "/assets/tennis.svg"
     ],
     "galleryLabels": [],
-    "specs": [],
+    "specs": [
+      {
+        "label": "Category",
+        "value": "Tennis"
+      },
+      {
+        "label": "Use Case",
+        "value": "Training and team purchase"
+      }
+    ],
     "translations": {
       "en": {
         "name": "Two-racket Tennis Bag",
@@ -1767,7 +2856,12 @@
         ]
       }
     },
-    "detailSections": []
+    "detailSections": [
+      {
+        "title": "Product Details",
+        "body": "Contact us for price, customization and delivery details."
+      }
+    ]
   },
   {
     "id": "badminton-1",
@@ -1787,7 +2881,16 @@
       "/assets/badminton.svg"
     ],
     "galleryLabels": [],
-    "specs": [],
+    "specs": [
+      {
+        "label": "Category",
+        "value": "Badminton"
+      },
+      {
+        "label": "Use Case",
+        "value": "Training and team purchase"
+      }
+    ],
     "translations": {
       "en": {
         "name": "Speed Badminton Racket",
@@ -1826,7 +2929,12 @@
         ]
       }
     },
-    "detailSections": []
+    "detailSections": [
+      {
+        "title": "Product Details",
+        "body": "Contact us for price, customization and delivery details."
+      }
+    ]
   },
   {
     "id": "badminton-2",
@@ -1846,7 +2954,16 @@
       "/assets/badminton.svg"
     ],
     "galleryLabels": [],
-    "specs": [],
+    "specs": [
+      {
+        "label": "Category",
+        "value": "Badminton"
+      },
+      {
+        "label": "Use Case",
+        "value": "Training and team purchase"
+      }
+    ],
     "translations": {
       "en": {
         "name": "Durable Shuttlecocks",
@@ -1885,7 +3002,12 @@
         ]
       }
     },
-    "detailSections": []
+    "detailSections": [
+      {
+        "title": "Product Details",
+        "body": "Contact us for price, customization and delivery details."
+      }
+    ]
   },
   {
     "id": "badminton-3",
@@ -1905,7 +3027,16 @@
       "/assets/badminton.svg"
     ],
     "galleryLabels": [],
-    "specs": [],
+    "specs": [
+      {
+        "label": "Category",
+        "value": "Badminton"
+      },
+      {
+        "label": "Use Case",
+        "value": "Training and team purchase"
+      }
+    ],
     "translations": {
       "en": {
         "name": "Anti-slip Badminton Shoes",
@@ -1944,7 +3075,12 @@
         ]
       }
     },
-    "detailSections": []
+    "detailSections": [
+      {
+        "title": "Product Details",
+        "body": "Contact us for price, customization and delivery details."
+      }
+    ]
   },
   {
     "id": "sports-tshirt-1",
@@ -1964,7 +3100,16 @@
       "/assets/tshirt.svg"
     ],
     "galleryLabels": [],
-    "specs": [],
+    "specs": [
+      {
+        "label": "Category",
+        "value": "Sports T-shirt"
+      },
+      {
+        "label": "Use Case",
+        "value": "Training and team purchase"
+      }
+    ],
     "translations": {
       "en": {
         "name": "Quick-dry Training T-shirt",
@@ -2003,7 +3148,12 @@
         ]
       }
     },
-    "detailSections": []
+    "detailSections": [
+      {
+        "title": "Product Details",
+        "body": "Contact us for price, customization and delivery details."
+      }
+    ]
   },
   {
     "id": "sports-tshirt-2",
@@ -2023,7 +3173,16 @@
       "/assets/tshirt.svg"
     ],
     "galleryLabels": [],
-    "specs": [],
+    "specs": [
+      {
+        "label": "Category",
+        "value": "Sports T-shirt"
+      },
+      {
+        "label": "Use Case",
+        "value": "Training and team purchase"
+      }
+    ],
     "translations": {
       "en": {
         "name": "Custom Team T-shirt",
@@ -2062,7 +3221,12 @@
         ]
       }
     },
-    "detailSections": []
+    "detailSections": [
+      {
+        "title": "Product Details",
+        "body": "Contact us for price, customization and delivery details."
+      }
+    ]
   },
   {
     "id": "sports-tshirt-3",
@@ -2082,7 +3246,16 @@
       "/assets/tshirt.svg"
     ],
     "galleryLabels": [],
-    "specs": [],
+    "specs": [
+      {
+        "label": "Category",
+        "value": "Sports T-shirt"
+      },
+      {
+        "label": "Use Case",
+        "value": "Training and team purchase"
+      }
+    ],
     "translations": {
       "en": {
         "name": "Stretch Fit Sports T-shirt",
@@ -2121,6 +3294,1226 @@
         ]
       }
     },
-    "detailSections": []
+    "detailSections": [
+      {
+        "title": "Product Details",
+        "body": "Contact us for price, customization and delivery details."
+      }
+    ]
+  },
+  {
+    "id": "tennis-racket-1",
+    "name": "Control Tennis Racket",
+    "category": "Tennis Racket",
+    "categorySlug": "tennis-racket",
+    "album": "Tennis Racket",
+    "image": "/assets/tennis-racket.svg",
+    "visible": true,
+    "sortOrder": 40,
+    "prices": {
+      "baseCurrency": "USD",
+      "basePrice": 28,
+      "priceUnit": "piece"
+    },
+    "galleryImages": [
+      "/assets/tennis-racket.svg"
+    ],
+    "galleryLabels": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "Aluminum alloy or carbon composite frame"
+      },
+      {
+        "label": "Use Case",
+        "value": "Tennis clubs, school classes, retail stores"
+      },
+      {
+        "label": "MOQ Reference",
+        "value": "5000 pieces or contact us for project quotation"
+      }
+    ],
+    "translations": {
+      "en": {
+        "name": "Control Tennis Racket",
+        "category": "Tennis Racket",
+        "album": "Tennis Racket",
+        "description": "Balanced control tennis racket for training programs, clubs and retail replenishment.",
+        "scenario": "Tennis clubs, school classes, retail stores",
+        "highlights": [
+          "Bulk inquiry available",
+          "Team purchase support",
+          "Customization support"
+        ]
+      },
+      "zh": {
+        "name": "控球型网球拍",
+        "category": "网球拍",
+        "album": "网球拍",
+        "description": "控球型网球拍，适合课程训练、俱乐部采购和门店补货。",
+        "scenario": "学校训练、俱乐部采购、体育用品门店和团队采购",
+        "highlights": [
+          "支持批量询盘",
+          "支持团队采购",
+          "可沟通定制需求"
+        ]
+      },
+      "es": {
+        "name": "Control Tennis Racket",
+        "category": "Tennis Racket",
+        "album": "Tennis Racket",
+        "description": "Producto deportivo para entrenamiento, venta minorista y compra por equipo.",
+        "scenario": "Escuelas, clubes y venta deportiva",
+        "highlights": [
+          "Consulta por volumen",
+          "Compra de equipo",
+          "Soporte personalizado"
+        ]
+      }
+    },
+    "detailSections": [
+      {
+        "title": "Product Details",
+        "body": "Contact us for price, customization, packing and delivery details."
+      },
+      {
+        "title": "采购说明",
+        "body": "可根据采购数量、包装方式、颜色和使用场景沟通报价。"
+      }
+    ]
+  },
+  {
+    "id": "tennis-racket-2",
+    "name": "Power Tennis Racket",
+    "category": "Tennis Racket",
+    "categorySlug": "tennis-racket",
+    "album": "Tennis Racket",
+    "image": "/assets/tennis-racket.svg",
+    "visible": true,
+    "sortOrder": 41,
+    "prices": {
+      "baseCurrency": "USD",
+      "basePrice": 36,
+      "priceUnit": "piece"
+    },
+    "galleryImages": [
+      "/assets/tennis-racket.svg"
+    ],
+    "galleryLabels": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "Carbon composite frame with reinforced throat"
+      },
+      {
+        "label": "Use Case",
+        "value": "Intermediate players, club training, team purchase"
+      },
+      {
+        "label": "MOQ Reference",
+        "value": "5000 pieces or contact us for project quotation"
+      }
+    ],
+    "translations": {
+      "en": {
+        "name": "Power Tennis Racket",
+        "category": "Tennis Racket",
+        "album": "Tennis Racket",
+        "description": "Power-focused tennis racket with stronger frame response for training and club sourcing.",
+        "scenario": "Intermediate players, club training, team purchase",
+        "highlights": [
+          "Bulk inquiry available",
+          "Team purchase support",
+          "Customization support"
+        ]
+      },
+      "zh": {
+        "name": "力量型网球拍",
+        "category": "网球拍",
+        "album": "网球拍",
+        "description": "力量型网球拍，拍框反馈更强，适合进阶训练和团队采购。",
+        "scenario": "学校训练、俱乐部采购、体育用品门店和团队采购",
+        "highlights": [
+          "支持批量询盘",
+          "支持团队采购",
+          "可沟通定制需求"
+        ]
+      },
+      "es": {
+        "name": "Power Tennis Racket",
+        "category": "Tennis Racket",
+        "album": "Tennis Racket",
+        "description": "Producto deportivo para entrenamiento, venta minorista y compra por equipo.",
+        "scenario": "Escuelas, clubes y venta deportiva",
+        "highlights": [
+          "Consulta por volumen",
+          "Compra de equipo",
+          "Soporte personalizado"
+        ]
+      }
+    },
+    "detailSections": [
+      {
+        "title": "Product Details",
+        "body": "Contact us for price, customization, packing and delivery details."
+      },
+      {
+        "title": "采购说明",
+        "body": "可根据采购数量、包装方式、颜色和使用场景沟通报价。"
+      }
+    ]
+  },
+  {
+    "id": "tennis-racket-3",
+    "name": "Junior Tennis Racket",
+    "category": "Tennis Racket",
+    "categorySlug": "tennis-racket",
+    "album": "Tennis Racket",
+    "image": "/assets/tennis-racket.svg",
+    "visible": true,
+    "sortOrder": 42,
+    "prices": {
+      "baseCurrency": "USD",
+      "basePrice": 18,
+      "priceUnit": "piece"
+    },
+    "galleryImages": [
+      "/assets/tennis-racket.svg"
+    ],
+    "galleryLabels": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "Lightweight aluminum alloy frame"
+      },
+      {
+        "label": "Use Case",
+        "value": "Schools, youth clubs, beginner training"
+      },
+      {
+        "label": "MOQ Reference",
+        "value": "5000 pieces or contact us for project quotation"
+      }
+    ],
+    "translations": {
+      "en": {
+        "name": "Junior Tennis Racket",
+        "category": "Tennis Racket",
+        "album": "Tennis Racket",
+        "description": "Light junior tennis racket for school training, beginner lessons and youth sports programs.",
+        "scenario": "Schools, youth clubs, beginner training",
+        "highlights": [
+          "Bulk inquiry available",
+          "Team purchase support",
+          "Customization support"
+        ]
+      },
+      "zh": {
+        "name": "青少年网球拍",
+        "category": "网球拍",
+        "album": "网球拍",
+        "description": "轻量青少年网球拍，适合学校训练、入门课程和青少年运动项目。",
+        "scenario": "学校训练、俱乐部采购、体育用品门店和团队采购",
+        "highlights": [
+          "支持批量询盘",
+          "支持团队采购",
+          "可沟通定制需求"
+        ]
+      },
+      "es": {
+        "name": "Junior Tennis Racket",
+        "category": "Tennis Racket",
+        "album": "Tennis Racket",
+        "description": "Producto deportivo para entrenamiento, venta minorista y compra por equipo.",
+        "scenario": "Escuelas, clubes y venta deportiva",
+        "highlights": [
+          "Consulta por volumen",
+          "Compra de equipo",
+          "Soporte personalizado"
+        ]
+      }
+    },
+    "detailSections": [
+      {
+        "title": "Product Details",
+        "body": "Contact us for price, customization, packing and delivery details."
+      },
+      {
+        "title": "采购说明",
+        "body": "可根据采购数量、包装方式、颜色和使用场景沟通报价。"
+      }
+    ]
+  },
+  {
+    "id": "badminton-racket-1",
+    "name": "Speed Badminton Racket",
+    "category": "Badminton Racket",
+    "categorySlug": "badminton-racket",
+    "album": "Badminton Racket",
+    "image": "/assets/badminton-racket.svg",
+    "visible": true,
+    "sortOrder": 43,
+    "prices": {
+      "baseCurrency": "USD",
+      "basePrice": 16,
+      "priceUnit": "piece"
+    },
+    "galleryImages": [
+      "/assets/badminton-racket.svg"
+    ],
+    "galleryLabels": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "Aluminum or carbon shaft options"
+      },
+      {
+        "label": "Use Case",
+        "value": "Badminton halls, school training, clubs"
+      },
+      {
+        "label": "MOQ Reference",
+        "value": "5000 pieces or contact us for project quotation"
+      }
+    ],
+    "translations": {
+      "en": {
+        "name": "Speed Badminton Racket",
+        "category": "Badminton Racket",
+        "album": "Badminton Racket",
+        "description": "Light badminton racket for fast rallies, daily training and club replenishment.",
+        "scenario": "Badminton halls, school training, clubs",
+        "highlights": [
+          "Bulk inquiry available",
+          "Team purchase support",
+          "Customization support"
+        ]
+      },
+      "zh": {
+        "name": "速度型羽毛球拍",
+        "category": "羽毛球拍",
+        "album": "羽毛球拍",
+        "description": "速度型羽毛球拍，适合快速对打、日常训练和俱乐部补货。",
+        "scenario": "学校训练、俱乐部采购、体育用品门店和团队采购",
+        "highlights": [
+          "支持批量询盘",
+          "支持团队采购",
+          "可沟通定制需求"
+        ]
+      },
+      "es": {
+        "name": "Speed Badminton Racket",
+        "category": "Badminton Racket",
+        "album": "Badminton Racket",
+        "description": "Producto deportivo para entrenamiento, venta minorista y compra por equipo.",
+        "scenario": "Escuelas, clubes y venta deportiva",
+        "highlights": [
+          "Consulta por volumen",
+          "Compra de equipo",
+          "Soporte personalizado"
+        ]
+      }
+    },
+    "detailSections": [
+      {
+        "title": "Product Details",
+        "body": "Contact us for price, customization, packing and delivery details."
+      },
+      {
+        "title": "采购说明",
+        "body": "可根据采购数量、包装方式、颜色和使用场景沟通报价。"
+      }
+    ]
+  },
+  {
+    "id": "badminton-racket-2",
+    "name": "Carbon Badminton Racket",
+    "category": "Badminton Racket",
+    "categorySlug": "badminton-racket",
+    "album": "Badminton Racket",
+    "image": "/assets/badminton-racket.svg",
+    "visible": true,
+    "sortOrder": 44,
+    "prices": {
+      "baseCurrency": "USD",
+      "basePrice": 24,
+      "priceUnit": "piece"
+    },
+    "galleryImages": [
+      "/assets/badminton-racket.svg"
+    ],
+    "galleryLabels": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "Carbon composite shaft and frame"
+      },
+      {
+        "label": "Use Case",
+        "value": "Club classes, team purchase, retail selection"
+      },
+      {
+        "label": "MOQ Reference",
+        "value": "5000 pieces or contact us for project quotation"
+      }
+    ],
+    "translations": {
+      "en": {
+        "name": "Carbon Badminton Racket",
+        "category": "Badminton Racket",
+        "album": "Badminton Racket",
+        "description": "Carbon badminton racket with stable swing feel for club training and team purchase.",
+        "scenario": "Club classes, team purchase, retail selection",
+        "highlights": [
+          "Bulk inquiry available",
+          "Team purchase support",
+          "Customization support"
+        ]
+      },
+      "zh": {
+        "name": "碳素羽毛球拍",
+        "category": "羽毛球拍",
+        "album": "羽毛球拍",
+        "description": "碳素羽毛球拍，挥拍稳定，适合俱乐部训练和团队采购。",
+        "scenario": "学校训练、俱乐部采购、体育用品门店和团队采购",
+        "highlights": [
+          "支持批量询盘",
+          "支持团队采购",
+          "可沟通定制需求"
+        ]
+      },
+      "es": {
+        "name": "Carbon Badminton Racket",
+        "category": "Badminton Racket",
+        "album": "Badminton Racket",
+        "description": "Producto deportivo para entrenamiento, venta minorista y compra por equipo.",
+        "scenario": "Escuelas, clubes y venta deportiva",
+        "highlights": [
+          "Consulta por volumen",
+          "Compra de equipo",
+          "Soporte personalizado"
+        ]
+      }
+    },
+    "detailSections": [
+      {
+        "title": "Product Details",
+        "body": "Contact us for price, customization, packing and delivery details."
+      },
+      {
+        "title": "采购说明",
+        "body": "可根据采购数量、包装方式、颜色和使用场景沟通报价。"
+      }
+    ]
+  },
+  {
+    "id": "badminton-racket-3",
+    "name": "Student Badminton Racket Set",
+    "category": "Badminton Racket",
+    "categorySlug": "badminton-racket",
+    "album": "Badminton Racket",
+    "image": "/assets/badminton-racket.svg",
+    "visible": true,
+    "sortOrder": 45,
+    "prices": {
+      "baseCurrency": "USD",
+      "basePrice": 12,
+      "priceUnit": "piece"
+    },
+    "galleryImages": [
+      "/assets/badminton-racket.svg"
+    ],
+    "galleryLabels": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "Aluminum alloy frame with training strings"
+      },
+      {
+        "label": "Use Case",
+        "value": "Schools, campus events, beginner programs"
+      },
+      {
+        "label": "MOQ Reference",
+        "value": "5000 pieces or contact us for project quotation"
+      }
+    ],
+    "translations": {
+      "en": {
+        "name": "Student Badminton Racket Set",
+        "category": "Badminton Racket",
+        "album": "Badminton Racket",
+        "description": "Student badminton racket set for schools, campus activities and beginner training.",
+        "scenario": "Schools, campus events, beginner programs",
+        "highlights": [
+          "Bulk inquiry available",
+          "Team purchase support",
+          "Customization support"
+        ]
+      },
+      "zh": {
+        "name": "学生羽毛球拍套装",
+        "category": "羽毛球拍",
+        "album": "羽毛球拍",
+        "description": "学生羽毛球拍套装，适合学校课程、校园活动和入门训练。",
+        "scenario": "学校训练、俱乐部采购、体育用品门店和团队采购",
+        "highlights": [
+          "支持批量询盘",
+          "支持团队采购",
+          "可沟通定制需求"
+        ]
+      },
+      "es": {
+        "name": "Student Badminton Racket Set",
+        "category": "Badminton Racket",
+        "album": "Badminton Racket",
+        "description": "Producto deportivo para entrenamiento, venta minorista y compra por equipo.",
+        "scenario": "Escuelas, clubes y venta deportiva",
+        "highlights": [
+          "Consulta por volumen",
+          "Compra de equipo",
+          "Soporte personalizado"
+        ]
+      }
+    },
+    "detailSections": [
+      {
+        "title": "Product Details",
+        "body": "Contact us for price, customization, packing and delivery details."
+      },
+      {
+        "title": "采购说明",
+        "body": "可根据采购数量、包装方式、颜色和使用场景沟通报价。"
+      }
+    ]
+  },
+  {
+    "id": "table-tennis-racket-1",
+    "name": "Training Table Tennis Racket",
+    "category": "Table Tennis Racket",
+    "categorySlug": "table-tennis-racket",
+    "album": "Table Tennis Racket",
+    "image": "/assets/table-tennis-racket.svg",
+    "visible": true,
+    "sortOrder": 46,
+    "prices": {
+      "baseCurrency": "USD",
+      "basePrice": 6,
+      "priceUnit": "piece"
+    },
+    "galleryImages": [
+      "/assets/table-tennis-racket.svg"
+    ],
+    "galleryLabels": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "Wood blade with rubber surface"
+      },
+      {
+        "label": "Use Case",
+        "value": "Schools, clubs, training rooms"
+      },
+      {
+        "label": "MOQ Reference",
+        "value": "5000 pieces or contact us for project quotation"
+      }
+    ],
+    "translations": {
+      "en": {
+        "name": "Training Table Tennis Racket",
+        "category": "Table Tennis Racket",
+        "album": "Table Tennis Racket",
+        "description": "Training table tennis racket for school classes, club lessons and beginner use.",
+        "scenario": "Schools, clubs, training rooms",
+        "highlights": [
+          "Bulk inquiry available",
+          "Team purchase support",
+          "Customization support"
+        ]
+      },
+      "zh": {
+        "name": "训练乒乓球拍",
+        "category": "乒乓球拍",
+        "album": "乒乓球拍",
+        "description": "训练乒乓球拍，适合学校课程、俱乐部教学和入门训练。",
+        "scenario": "学校训练、俱乐部采购、体育用品门店和团队采购",
+        "highlights": [
+          "支持批量询盘",
+          "支持团队采购",
+          "可沟通定制需求"
+        ]
+      },
+      "es": {
+        "name": "Training Table Tennis Racket",
+        "category": "Table Tennis Racket",
+        "album": "Table Tennis Racket",
+        "description": "Producto deportivo para entrenamiento, venta minorista y compra por equipo.",
+        "scenario": "Escuelas, clubes y venta deportiva",
+        "highlights": [
+          "Consulta por volumen",
+          "Compra de equipo",
+          "Soporte personalizado"
+        ]
+      }
+    },
+    "detailSections": [
+      {
+        "title": "Product Details",
+        "body": "Contact us for price, customization, packing and delivery details."
+      },
+      {
+        "title": "采购说明",
+        "body": "可根据采购数量、包装方式、颜色和使用场景沟通报价。"
+      }
+    ]
+  },
+  {
+    "id": "table-tennis-racket-2",
+    "name": "Competition Table Tennis Racket",
+    "category": "Table Tennis Racket",
+    "categorySlug": "table-tennis-racket",
+    "album": "Table Tennis Racket",
+    "image": "/assets/table-tennis-racket.svg",
+    "visible": true,
+    "sortOrder": 47,
+    "prices": {
+      "baseCurrency": "USD",
+      "basePrice": 12,
+      "priceUnit": "piece"
+    },
+    "galleryImages": [
+      "/assets/table-tennis-racket.svg"
+    ],
+    "galleryLabels": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "Layered wood blade with higher grip rubber"
+      },
+      {
+        "label": "Use Case",
+        "value": "Clubs, training centers, retail sourcing"
+      },
+      {
+        "label": "MOQ Reference",
+        "value": "5000 pieces or contact us for project quotation"
+      }
+    ],
+    "translations": {
+      "en": {
+        "name": "Competition Table Tennis Racket",
+        "category": "Table Tennis Racket",
+        "album": "Table Tennis Racket",
+        "description": "Competition table tennis racket with stronger grip and control for club training.",
+        "scenario": "Clubs, training centers, retail sourcing",
+        "highlights": [
+          "Bulk inquiry available",
+          "Team purchase support",
+          "Customization support"
+        ]
+      },
+      "zh": {
+        "name": "比赛乒乓球拍",
+        "category": "乒乓球拍",
+        "album": "乒乓球拍",
+        "description": "比赛乒乓球拍，胶皮抓球感更强，适合俱乐部训练和比赛备货。",
+        "scenario": "学校训练、俱乐部采购、体育用品门店和团队采购",
+        "highlights": [
+          "支持批量询盘",
+          "支持团队采购",
+          "可沟通定制需求"
+        ]
+      },
+      "es": {
+        "name": "Competition Table Tennis Racket",
+        "category": "Table Tennis Racket",
+        "album": "Table Tennis Racket",
+        "description": "Producto deportivo para entrenamiento, venta minorista y compra por equipo.",
+        "scenario": "Escuelas, clubes y venta deportiva",
+        "highlights": [
+          "Consulta por volumen",
+          "Compra de equipo",
+          "Soporte personalizado"
+        ]
+      }
+    },
+    "detailSections": [
+      {
+        "title": "Product Details",
+        "body": "Contact us for price, customization, packing and delivery details."
+      },
+      {
+        "title": "采购说明",
+        "body": "可根据采购数量、包装方式、颜色和使用场景沟通报价。"
+      }
+    ]
+  },
+  {
+    "id": "table-tennis-racket-3",
+    "name": "Student Table Tennis Racket Set",
+    "category": "Table Tennis Racket",
+    "categorySlug": "table-tennis-racket",
+    "album": "Table Tennis Racket",
+    "image": "/assets/table-tennis-racket.svg",
+    "visible": true,
+    "sortOrder": 48,
+    "prices": {
+      "baseCurrency": "USD",
+      "basePrice": 5,
+      "priceUnit": "piece"
+    },
+    "galleryImages": [
+      "/assets/table-tennis-racket.svg"
+    ],
+    "galleryLabels": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "Wood blade with durable rubber"
+      },
+      {
+        "label": "Use Case",
+        "value": "Schools, campus activities, beginner training"
+      },
+      {
+        "label": "MOQ Reference",
+        "value": "5000 pieces or contact us for project quotation"
+      }
+    ],
+    "translations": {
+      "en": {
+        "name": "Student Table Tennis Racket Set",
+        "category": "Table Tennis Racket",
+        "album": "Table Tennis Racket",
+        "description": "Student table tennis racket set for school sports classes and campus activity purchasing.",
+        "scenario": "Schools, campus activities, beginner training",
+        "highlights": [
+          "Bulk inquiry available",
+          "Team purchase support",
+          "Customization support"
+        ]
+      },
+      "zh": {
+        "name": "学生乒乓球拍套装",
+        "category": "乒乓球拍",
+        "album": "乒乓球拍",
+        "description": "学生乒乓球拍套装，适合学校体育课和校园活动采购。",
+        "scenario": "学校训练、俱乐部采购、体育用品门店和团队采购",
+        "highlights": [
+          "支持批量询盘",
+          "支持团队采购",
+          "可沟通定制需求"
+        ]
+      },
+      "es": {
+        "name": "Student Table Tennis Racket Set",
+        "category": "Table Tennis Racket",
+        "album": "Table Tennis Racket",
+        "description": "Producto deportivo para entrenamiento, venta minorista y compra por equipo.",
+        "scenario": "Escuelas, clubes y venta deportiva",
+        "highlights": [
+          "Consulta por volumen",
+          "Compra de equipo",
+          "Soporte personalizado"
+        ]
+      }
+    },
+    "detailSections": [
+      {
+        "title": "Product Details",
+        "body": "Contact us for price, customization, packing and delivery details."
+      },
+      {
+        "title": "采购说明",
+        "body": "可根据采购数量、包装方式、颜色和使用场景沟通报价。"
+      }
+    ]
+  },
+  {
+    "id": "table-tennis-1",
+    "name": "Training Table Tennis Balls",
+    "category": "Table Tennis",
+    "categorySlug": "table-tennis",
+    "album": "Table Tennis",
+    "image": "/assets/table-tennis.svg",
+    "visible": true,
+    "sortOrder": 49,
+    "prices": {
+      "baseCurrency": "USD",
+      "basePrice": 3,
+      "priceUnit": "piece"
+    },
+    "galleryImages": [
+      "/assets/table-tennis.svg"
+    ],
+    "galleryLabels": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "ABS plastic with stable roundness"
+      },
+      {
+        "label": "Use Case",
+        "value": "Schools, clubs, training rooms and sports retail"
+      },
+      {
+        "label": "MOQ Reference",
+        "value": "5000 pieces or contact us for project quotation"
+      }
+    ],
+    "translations": {
+      "en": {
+        "name": "Training Table Tennis Balls",
+        "category": "Table Tennis",
+        "album": "Table Tennis",
+        "description": "Training table tennis balls for school classes, club practice and retail replenishment.",
+        "scenario": "Schools, clubs, training rooms and sports retail",
+        "highlights": [
+          "Bulk inquiry available",
+          "Team purchase support",
+          "Customization support"
+        ]
+      },
+      "zh": {
+        "name": "训练乒乓球",
+        "category": "乒乓球",
+        "album": "乒乓球",
+        "description": "训练乒乓球，适合学校课程、俱乐部练习和门店补货。",
+        "scenario": "学校训练、俱乐部采购、体育用品门店和团队采购",
+        "highlights": [
+          "支持批量询盘",
+          "支持团队采购",
+          "可沟通定制需求"
+        ]
+      },
+      "es": {
+        "name": "Training Table Tennis Balls",
+        "category": "Table Tennis",
+        "album": "Table Tennis",
+        "description": "Producto deportivo para entrenamiento, venta minorista y compra por equipo.",
+        "scenario": "Escuelas, clubes y venta deportiva",
+        "highlights": [
+          "Consulta por volumen",
+          "Compra de equipo",
+          "Soporte personalizado"
+        ]
+      }
+    },
+    "detailSections": [
+      {
+        "title": "Product Details",
+        "body": "Contact us for price, customization, packing and delivery details."
+      },
+      {
+        "title": "采购说明",
+        "body": "可根据采购数量、包装方式、颜色和使用场景沟通报价。"
+      }
+    ]
+  },
+  {
+    "id": "table-tennis-2",
+    "name": "Competition Table Tennis Balls",
+    "category": "Table Tennis",
+    "categorySlug": "table-tennis",
+    "album": "Table Tennis",
+    "image": "/assets/table-tennis.svg",
+    "visible": true,
+    "sortOrder": 50,
+    "prices": {
+      "baseCurrency": "USD",
+      "basePrice": 5,
+      "priceUnit": "piece"
+    },
+    "galleryImages": [
+      "/assets/table-tennis.svg"
+    ],
+    "galleryLabels": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "ABS plastic with competition bounce consistency"
+      },
+      {
+        "label": "Use Case",
+        "value": "Clubs, matches, training centers"
+      },
+      {
+        "label": "MOQ Reference",
+        "value": "5000 pieces or contact us for project quotation"
+      }
+    ],
+    "translations": {
+      "en": {
+        "name": "Competition Table Tennis Balls",
+        "category": "Table Tennis",
+        "album": "Table Tennis",
+        "description": "Competition table tennis balls with stable bounce for matches and training centers.",
+        "scenario": "Clubs, matches, training centers",
+        "highlights": [
+          "Bulk inquiry available",
+          "Team purchase support",
+          "Customization support"
+        ]
+      },
+      "zh": {
+        "name": "比赛乒乓球",
+        "category": "乒乓球",
+        "album": "乒乓球",
+        "description": "比赛乒乓球，弹跳稳定，适合赛事、俱乐部和训练中心采购。",
+        "scenario": "学校训练、俱乐部采购、体育用品门店和团队采购",
+        "highlights": [
+          "支持批量询盘",
+          "支持团队采购",
+          "可沟通定制需求"
+        ]
+      },
+      "es": {
+        "name": "Competition Table Tennis Balls",
+        "category": "Table Tennis",
+        "album": "Table Tennis",
+        "description": "Producto deportivo para entrenamiento, venta minorista y compra por equipo.",
+        "scenario": "Escuelas, clubes y venta deportiva",
+        "highlights": [
+          "Consulta por volumen",
+          "Compra de equipo",
+          "Soporte personalizado"
+        ]
+      }
+    },
+    "detailSections": [
+      {
+        "title": "Product Details",
+        "body": "Contact us for price, customization, packing and delivery details."
+      },
+      {
+        "title": "采购说明",
+        "body": "可根据采购数量、包装方式、颜色和使用场景沟通报价。"
+      }
+    ]
+  },
+  {
+    "id": "table-tennis-3",
+    "name": "Table Tennis Ball Pack",
+    "category": "Table Tennis",
+    "categorySlug": "table-tennis",
+    "album": "Table Tennis",
+    "image": "/assets/table-tennis.svg",
+    "visible": true,
+    "sortOrder": 51,
+    "prices": {
+      "baseCurrency": "USD",
+      "basePrice": 4,
+      "priceUnit": "piece"
+    },
+    "galleryImages": [
+      "/assets/table-tennis.svg"
+    ],
+    "galleryLabels": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "Durable ABS training balls"
+      },
+      {
+        "label": "Use Case",
+        "value": "Training rooms, schools, sports retail"
+      },
+      {
+        "label": "MOQ Reference",
+        "value": "5000 pieces or contact us for project quotation"
+      }
+    ],
+    "translations": {
+      "en": {
+        "name": "Table Tennis Ball Pack",
+        "category": "Table Tennis",
+        "album": "Table Tennis",
+        "description": "Bulk table tennis ball pack for training rooms, schools and retail replenishment.",
+        "scenario": "Training rooms, schools, sports retail",
+        "highlights": [
+          "Bulk inquiry available",
+          "Team purchase support",
+          "Customization support"
+        ]
+      },
+      "zh": {
+        "name": "乒乓球训练装",
+        "category": "乒乓球",
+        "album": "乒乓球",
+        "description": "乒乓球训练装，适合训练室、学校和门店批量补货。",
+        "scenario": "学校训练、俱乐部采购、体育用品门店和团队采购",
+        "highlights": [
+          "支持批量询盘",
+          "支持团队采购",
+          "可沟通定制需求"
+        ]
+      },
+      "es": {
+        "name": "Table Tennis Ball Pack",
+        "category": "Table Tennis",
+        "album": "Table Tennis",
+        "description": "Producto deportivo para entrenamiento, venta minorista y compra por equipo.",
+        "scenario": "Escuelas, clubes y venta deportiva",
+        "highlights": [
+          "Consulta por volumen",
+          "Compra de equipo",
+          "Soporte personalizado"
+        ]
+      }
+    },
+    "detailSections": [
+      {
+        "title": "Product Details",
+        "body": "Contact us for price, customization, packing and delivery details."
+      },
+      {
+        "title": "采购说明",
+        "body": "可根据采购数量、包装方式、颜色和使用场景沟通报价。"
+      }
+    ]
+  },
+  {
+    "id": "jump-rope-1",
+    "name": "Adjustable Training Jump Rope",
+    "category": "Jump Rope",
+    "categorySlug": "jump-rope",
+    "album": "Jump Rope",
+    "image": "/assets/jump-rope.svg",
+    "visible": true,
+    "sortOrder": 52,
+    "prices": {
+      "baseCurrency": "USD",
+      "basePrice": 4,
+      "priceUnit": "piece"
+    },
+    "galleryImages": [
+      "/assets/jump-rope.svg"
+    ],
+    "galleryLabels": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "PVC rope with adjustable handle length"
+      },
+      {
+        "label": "Use Case",
+        "value": "Schools, fitness programs, campus events"
+      },
+      {
+        "label": "MOQ Reference",
+        "value": "5000 pieces or contact us for project quotation"
+      }
+    ],
+    "translations": {
+      "en": {
+        "name": "Adjustable Training Jump Rope",
+        "category": "Jump Rope",
+        "album": "Jump Rope",
+        "description": "Adjustable jump rope for fitness tests, school classes and daily exercise.",
+        "scenario": "Schools, fitness programs, campus events",
+        "highlights": [
+          "Bulk inquiry available",
+          "Team purchase support",
+          "Customization support"
+        ]
+      },
+      "zh": {
+        "name": "可调节训练跳绳",
+        "category": "跳绳",
+        "album": "跳绳",
+        "description": "可调节训练跳绳，适合体测、学校课程和日常锻炼。",
+        "scenario": "学校训练、俱乐部采购、体育用品门店和团队采购",
+        "highlights": [
+          "支持批量询盘",
+          "支持团队采购",
+          "可沟通定制需求"
+        ]
+      },
+      "es": {
+        "name": "Adjustable Training Jump Rope",
+        "category": "Jump Rope",
+        "album": "Jump Rope",
+        "description": "Producto deportivo para entrenamiento, venta minorista y compra por equipo.",
+        "scenario": "Escuelas, clubes y venta deportiva",
+        "highlights": [
+          "Consulta por volumen",
+          "Compra de equipo",
+          "Soporte personalizado"
+        ]
+      }
+    },
+    "detailSections": [
+      {
+        "title": "Product Details",
+        "body": "Contact us for price, customization, packing and delivery details."
+      },
+      {
+        "title": "采购说明",
+        "body": "可根据采购数量、包装方式、颜色和使用场景沟通报价。"
+      }
+    ]
+  },
+  {
+    "id": "jump-rope-2",
+    "name": "Speed Bearing Jump Rope",
+    "category": "Jump Rope",
+    "categorySlug": "jump-rope",
+    "album": "Jump Rope",
+    "image": "/assets/jump-rope.svg",
+    "visible": true,
+    "sortOrder": 53,
+    "prices": {
+      "baseCurrency": "USD",
+      "basePrice": 7,
+      "priceUnit": "piece"
+    },
+    "galleryImages": [
+      "/assets/jump-rope.svg"
+    ],
+    "galleryLabels": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "Steel wire rope with bearing handles"
+      },
+      {
+        "label": "Use Case",
+        "value": "Fitness classes, speed training, competitions"
+      },
+      {
+        "label": "MOQ Reference",
+        "value": "5000 pieces or contact us for project quotation"
+      }
+    ],
+    "translations": {
+      "en": {
+        "name": "Speed Bearing Jump Rope",
+        "category": "Jump Rope",
+        "album": "Jump Rope",
+        "description": "Speed bearing jump rope for fast skipping, fitness classes and competition training.",
+        "scenario": "Fitness classes, speed training, competitions",
+        "highlights": [
+          "Bulk inquiry available",
+          "Team purchase support",
+          "Customization support"
+        ]
+      },
+      "zh": {
+        "name": "竞速轴承跳绳",
+        "category": "跳绳",
+        "album": "跳绳",
+        "description": "竞速轴承跳绳，适合快速跳绳、健身课程和比赛训练。",
+        "scenario": "学校训练、俱乐部采购、体育用品门店和团队采购",
+        "highlights": [
+          "支持批量询盘",
+          "支持团队采购",
+          "可沟通定制需求"
+        ]
+      },
+      "es": {
+        "name": "Speed Bearing Jump Rope",
+        "category": "Jump Rope",
+        "album": "Jump Rope",
+        "description": "Producto deportivo para entrenamiento, venta minorista y compra por equipo.",
+        "scenario": "Escuelas, clubes y venta deportiva",
+        "highlights": [
+          "Consulta por volumen",
+          "Compra de equipo",
+          "Soporte personalizado"
+        ]
+      }
+    },
+    "detailSections": [
+      {
+        "title": "Product Details",
+        "body": "Contact us for price, customization, packing and delivery details."
+      },
+      {
+        "title": "采购说明",
+        "body": "可根据采购数量、包装方式、颜色和使用场景沟通报价。"
+      }
+    ]
+  },
+  {
+    "id": "jump-rope-3",
+    "name": "Kids Fitness Jump Rope",
+    "category": "Jump Rope",
+    "categorySlug": "jump-rope",
+    "album": "Jump Rope",
+    "image": "/assets/jump-rope.svg",
+    "visible": true,
+    "sortOrder": 54,
+    "prices": {
+      "baseCurrency": "USD",
+      "basePrice": 3,
+      "priceUnit": "piece"
+    },
+    "galleryImages": [
+      "/assets/jump-rope.svg"
+    ],
+    "galleryLabels": [],
+    "specs": [
+      {
+        "label": "Material",
+        "value": "Soft PVC rope with lightweight handles"
+      },
+      {
+        "label": "Use Case",
+        "value": "Kids training, schools, activity kits"
+      },
+      {
+        "label": "MOQ Reference",
+        "value": "5000 pieces or contact us for project quotation"
+      }
+    ],
+    "translations": {
+      "en": {
+        "name": "Kids Fitness Jump Rope",
+        "category": "Jump Rope",
+        "album": "Jump Rope",
+        "description": "Kids jump rope for school sports, campus activities and beginner fitness training.",
+        "scenario": "Kids training, schools, activity kits",
+        "highlights": [
+          "Bulk inquiry available",
+          "Team purchase support",
+          "Customization support"
+        ]
+      },
+      "zh": {
+        "name": "儿童健身跳绳",
+        "category": "跳绳",
+        "album": "跳绳",
+        "description": "儿童健身跳绳，适合学校体育、校园活动和儿童运动训练。",
+        "scenario": "学校训练、俱乐部采购、体育用品门店和团队采购",
+        "highlights": [
+          "支持批量询盘",
+          "支持团队采购",
+          "可沟通定制需求"
+        ]
+      },
+      "es": {
+        "name": "Kids Fitness Jump Rope",
+        "category": "Jump Rope",
+        "album": "Jump Rope",
+        "description": "Producto deportivo para entrenamiento, venta minorista y compra por equipo.",
+        "scenario": "Escuelas, clubes y venta deportiva",
+        "highlights": [
+          "Consulta por volumen",
+          "Compra de equipo",
+          "Soporte personalizado"
+        ]
+      }
+    },
+    "detailSections": [
+      {
+        "title": "Product Details",
+        "body": "Contact us for price, customization, packing and delivery details."
+      },
+      {
+        "title": "采购说明",
+        "body": "可根据采购数量、包装方式、颜色和使用场景沟通报价。"
+      }
+    ]
   }
 ]
